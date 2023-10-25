@@ -98,3 +98,5 @@
 2961	3107	7199476258313341	D:/Git/workspace/vlp_local/hello_world/build/bootloader/.bin_timestamp	c4c63e036373d118
 3107	3158	0	esp-idf/esptool_py/CMakeFiles/bootloader_check_size	40cc229f8097688f
 3107	3158	0	D:/Git/workspace/vlp_local/hello_world/build/bootloader/esp-idf/esptool_py/CMakeFiles/bootloader_check_size	40cc229f8097688f
+5	59	0	esp-idf/esptool_py/CMakeFiles/bootloader_check_size	40cc229f8097688f
+5	59	0	D:/Git/workspace/vlp_local/hello_world/build/bootloader/esp-idf/esptool_py/CMakeFiles/bootloader_check_size	40cc229f8097688f

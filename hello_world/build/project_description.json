@@ -1,7 +1,7 @@
 {
     "version":            "1",
     "project_name":       "hello_world",
-    "project_version":    "9205f79",
+    "project_version":    "2223f39-dirty",
     "project_path":       "D:/Git/workspace/vlp_local/hello_world",
     "idf_path":           "D:/expressif/esp-idf",
     "build_dir":          "D:/Git/workspace/vlp_local/hello_world/build",
