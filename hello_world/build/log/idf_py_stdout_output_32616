@@ -1,0 +1,44 @@
+-- Existing sdkconfig 'D:/Git/workspace/vlp_local/hello_world/sdkconfig' renamed to 'D:/Git/workspace/vlp_local/hello_world/sdkconfig.old'.
+-- Found Git: D:/expressif/tools/idf-git/2.39.2/cmd/git.exe (found version "2.39.2.windows.1") 
+-- The C compiler identification is GNU 12.2.0
+-- The CXX compiler identification is GNU 12.2.0
+-- The ASM compiler identification is GNU
+-- Found assembler: D:/expressif/tools/riscv32-esp-elf/esp-12.2.0_20230208/riscv32-esp-elf/bin/riscv32-esp-elf-gcc.exe
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: D:/expressif/tools/riscv32-esp-elf/esp-12.2.0_20230208/riscv32-esp-elf/bin/riscv32-esp-elf-gcc.exe - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: D:/expressif/tools/riscv32-esp-elf/esp-12.2.0_20230208/riscv32-esp-elf/bin/riscv32-esp-elf-g++.exe - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Building ESP-IDF components for target esp32c3
+-- Project sdkconfig file D:/Git/workspace/vlp_local/hello_world/sdkconfig
+-- Looking for sys/types.h
+-- Looking for sys/types.h - found
+-- Looking for stdint.h
+-- Looking for stdint.h - found
+-- Looking for stddef.h
+-- Looking for stddef.h - found
+-- Check size of time_t
+-- Check size of time_t - done
+-- Found Python3: d:/expressif/python_env/idf5.1_py3.11_env/Scripts/python.exe (found version "3.11.2") found components: Interpreter 
+-- Performing Test C_COMPILER_SUPPORTS_WFORMAT_SIGNEDNESS
+-- Performing Test C_COMPILER_SUPPORTS_WFORMAT_SIGNEDNESS - Success
+-- App "hello_world" version: 9205f79
+-- Adding linker script D:/Git/workspace/vlp_local/hello_world/build/esp-idf/esp_system/ld/memory.ld
+-- Adding linker script D:/expressif/esp-idf/components/esp_system/ld/esp32c3/sections.ld.in
+-- Adding linker script D:/expressif/esp-idf/components/esp_rom/esp32c3/ld/esp32c3.rom.ld
+-- Adding linker script D:/expressif/esp-idf/components/esp_rom/esp32c3/ld/esp32c3.rom.api.ld
+-- Adding linker script D:/expressif/esp-idf/components/esp_rom/esp32c3/ld/esp32c3.rom.libgcc.ld
+-- Adding linker script D:/expressif/esp-idf/components/esp_rom/esp32c3/ld/esp32c3.rom.newlib.ld
+-- Adding linker script D:/expressif/esp-idf/components/esp_rom/esp32c3/ld/esp32c3.rom.version.ld
+-- Adding linker script D:/expressif/esp-idf/components/esp_rom/esp32c3/ld/esp32c3.rom.eco3.ld
+-- Adding linker script D:/expressif/esp-idf/components/soc/esp32c3/ld/esp32c3.peripherals.ld
+-- Components: app_trace app_update bootloader bootloader_support bt cmock console cxx driver efuse esp-tls esp_adc esp_app_format esp_coex esp_common esp_eth esp_event esp_gdbstub esp_hid esp_http_client esp_http_server esp_https_ota esp_https_server esp_hw_support esp_lcd esp_local_ctrl esp_mm esp_netif esp_netif_stack esp_partition esp_phy esp_pm esp_psram esp_ringbuf esp_rom esp_system esp_timer esp_wifi espcoredump esptool_py fatfs freertos hal heap http_parser idf_test ieee802154 json log lwip main mbedtls mqtt newlib nvs_flash openthread partition_table protobuf-c protocomm pthread riscv sdmmc soc spi_flash spiffs tcp_transport ulp unity usb vfs wear_levelling wifi_provisioning wpa_supplicant
+-- Component paths: D:/expressif/esp-idf/components/app_trace D:/expressif/esp-idf/components/app_update D:/expressif/esp-idf/components/bootloader D:/expressif/esp-idf/components/bootloader_support D:/expressif/esp-idf/components/bt D:/expressif/esp-idf/components/cmock D:/expressif/esp-idf/components/console D:/expressif/esp-idf/components/cxx D:/expressif/esp-idf/components/driver D:/expressif/esp-idf/components/efuse D:/expressif/esp-idf/components/esp-tls D:/expressif/esp-idf/components/esp_adc D:/expressif/esp-idf/components/esp_app_format D:/expressif/esp-idf/components/esp_coex D:/expressif/esp-idf/components/esp_common D:/expressif/esp-idf/components/esp_eth D:/expressif/esp-idf/components/esp_event D:/expressif/esp-idf/components/esp_gdbstub D:/expressif/esp-idf/components/esp_hid D:/expressif/esp-idf/components/esp_http_client D:/expressif/esp-idf/components/esp_http_server D:/expressif/esp-idf/components/esp_https_ota D:/expressif/esp-idf/components/esp_https_server D:/expressif/esp-idf/components/esp_hw_support D:/expressif/esp-idf/components/esp_lcd D:/expressif/esp-idf/components/esp_local_ctrl D:/expressif/esp-idf/components/esp_mm D:/expressif/esp-idf/components/esp_netif D:/expressif/esp-idf/components/esp_netif_stack D:/expressif/esp-idf/components/esp_partition D:/expressif/esp-idf/components/esp_phy D:/expressif/esp-idf/components/esp_pm D:/expressif/esp-idf/components/esp_psram D:/expressif/esp-idf/components/esp_ringbuf D:/expressif/esp-idf/components/esp_rom D:/expressif/esp-idf/components/esp_system D:/expressif/esp-idf/components/esp_timer D:/expressif/esp-idf/components/esp_wifi D:/expressif/esp-idf/components/espcoredump D:/expressif/esp-idf/components/esptool_py D:/expressif/esp-idf/components/fatfs D:/expressif/esp-idf/components/freertos D:/expressif/esp-idf/components/hal D:/expressif/esp-idf/components/heap D:/expressif/esp-idf/components/http_parser D:/expressif/esp-idf/components/idf_test D:/expressif/esp-idf/components/ieee802154 D:/expressif/esp-idf/components/json D:/expressif/esp-idf/components/log D:/expressif/esp-idf/components/lwip D:/Git/workspace/vlp_local/hello_world/main D:/expressif/esp-idf/components/mbedtls D:/expressif/esp-idf/components/mqtt D:/expressif/esp-idf/components/newlib D:/expressif/esp-idf/components/nvs_flash D:/expressif/esp-idf/components/openthread D:/expressif/esp-idf/components/partition_table D:/expressif/esp-idf/components/protobuf-c D:/expressif/esp-idf/components/protocomm D:/expressif/esp-idf/components/pthread D:/expressif/esp-idf/components/riscv D:/expressif/esp-idf/components/sdmmc D:/expressif/esp-idf/components/soc D:/expressif/esp-idf/components/spi_flash D:/expressif/esp-idf/components/spiffs D:/expressif/esp-idf/components/tcp_transport D:/expressif/esp-idf/components/ulp D:/expressif/esp-idf/components/unity D:/expressif/esp-idf/components/usb D:/expressif/esp-idf/components/vfs D:/expressif/esp-idf/components/wear_levelling D:/expressif/esp-idf/components/wifi_provisioning D:/expressif/esp-idf/components/wpa_supplicant
+-- Configuring done
+-- Generating done
+-- Build files have been written to: D:/Git/workspace/vlp_local/hello_world/build
