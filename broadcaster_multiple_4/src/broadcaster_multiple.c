@@ -72,10 +72,10 @@ int broadcaster_multiple(void)
 		.sid = 0U, /* Supply unique SID when creating advertising set */
 		.secondary_max_skip = 0U,
 		.options = (BT_LE_ADV_OPT_EXT_ADV | BT_LE_ADV_OPT_USE_NAME),
-		.interval_min = 0x0020,
-		.interval_max = 0x0020,
+		.interval_min = 0x0050,
+		.interval_max = 0x0050,
 		.peer = NULL,
-	};//间隔为200ms
+	};//间隔为50ms
 	int err;
 
 	/* Initialize the Bluetooth Subsystem */
