@@ -50,6 +50,7 @@ int main(void)
 	// 进行定时器初始化 2k采样率 这里有问题会冲突
 	//  timer1_init_enable();
 	// 进行线程的创立
+	//这开启两个线程
 	k_thread_create(&thread_data_1, thread_stack_1,
 					K_THREAD_STACK_SIZEOF(thread_stack_1),
 					thread_entry_1, NULL, NULL, NULL,
