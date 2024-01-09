@@ -8,6 +8,7 @@
         "nrfx_gpiote.h": "c",
         "imu_bag.h": "c",
         "timer.h": "c",
-        "adc.h": "c"
+        "adc.h": "c",
+        "device.h": "c"
     }
 }

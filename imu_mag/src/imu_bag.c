@@ -145,6 +145,6 @@ void imu_bag_read_data( void)
 		mag_data[0] = lis3dml_data[0] + (lis3dml_data[1] << 8);
 		mag_data[1] = lis3dml_data[2] + (lis3dml_data[3] << 8);
 		mag_data[2] = lis3dml_data[4] + (lis3dml_data[5] << 8);
-		printf("lis3dml, mag_x:%d, mag_y:%d, mag_z:%d\n",
+		printk("lis3dml, mag_x:%d, mag_y:%d, mag_z:%d\n",
 			   mag_data[0], mag_data[1], mag_data[2]);
 }

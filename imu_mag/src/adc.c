@@ -76,17 +76,19 @@ void adc_read_data(void)
             {
                 val_mv = (int32_t)buf;
             }
-            printk("%" PRId32, val_mv);
-            err = adc_raw_to_millivolts_dt(&adc_channels[i],
-                                           &val_mv);
-            /* conversion to mV may not be supported, skip if not */
-            if (err < 0)
-            {
-                printk(" (value in mV not available)\n");
-            }
-            else
-            {
-                printk(" = %" PRId32 " mV\n", val_mv);
-            }
+            // printk("ADC%\n" PRId32, val_mv);
+            printk("ADC:%d\n", val_mv);
+            //下列代码是将ADC原始值变换为mV
+            // err = adc_raw_to_millivolts_dt(&adc_channels[i],
+            //                                &val_mv);
+            // /* conversion to mV may not be supported, skip if not */
+            // if (err < 0)
+            // {
+            //     printk(" (value in mV not available)\n");
+            // }
+            // else
+            // {
+            //     printk(" = %" PRId32 " mV\n", val_mv);
+            // }
         }
 }

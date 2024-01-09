@@ -33,3 +33,6 @@
 &comp {
 	status = "okay";
 };
+&uart0 {
+	current-speed = <1000000>;
+};
