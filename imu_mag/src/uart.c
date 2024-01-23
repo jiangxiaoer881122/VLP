@@ -1,30 +1,22 @@
 /*
- * Copyright (c) 2022 Libre Solar Technologies GmbH
- *
- * SPDX-License-Identifier: Apache-2.0
+用于串口发送
  */
 
-#include <zephyr/kernel.h>
-#include <zephyr/device.h>
-#include <zephyr/drivers/uart.h>
+#include "uart.h"
 
-#include <string.h>
 
-/* change this to any other UART peripheral if desired */
-//检查设备节点
-#define UART_DEVICE_NODE DT_CHOSEN(zephyr_shell_uart)
 
-#define MSG_SIZE 32
+
 
 /* queue to store up to 10 messages (aligned to 4-byte boundary) */
 //初始化存储队列
 K_MSGQ_DEFINE(uart_msgq, MSG_SIZE, 10, 4);
 
-static const struct device *const uart_dev = DEVICE_DT_GET(UART_DEVICE_NODE);
+const struct device *const uart_dev = DEVICE_DT_GET(UART_DEVICE_NODE);
 
 /* receive buffer used in UART ISR callback */
-static char rx_buf[MSG_SIZE];
-static int rx_buf_pos;
+char rx_buf[MSG_SIZE];
+int rx_buf_pos;
 
 /*
  * Read characters from UART until line end is detected. Afterwards push the
@@ -71,23 +63,16 @@ void print_uart(char *buf)
 		uart_poll_out(uart_dev, buf[i]);
 	}
 }
-
-int main(void)
+//串口初始化且注册中断处理函数
+int uart_init_slef(void)
 {
-	//用于计数
-	int  count =0;
-	char str[10];//用于存储格式化字符串
-	char tx_buf[MSG_SIZE]; //字符指针
-	char *ptr;
-
 	if (!device_is_ready(uart_dev)) {
 		printk("UART device not found!");
 		return 0;
 	}else{
-		printk("hhelo uart\n");
+		printk("hello uart\n");
 	}
-
-	/* configure interrupt and callback to receive data */
+    	/* configure interrupt and callback to receive data */
 	//进行中断处理函数的回调
 	int ret = uart_irq_callback_user_data_set(uart_dev, serial_cb, NULL);
 
@@ -106,23 +91,32 @@ int main(void)
 	uart_irq_rx_enable(uart_dev);
 	printk("this is ok\n");
 	printk("this is anther\n");	
-	while(1)
-	{
-	//将整数格式化成字符串
-	sprintf(str,"%d\n",count);
-	//将字符串的首地址赋给字符指针
-	ptr=str;
-	print_uart(ptr);
-	k_sleep(K_MSEC(1));
-	count++;
-	// print_uart("this is my first try\n");
-	// k_sleep(K_MSEC(1000));
-	}
-	/* indefinitely wait for input from the user */
-	while (k_msgq_get(&uart_msgq, &tx_buf, K_FOREVER) == 0) {
-		print_uart("Echo: ");
-		print_uart(tx_buf);
-		print_uart("\r\n");
-	}
-	return 0;
+    return 0;
 }
+// int main(void)
+// {
+// 	//用于计数
+// 	int  count =0;
+// 	char str[10];//用于存储格式化字符串
+// 	char tx_buf[MSG_SIZE]; //字符指针
+// 	char *ptr;
+// 	while(1)
+// 	{
+// 	//将整数格式化成字符串
+// 	sprintf(str,"%d\n",count);
+// 	//将字符串的首地址赋给字符指针
+// 	ptr=str;
+// 	print_uart(ptr);
+// 	k_sleep(K_MSEC(1));
+// 	count++;
+// 	// print_uart("this is my first try\n");
+// 	// k_sleep(K_MSEC(1000));
+// 	}
+// 	/* indefinitely wait for input from the user */
+// 	while (k_msgq_get(&uart_msgq, &tx_buf, K_FOREVER) == 0) {
+// 		print_uart("Echo: ");
+// 		print_uart(tx_buf);
+// 		print_uart("\r\n");
+// 	}
+// 	return 0;
+// }

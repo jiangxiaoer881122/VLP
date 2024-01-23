@@ -36,3 +36,16 @@
 &uart0 {
 	current-speed = <1000000>;
 };
+
+&i2c0 {
+	clock-frequency = <I2C_BITRATE_FAST>;
+	label = "I2C_0";
+};
+
+&clock {
+	status = "okay";
+};
+
+&timer0 {
+	status = "okay";
+};

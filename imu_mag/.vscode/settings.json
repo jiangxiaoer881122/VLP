@@ -9,6 +9,8 @@
         "imu_bag.h": "c",
         "timer.h": "c",
         "adc.h": "c",
-        "device.h": "c"
+        "device.h": "c",
+        "iic_twi.h": "c",
+        "syscall_list.h": "c"
     }
 }

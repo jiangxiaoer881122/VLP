@@ -75,7 +75,7 @@ void lis3dml_init()
 {
 	/* 读WHO_AM_I寄存器 */
 	sensor_register_read(LIS3MDL_I2C_ADDR_G, LIS3MDL_WHO_AM_I, data, 1);
-	printk("lis3dml read id:%X", data[0]);
+	printk("lis3dml read id:%X\n", data[0]);
 	if (data[0] == LIS3MDL_ID)
 	{
 		printk("lis3dml ready!");
@@ -103,7 +103,7 @@ void lis3dml_init()
  */
  void imu_bag_init(void)
 {
-	I2cInit();
+	// I2cInit();
 	/* 初始化icm42688 */
 	icm_init();
 	/* 初始化lis3dml */

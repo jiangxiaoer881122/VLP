@@ -40,7 +40,7 @@
 /**
  * @brief        adc初始化配置
  */
-void adc_init(void);
+int adc_init(void);
 /**
  * @brief        adc读取数据配置
  */

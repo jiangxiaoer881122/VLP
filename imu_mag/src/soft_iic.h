@@ -5,7 +5,8 @@
 #include <zephyr/kernel.h>
 #include <zephyr/drivers/gpio.h>
 #include <nrfx_gpiote.h>
-
+//硬件IIC所需头文件
+#include "iic_twi.h"
 #define ACK_VAL 0x0
 #define NACK_VAL 0x1
 #define ACK_CHECK_EN 0x1
@@ -39,6 +40,9 @@
 #define I2C_SCL_LOW GpioResetBit(I2C_SCL_PIN)
 
 #define I2C_SDA GpioReadBit(I2C_SDA_PIN)
+
+//定义的IIC设备标签（硬件IIC所需）
+extern struct device *i2c_dev;
 
 // #define I2C_SDA				                gpio_get_level(I2C_SDA_PIN)
 

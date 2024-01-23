@@ -12,7 +12,7 @@ static const struct adc_dt_spec adc_channels[] = {
     DT_FOREACH_PROP_ELEM(DT_PATH(zephyr_user), io_channels,
                          DT_SPEC_AND_COMMA)};
 static int err;
-static uint32_t count = 0;
+// static uint32_t count = 0;
 static uint16_t buf;
 static struct adc_sequence sequence = {
     .buffer = &buf,
@@ -22,7 +22,7 @@ static struct adc_sequence sequence = {
 /**
  * @brief        adc初始化配置
  */
-void adc_init(void)
+int adc_init(void)
 {
 
     /* Configure channels individually prior to sampling. */
@@ -41,12 +41,17 @@ void adc_init(void)
             return 0;
         }
     }
+    return 1;
 }
 /**
  * @brief        adc读取数据处理
  */
 void adc_read_data(void)
 {
+	//用于存储格式化字符串
+	char str[10];
+	//字符指针
+	char *ptr;
 
         // printk("ADC reading[%u]:\n", count++);
         for (size_t i = 0U; i < ARRAY_SIZE(adc_channels); i++)
@@ -77,7 +82,14 @@ void adc_read_data(void)
                 val_mv = (int32_t)buf;
             }
             // printk("ADC%\n" PRId32, val_mv);
-            printk("ADC:%d\n", val_mv);
+            // printk("%d,", val_mv);
+
+            //将整数格式化成指针
+		    sprintf(str,"%d,",val_mv);
+		    ptr =str;
+    		print_uart(ptr);
+
+
             //下列代码是将ADC原始值变换为mV
             // err = adc_raw_to_millivolts_dt(&adc_channels[i],
             //                                &val_mv);
