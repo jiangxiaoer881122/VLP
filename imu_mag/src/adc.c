@@ -40,6 +40,7 @@ int adc_init(void)
             printk("Could not setup channel #%d (%d)\n", i, err);
             return 0;
         }
+        (void)adc_sequence_init_dt(&adc_channels[i], &sequence);
     }
     return 1;
 }
@@ -61,7 +62,7 @@ void adc_read_data(void)
             // printk("- %s, channel %d: ",
             //        adc_channels[i].dev->name,
             //        adc_channels[i].channel_id);
-            (void)adc_sequence_init_dt(&adc_channels[i], &sequence);
+            // (void)adc_sequence_init_dt(&adc_channels[i], &sequence);
             err = adc_read(adc_channels[i].dev, &sequence);
             if (err < 0)
             {

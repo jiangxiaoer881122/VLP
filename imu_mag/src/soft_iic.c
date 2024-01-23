@@ -158,18 +158,18 @@ uint8_t I2cReadByte(uint8_t isAck)
 
 void EspI2cWriteByte(uint8_t dev_addr, uint8_t reg_addr, uint8_t write_data)
 {
-    // I2cStart();
-    // I2cWriteByte((dev_addr << 1) | I2C_MASTER_WRITE);
-    // I2cWaitAck();
-    // I2cWriteByte(reg_addr);
-    // I2cWaitAck();
-    // I2cWriteByte(write_data);
-    // I2cWaitAck();
-    // I2cStop();
+    I2cStart();
+    I2cWriteByte((dev_addr << 1) | I2C_MASTER_WRITE);
+    I2cWaitAck();
+    I2cWriteByte(reg_addr);
+    I2cWaitAck();
+    I2cWriteByte(write_data);
+    I2cWaitAck();
+    I2cStop();
 
-    //以下是重新调用硬件IIC
-    i2c_write(i2c_dev, reg_addr, 1, dev_addr);
-    i2c_write(i2c_dev, write_data, 1, dev_addr);
+    // //以下是重新调用硬件IIC
+    // i2c_write(i2c_dev, reg_addr, 1, dev_addr);
+    // i2c_write(i2c_dev, write_data, 1, dev_addr);
 }
 
 void EspI2cReadByte(uint8_t dev_addr, uint8_t reg_addr, uint8_t *read_data)
@@ -208,35 +208,35 @@ void EspI2cWriteBytes(uint8_t dev_addr, uint8_t reg_addr, uint8_t *write_data, u
 
 void EspI2cReadBytes(uint8_t dev_addr, uint8_t reg_addr, uint8_t *read_data, uint8_t read_len)
 {
-    // uint8_t i = 0;
+    uint8_t i = 0;
 
-    // I2cStart();
+    I2cStart();
 
-    // I2cWriteByte((dev_addr << 1) | I2C_MASTER_WRITE);
-    // I2cWaitAck();
+    I2cWriteByte((dev_addr << 1) | I2C_MASTER_WRITE);
+    I2cWaitAck();
 
-    // I2cWriteByte(reg_addr);
-    // I2cWaitAck();
+    I2cWriteByte(reg_addr);
+    I2cWaitAck();
 
-    // I2cStart();
-    // I2cWriteByte((dev_addr << 1) | I2C_MASTER_READ);
-    // I2cWaitAck();
+    I2cStart();
+    I2cWriteByte((dev_addr << 1) | I2C_MASTER_READ);
+    I2cWaitAck();
 
-    // if (read_len > 1)
-    // {
-    //     for (i = 0; i < read_len - 1; i++)
-    //     {
-    //         read_data[i] = I2cReadByte(ACK_VAL);
-    //         // ets_delay_us(10);
-    //     }
-    // }
-    // read_data[i] = I2cReadByte(NACK_VAL);
+    if (read_len > 1)
+    {
+        for (i = 0; i < read_len - 1; i++)
+        {
+            read_data[i] = I2cReadByte(ACK_VAL);
+            // ets_delay_us(10);
+        }
+    }
+    read_data[i] = I2cReadByte(NACK_VAL);
 
-    // I2cStop();
+    I2cStop();
 
 
-    //以下是调用硬件IIC
-    i2c_write_read(i2c_dev, dev_addr,&reg_addr, 1, read_data ,read_len);
+    // //以下是调用硬件IIC
+    // i2c_write_read(i2c_dev, dev_addr,&reg_addr, 1, read_data ,read_len);
 }
 
 void I2cDetect(void)

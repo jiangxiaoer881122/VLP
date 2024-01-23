@@ -11,7 +11,7 @@
 #include "uart.h"
 //定义IIC的设备名称
 #define I2C_DEV_NAME "I2C_0"
-
+int flag =0;
 //以多线程的方式来进行数据的传输
 #define STACK_SIZE 1024
 #define PRIORITY 5
@@ -73,14 +73,14 @@ int main(void)
     // }
     // printk("I2C device configured successfully\n");
 
-	// // 进行imu与bag的初始化
-	// imu_bag_init();
+	// 进行imu与bag的初始化
+	imu_bag_init();
 	// 进行adc初始化
 	adc_init();
 	//进行串口初始化
 	uart_init_slef();
 	//进行定时器初始化 2k采样率 这里有问题会冲突
- 	//timer1_init_enable();
+ 	timer1_init_enable();
 	// 进行线程的创立
 	//这开启两个线程
 	// k_thread_create(&thread_data_1, thread_stack_1,
@@ -103,8 +103,22 @@ int main(void)
 		// k_sleep(K_MSEC(1));
 		// count++;
 
-		adc_read_data();
-		k_sleep(K_USEC(500));
+		// adc_read_data();
+		// k_sleep(K_USEC(500));
+
+		// imu_bag_read_data();
+		// k_sleep(K_MSEC(1000));		
+
+		// 这里检测定时器代码
+		// printk("this is a flag %d\n",flag);
+		__NOP();
+		if(flag)
+		{
+    
+			adc_read_data();
+			flag=0;
+			// break;
+		}
 	}
 
 	return 0;

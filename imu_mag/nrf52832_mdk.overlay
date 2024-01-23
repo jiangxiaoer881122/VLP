@@ -29,12 +29,15 @@
 	};
 
 	status = "okay";
+
+	interrupts = <7>, <3>;
 };
 &comp {
 	status = "okay";
 };
 &uart0 {
 	current-speed = <1000000>;
+	interrupts = <2>, <4>;
 };
 
 &i2c0 {
@@ -48,4 +51,5 @@
 
 &timer0 {
 	status = "okay";
+	interrupts = <8>, <5>;
 };
