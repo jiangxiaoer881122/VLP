@@ -12,40 +12,42 @@
 //定义IIC的设备名称
 #define I2C_DEV_NAME "I2C_0"
 int flag =0;
+int b = 0;
+int c = 1;
 //以多线程的方式来进行数据的传输
-#define STACK_SIZE 1024
-#define PRIORITY 5
+// #define STACK_SIZE 1024
+// #define PRIORITY 5
 //定义线程的运行内存
-K_THREAD_STACK_DEFINE(thread_stack_1,STACK_SIZE);
-K_THREAD_STACK_DEFINE(thread_stack_2,STACK_SIZE);
+// K_THREAD_STACK_DEFINE(thread_stack_1,STACK_SIZE);
+// K_THREAD_STACK_DEFINE(thread_stack_2,STACK_SIZE);
 //定义线程的结构对象用来创造
-struct k_thread thread_data_1;
-struct k_thread thread_data_2;
-struct device *i2c_dev;
+// struct k_thread thread_data_1;
+// struct k_thread thread_data_2;
+// struct device *i2c_dev;
 //定义线程的处理函数
 //分别是adc 采样和imu数据
 //adc_read_data();
 //imu_bag_read_data();
-void thread_entry_1(void *p1, void *p2, void *p3)
-{
-    // 在这里编写线程1的逻辑
-	while(1)
-	{
-		adc_read_data();
-		k_sleep(K_USEC(500));
-	}
+// void thread_entry_1(void *p1, void *p2, void *p3)
+// {
+//     // 在这里编写线程1的逻辑
+// 	while(1)
+// 	{
+// 		adc_read_data();
+// 		k_sleep(K_USEC(500));
+// 	}
 
-}
-void thread_entry_2(void *p1, void *p2, void *p3)
-{
-    // 在这里编写线程2的逻辑
-	while(1)
-	{
-		imu_bag_read_data();
-		k_sleep(K_MSEC(500));
-	}
+// }
+// void thread_entry_2(void *p1, void *p2, void *p3)
+// {
+//     // 在这里编写线程2的逻辑
+// 	while(1)
+// 	{
+// 		imu_bag_read_data();
+// 		k_sleep(K_MSEC(500));
+// 	}
 
-}
+// }
 
 int main(void)
 {
@@ -104,20 +106,21 @@ int main(void)
 		// count++;
 
 		// adc_read_data();
-		// k_sleep(K_USEC(500));
+		// k_sleep(K_USEC(480));		
+		// k_sleep(K_USEC(330));
+		//k_busy_wait()
 
 		// imu_bag_read_data();
 		// k_sleep(K_MSEC(1000));		
 
 		// 这里检测定时器代码
-		// printk("this is a flag %d\n",flag);
-		__NOP();
 		if(flag)
 		{
-    
 			adc_read_data();
 			flag=0;
-			// break;
+		}else{
+			//必须加否则会被优化
+			c=1;
 		}
 	}
 

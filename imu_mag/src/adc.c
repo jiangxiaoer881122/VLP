@@ -50,7 +50,7 @@ int adc_init(void)
 void adc_read_data(void)
 {
 	//用于存储格式化字符串
-	char str[10];
+	char str[5];
 	//字符指针
 	char *ptr;
 
