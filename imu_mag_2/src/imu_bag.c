@@ -163,9 +163,9 @@ void imu_bag_read_data( void)
 		print_uart(ptr_42688);
 		memset(str_42688,0,sizeof(str_42688));
 
-		// sprintf(str_3dml,"lis3dml, mag_x:%d, mag_y:%d, mag_z:%d\n",
-		// 	   mag_data[0], mag_data[1], mag_data[2]);
-		// ptr_3dml = str_3dml;
-		// print_uart(ptr_3dml);
-		// memset(str_3dml,0,sizeof(str_3dml));
+		sprintf(str_3dml,"lis3dml, mag_x:%d, mag_y:%d, mag_z:%d\n",
+			   mag_data[0], mag_data[1], mag_data[2]);
+		ptr_3dml = str_3dml;
+		print_uart(ptr_3dml);
+		memset(str_3dml,0,sizeof(str_3dml));
 }

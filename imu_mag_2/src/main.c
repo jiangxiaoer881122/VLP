@@ -10,6 +10,7 @@
 #include "icm_42688.h"
 #include "uart.h"
 //定义IIC的设备名称
+struct device *i2c_dev;
 #define I2C_DEV_NAME "I2C_0"
 int flag =0;
 int b = 0;
