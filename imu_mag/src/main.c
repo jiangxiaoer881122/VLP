@@ -48,16 +48,10 @@ int c = 1;
 // 	}
 
 // }
+struct device *i2c_dev;
 
 int main(void)
 {
-	// //用于计数
-	// int count=0;
-	// //用于存储格式化字符串
-	// char str[10];
-	// //字符指针
-	// char *ptr;
-
 	//硬件IIC
 	i2c_dev = device_get_binding(I2C_DEV_NAME);
 	if(!i2c_dev)
