@@ -70,7 +70,7 @@ int main(void)
     printk("I2C device configured successfully\n");
 
 	// 进行imu与bag的初始化
-	// imu_bag_init();
+	imu_bag_init();
 	// 进行adc初始化
 	adc_init();
 	//进行串口初始化
