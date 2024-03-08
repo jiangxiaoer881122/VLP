@@ -14,7 +14,17 @@
 #include <zephyr/kernel.h>
 #include <zephyr/sys/printk.h>
 #include <zephyr/sys/util.h>
+/*调整外部时钟使其更加准确的采样率*/
+void Bsp_HFCLK_Init_Extern()
+{
+    NRF_CLOCK->EVENTS_HFCLKSTARTED = 0;
+    NRF_CLOCK->TASKS_HFCLKSTART = 1;
 
+    while (NRF_CLOCK->EVENTS_HFCLKSTARTED == 0)
+    {
+        // Do nothing.
+    }
+}
 #if !DT_NODE_EXISTS(DT_PATH(zephyr_user)) || \
 	!DT_NODE_HAS_PROP(DT_PATH(zephyr_user), io_channels)
 #error "No suitable devicetree overlay specified"
@@ -34,6 +44,7 @@ int main(void)
 	int err;
 	uint32_t count = 0;
 	uint16_t buf;
+	Bsp_HFCLK_Init_Extern();
 	struct adc_sequence sequence = {
 		.buffer = &buf,
 		/* buffer size in bytes, not number of samples */
