@@ -110,8 +110,8 @@ int main(void)
 		// 这里检测定时器代码
 		if(flag)
 		{
-			// adc_read_data();
-			imu_bag_read_data();
+			adc_read_data();
+			// imu_bag_read_data();
 			flag=0;
 		}else{
 			//必须加否则会被优化
