@@ -112,7 +112,7 @@ int main(void)
 		if(flag)
 		{
 			flag=0;
-			// adc_read_data();
+			adc_read_data();
 			if(imu_flag)
 			{
 			imu_flag =0;

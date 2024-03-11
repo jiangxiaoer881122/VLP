@@ -14,8 +14,9 @@ void timer_handler(nrf_timer_event_t event_type, void * p_context)
     {
         flag =(flag+1)%2;
         count++;
-        if(count==100)
+        if(count%100==0)
         {
+        count =count%100;
         imu_flag =1;
         count =0;
         }
