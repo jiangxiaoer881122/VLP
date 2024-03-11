@@ -12,7 +12,11 @@
 //定义IIC的设备名称
 struct device *i2c_dev;
 #define I2C_DEV_NAME "I2C_0"
+//用于进行flag的调用
 int flag =0;
+//用于imu的数据发送
+int count =0;
+int imu_flag =0;
 int b = 0;
 int c = 1;
 //以多线程的方式来进行数据的传输
@@ -82,7 +86,7 @@ int main(void)
 	adc_init();
 	//进行串口初始化
 	uart_init_slef();
-	//进行定时器初始化 2k采样率 这里有问题会冲突
+	//进行定时器初始化 2k采样率 
  	timer1_init_enable();
 	// 进行线程的创立
 	//这开启两个线程
@@ -96,9 +100,7 @@ int main(void)
 	// 				PRIORITY, 0, K_NO_WAIT);
 	while (1)
 	{
-		// printk("System clock frequency :%d",sys_clock_hw_cycles_per_sec);
-		// imu_bag_read_data();
-		
+		// printk("System clock frequency :%d",sys_clock_hw_cycles_per_sec);	
 		//将整数格式化成指针
 		// sprintf(str,"%d\n",count);
 		// ptr =str;
@@ -106,20 +108,16 @@ int main(void)
 		// k_sleep(K_MSEC(1));
 		// count++;
 
-		// adc_read_data();
-		// k_sleep(K_USEC(480));		
-		// k_sleep(K_USEC(330));
-		//k_busy_wait()
-
-		// imu_bag_read_data();
-		// k_sleep(K_MSEC(1000));		
-
 		// 这里检测定时器代码
 		if(flag)
 		{
-			adc_read_data();
-			// imu_bag_read_data();
 			flag=0;
+			// adc_read_data();
+			if(imu_flag)
+			{
+			imu_flag =0;
+			imu_bag_read_data();
+			}
 		}else{
 			//必须加否则会被优化
 			c=1;

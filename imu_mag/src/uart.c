@@ -93,30 +93,3 @@ int uart_init_slef(void)
 	printk("this is anther\n");	
     return 0;
 }
-// int main(void)
-// {
-// 	//用于计数
-// 	int  count =0;
-// 	char str[10];//用于存储格式化字符串
-// 	char tx_buf[MSG_SIZE]; //字符指针
-// 	char *ptr;
-// 	while(1)
-// 	{
-// 	//将整数格式化成字符串
-// 	sprintf(str,"%d\n",count);
-// 	//将字符串的首地址赋给字符指针
-// 	ptr=str;
-// 	print_uart(ptr);
-// 	k_sleep(K_MSEC(1));
-// 	count++;
-// 	// print_uart("this is my first try\n");
-// 	// k_sleep(K_MSEC(1000));
-// 	}
-// 	/* indefinitely wait for input from the user */
-// 	while (k_msgq_get(&uart_msgq, &tx_buf, K_FOREVER) == 0) {
-// 		print_uart("Echo: ");
-// 		print_uart(tx_buf);
-// 		print_uart("\r\n");
-// 	}
-// 	return 0;
-// }

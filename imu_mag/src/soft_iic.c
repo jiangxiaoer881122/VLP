@@ -158,18 +158,18 @@ uint8_t I2cReadByte(uint8_t isAck)
 
 void EspI2cWriteByte(uint8_t dev_addr, uint8_t reg_addr, uint8_t write_data)
 {
-    I2cStart();
-    I2cWriteByte((dev_addr << 1) | I2C_MASTER_WRITE);
-    I2cWaitAck();
-    I2cWriteByte(reg_addr);
-    I2cWaitAck();
-    I2cWriteByte(write_data);
-    I2cWaitAck();
-    I2cStop();
+    // I2cStart();
+    // I2cWriteByte((dev_addr << 1) | I2C_MASTER_WRITE);
+    // I2cWaitAck();
+    // I2cWriteByte(reg_addr);
+    // I2cWaitAck();
+    // I2cWriteByte(write_data);
+    // I2cWaitAck();
+    // I2cStop();
 
     //以下是重新调用硬件IIC
-    // i2c_write(i2c_dev, reg_addr, 1, dev_addr);
-    // i2c_write(i2c_dev, write_data, 1, dev_addr);
+    i2c_write(i2c_dev, reg_addr, 1, dev_addr);
+    i2c_write(i2c_dev, write_data, 1, dev_addr);
 }
 
 void EspI2cReadByte(uint8_t dev_addr, uint8_t reg_addr, uint8_t *read_data)

@@ -15,7 +15,6 @@ void Bsp_HFCLK_Init_Extern()
         // Do nothing.
     }
 }
-
 /* Data of ADC io-channels specified in devicetree. */
 static const struct adc_dt_spec adc_channels[] = {
     DT_FOREACH_PROP_ELEM(DT_PATH(zephyr_user), io_channels,

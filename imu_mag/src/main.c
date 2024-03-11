@@ -12,6 +12,8 @@
 //定义IIC的设备名称
 #define I2C_DEV_NAME "I2C_0"
 int flag =0;
+int count =0;
+int imu_flag =0;
 int b = 0;
 int c = 1;
 //以多线程的方式来进行数据的传输
@@ -88,31 +90,17 @@ int main(void)
 	// 				thread_entry_2, NULL, NULL, NULL,
 	// 				PRIORITY, 0, K_NO_WAIT);
 	while (1)
-	{
-		// printk("System clock frequency :%d",sys_clock_hw_cycles_per_sec);
-		// imu_bag_read_data();
-		
-		//将整数格式化成指针
-		// sprintf(str,"%d\n",count);
-		// ptr =str;
-		// print_uart(ptr);
-		// k_sleep(K_MSEC(1));
-		// count++;
-
-		// adc_read_data();
-		// k_sleep(K_USEC(480));		
-		// k_sleep(K_USEC(330));
-		//k_busy_wait()
-
-		// imu_bag_read_data();
-		// k_sleep(K_MSEC(1000));		
-
+	{	
 		// 这里检测定时器代码
 		if(flag)
 		{
 			adc_read_data();
-			// imu_bag_read_data();
 			flag=0;
+			if(imu_flag)
+			{
+				imu_bag_read_data();
+				imu_flag=0;
+			}
 		}else{
 			//必须加否则会被优化
 			c=1;

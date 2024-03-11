@@ -126,7 +126,7 @@ void imu_bag_read_data( void)
 		sensor_register_write_byte(ICM_I2C_ADDR, ICM_SIGNAL_PATH_RESET, 0x04);
 		sensor_register_read(ICM_I2C_ADDR, ICM_ACCEL_DATA_X1, icm42688_data, 12);
 		sensor_register_write_byte(ICM_I2C_ADDR, ICM_BANK_SEL, 1);
-		k_usleep(10);
+		// k_usleep(10);
 		sensor_register_read(ICM_I2C_ADDR, ICM_TMSTVAL0, icm42688_data + 12, 3);
 
 		/* LIS3DML读数据 */
