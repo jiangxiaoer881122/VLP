@@ -12,7 +12,7 @@
 // You can also visit the nRF DeviceTree extension documentation at https://nrfconnect.github.io/vscode-nrf-connect/devicetree/nrfdevicetree.html
 / {
 	zephyr,user {
-		io-channels = <&adc 1>;
+		io-channels = <&adc 1>,<&adc 2>;
 	};
 };
 &adc {
@@ -31,7 +31,7 @@
 		zephyr,gain = "ADC_GAIN_1_6";
 		zephyr,reference = "ADC_REF_INTERNAL";
 		zephyr,acquisition-time = <ADC_ACQ_TIME_DEFAULT>;
-		zephyr,input-positive = <NRF_SAADC_AIN2>; /* P0.04 */
+		zephyr,input-positive = <NRF_SAADC_VDD>; /* P0.04 */
 		zephyr,resolution = <12>;
 	};
 

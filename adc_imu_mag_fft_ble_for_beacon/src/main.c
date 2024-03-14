@@ -113,11 +113,11 @@ int main(void)
 		{
 			flag=0;
 			adc_read_data();
-			if(imu_flag)
-			{
-			imu_flag =0;
-			imu_bag_read_data();
-			}
+			// if(imu_flag)
+			// {
+			// imu_flag =0;
+			// imu_bag_read_data();
+			// }
 		}else{
 			//必须加否则会被优化
 			c=1;

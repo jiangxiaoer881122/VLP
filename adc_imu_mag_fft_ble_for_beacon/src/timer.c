@@ -13,13 +13,13 @@ void timer_handler(nrf_timer_event_t event_type, void * p_context)
     if(event_type == NRF_TIMER_EVENT_COMPARE0)
     {
         flag =(flag+1)%2;
-        count++;
-        if(count%100==0)
-        {
-        count =count%100;
-        imu_flag =1;
-        count =0;
-        }
+        // count++;
+        // if(count%100==0)
+        // {
+        // count =count%100;
+        // imu_flag =1;
+        // count =0;
+        // }
     }
 }
 

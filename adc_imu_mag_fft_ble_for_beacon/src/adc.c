@@ -72,7 +72,7 @@ void adc_read_data(void)
             // printk("- %s, channel %d: ",
             //        adc_channels[i].dev->name,
             //        adc_channels[i].channel_id);
-            // (void)adc_sequence_init_dt(&adc_channels[i], &sequence);
+            (void)adc_sequence_init_dt(&adc_channels[i], &sequence);
             err = adc_read(adc_channels[i].dev, &sequence);
             if (err < 0)
             {
@@ -94,11 +94,20 @@ void adc_read_data(void)
             }
             // printk("ADC%\n" PRId32, val_mv);
             // printk("%d,", val_mv);
+            //用来判断是哪个通道的
+            if(adc_channels[i].channel_id==1)
+            {
+                //将整数格式化成指针
+                sprintf(str,"A:%d,",val_mv);
+                ptr =str;
+                print_uart(ptr);
+            }else{
+                //将整数格式化成指针
+                sprintf(str,"B:%d,",val_mv);
+                ptr =str;
+                print_uart(ptr);               
+            }
 
-            //将整数格式化成指针
-		    sprintf(str,"%d,",val_mv);
-		    ptr =str;
-    		print_uart(ptr);
 
 
             //下列代码是将ADC原始值变换为mV
