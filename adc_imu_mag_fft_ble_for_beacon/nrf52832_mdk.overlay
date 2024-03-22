@@ -12,7 +12,7 @@
 // You can also visit the nRF DeviceTree extension documentation at https://nrfconnect.github.io/vscode-nrf-connect/devicetree/nrfdevicetree.html
 / {
 	zephyr,user {
-		io-channels = <&adc 1>,<&adc 2>;
+		io-channels = <&adc 2>;
 	};
 };
 &adc {

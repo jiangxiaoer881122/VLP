@@ -12,6 +12,7 @@
         "device.h": "c",
         "iic_twi.h": "c",
         "syscall_list.h": "c",
-        "uart.h": "c"
+        "uart.h": "c",
+        "nrfx_saadc.h": "c"
     }
 }

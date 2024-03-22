@@ -168,8 +168,19 @@ void EspI2cWriteByte(uint8_t dev_addr, uint8_t reg_addr, uint8_t write_data)
     // I2cStop();
 
     //以下是重新调用硬件IIC
-    i2c_write(i2c_dev, reg_addr, 1, dev_addr);
-    i2c_write(i2c_dev, write_data, 1, dev_addr);
+    // i2c_write(i2c_dev, reg_addr, 1, dev_addr);
+    // i2c_write(i2c_dev, write_data, 1, dev_addr);
+    
+    //重新更新硬件IIC
+    struct i2c_msg msgs[2];
+	msgs[0].buf = &reg_addr;
+	msgs[0].len = 1;
+	msgs[0].flags = I2C_MSG_WRITE;
+	msgs[1].buf = &write_data;
+	msgs[1].len = 1;
+	msgs[1].flags = I2C_MSG_WRITE | I2C_MSG_STOP;
+
+	i2c_transfer(i2c_dev, msgs, 2, dev_addr);
 }
 
 void EspI2cReadByte(uint8_t dev_addr, uint8_t reg_addr, uint8_t *read_data)

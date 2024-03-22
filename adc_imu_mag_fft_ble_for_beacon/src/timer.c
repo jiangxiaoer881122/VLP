@@ -1,11 +1,14 @@
 #include "timer.h"
 #include "adc.h"
+
 /**
  * @brief 定时器事件处理函数
  *
  * @param[in] event_type 定时器的事件类型.
  * @param[in] p_context  传递的字节数
  */
+char str[10];
+char *P;
 extern int flag,count,imu_flag;
 void timer_handler(nrf_timer_event_t event_type, void * p_context)
 {
@@ -13,13 +16,15 @@ void timer_handler(nrf_timer_event_t event_type, void * p_context)
     if(event_type == NRF_TIMER_EVENT_COMPARE0)
     {
         flag =(flag+1)%2;
-        // count++;
-        // if(count%100==0)
-        // {
-        // count =count%100;
-        // imu_flag =1;
-        // count =0;
-        // }
+        count++;
+        if(count%100==0)
+        {
+        count =count%100;
+        imu_flag =1;
+        }
+        // sprintf(str,"%d,",adc_value_get());
+		// P=str;
+		// print_uart(P);
     }
 }
 

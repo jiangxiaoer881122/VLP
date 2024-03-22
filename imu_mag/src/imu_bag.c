@@ -142,18 +142,11 @@ void imu_bag_read_data( void)
 		gyro_data[2] = (icm42688_data[10] << 8) + icm42688_data[11];
 
 		icm42688_timestamp = (icm42688_data[14] << 16) + (icm42688_data[13] << 8) + icm42688_data[12];
-		// //icm42688打印数据
-		// printk("icm42688, acc_x:%d, acc_y:%d, acc_z:%d, gyr_x:%d, gyr_y:%d, gyr_z:%d, tick:%ld \n",
-		//    acc_data[0], acc_data[1], acc_data[2],
-		//    gyro_data[0], gyro_data[1], gyro_data[2],
-		//    (long int)icm42688_timestamp);
 
 		// /* LIS3DML打印数据 */
 		mag_data[0] = lis3dml_data[0] + (lis3dml_data[1] << 8);
 		mag_data[1] = lis3dml_data[2] + (lis3dml_data[3] << 8);
 		mag_data[2] = lis3dml_data[4] + (lis3dml_data[5] << 8);
-		// printk("lis3dml, mag_x:%d, mag_y:%d, mag_z:%d\n",
-		// 	   mag_data[0], mag_data[1], mag_data[2]);
 
 		// 将上面两行数据直接用串口打印
 		// 将整数格式化成指针
@@ -161,11 +154,11 @@ void imu_bag_read_data( void)
 			   gyro_data[0], gyro_data[1], gyro_data[2],(long int)icm42688_timestamp);
 		ptr_42688 = str_42688;
 		print_uart(ptr_42688);
-		memset(str_42688,0,sizeof(str_42688));
+		// memset(str_42688,0,sizeof(str_42688));
 
 		sprintf(str_3dml,"lis3dml, mag_x:%d, mag_y:%d, mag_z:%d\n",
 			   mag_data[0], mag_data[1], mag_data[2]);
 		ptr_3dml = str_3dml;
 		print_uart(ptr_3dml);
-		memset(str_3dml,0,sizeof(str_3dml));
+		// memset(str_3dml,0,sizeof(str_3dml));
 }

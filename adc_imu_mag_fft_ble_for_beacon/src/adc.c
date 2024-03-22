@@ -5,17 +5,8 @@
  */
 #include "adc.h"
 
-/*调整外部时钟使其更加准确的采样率*/
-void Bsp_HFCLK_Init_Extern()
-{
-    NRF_CLOCK->EVENTS_HFCLKSTARTED = 0;
-    NRF_CLOCK->TASKS_HFCLKSTART = 1;
 
-    while (NRF_CLOCK->EVENTS_HFCLKSTARTED == 0)
-    {
-        // Do nothing.
-    }
-}
+
 
 /* Data of ADC io-channels specified in devicetree. */
 static const struct adc_dt_spec adc_channels[] = {
@@ -95,19 +86,22 @@ void adc_read_data(void)
             // printk("ADC%\n" PRId32, val_mv);
             // printk("%d,", val_mv);
             //用来判断是哪个通道的
-            if(adc_channels[i].channel_id==1)
-            {
+            // if(adc_channels[i].channel_id==1)
+            // {
+            //     //将整数格式化成指针
+            //     sprintf(str,"A:%d,",val_mv);
+            //     ptr =str;
+            //     print_uart(ptr);
+            // }else{
+            //     //将整数格式化成指针
+            //     sprintf(str,"B:%d,",val_mv);
+            //     ptr =str;
+            //     print_uart(ptr);               
+            // }
                 //将整数格式化成指针
-                sprintf(str,"A:%d,",val_mv);
+                sprintf(str,"%d,",val_mv);
                 ptr =str;
                 print_uart(ptr);
-            }else{
-                //将整数格式化成指针
-                sprintf(str,"B:%d,",val_mv);
-                ptr =str;
-                print_uart(ptr);               
-            }
-
 
 
             //下列代码是将ADC原始值变换为mV

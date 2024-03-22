@@ -95,6 +95,7 @@ int main(void)
 		if(flag)
 		{
 			adc_read_data();
+			//imu_bag_read_data();
 			flag=0;
 			if(imu_flag)
 			{
