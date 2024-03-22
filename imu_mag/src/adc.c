@@ -4,17 +4,7 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 #include "adc.h"
-/*时钟校准*/
-void Bsp_HFCLK_Init_Extern()
-{
-    NRF_CLOCK->EVENTS_HFCLKSTARTED = 0;
-    NRF_CLOCK->TASKS_HFCLKSTART = 1;
 
-    while (NRF_CLOCK->EVENTS_HFCLKSTARTED == 0)
-    {
-        // Do nothing.
-    }
-}
 /* Data of ADC io-channels specified in devicetree. */
 static const struct adc_dt_spec adc_channels[] = {
     DT_FOREACH_PROP_ELEM(DT_PATH(zephyr_user), io_channels,
@@ -32,7 +22,6 @@ static struct adc_sequence sequence = {
  */
 int adc_init(void)
 {
-    Bsp_HFCLK_Init_Extern();
     /* Configure channels individually prior to sampling. */
     for (size_t i = 0U; i < ARRAY_SIZE(adc_channels); i++)
     {

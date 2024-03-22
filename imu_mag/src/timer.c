@@ -6,7 +6,7 @@
  * @param[in] event_type 定时器的事件类型.
  * @param[in] p_context  传递的字节数
  */
-extern int flag,count,imu_flag;
+extern int flag,count,imu_flag,pd[100];
 void timer_handler(nrf_timer_event_t event_type, void * p_context)
 {
 
@@ -14,10 +14,11 @@ void timer_handler(nrf_timer_event_t event_type, void * p_context)
     {
         flag =(flag+1)%2;
         count++;
+        pd[count-1] = adc_value_get();
         if(count%100==0)
         {
-            count=count%100;
-            imu_flag=1;
+        count =count%100;
+        imu_flag =1;
         }
     }
 }

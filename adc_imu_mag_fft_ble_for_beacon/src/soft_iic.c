@@ -247,7 +247,16 @@ void EspI2cReadBytes(uint8_t dev_addr, uint8_t reg_addr, uint8_t *read_data, uin
 
 
     //以下是调用硬件IIC
-    i2c_write_read(i2c_dev, dev_addr,&reg_addr, 1, read_data ,read_len);
+    // i2c_write_read(i2c_dev, dev_addr,&reg_addr, 1, read_data ,read_len);
+    struct i2c_msg msgs[2];
+	msgs[0].buf = &reg_addr;
+	msgs[0].len = 1;
+	msgs[0].flags = I2C_MSG_WRITE | I2C_MSG_STOP;
+	msgs[1].buf = read_data;
+	msgs[1].len = read_len;
+	msgs[1].flags = I2C_MSG_READ | I2C_MSG_STOP;
+
+	i2c_transfer(i2c_dev, msgs, 2, dev_addr);
 }
 
 void I2cDetect(void)

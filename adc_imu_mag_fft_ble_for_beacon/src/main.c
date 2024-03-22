@@ -14,6 +14,8 @@ struct device *i2c_dev;
 #define I2C_DEV_NAME "I2C_0"
 //用于进行flag的调用
 int flag =0;
+//存储一定的AD进而来进行在一定下进行输送
+int pd[100];
 //用于imu的数据发送
 int count =0;
 int imu_flag =0;
@@ -87,10 +89,10 @@ int main(void)
 	// //用于计数
 	// int count=0;
 	// //用于存储格式化字符串
-	// char str[10];
+	char str[200];
 	// //字符指针
-	// char *P;
-
+	char *P;
+	int i=0,offset=0;
 	//硬件IIC
 	i2c_dev = device_get_binding(I2C_DEV_NAME);
 	if(!i2c_dev)
@@ -120,14 +122,21 @@ int main(void)
 	while (1)
 	{
 		// 这里检测定时器代码
-		if(flag)
-		{
-			flag=0;
+		// if(flag)
+		// {
+			// flag=0;
 			if(imu_flag)
 			{
 			imu_flag =0;
 			imu_bag_read_data();
+			for(i=0;i<100;i++)
+			{
+				offset += sprintf(str + offset, "%d,", pd[i]); // 将整数转换为字符串并拼接到str中
 			}
+			P=str;
+			print_uart(P);
+			offset=0;
+			// }
 		}else{
 			//必须加否则会被优化
 			c=1;
