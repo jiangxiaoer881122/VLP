@@ -1,0 +1,17 @@
+{
+    "files.associations": {
+        "i2c.h": "c",
+        "soft_iic.h": "c",
+        "stdio.h": "c",
+        "gpio.h": "c",
+        "kernel.h": "c",
+        "nrfx_gpiote.h": "c",
+        "imu_bag.h": "c",
+        "timer.h": "c",
+        "adc.h": "c",
+        "device.h": "c",
+        "iic_twi.h": "c",
+        "syscall_list.h": "c",
+        "uart.h": "c"
+    }
+}
