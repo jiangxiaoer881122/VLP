@@ -21,16 +21,17 @@ struct device *i2c_dev;
 int flag =0;
 //存储一定的AD进而来进行在一定下进行输送
 int pd[100];
+int pd2[100];
 //用于imu的数据发送
 int count =0;
 int imu_flag =0;
 int b = 0;
 int c = 1;
 LOG_MODULE_REGISTER(adc, LOG_LEVEL_DBG);
-#define CHANNEL_COUNT 1
-
+#define CHANNEL_COUNT 2
 static nrfx_saadc_channel_t single_channel = NRFX_SAADC_DEFAULT_CHANNEL_SE(NRF_SAADC_INPUT_AIN2, 0);
-static nrf_saadc_value_t buffer[CHANNEL_COUNT];
+static nrfx_saadc_channel_t single_channel2 = NRFX_SAADC_DEFAULT_CHANNEL_SE(NRF_SAADC_INPUT_AIN1, 0);
+nrf_saadc_value_t buffer[CHANNEL_COUNT];
 /*时钟校准*/
 void Bsp_HFCLK_Init_Extern()
 {
@@ -48,31 +49,46 @@ int adc_init2(void)
 	Bsp_HFCLK_Init_Extern();
 	nrfx_err_t err;
 	//初始化 输入初始化的中断优秀级
+	//进行中断配置
 	err = nrfx_saadc_init(NRFX_SAADC_DEFAULT_CONFIG_IRQ_PRIORITY);
 	//配置通道的属性
 	single_channel.channel_config.gain = NRF_SAADC_GAIN1_6;
+	single_channel2.channel_config.gain = NRF_SAADC_GAIN1_6;
 	//显示通道的采样时间间隔
 	LOG_INF("TIME=%d\r\n",single_channel.channel_config.acq_time);
+	LOG_INF("TIME=%d\r\n",single_channel2.channel_config.acq_time);
+	//配置通道的index
+	single_channel2.channel_index=1;
+	//显示通道的位数
+	LOG_INF("idex1=%d\r\n",single_channel.channel_index);
+	LOG_INF("idex2=%d\r\n",single_channel2.channel_index);
+
 	//nrfx_saadc_channel_config完成通道的配置
 	err = nrfx_saadc_channel_config(&single_channel);
+	LOG_INF("chan1 config %d\r\n",err);
+	err = nrfx_saadc_channel_config(&single_channel2);
+	LOG_INF("chan2 config %d\r\n",err);
 	//nrfx_saadc_channels_configured_get();记录了当前配置的通道配置情况
 	uint32_t channels_mask = nrfx_saadc_channels_configured_get();
 	LOG_INF("ADC channels mask: %d\n", channels_mask);
 	//设置通道分辨率为12bit，不使用过采样，事件回调
 	err = nrfx_saadc_simple_mode_set(channels_mask, NRF_SAADC_RESOLUTION_12BIT, NRF_SAADC_OVERSAMPLE_DISABLED, NULL);
 	printk("this %d\n",err);
-	//在开始 SAADC 转换之前，您需要调用此函数来设置一个缓冲区，SAADC 将把采样数据存储到这个缓冲区中。
+	//在开始 SAADC 转换之前，您需要调用此函数来设置一个缓冲区，SAADC 将把采样数据存储到这个缓冲区中,这个是根据。
 	err = nrfx_saadc_buffer_set(buffer, CHANNEL_COUNT);
+	LOG_INF("supply : %d\n", err);
 }
 
-int adc_value_get(void)
+void adc_value_get(void)
 {
 	nrfx_err_t err;
 	//nrfx_saadc_offset_calibrate(NULL);校准ADC的偏移量，这里不使用回调函数。
 	err = nrfx_saadc_offset_calibrate(NULL);
+	// LOG_INF("ADC : %d\n", err);
 	//nrfx_saadc_mode_trigger();开始采集数据。
 	err = nrfx_saadc_mode_trigger();
-	return buffer[0];
+	// LOG_INF("ADC : %d\n", err);
+	// return buffer[1];
 }
 //转换成电压
 int adc_to_voltage(int adc_value)
@@ -84,6 +100,7 @@ int main(void)
 {
 	// //用于存储格式化字符串
 	char str[200];
+	char str2[200];
 	// //字符指针
 	char *P;
 	int i=0,offset=0;
@@ -116,11 +133,20 @@ int main(void)
 			{
 			imu_flag =0;
 			imu_bag_read_data();
+			//pd1
 			for(i=0;i<100;i++)
 			{
-				offset += sprintf(str + offset, "%d,", pd[i]); // 将整数转换为字符串并拼接到str中
+				offset += sprintf(str + offset, "A:%d,", pd[i]); // 将整数转换为字符串并拼接到str中
 			}
 			P=str;
+			print_uart(P);
+			offset=0;
+			//pd2
+			for(i=0;i<100;i++)
+			{
+				offset += sprintf(str2 + offset, "B:%d,", pd2[i]); // 将整数转换为字符串并拼接到str中
+			}
+			P=str2;
 			print_uart(P);
 			offset=0;
 			// }

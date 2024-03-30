@@ -1,12 +1,14 @@
 #include "timer.h"
 #include "adc.h"
+#include "nrfx_saadc.h"
 /**
  * @brief 定时器事件处理函数
  *
  * @param[in] event_type 定时器的事件类型.
  * @param[in] p_context  传递的字节数
  */
-extern int flag,count,imu_flag,pd[100];
+extern int flag,count,imu_flag,pd[100],pd2[100];
+extern nrf_saadc_value_t buffer[2];
 void timer_handler(nrf_timer_event_t event_type, void * p_context)
 {
 
@@ -14,7 +16,9 @@ void timer_handler(nrf_timer_event_t event_type, void * p_context)
     {
         flag =(flag+1)%2;
         count++;
-        pd[count-1] = adc_value_get();
+        adc_value_get();
+        pd[count-1] = buffer[0];
+        pd2[count-1] = buffer[1];        
         if(count%100==0)
         {
         count =count%100;
