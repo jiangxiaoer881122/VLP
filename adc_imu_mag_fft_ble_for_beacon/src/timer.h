@@ -22,7 +22,7 @@
 ===========================
 */
 /** @brief 选用哪个型号的定时器 */
-#define TIMER_INST_IDX 0
+#define TIMER_INST_IDX 2
 
 /** @brief 等待时间以us为单位*/
 #define TIME_TO_WAIT_US 500UL

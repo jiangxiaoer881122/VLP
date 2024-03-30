@@ -60,3 +60,25 @@
 	status = "okay";
 	interrupts = <8>, <5>;
 };
+
+&timer1 {
+	status = "okay";
+	zli;
+	interrupts = <4>, <NRF_DEFAULT_IRQ_PRIORITY>;
+};
+
+&timer2 {
+	status = "okay";
+};
+
+&nvic {
+	status = "okay";
+};
+
+&power {
+	status = "disabled";
+};
+
+&bprot {
+	status = "disabled";
+};

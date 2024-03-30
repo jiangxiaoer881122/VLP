@@ -16,6 +16,8 @@
         "nrfx_saadc.h": "c",
         "string": "c",
         "string_view": "c",
-        "array": "c"
+        "array": "c",
+        "fft.h": "c",
+        "ble.h": "c"
     }
 }
