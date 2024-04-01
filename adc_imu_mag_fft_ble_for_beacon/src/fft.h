@@ -17,6 +17,7 @@
 #include <nrfx_gpiote.h>
 #include <arm_math.h>
 #include <arm_const_structs.h>
+#include "uart.h"
 // #include <support_functions.h>
 /*
 ===========================

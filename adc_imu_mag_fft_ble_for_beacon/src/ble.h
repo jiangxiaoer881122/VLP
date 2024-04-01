@@ -64,6 +64,6 @@
  * @brief        蓝牙开始广播
  */
 int broadcaster_multiple(void);
-//开始广播
+//广播更新数据
 void ble_data_update();
 #endif

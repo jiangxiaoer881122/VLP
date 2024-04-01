@@ -9,6 +9,10 @@
 #include "iic_twi.h"
 #include "icm_42688.h"
 #include "uart.h"
+#include <stdio.h>
+#include "zephyr/logging/log.h"
+#include "nrfx_saadc.h"
+#include <zephyr/kernel.h>
 //定义IIC的设备名称
 struct device *i2c_dev;
 #define I2C_DEV_NAME "I2C_0"
@@ -17,17 +21,24 @@ int flag =0;
 //存储一定的AD进而来进行在一定下进行输送
 int pd[1000];
 //用于imu的数据发送
-int count =0;
+int count_imu =0;
 int imu_flag =0;
+//这里是0.5秒的计时器
+int count =0;
 int b = 0;
 int c = 1;
-
-
-#include <stdio.h>
-#include "zephyr/logging/log.h"
-#include "nrfx_saadc.h"
-#include <zephyr/kernel.h>
-
+//以下是大的时间戳 0.5秒计时一次 0-65536
+u_int16_t big_time = 0;
+//MovingFlag 与beacondeviceType
+uint8_t Mov_type = 0; 
+//Moving flag 0为不动 1为动
+uint8_t Moving_flag = 0;
+//标志不同类型
+uint8_t beacon_type = 0;
+//标志接受端的电池容量
+uint8_t voltage = 0;
+//标志接收端的imu的时间戳
+int small_time = 0; 
 
 LOG_MODULE_REGISTER(adc, LOG_LEVEL_DBG);
 
@@ -123,15 +134,25 @@ int main(void)
 	while (1)
 	{
 		// 这里检测定时器代码
-		// if(flag)
-		// {
-			// flag=0;
-			if(imu_flag)
+		if(imu_flag)
+		{
+			imu_flag=0;
+			//进行imu_bag的读取
+			small_time = small_time+400;
+			// imu_bag_read_data();
+			if(flag)
 			{
-			imu_flag =0;
+			//这代表0.5秒时间触发了
+			big_time++;
+			//进行FFT处理
 			fft();
-			print_uart("A\n");
-			ble_data_update();
+			//进行数据的更新
+			// ble_data_update();
+			//清零
+			flag=0;
+			//清除imu的时间戳
+			small_time=0;
+			}
 		}else{
 			//必须加否则会被优化
 			c=1;
