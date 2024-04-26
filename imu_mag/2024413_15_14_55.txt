@@ -1,0 +1,2028 @@
+icm42688, acc_x:612, acc_y:-2930, acc_z:7747, gyr_x:-8, gyr_y:-56, gyr_z:-15, tick:321754 
+lis3dml, mag_x:2312, mag_y:1588, mag_z:-1630
+icm42688, acc_x:613, acc_y:-2930, acc_z:7743, gyr_x:-8, gyr_y:-55, gyr_z:-14, tick:326497 
+lis3dml, mag_x:2312, mag_y:1588, mag_z:-1630
+icm42688, acc_x:611, acc_y:-2932, acc_z:7744, gyr_x:-7, gyr_y:-56, gyr_z:-12, tick:331241 
+lis3dml, mag_x:2322, mag_y:1581, mag_z:-1607
+icm42688, acc_x:610, acc_y:-2933, acc_z:7747, gyr_x:-6, gyr_y:-59, gyr_z:-11, tick:335985 
+lis3dml, mag_x:2322, mag_y:1581, mag_z:-1607
+icm42688, acc_x:613, acc_y:-2933, acc_z:7748, gyr_x:-9, gyr_y:-59, gyr_z:-10, tick:340728 
+lis3dml, mag_x:2336, mag_y:1590, mag_z:-1618
+icm42688, acc_x:615, acc_y:-2930, acc_z:7748, gyr_x:-10, gyr_y:-56, gyr_z:-10, tick:345471 
+lis3dml, mag_x:2336, mag_y:1590, mag_z:-1618
+icm42688, acc_x:616, acc_y:-2928, acc_z:7748, gyr_x:-10, gyr_y:-55, gyr_z:-11, tick:350214 
+lis3dml, mag_x:2336, mag_y:1590, mag_z:-1618
+icm42688, acc_x:617, acc_y:-2925, acc_z:7749, gyr_x:-10, gyr_y:-55, gyr_z:-12, tick:354957 
+lis3dml, mag_x:2360, mag_y:1566, mag_z:-1613
+icm42688, acc_x:614, acc_y:-2925, acc_z:7748, gyr_x:-10, gyr_y:-55, gyr_z:-13, tick:359701 
+lis3dml, mag_x:2360, mag_y:1566, mag_z:-1613
+icm42688, acc_x:610, acc_y:-2925, acc_z:7748, gyr_x:-11, gyr_y:-55, gyr_z:-13, tick:364445 
+lis3dml, mag_x:2343, mag_y:1581, mag_z:-1609
+icm42688, acc_x:608, acc_y:-2925, acc_z:7747, gyr_x:-10, gyr_y:-55, gyr_z:-13, tick:369188 
+lis3dml, mag_x:2343, mag_y:1581, mag_z:-1609
+icm42688, acc_x:608, acc_y:-2925, acc_z:7747, gyr_x:-7, gyr_y:-55, gyr_z:-13, tick:373931 
+lis3dml, mag_x:2343, mag_y:1581, mag_z:-1609
+icm42688, acc_x:609, acc_y:-2925, acc_z:7746, gyr_x:-6, gyr_y:-55, gyr_z:-12, tick:378674 
+lis3dml, mag_x:2355, mag_y:1596, mag_z:-1596
+icm42688, acc_x:610, acc_y:-2925, acc_z:7746, gyr_x:-8, gyr_y:-54, gyr_z:-12, tick:383418 
+lis3dml, mag_x:2355, mag_y:1596, mag_z:-1596
+icm42688, acc_x:612, acc_y:-2925, acc_z:7746, gyr_x:-8, gyr_y:-54, gyr_z:-12, tick:388162 
+lis3dml, mag_x:2355, mag_y:1596, mag_z:-1596
+icm42688, acc_x:611, acc_y:-2926, acc_z:7746, gyr_x:-7, gyr_y:-54, gyr_z:-12, tick:392905 
+lis3dml, mag_x:2345, mag_y:1585, mag_z:-1577
+icm42688, acc_x:610, acc_y:-2926, acc_z:7748, gyr_x:-6, gyr_y:-53, gyr_z:-12, tick:397648 
+lis3dml, mag_x:2345, mag_y:1585, mag_z:-1577
+icm42688, acc_x:610, acc_y:-2927, acc_z:7750, gyr_x:-5, gyr_y:-53, gyr_z:-12, tick:402392 
+lis3dml, mag_x:2325, mag_y:1591, mag_z:-1641
+icm42688, acc_x:611, acc_y:-2928, acc_z:7751, gyr_x:-4, gyr_y:-55, gyr_z:-12, tick:407135 
+lis3dml, mag_x:2325, mag_y:1591, mag_z:-1641
+icm42688, acc_x:611, acc_y:-2929, acc_z:7750, gyr_x:-5, gyr_y:-55, gyr_z:-13, tick:411878 
+lis3dml, mag_x:2325, mag_y:1591, mag_z:-1641
+icm42688, acc_x:614, acc_y:-2929, acc_z:7747, gyr_x:-6, gyr_y:-57, gyr_z:-14, tick:416621 
+lis3dml, mag_x:2352, mag_y:1591, mag_z:-1635
+icm42688, acc_x:615, acc_y:-2929, acc_z:7746, gyr_x:-7, gyr_y:-58, gyr_z:-15, tick:421365 
+lis3dml, mag_x:2352, mag_y:1591, mag_z:-1635
+icm42688, acc_x:616, acc_y:-2927, acc_z:7747, gyr_x:-6, gyr_y:-56, gyr_z:-13, tick:426109 
+lis3dml, mag_x:2331, mag_y:1590, mag_z:-1635
+icm42688, acc_x:615, acc_y:-2925, acc_z:7748, gyr_x:-6, gyr_y:-58, gyr_z:-12, tick:430852 
+lis3dml, mag_x:2331, mag_y:1590, mag_z:-1635
+icm42688, acc_x:614, acc_y:-2926, acc_z:7750, gyr_x:-6, gyr_y:-58, gyr_z:-12, tick:435595 
+lis3dml, mag_x:2331, mag_y:1590, mag_z:-1635
+icm42688, acc_x:612, acc_y:-2926, acc_z:7750, gyr_x:-8, gyr_y:-56, gyr_z:-12, tick:440338 
+lis3dml, mag_x:2336, mag_y:1577, mag_z:-1623
+icm42688, acc_x:613, acc_y:-2926, acc_z:7751, gyr_x:-10, gyr_y:-54, gyr_z:-12, tick:445082 
+lis3dml, mag_x:2336, mag_y:1577, mag_z:-1623
+icm42688, acc_x:613, acc_y:-2926, acc_z:7750, gyr_x:-10, gyr_y:-51, gyr_z:-10, tick:449825 
+lis3dml, mag_x:2360, mag_y:1566, mag_z:-1640
+icm42688, acc_x:612, acc_y:-2926, acc_z:7747, gyr_x:-10, gyr_y:-49, gyr_z:-10, tick:454569 
+lis3dml, mag_x:2360, mag_y:1566, mag_z:-1640
+icm42688, acc_x:612, acc_y:-2926, acc_z:7745, gyr_x:-8, gyr_y:-49, gyr_z:-11, tick:459312 
+lis3dml, mag_x:2360, mag_y:1566, mag_z:-1640
+icm42688, acc_x:613, acc_y:-2927, acc_z:7746, gyr_x:-6, gyr_y:-54, gyr_z:-13, tick:464056 
+lis3dml, mag_x:2340, mag_y:1558, mag_z:-1622
+icm42688, acc_x:613, acc_y:-2928, acc_z:7744, gyr_x:-8, gyr_y:-57, gyr_z:-13, tick:468799 
+lis3dml, mag_x:2340, mag_y:1558, mag_z:-1622
+icm42688, acc_x:612, acc_y:-2931, acc_z:7745, gyr_x:-11, gyr_y:-58, gyr_z:-14, tick:473543 
+lis3dml, mag_x:2340, mag_y:1558, mag_z:-1622
+icm42688, acc_x:611, acc_y:-2933, acc_z:7747, gyr_x:-10, gyr_y:-60, gyr_z:-13, tick:478286 
+lis3dml, mag_x:2328, mag_y:1561, mag_z:-1680
+icm42688, acc_x:610, acc_y:-2931, acc_z:7746, gyr_x:-8, gyr_y:-60, gyr_z:-11, tick:483029 
+lis3dml, mag_x:2328, mag_y:1561, mag_z:-1680
+icm42688, acc_x:610, acc_y:-2927, acc_z:7745, gyr_x:-7, gyr_y:-59, gyr_z:-11, tick:487773 
+lis3dml, mag_x:2344, mag_y:1552, mag_z:-1640
+icm42688, acc_x:609, acc_y:-2925, acc_z:7746, gyr_x:-5, gyr_y:-57, gyr_z:-10, tick:492516 
+lis3dml, mag_x:2344, mag_y:1552, mag_z:-1640
+icm42688, acc_x:607, acc_y:-2925, acc_z:7746, gyr_x:-5, gyr_y:-54, gyr_z:-10, tick:497259 
+lis3dml, mag_x:2344, mag_y:1552, mag_z:-1640
+icm42688, acc_x:608, acc_y:-2925, acc_z:7746, gyr_x:-6, gyr_y:-50, gyr_z:-11, tick:502002 
+lis3dml, mag_x:2322, mag_y:1587, mag_z:-1589
+icm42688, acc_x:612, acc_y:-2925, acc_z:7746, gyr_x:-6, gyr_y:-49, gyr_z:-12, tick:506746 
+lis3dml, mag_x:2322, mag_y:1587, mag_z:-1589
+icm42688, acc_x:615, acc_y:-2927, acc_z:7747, gyr_x:-5, gyr_y:-50, gyr_z:-14, tick:511490 
+lis3dml, mag_x:2342, mag_y:1576, mag_z:-1604
+icm42688, acc_x:615, acc_y:-2928, acc_z:7748, gyr_x:-7, gyr_y:-52, gyr_z:-13, tick:516233 
+lis3dml, mag_x:2342, mag_y:1576, mag_z:-1604
+icm42688, acc_x:615, acc_y:-2927, acc_z:7749, gyr_x:-8, gyr_y:-55, gyr_z:-12, tick:520976 
+lis3dml, mag_x:2342, mag_y:1576, mag_z:-1604
+icm42688, acc_x:615, acc_y:-2927, acc_z:7748, gyr_x:-6, gyr_y:-60, gyr_z:-13, tick:525719 
+lis3dml, mag_x:2349, mag_y:1586, mag_z:-1616
+icm42688, acc_x:615, acc_y:-2927, acc_z:7745, gyr_x:-5, gyr_y:-60, gyr_z:-15, tick:530463 
+lis3dml, mag_x:2349, mag_y:1586, mag_z:-1616
+icm42688, acc_x:615, acc_y:-2928, acc_z:7745, gyr_x:-6, gyr_y:-60, gyr_z:-15, tick:535206 
+lis3dml, mag_x:2295, mag_y:1613, mag_z:-1648
+icm42688, acc_x:615, acc_y:-2930, acc_z:7746, gyr_x:-7, gyr_y:-59, gyr_z:-12, tick:539949 
+lis3dml, mag_x:2295, mag_y:1613, mag_z:-1648
+icm42688, acc_x:613, acc_y:-2929, acc_z:7748, gyr_x:-9, gyr_y:-59, gyr_z:-11, tick:544693 
+lis3dml, mag_x:2295, mag_y:1613, mag_z:-1648
+icm42688, acc_x:610, acc_y:-2926, acc_z:7749, gyr_x:-11, gyr_y:-57, gyr_z:-11, tick:549436 
+lis3dml, mag_x:2320, mag_y:1624, mag_z:-1615
+icm42688, acc_x:609, acc_y:-2925, acc_z:7750, gyr_x:-11, gyr_y:-55, gyr_z:-12, tick:554180 
+lis3dml, mag_x:2320, mag_y:1624, mag_z:-1615
+icm42688, acc_x:609, acc_y:-2926, acc_z:7751, gyr_x:-12, gyr_y:-53, gyr_z:-12, tick:558923 
+lis3dml, mag_x:2320, mag_y:1624, mag_z:-1615
+icm42688, acc_x:611, acc_y:-2926, acc_z:7752, gyr_x:-9, gyr_y:-54, gyr_z:-10, tick:563667 
+lis3dml, mag_x:2315, mag_y:1583, mag_z:-1588
+icm42688, acc_x:614, acc_y:-2926, acc_z:7753, gyr_x:-6, gyr_y:-56, gyr_z:-8, tick:568410 
+lis3dml, mag_x:2315, mag_y:1583, mag_z:-1588
+icm42688, acc_x:615, acc_y:-2925, acc_z:7753, gyr_x:-8, gyr_y:-57, gyr_z:-8, tick:573154 
+lis3dml, mag_x:2326, mag_y:1609, mag_z:-1598
+icm42688, acc_x:615, acc_y:-2927, acc_z:7751, gyr_x:-9, gyr_y:-57, gyr_z:-9, tick:577897 
+lis3dml, mag_x:2326, mag_y:1609, mag_z:-1598
+icm42688, acc_x:615, acc_y:-2927, acc_z:7750, gyr_x:-8, gyr_y:-60, gyr_z:-12, tick:582640 
+lis3dml, mag_x:2326, mag_y:1609, mag_z:-1598
+icm42688, acc_x:614, acc_y:-2927, acc_z:7749, gyr_x:-8, gyr_y:-58, gyr_z:-12, tick:587383 
+lis3dml, mag_x:2345, mag_y:1583, mag_z:-1579
+icm42688, acc_x:612, acc_y:-2930, acc_z:7747, gyr_x:-7, gyr_y:-55, gyr_z:-11, tick:592127 
+lis3dml, mag_x:2345, mag_y:1583, mag_z:-1579
+icm42688, acc_x:614, acc_y:-2930, acc_z:7747, gyr_x:-7, gyr_y:-55, gyr_z:-10, tick:596871 
+lis3dml, mag_x:2316, mag_y:1598, mag_z:-1625
+icm42688, acc_x:616, acc_y:-2927, acc_z:7748, gyr_x:-9, gyr_y:-56, gyr_z:-8, tick:601614 
+lis3dml, mag_x:2316, mag_y:1598, mag_z:-1625
+icm42688, acc_x:617, acc_y:-2927, acc_z:7749, gyr_x:-8, gyr_y:-58, gyr_z:-9, tick:606357 
+lis3dml, mag_x:2316, mag_y:1598, mag_z:-1625
+icm42688, acc_x:616, acc_y:-2927, acc_z:7749, gyr_x:-6, gyr_y:-60, gyr_z:-10, tick:611100 
+lis3dml, mag_x:2315, mag_y:1599, mag_z:-1599
+icm42688, acc_x:615, acc_y:-2928, acc_z:7748, gyr_x:-7, gyr_y:-60, gyr_z:-10, tick:615844 
+lis3dml, mag_x:2315, mag_y:1599, mag_z:-1599
+icm42688, acc_x:613, acc_y:-2929, acc_z:7745, gyr_x:-8, gyr_y:-57, gyr_z:-10, tick:620587 
+lis3dml, mag_x:2335, mag_y:1570, mag_z:-1624
+icm42688, acc_x:611, acc_y:-2929, acc_z:7745, gyr_x:-5, gyr_y:-54, gyr_z:-12, tick:625330 
+lis3dml, mag_x:2335, mag_y:1570, mag_z:-1624
+icm42688, acc_x:610, acc_y:-2927, acc_z:7745, gyr_x:-4, gyr_y:-48, gyr_z:-14, tick:630074 
+lis3dml, mag_x:2335, mag_y:1570, mag_z:-1624
+icm42688, acc_x:610, acc_y:-2928, acc_z:7747, gyr_x:-5, gyr_y:-46, gyr_z:-15, tick:634818 
+lis3dml, mag_x:2292, mag_y:1580, mag_z:-1589
+icm42688, acc_x:612, acc_y:-2929, acc_z:7751, gyr_x:-7, gyr_y:-48, gyr_z:-15, tick:639561 
+lis3dml, mag_x:2292, mag_y:1580, mag_z:-1589
+icm42688, acc_x:612, acc_y:-2930, acc_z:7752, gyr_x:-6, gyr_y:-56, gyr_z:-13, tick:644304 
+lis3dml, mag_x:2292, mag_y:1580, mag_z:-1589
+icm42688, acc_x:612, acc_y:-2930, acc_z:7749, gyr_x:-7, gyr_y:-60, gyr_z:-12, tick:649047 
+lis3dml, mag_x:2288, mag_y:1585, mag_z:-1588
+icm42688, acc_x:611, acc_y:-2928, acc_z:7748, gyr_x:-9, gyr_y:-60, gyr_z:-12, tick:653791 
+lis3dml, mag_x:2288, mag_y:1585, mag_z:-1588
+icm42688, acc_x:611, acc_y:-2927, acc_z:7748, gyr_x:-8, gyr_y:-60, gyr_z:-14, tick:658535 
+lis3dml, mag_x:2348, mag_y:1591, mag_z:-1593
+icm42688, acc_x:612, acc_y:-2926, acc_z:7747, gyr_x:-9, gyr_y:-58, gyr_z:-14, tick:663278 
+lis3dml, mag_x:2348, mag_y:1591, mag_z:-1593
+icm42688, acc_x:613, acc_y:-2928, acc_z:7746, gyr_x:-11, gyr_y:-59, gyr_z:-10, tick:668021 
+lis3dml, mag_x:2348, mag_y:1591, mag_z:-1593
+icm42688, acc_x:614, acc_y:-2929, acc_z:7745, gyr_x:-11, gyr_y:-61, gyr_z:-8, tick:672764 
+lis3dml, mag_x:2326, mag_y:1579, mag_z:-1595
+icm42688, acc_x:614, acc_y:-2929, acc_z:7745, gyr_x:-11, gyr_y:-60, gyr_z:-8, tick:677508 
+lis3dml, mag_x:2326, mag_y:1579, mag_z:-1595
+icm42688, acc_x:614, acc_y:-2928, acc_z:7745, gyr_x:-10, gyr_y:-56, gyr_z:-10, tick:682251 
+lis3dml, mag_x:2324, mag_y:1595, mag_z:-1658
+icm42688, acc_x:613, acc_y:-2926, acc_z:7747, gyr_x:-7, gyr_y:-55, gyr_z:-12, tick:686995 
+lis3dml, mag_x:2324, mag_y:1595, mag_z:-1658
+icm42688, acc_x:612, acc_y:-2926, acc_z:7750, gyr_x:-4, gyr_y:-52, gyr_z:-14, tick:691738 
+lis3dml, mag_x:2324, mag_y:1595, mag_z:-1658
+icm42688, acc_x:613, acc_y:-2926, acc_z:7751, gyr_x:-4, gyr_y:-50, gyr_z:-14, tick:696481 
+lis3dml, mag_x:2331, mag_y:1574, mag_z:-1616
+icm42688, acc_x:615, acc_y:-2928, acc_z:7750, gyr_x:-4, gyr_y:-53, gyr_z:-13, tick:701225 
+lis3dml, mag_x:2331, mag_y:1574, mag_z:-1616
+icm42688, acc_x:616, acc_y:-2930, acc_z:7748, gyr_x:-7, gyr_y:-56, gyr_z:-12, tick:705968 
+lis3dml, mag_x:2314, mag_y:1573, mag_z:-1603
+icm42688, acc_x:614, acc_y:-2932, acc_z:7745, gyr_x:-10, gyr_y:-56, gyr_z:-13, tick:710711 
+lis3dml, mag_x:2314, mag_y:1573, mag_z:-1603
+icm42688, acc_x:612, acc_y:-2931, acc_z:7744, gyr_x:-10, gyr_y:-60, gyr_z:-13, tick:715454 
+lis3dml, mag_x:2314, mag_y:1573, mag_z:-1603
+icm42688, acc_x:611, acc_y:-2927, acc_z:7746, gyr_x:-9, gyr_y:-61, gyr_z:-13, tick:720199 
+lis3dml, mag_x:2312, mag_y:1574, mag_z:-1611
+icm42688, acc_x:612, acc_y:-2924, acc_z:7750, gyr_x:-9, gyr_y:-62, gyr_z:-13, tick:724942 
+lis3dml, mag_x:2312, mag_y:1574, mag_z:-1611
+icm42688, acc_x:612, acc_y:-2923, acc_z:7750, gyr_x:-9, gyr_y:-61, gyr_z:-13, tick:729685 
+lis3dml, mag_x:2312, mag_y:1574, mag_z:-1611
+icm42688, acc_x:610, acc_y:-2924, acc_z:7750, gyr_x:-8, gyr_y:-60, gyr_z:-13, tick:734428 
+lis3dml, mag_x:2326, mag_y:1572, mag_z:-1623
+icm42688, acc_x:611, acc_y:-2926, acc_z:7749, gyr_x:-8, gyr_y:-56, gyr_z:-14, tick:739171 
+lis3dml, mag_x:2326, mag_y:1572, mag_z:-1623
+icm42688, acc_x:611, acc_y:-2927, acc_z:7748, gyr_x:-10, gyr_y:-52, gyr_z:-15, tick:743916 
+lis3dml, mag_x:2307, mag_y:1608, mag_z:-1651
+icm42688, acc_x:612, acc_y:-2929, acc_z:7747, gyr_x:-12, gyr_y:-51, gyr_z:-14, tick:748659 
+lis3dml, mag_x:2307, mag_y:1608, mag_z:-1651
+icm42688, acc_x:615, acc_y:-2930, acc_z:7748, gyr_x:-14, gyr_y:-53, gyr_z:-12, tick:753402 
+lis3dml, mag_x:2307, mag_y:1608, mag_z:-1651
+icm42688, acc_x:616, acc_y:-2932, acc_z:7751, gyr_x:-12, gyr_y:-56, gyr_z:-13, tick:758145 
+lis3dml, mag_x:2326, mag_y:1573, mag_z:-1649
+icm42688, acc_x:614, acc_y:-2930, acc_z:7747, gyr_x:-8, gyr_y:-57, gyr_z:-14, tick:762889 
+lis3dml, mag_x:2326, mag_y:1573, mag_z:-1649
+icm42688, acc_x:613, acc_y:-2930, acc_z:7744, gyr_x:-9, gyr_y:-57, gyr_z:-13, tick:767632 
+lis3dml, mag_x:2319, mag_y:1573, mag_z:-1563
+icm42688, acc_x:613, acc_y:-2928, acc_z:7744, gyr_x:-11, gyr_y:-57, gyr_z:-12, tick:772375 
+lis3dml, mag_x:2319, mag_y:1573, mag_z:-1563
+icm42688, acc_x:613, acc_y:-2927, acc_z:7746, gyr_x:-12, gyr_y:-59, gyr_z:-11, tick:777119 
+lis3dml, mag_x:2319, mag_y:1573, mag_z:-1563
+icm42688, acc_x:615, acc_y:-2927, acc_z:7749, gyr_x:-13, gyr_y:-58, gyr_z:-10, tick:781862 
+lis3dml, mag_x:2350, mag_y:1552, mag_z:-1606
+icm42688, acc_x:615, acc_y:-2927, acc_z:7750, gyr_x:-12, gyr_y:-59, gyr_z:-11, tick:786606 
+lis3dml, mag_x:2350, mag_y:1552, mag_z:-1606
+icm42688, acc_x:615, acc_y:-2928, acc_z:7751, gyr_x:-9, gyr_y:-60, gyr_z:-14, tick:791349 
+lis3dml, mag_x:2369, mag_y:1567, mag_z:-1619
+icm42688, acc_x:614, acc_y:-2929, acc_z:7751, gyr_x:-9, gyr_y:-57, gyr_z:-16, tick:796092 
+lis3dml, mag_x:2369, mag_y:1567, mag_z:-1619
+icm42688, acc_x:614, acc_y:-2926, acc_z:7749, gyr_x:-8, gyr_y:-54, gyr_z:-15, tick:800835 
+lis3dml, mag_x:2369, mag_y:1567, mag_z:-1619
+icm42688, acc_x:615, acc_y:-2923, acc_z:7749, gyr_x:-7, gyr_y:-54, gyr_z:-13, tick:805579 
+lis3dml, mag_x:2351, mag_y:1599, mag_z:-1606
+icm42688, acc_x:615, acc_y:-2921, acc_z:7748, gyr_x:-7, gyr_y:-54, gyr_z:-10, tick:810323 
+lis3dml, mag_x:2351, mag_y:1599, mag_z:-1606
+icm42688, acc_x:615, acc_y:-2923, acc_z:7748, gyr_x:-8, gyr_y:-56, gyr_z:-11, tick:815066 
+lis3dml, mag_x:2351, mag_y:1599, mag_z:-1606
+icm42688, acc_x:615, acc_y:-2926, acc_z:7748, gyr_x:-8, gyr_y:-59, gyr_z:-12, tick:819809 
+lis3dml, mag_x:2342, mag_y:1617, mag_z:-1603
+icm42688, acc_x:615, acc_y:-2928, acc_z:7747, gyr_x:-8, gyr_y:-60, gyr_z:-11, tick:824553 
+lis3dml, mag_x:2342, mag_y:1617, mag_z:-1603
+icm42688, acc_x:615, acc_y:-2931, acc_z:7747, gyr_x:-8, gyr_y:-60, gyr_z:-10, tick:829296 
+lis3dml, mag_x:2353, mag_y:1611, mag_z:-1577
+icm42688, acc_x:614, acc_y:-2932, acc_z:7748, gyr_x:-8, gyr_y:-60, gyr_z:-8, tick:834040 
+lis3dml, mag_x:2353, mag_y:1611, mag_z:-1577
+icm42688, acc_x:612, acc_y:-2931, acc_z:7747, gyr_x:-7, gyr_y:-58, gyr_z:-7, tick:838783 
+lis3dml, mag_x:2353, mag_y:1611, mag_z:-1577
+icm42688, acc_x:613, acc_y:-2928, acc_z:7746, gyr_x:-6, gyr_y:-58, gyr_z:-8, tick:843526 
+lis3dml, mag_x:2331, mag_y:1578, mag_z:-1597
+icm42688, acc_x:613, acc_y:-2926, acc_z:7747, gyr_x:-6, gyr_y:-57, gyr_z:-10, tick:848270 
+lis3dml, mag_x:2331, mag_y:1578, mag_z:-1597
+icm42688, acc_x:613, acc_y:-2926, acc_z:7748, gyr_x:-7, gyr_y:-54, gyr_z:-11, tick:853013 
+lis3dml, mag_x:2352, mag_y:1589, mag_z:-1565
+icm42688, acc_x:613, acc_y:-2927, acc_z:7748, gyr_x:-8, gyr_y:-50, gyr_z:-12, tick:857756 
+lis3dml, mag_x:2352, mag_y:1589, mag_z:-1565
+icm42688, acc_x:613, acc_y:-2927, acc_z:7748, gyr_x:-10, gyr_y:-49, gyr_z:-11, tick:862499 
+lis3dml, mag_x:2352, mag_y:1589, mag_z:-1565
+icm42688, acc_x:612, acc_y:-2927, acc_z:7748, gyr_x:-9, gyr_y:-52, gyr_z:-10, tick:867243 
+lis3dml, mag_x:2355, mag_y:1598, mag_z:-1543
+icm42688, acc_x:613, acc_y:-2926, acc_z:7748, gyr_x:-7, gyr_y:-55, gyr_z:-11, tick:871987 
+lis3dml, mag_x:2355, mag_y:1598, mag_z:-1543
+icm42688, acc_x:613, acc_y:-2927, acc_z:7748, gyr_x:-8, gyr_y:-55, gyr_z:-12, tick:876730 
+lis3dml, mag_x:2338, mag_y:1552, mag_z:-1578
+icm42688, acc_x:613, acc_y:-2926, acc_z:7747, gyr_x:-7, gyr_y:-57, gyr_z:-13, tick:881473 
+lis3dml, mag_x:2338, mag_y:1552, mag_z:-1578
+icm42688, acc_x:615, acc_y:-2925, acc_z:7747, gyr_x:-8, gyr_y:-60, gyr_z:-13, tick:886216 
+lis3dml, mag_x:2338, mag_y:1552, mag_z:-1578
+icm42688, acc_x:613, acc_y:-2926, acc_z:7746, gyr_x:-9, gyr_y:-61, gyr_z:-14, tick:890960 
+lis3dml, mag_x:2351, mag_y:1591, mag_z:-1591
+icm42688, acc_x:613, acc_y:-2925, acc_z:7748, gyr_x:-9, gyr_y:-61, gyr_z:-13, tick:895703 
+lis3dml, mag_x:2351, mag_y:1591, mag_z:-1591
+icm42688, acc_x:611, acc_y:-2924, acc_z:7749, gyr_x:-8, gyr_y:-59, gyr_z:-13, tick:900447 
+lis3dml, mag_x:2351, mag_y:1591, mag_z:-1591
+icm42688, acc_x:609, acc_y:-2925, acc_z:7749, gyr_x:-8, gyr_y:-54, gyr_z:-11, tick:905190 
+lis3dml, mag_x:2351, mag_y:1565, mag_z:-1562
+icm42688, acc_x:608, acc_y:-2926, acc_z:7749, gyr_x:-6, gyr_y:-54, gyr_z:-10, tick:909933 
+lis3dml, mag_x:2351, mag_y:1565, mag_z:-1562
+icm42688, acc_x:609, acc_y:-2928, acc_z:7748, gyr_x:-6, gyr_y:-54, gyr_z:-11, tick:914677 
+lis3dml, mag_x:2305, mag_y:1567, mag_z:-1578
+icm42688, acc_x:611, acc_y:-2931, acc_z:7747, gyr_x:-9, gyr_y:-54, gyr_z:-13, tick:919420 
+lis3dml, mag_x:2305, mag_y:1567, mag_z:-1578
+icm42688, acc_x:612, acc_y:-2930, acc_z:7747, gyr_x:-11, gyr_y:-55, gyr_z:-13, tick:924164 
+lis3dml, mag_x:2305, mag_y:1567, mag_z:-1578
+icm42688, acc_x:614, acc_y:-2927, acc_z:7749, gyr_x:-10, gyr_y:-59, gyr_z:-12, tick:928907 
+lis3dml, mag_x:2343, mag_y:1596, mag_z:-1574
+icm42688, acc_x:614, acc_y:-2925, acc_z:7749, gyr_x:-8, gyr_y:-60, gyr_z:-10, tick:933651 
+lis3dml, mag_x:2343, mag_y:1596, mag_z:-1574
+icm42688, acc_x:614, acc_y:-2924, acc_z:7747, gyr_x:-7, gyr_y:-60, gyr_z:-10, tick:938394 
+lis3dml, mag_x:2296, mag_y:1575, mag_z:-1572
+icm42688, acc_x:612, acc_y:-2922, acc_z:7747, gyr_x:-6, gyr_y:-60, gyr_z:-11, tick:943137 
+lis3dml, mag_x:2296, mag_y:1575, mag_z:-1572
+icm42688, acc_x:610, acc_y:-2921, acc_z:7749, gyr_x:-7, gyr_y:-58, gyr_z:-10, tick:947880 
+lis3dml, mag_x:2296, mag_y:1575, mag_z:-1572
+icm42688, acc_x:611, acc_y:-2923, acc_z:7750, gyr_x:-8, gyr_y:-57, gyr_z:-10, tick:952624 
+lis3dml, mag_x:2299, mag_y:1585, mag_z:-1624
+icm42688, acc_x:612, acc_y:-2925, acc_z:7750, gyr_x:-10, gyr_y:-59, gyr_z:-11, tick:957368 
+lis3dml, mag_x:2299, mag_y:1585, mag_z:-1624
+icm42688, acc_x:613, acc_y:-2925, acc_z:7749, gyr_x:-12, gyr_y:-60, gyr_z:-10, tick:962111 
+lis3dml, mag_x:2338, mag_y:1588, mag_z:-1624
+icm42688, acc_x:613, acc_y:-2925, acc_z:7747, gyr_x:-11, gyr_y:-58, gyr_z:-9, tick:966854 
+lis3dml, mag_x:2338, mag_y:1588, mag_z:-1624
+icm42688, acc_x:615, acc_y:-2926, acc_z:7744, gyr_x:-10, gyr_y:-55, gyr_z:-11, tick:971597 
+lis3dml, mag_x:2338, mag_y:1588, mag_z:-1624
+icm42688, acc_x:616, acc_y:-2928, acc_z:7745, gyr_x:-10, gyr_y:-55, gyr_z:-13, tick:976341 
+lis3dml, mag_x:2313, mag_y:1599, mag_z:-1587
+icm42688, acc_x:615, acc_y:-2928, acc_z:7746, gyr_x:-12, gyr_y:-55, gyr_z:-15, tick:981084 
+lis3dml, mag_x:2313, mag_y:1599, mag_z:-1587
+icm42688, acc_x:613, acc_y:-2929, acc_z:7747, gyr_x:-11, gyr_y:-57, gyr_z:-15, tick:985827 
+lis3dml, mag_x:2313, mag_y:1599, mag_z:-1587
+icm42688, acc_x:614, acc_y:-2927, acc_z:7748, gyr_x:-9, gyr_y:-57, gyr_z:-15, tick:990571 
+lis3dml, mag_x:2316, mag_y:1610, mag_z:-1586
+icm42688, acc_x:614, acc_y:-2926, acc_z:7749, gyr_x:-6, gyr_y:-57, gyr_z:-15, tick:995315 
+lis3dml, mag_x:2316, mag_y:1610, mag_z:-1586
+icm42688, acc_x:615, acc_y:-2926, acc_z:7750, gyr_x:-5, gyr_y:-57, gyr_z:-15, tick:1000058 
+lis3dml, mag_x:2355, mag_y:1602, mag_z:-1572
+icm42688, acc_x:617, acc_y:-2927, acc_z:7750, gyr_x:-5, gyr_y:-58, gyr_z:-15, tick:1004801 
+lis3dml, mag_x:2355, mag_y:1602, mag_z:-1572
+icm42688, acc_x:616, acc_y:-2930, acc_z:7748, gyr_x:-6, gyr_y:-57, gyr_z:-15, tick:1009544 
+lis3dml, mag_x:2355, mag_y:1602, mag_z:-1572
+icm42688, acc_x:615, acc_y:-2933, acc_z:7747, gyr_x:-8, gyr_y:-57, gyr_z:-14, tick:1014289 
+lis3dml, mag_x:2289, mag_y:1618, mag_z:-1607
+icm42688, acc_x:615, acc_y:-2930, acc_z:7748, gyr_x:-9, gyr_y:-55, gyr_z:-13, tick:1019032 
+lis3dml, mag_x:2289, mag_y:1618, mag_z:-1607
+icm42688, acc_x:613, acc_y:-2927, acc_z:7751, gyr_x:-10, gyr_y:-54, gyr_z:-13, tick:1023775 
+lis3dml, mag_x:2306, mag_y:1589, mag_z:-1616
+icm42688, acc_x:613, acc_y:-2926, acc_z:7754, gyr_x:-10, gyr_y:-55, gyr_z:-13, tick:1028518 
+lis3dml, mag_x:2306, mag_y:1589, mag_z:-1616
+icm42688, acc_x:613, acc_y:-2929, acc_z:7754, gyr_x:-10, gyr_y:-57, gyr_z:-13, tick:1033261 
+lis3dml, mag_x:2306, mag_y:1589, mag_z:-1616
+icm42688, acc_x:614, acc_y:-2931, acc_z:7752, gyr_x:-10, gyr_y:-58, gyr_z:-11, tick:1038005 
+lis3dml, mag_x:2346, mag_y:1592, mag_z:-1610
+icm42688, acc_x:615, acc_y:-2931, acc_z:7752, gyr_x:-9, gyr_y:-58, gyr_z:-10, tick:1042748 
+lis3dml, mag_x:2346, mag_y:1592, mag_z:-1610
+icm42688, acc_x:615, acc_y:-2931, acc_z:7750, gyr_x:-8, gyr_y:-59, gyr_z:-9, tick:1047492 
+lis3dml, mag_x:2278, mag_y:1601, mag_z:-1634
+icm42688, acc_x:614, acc_y:-2930, acc_z:7749, gyr_x:-7, gyr_y:-59, gyr_z:-9, tick:3659 
+lis3dml, mag_x:2278, mag_y:1601, mag_z:-1634
+icm42688, acc_x:613, acc_y:-2929, acc_z:7747, gyr_x:-8, gyr_y:-58, gyr_z:-9, tick:8402 
+lis3dml, mag_x:2278, mag_y:1601, mag_z:-1634
+icm42688, acc_x:611, acc_y:-2930, acc_z:7746, gyr_x:-8, gyr_y:-58, gyr_z:-8, tick:13146 
+lis3dml, mag_x:2303, mag_y:1602, mag_z:-1590
+icm42688, acc_x:611, acc_y:-2930, acc_z:7746, gyr_x:-7, gyr_y:-57, gyr_z:-10, tick:17889 
+lis3dml, mag_x:2303, mag_y:1602, mag_z:-1590
+icm42688, acc_x:612, acc_y:-2929, acc_z:7747, gyr_x:-7, gyr_y:-56, gyr_z:-12, tick:22632 
+lis3dml, mag_x:2303, mag_y:1602, mag_z:-1590
+icm42688, acc_x:612, acc_y:-2928, acc_z:7747, gyr_x:-7, gyr_y:-56, gyr_z:-14, tick:27375 
+lis3dml, mag_x:2283, mag_y:1579, mag_z:-1614
+icm42688, acc_x:612, acc_y:-2926, acc_z:7747, gyr_x:-6, gyr_y:-56, gyr_z:-15, tick:32120 
+lis3dml, mag_x:2283, mag_y:1579, mag_z:-1614
+icm42688, acc_x:611, acc_y:-2927, acc_z:7747, gyr_x:-6, gyr_y:-55, gyr_z:-14, tick:36863 
+lis3dml, mag_x:2327, mag_y:1580, mag_z:-1573
+icm42688, acc_x:609, acc_y:-2929, acc_z:7745, gyr_x:-7, gyr_y:-55, gyr_z:-12, tick:41606 
+lis3dml, mag_x:2327, mag_y:1580, mag_z:-1573
+icm42688, acc_x:608, acc_y:-2928, acc_z:7745, gyr_x:-7, gyr_y:-55, gyr_z:-12, tick:46349 
+lis3dml, mag_x:2327, mag_y:1580, mag_z:-1573
+icm42688, acc_x:608, acc_y:-2925, acc_z:7746, gyr_x:-8, gyr_y:-55, gyr_z:-11, tick:51093 
+lis3dml, mag_x:2312, mag_y:1562, mag_z:-1649
+icm42688, acc_x:610, acc_y:-2925, acc_z:7746, gyr_x:-9, gyr_y:-55, gyr_z:-11, tick:55837 
+lis3dml, mag_x:2312, mag_y:1562, mag_z:-1649
+icm42688, acc_x:614, acc_y:-2925, acc_z:7745, gyr_x:-9, gyr_y:-56, gyr_z:-12, tick:60580 
+lis3dml, mag_x:2308, mag_y:1583, mag_z:-1640
+icm42688, acc_x:615, acc_y:-2926, acc_z:7744, gyr_x:-8, gyr_y:-59, gyr_z:-14, tick:65323 
+lis3dml, mag_x:2308, mag_y:1583, mag_z:-1640
+icm42688, acc_x:614, acc_y:-2926, acc_z:7744, gyr_x:-10, gyr_y:-61, gyr_z:-14, tick:70066 
+lis3dml, mag_x:2308, mag_y:1583, mag_z:-1640
+icm42688, acc_x:611, acc_y:-2925, acc_z:7743, gyr_x:-11, gyr_y:-60, gyr_z:-14, tick:74810 
+lis3dml, mag_x:2312, mag_y:1571, mag_z:-1632
+icm42688, acc_x:610, acc_y:-2926, acc_z:7743, gyr_x:-10, gyr_y:-60, gyr_z:-12, tick:79553 
+lis3dml, mag_x:2312, mag_y:1571, mag_z:-1632
+icm42688, acc_x:612, acc_y:-2925, acc_z:7745, gyr_x:-10, gyr_y:-58, gyr_z:-11, tick:84296 
+lis3dml, mag_x:2326, mag_y:1561, mag_z:-1589
+icm42688, acc_x:614, acc_y:-2926, acc_z:7747, gyr_x:-10, gyr_y:-55, gyr_z:-12, tick:89040 
+lis3dml, mag_x:2326, mag_y:1561, mag_z:-1589
+icm42688, acc_x:614, acc_y:-2928, acc_z:7747, gyr_x:-7, gyr_y:-53, gyr_z:-12, tick:93784 
+lis3dml, mag_x:2326, mag_y:1561, mag_z:-1589
+icm42688, acc_x:612, acc_y:-2928, acc_z:7748, gyr_x:-5, gyr_y:-51, gyr_z:-12, tick:98527 
+lis3dml, mag_x:2307, mag_y:1558, mag_z:-1603
+icm42688, acc_x:609, acc_y:-2928, acc_z:7746, gyr_x:-5, gyr_y:-50, gyr_z:-12, tick:103270 
+lis3dml, mag_x:2307, mag_y:1558, mag_z:-1603
+icm42688, acc_x:607, acc_y:-2928, acc_z:7746, gyr_x:-7, gyr_y:-56, gyr_z:-11, tick:108013 
+lis3dml, mag_x:2307, mag_y:1558, mag_z:-1603
+icm42688, acc_x:608, acc_y:-2925, acc_z:7747, gyr_x:-8, gyr_y:-58, gyr_z:-11, tick:112756 
+lis3dml, mag_x:2306, mag_y:1552, mag_z:-1613
+icm42688, acc_x:609, acc_y:-2925, acc_z:7748, gyr_x:-9, gyr_y:-58, gyr_z:-11, tick:117500 
+lis3dml, mag_x:2306, mag_y:1552, mag_z:-1613
+icm42688, acc_x:610, acc_y:-2925, acc_z:7748, gyr_x:-10, gyr_y:-59, gyr_z:-11, tick:122244 
+lis3dml, mag_x:2337, mag_y:1583, mag_z:-1614
+icm42688, acc_x:612, acc_y:-2925, acc_z:7748, gyr_x:-12, gyr_y:-58, gyr_z:-9, tick:126987 
+lis3dml, mag_x:2337, mag_y:1583, mag_z:-1614
+icm42688, acc_x:615, acc_y:-2926, acc_z:7746, gyr_x:-12, gyr_y:-55, gyr_z:-11, tick:131730 
+lis3dml, mag_x:2337, mag_y:1583, mag_z:-1614
+icm42688, acc_x:615, acc_y:-2926, acc_z:7746, gyr_x:-10, gyr_y:-54, gyr_z:-13, tick:136474 
+lis3dml, mag_x:2322, mag_y:1579, mag_z:-1622
+icm42688, acc_x:614, acc_y:-2925, acc_z:7748, gyr_x:-8, gyr_y:-55, gyr_z:-12, tick:141217 
+lis3dml, mag_x:2322, mag_y:1579, mag_z:-1622
+icm42688, acc_x:612, acc_y:-2925, acc_z:7747, gyr_x:-9, gyr_y:-56, gyr_z:-11, tick:145961 
+lis3dml, mag_x:2341, mag_y:1559, mag_z:-1583
+icm42688, acc_x:611, acc_y:-2928, acc_z:7746, gyr_x:-9, gyr_y:-58, gyr_z:-9, tick:150704 
+lis3dml, mag_x:2341, mag_y:1559, mag_z:-1583
+icm42688, acc_x:613, acc_y:-2929, acc_z:7747, gyr_x:-8, gyr_y:-58, gyr_z:-9, tick:155447 
+lis3dml, mag_x:2341, mag_y:1559, mag_z:-1583
+icm42688, acc_x:612, acc_y:-2931, acc_z:7746, gyr_x:-10, gyr_y:-58, gyr_z:-11, tick:160191 
+lis3dml, mag_x:2311, mag_y:1568, mag_z:-1599
+icm42688, acc_x:611, acc_y:-2931, acc_z:7748, gyr_x:-11, gyr_y:-58, gyr_z:-12, tick:164934 
+lis3dml, mag_x:2311, mag_y:1568, mag_z:-1599
+icm42688, acc_x:611, acc_y:-2929, acc_z:7750, gyr_x:-9, gyr_y:-56, gyr_z:-11, tick:169677 
+lis3dml, mag_x:2290, mag_y:1540, mag_z:-1610
+icm42688, acc_x:614, acc_y:-2929, acc_z:7750, gyr_x:-7, gyr_y:-52, gyr_z:-11, tick:174420 
+lis3dml, mag_x:2290, mag_y:1540, mag_z:-1610
+icm42688, acc_x:615, acc_y:-2930, acc_z:7750, gyr_x:-6, gyr_y:-51, gyr_z:-11, tick:179165 
+lis3dml, mag_x:2290, mag_y:1540, mag_z:-1610
+icm42688, acc_x:615, acc_y:-2929, acc_z:7751, gyr_x:-5, gyr_y:-52, gyr_z:-10, tick:183908 
+lis3dml, mag_x:2322, mag_y:1586, mag_z:-1636
+icm42688, acc_x:612, acc_y:-2929, acc_z:7752, gyr_x:-6, gyr_y:-54, gyr_z:-10, tick:188651 
+lis3dml, mag_x:2322, mag_y:1586, mag_z:-1636
+icm42688, acc_x:612, acc_y:-2929, acc_z:7751, gyr_x:-7, gyr_y:-58, gyr_z:-12, tick:193394 
+lis3dml, mag_x:2322, mag_y:1595, mag_z:-1610
+icm42688, acc_x:613, acc_y:-2927, acc_z:7748, gyr_x:-9, gyr_y:-60, gyr_z:-12, tick:198137 
+lis3dml, mag_x:2301, mag_y:1595, mag_z:-1610
+icm42688, acc_x:613, acc_y:-2926, acc_z:7745, gyr_x:-9, gyr_y:-60, gyr_z:-13, tick:202881 
+lis3dml, mag_x:2301, mag_y:1595, mag_z:-1610
+icm42688, acc_x:612, acc_y:-2927, acc_z:7745, gyr_x:-9, gyr_y:-60, gyr_z:-13, tick:207624 
+lis3dml, mag_x:2326, mag_y:1582, mag_z:-1594
+icm42688, acc_x:614, acc_y:-2929, acc_z:7745, gyr_x:-10, gyr_y:-58, gyr_z:-13, tick:212368 
+lis3dml, mag_x:2326, mag_y:1582, mag_z:-1594
+icm42688, acc_x:615, acc_y:-2929, acc_z:7744, gyr_x:-9, gyr_y:-56, gyr_z:-12, tick:217111 
+lis3dml, mag_x:2326, mag_y:1582, mag_z:-1594
+icm42688, acc_x:615, acc_y:-2928, acc_z:7743, gyr_x:-8, gyr_y:-54, gyr_z:-10, tick:221855 
+lis3dml, mag_x:2329, mag_y:1574, mag_z:-1574
+icm42688, acc_x:615, acc_y:-2929, acc_z:7744, gyr_x:-6, gyr_y:-52, gyr_z:-10, tick:226598 
+lis3dml, mag_x:2329, mag_y:1574, mag_z:-1574
+icm42688, acc_x:615, acc_y:-2929, acc_z:7747, gyr_x:-5, gyr_y:-52, gyr_z:-10, tick:231342 
+lis3dml, mag_x:2305, mag_y:1595, mag_z:-1594
+icm42688, acc_x:614, acc_y:-2928, acc_z:7748, gyr_x:-5, gyr_y:-54, gyr_z:-11, tick:236085 
+lis3dml, mag_x:2305, mag_y:1595, mag_z:-1594
+icm42688, acc_x:613, acc_y:-2927, acc_z:7750, gyr_x:-4, gyr_y:-58, gyr_z:-12, tick:240828 
+lis3dml, mag_x:2305, mag_y:1595, mag_z:-1594
+icm42688, acc_x:614, acc_y:-2925, acc_z:7751, gyr_x:-7, gyr_y:-59, gyr_z:-13, tick:245572 
+lis3dml, mag_x:2313, mag_y:1583, mag_z:-1592
+icm42688, acc_x:614, acc_y:-2927, acc_z:7751, gyr_x:-11, gyr_y:-55, gyr_z:-13, tick:250315 
+lis3dml, mag_x:2313, mag_y:1583, mag_z:-1592
+icm42688, acc_x:613, acc_y:-2930, acc_z:7750, gyr_x:-13, gyr_y:-51, gyr_z:-14, tick:255058 
+lis3dml, mag_x:2323, mag_y:1563, mag_z:-1621
+icm42688, acc_x:615, acc_y:-2930, acc_z:7749, gyr_x:-11, gyr_y:-53, gyr_z:-15, tick:259801 
+lis3dml, mag_x:2323, mag_y:1563, mag_z:-1621
+icm42688, acc_x:615, acc_y:-2930, acc_z:7748, gyr_x:-10, gyr_y:-53, gyr_z:-15, tick:264545 
+lis3dml, mag_x:2323, mag_y:1563, mag_z:-1621
+icm42688, acc_x:616, acc_y:-2929, acc_z:7746, gyr_x:-9, gyr_y:-55, gyr_z:-14, tick:269289 
+lis3dml, mag_x:2297, mag_y:1567, mag_z:-1624
+icm42688, acc_x:616, acc_y:-2929, acc_z:7744, gyr_x:-6, gyr_y:-60, gyr_z:-13, tick:274032 
+lis3dml, mag_x:2297, mag_y:1567, mag_z:-1624
+icm42688, acc_x:617, acc_y:-2930, acc_z:7742, gyr_x:-7, gyr_y:-59, gyr_z:-11, tick:278775 
+lis3dml, mag_x:2305, mag_y:1566, mag_z:-1631
+icm42688, acc_x:615, acc_y:-2932, acc_z:7743, gyr_x:-8, gyr_y:-54, gyr_z:-10, tick:283519 
+lis3dml, mag_x:2305, mag_y:1566, mag_z:-1631
+icm42688, acc_x:612, acc_y:-2931, acc_z:7743, gyr_x:-5, gyr_y:-52, gyr_z:-9, tick:288262 
+lis3dml, mag_x:2305, mag_y:1566, mag_z:-1631
+icm42688, acc_x:612, acc_y:-2928, acc_z:7743, gyr_x:-6, gyr_y:-47, gyr_z:-11, tick:293005 
+lis3dml, mag_x:2347, mag_y:1584, mag_z:-1604
+icm42688, acc_x:612, acc_y:-2925, acc_z:7745, gyr_x:-9, gyr_y:-46, gyr_z:-13, tick:297748 
+lis3dml, mag_x:2347, mag_y:1584, mag_z:-1604
+icm42688, acc_x:610, acc_y:-2923, acc_z:7748, gyr_x:-9, gyr_y:-51, gyr_z:-13, tick:302492 
+lis3dml, mag_x:2347, mag_y:1584, mag_z:-1604
+icm42688, acc_x:610, acc_y:-2922, acc_z:7751, gyr_x:-9, gyr_y:-56, gyr_z:-11, tick:307236 
+lis3dml, mag_x:2331, mag_y:1606, mag_z:-1628
+icm42688, acc_x:610, acc_y:-2924, acc_z:7752, gyr_x:-10, gyr_y:-57, gyr_z:-10, tick:311979 
+lis3dml, mag_x:2331, mag_y:1606, mag_z:-1628
+icm42688, acc_x:612, acc_y:-2925, acc_z:7752, gyr_x:-8, gyr_y:-59, gyr_z:-11, tick:316722 
+lis3dml, mag_x:2318, mag_y:1606, mag_z:-1644
+icm42688, acc_x:612, acc_y:-2927, acc_z:7752, gyr_x:-7, gyr_y:-59, gyr_z:-12, tick:321466 
+lis3dml, mag_x:2318, mag_y:1606, mag_z:-1644
+icm42688, acc_x:610, acc_y:-2926, acc_z:7750, gyr_x:-7, gyr_y:-57, gyr_z:-12, tick:326210 
+lis3dml, mag_x:2318, mag_y:1606, mag_z:-1644
+icm42688, acc_x:609, acc_y:-2925, acc_z:7748, gyr_x:-6, gyr_y:-54, gyr_z:-12, tick:330953 
+lis3dml, mag_x:2329, mag_y:1580, mag_z:-1635
+icm42688, acc_x:609, acc_y:-2926, acc_z:7747, gyr_x:-7, gyr_y:-51, gyr_z:-12, tick:335696 
+lis3dml, mag_x:2329, mag_y:1580, mag_z:-1635
+icm42688, acc_x:610, acc_y:-2927, acc_z:7746, gyr_x:-7, gyr_y:-48, gyr_z:-11, tick:340439 
+lis3dml, mag_x:2307, mag_y:1610, mag_z:-1644
+icm42688, acc_x:611, acc_y:-2928, acc_z:7747, gyr_x:-6, gyr_y:-48, gyr_z:-9, tick:345182 
+lis3dml, mag_x:2307, mag_y:1610, mag_z:-1644
+icm42688, acc_x:612, acc_y:-2928, acc_z:7747, gyr_x:-7, gyr_y:-51, gyr_z:-9, tick:349926 
+lis3dml, mag_x:2307, mag_y:1610, mag_z:-1644
+icm42688, acc_x:612, acc_y:-2929, acc_z:7747, gyr_x:-10, gyr_y:-54, gyr_z:-9, tick:354670 
+lis3dml, mag_x:2292, mag_y:1605, mag_z:-1623
+icm42688, acc_x:613, acc_y:-2928, acc_z:7748, gyr_x:-11, gyr_y:-57, gyr_z:-11, tick:359413 
+lis3dml, mag_x:2292, mag_y:1605, mag_z:-1623
+icm42688, acc_x:613, acc_y:-2928, acc_z:7747, gyr_x:-12, gyr_y:-59, gyr_z:-13, tick:364156 
+lis3dml, mag_x:2305, mag_y:1588, mag_z:-1596
+icm42688, acc_x:613, acc_y:-2927, acc_z:7745, gyr_x:-11, gyr_y:-59, gyr_z:-14, tick:368900 
+lis3dml, mag_x:2305, mag_y:1588, mag_z:-1596
+icm42688, acc_x:611, acc_y:-2926, acc_z:7746, gyr_x:-10, gyr_y:-59, gyr_z:-13, tick:373643 
+lis3dml, mag_x:2305, mag_y:1588, mag_z:-1596
+icm42688, acc_x:610, acc_y:-2928, acc_z:7750, gyr_x:-8, gyr_y:-59, gyr_z:-13, tick:378386 
+lis3dml, mag_x:2307, mag_y:1602, mag_z:-1596
+icm42688, acc_x:610, acc_y:-2928, acc_z:7751, gyr_x:-9, gyr_y:-57, gyr_z:-13, tick:383129 
+lis3dml, mag_x:2307, mag_y:1602, mag_z:-1596
+icm42688, acc_x:613, acc_y:-2927, acc_z:7750, gyr_x:-9, gyr_y:-54, gyr_z:-14, tick:387873 
+lis3dml, mag_x:2307, mag_y:1602, mag_z:-1596
+icm42688, acc_x:614, acc_y:-2928, acc_z:7747, gyr_x:-7, gyr_y:-54, gyr_z:-13, tick:392617 
+lis3dml, mag_x:2326, mag_y:1623, mag_z:-1627
+icm42688, acc_x:613, acc_y:-2928, acc_z:7746, gyr_x:-7, gyr_y:-54, gyr_z:-12, tick:397360 
+lis3dml, mag_x:2326, mag_y:1623, mag_z:-1627
+icm42688, acc_x:611, acc_y:-2926, acc_z:7747, gyr_x:-8, gyr_y:-52, gyr_z:-13, tick:402103 
+lis3dml, mag_x:2287, mag_y:1594, mag_z:-1636
+icm42688, acc_x:610, acc_y:-2926, acc_z:7749, gyr_x:-9, gyr_y:-54, gyr_z:-11, tick:406846 
+lis3dml, mag_x:2287, mag_y:1594, mag_z:-1636
+icm42688, acc_x:611, acc_y:-2927, acc_z:7751, gyr_x:-9, gyr_y:-55, gyr_z:-10, tick:411591 
+lis3dml, mag_x:2287, mag_y:1594, mag_z:-1636
+icm42688, acc_x:613, acc_y:-2929, acc_z:7751, gyr_x:-9, gyr_y:-54, gyr_z:-10, tick:416334 
+lis3dml, mag_x:2290, mag_y:1618, mag_z:-1635
+icm42688, acc_x:615, acc_y:-2930, acc_z:7749, gyr_x:-9, gyr_y:-56, gyr_z:-11, tick:421077 
+lis3dml, mag_x:2290, mag_y:1618, mag_z:-1635
+icm42688, acc_x:615, acc_y:-2930, acc_z:7747, gyr_x:-9, gyr_y:-57, gyr_z:-13, tick:425820 
+lis3dml, mag_x:2337, mag_y:1606, mag_z:-1617
+icm42688, acc_x:614, acc_y:-2931, acc_z:7746, gyr_x:-9, gyr_y:-59, gyr_z:-15, tick:430564 
+lis3dml, mag_x:2337, mag_y:1606, mag_z:-1617
+icm42688, acc_x:614, acc_y:-2930, acc_z:7746, gyr_x:-8, gyr_y:-60, gyr_z:-15, tick:435307 
+lis3dml, mag_x:2337, mag_y:1606, mag_z:-1617
+icm42688, acc_x:613, acc_y:-2927, acc_z:7749, gyr_x:-7, gyr_y:-60, gyr_z:-15, tick:440050 
+lis3dml, mag_x:2318, mag_y:1618, mag_z:-1642
+icm42688, acc_x:612, acc_y:-2925, acc_z:7751, gyr_x:-7, gyr_y:-57, gyr_z:-12, tick:444794 
+lis3dml, mag_x:2318, mag_y:1618, mag_z:-1642
+icm42688, acc_x:612, acc_y:-2925, acc_z:7753, gyr_x:-8, gyr_y:-56, gyr_z:-10, tick:449537 
+lis3dml, mag_x:2298, mag_y:1595, mag_z:-1637
+icm42688, acc_x:613, acc_y:-2927, acc_z:7752, gyr_x:-7, gyr_y:-55, gyr_z:-10, tick:454281 
+lis3dml, mag_x:2298, mag_y:1595, mag_z:-1637
+icm42688, acc_x:613, acc_y:-2928, acc_z:7750, gyr_x:-8, gyr_y:-53, gyr_z:-11, tick:459024 
+lis3dml, mag_x:2298, mag_y:1595, mag_z:-1637
+icm42688, acc_x:612, acc_y:-2928, acc_z:7747, gyr_x:-9, gyr_y:-52, gyr_z:-14, tick:463767 
+lis3dml, mag_x:2324, mag_y:1573, mag_z:-1640
+icm42688, acc_x:611, acc_y:-2928, acc_z:7745, gyr_x:-8, gyr_y:-52, gyr_z:-15, tick:468510 
+lis3dml, mag_x:2324, mag_y:1573, mag_z:-1640
+icm42688, acc_x:611, acc_y:-2929, acc_z:7746, gyr_x:-7, gyr_y:-52, gyr_z:-16, tick:473253 
+lis3dml, mag_x:2324, mag_y:1573, mag_z:-1640
+icm42688, acc_x:611, acc_y:-2932, acc_z:7749, gyr_x:-6, gyr_y:-53, gyr_z:-15, tick:477998 
+lis3dml, mag_x:2319, mag_y:1596, mag_z:-1622
+icm42688, acc_x:613, acc_y:-2931, acc_z:7751, gyr_x:-7, gyr_y:-55, gyr_z:-13, tick:482741 
+lis3dml, mag_x:2319, mag_y:1596, mag_z:-1622
+icm42688, acc_x:615, acc_y:-2928, acc_z:7751, gyr_x:-9, gyr_y:-57, gyr_z:-12, tick:487484 
+lis3dml, mag_x:2349, mag_y:1610, mag_z:-1655
+icm42688, acc_x:615, acc_y:-2926, acc_z:7749, gyr_x:-10, gyr_y:-60, gyr_z:-12, tick:492227 
+lis3dml, mag_x:2349, mag_y:1610, mag_z:-1655
+icm42688, acc_x:614, acc_y:-2926, acc_z:7746, gyr_x:-12, gyr_y:-60, gyr_z:-13, tick:496971 
+lis3dml, mag_x:2349, mag_y:1610, mag_z:-1655
+icm42688, acc_x:615, acc_y:-2925, acc_z:7745, gyr_x:-12, gyr_y:-60, gyr_z:-13, tick:501715 
+lis3dml, mag_x:2301, mag_y:1583, mag_z:-1638
+icm42688, acc_x:615, acc_y:-2926, acc_z:7749, gyr_x:-12, gyr_y:-58, gyr_z:-13, tick:506458 
+lis3dml, mag_x:2301, mag_y:1583, mag_z:-1638
+icm42688, acc_x:614, acc_y:-2929, acc_z:7752, gyr_x:-11, gyr_y:-60, gyr_z:-12, tick:511201 
+lis3dml, mag_x:2303, mag_y:1602, mag_z:-1641
+icm42688, acc_x:613, acc_y:-2930, acc_z:7753, gyr_x:-10, gyr_y:-59, gyr_z:-12, tick:515945 
+lis3dml, mag_x:2303, mag_y:1602, mag_z:-1641
+icm42688, acc_x:612, acc_y:-2929, acc_z:7753, gyr_x:-9, gyr_y:-56, gyr_z:-12, tick:520688 
+lis3dml, mag_x:2303, mag_y:1602, mag_z:-1641
+icm42688, acc_x:611, acc_y:-2929, acc_z:7754, gyr_x:-7, gyr_y:-55, gyr_z:-11, tick:525431 
+lis3dml, mag_x:2349, mag_y:1592, mag_z:-1688
+icm42688, acc_x:610, acc_y:-2928, acc_z:7755, gyr_x:-8, gyr_y:-55, gyr_z:-10, tick:530174 
+lis3dml, mag_x:2349, mag_y:1592, mag_z:-1688
+icm42688, acc_x:611, acc_y:-2928, acc_z:7752, gyr_x:-7, gyr_y:-57, gyr_z:-10, tick:534918 
+lis3dml, mag_x:2304, mag_y:1595, mag_z:-1668
+icm42688, acc_x:615, acc_y:-2930, acc_z:7751, gyr_x:-8, gyr_y:-56, gyr_z:-11, tick:539662 
+lis3dml, mag_x:2304, mag_y:1595, mag_z:-1668
+icm42688, acc_x:618, acc_y:-2930, acc_z:7750, gyr_x:-9, gyr_y:-55, gyr_z:-11, tick:544405 
+lis3dml, mag_x:2304, mag_y:1595, mag_z:-1668
+icm42688, acc_x:617, acc_y:-2928, acc_z:7748, gyr_x:-9, gyr_y:-55, gyr_z:-11, tick:549148 
+lis3dml, mag_x:2300, mag_y:1605, mag_z:-1615
+icm42688, acc_x:615, acc_y:-2927, acc_z:7748, gyr_x:-9, gyr_y:-55, gyr_z:-14, tick:553891 
+lis3dml, mag_x:2300, mag_y:1605, mag_z:-1615
+icm42688, acc_x:612, acc_y:-2929, acc_z:7747, gyr_x:-9, gyr_y:-55, gyr_z:-15, tick:558634 
+lis3dml, mag_x:2300, mag_y:1605, mag_z:-1615
+icm42688, acc_x:610, acc_y:-2929, acc_z:7746, gyr_x:-7, gyr_y:-57, gyr_z:-15, tick:563378 
+lis3dml, mag_x:2338, mag_y:1564, mag_z:-1633
+icm42688, acc_x:610, acc_y:-2929, acc_z:7747, gyr_x:-8, gyr_y:-58, gyr_z:-15, tick:568122 
+lis3dml, mag_x:2338, mag_y:1564, mag_z:-1633
+icm42688, acc_x:611, acc_y:-2928, acc_z:7747, gyr_x:-8, gyr_y:-57, gyr_z:-13, tick:572865 
+lis3dml, mag_x:2301, mag_y:1588, mag_z:-1603
+icm42688, acc_x:612, acc_y:-2926, acc_z:7748, gyr_x:-7, gyr_y:-56, gyr_z:-11, tick:577608 
+lis3dml, mag_x:2301, mag_y:1588, mag_z:-1603
+icm42688, acc_x:613, acc_y:-2925, acc_z:7750, gyr_x:-6, gyr_y:-55, gyr_z:-12, tick:582352 
+lis3dml, mag_x:2301, mag_y:1588, mag_z:-1603
+icm42688, acc_x:613, acc_y:-2926, acc_z:7753, gyr_x:-6, gyr_y:-54, gyr_z:-13, tick:587095 
+lis3dml, mag_x:2329, mag_y:1587, mag_z:-1661
+icm42688, acc_x:614, acc_y:-2927, acc_z:7753, gyr_x:-7, gyr_y:-55, gyr_z:-11, tick:591839 
+lis3dml, mag_x:2329, mag_y:1587, mag_z:-1661
+icm42688, acc_x:614, acc_y:-2927, acc_z:7751, gyr_x:-8, gyr_y:-55, gyr_z:-9, tick:596582 
+lis3dml, mag_x:2348, mag_y:1620, mag_z:-1637
+icm42688, acc_x:615, acc_y:-2928, acc_z:7750, gyr_x:-10, gyr_y:-55, gyr_z:-9, tick:601326 
+lis3dml, mag_x:2348, mag_y:1620, mag_z:-1637
+icm42688, acc_x:616, acc_y:-2928, acc_z:7748, gyr_x:-10, gyr_y:-57, gyr_z:-8, tick:606069 
+lis3dml, mag_x:2348, mag_y:1620, mag_z:-1637
+icm42688, acc_x:616, acc_y:-2927, acc_z:7747, gyr_x:-8, gyr_y:-59, gyr_z:-8, tick:610812 
+lis3dml, mag_x:2319, mag_y:1618, mag_z:-1588
+icm42688, acc_x:616, acc_y:-2927, acc_z:7747, gyr_x:-8, gyr_y:-58, gyr_z:-9, tick:615555 
+lis3dml, mag_x:2319, mag_y:1618, mag_z:-1588
+icm42688, acc_x:617, acc_y:-2929, acc_z:7747, gyr_x:-8, gyr_y:-57, gyr_z:-13, tick:620298 
+lis3dml, mag_x:2296, mag_y:1586, mag_z:-1616
+icm42688, acc_x:615, acc_y:-2930, acc_z:7748, gyr_x:-8, gyr_y:-56, gyr_z:-15, tick:625043 
+lis3dml, mag_x:2296, mag_y:1586, mag_z:-1616
+icm42688, acc_x:613, acc_y:-2934, acc_z:7748, gyr_x:-9, gyr_y:-53, gyr_z:-15, tick:629786 
+lis3dml, mag_x:2296, mag_y:1586, mag_z:-1616
+icm42688, acc_x:613, acc_y:-2934, acc_z:7749, gyr_x:-10, gyr_y:-51, gyr_z:-14, tick:634529 
+lis3dml, mag_x:2349, mag_y:1569, mag_z:-1628
+icm42688, acc_x:613, acc_y:-2931, acc_z:7751, gyr_x:-10, gyr_y:-49, gyr_z:-13, tick:639272 
+lis3dml, mag_x:2349, mag_y:1569, mag_z:-1628
+icm42688, acc_x:613, acc_y:-2929, acc_z:7751, gyr_x:-12, gyr_y:-51, gyr_z:-12, tick:644016 
+lis3dml, mag_x:2349, mag_y:1569, mag_z:-1628
+icm42688, acc_x:612, acc_y:-2926, acc_z:7749, gyr_x:-12, gyr_y:-55, gyr_z:-12, tick:648759 
+lis3dml, mag_x:2314, mag_y:1583, mag_z:-1623
+icm42688, acc_x:613, acc_y:-2924, acc_z:7748, gyr_x:-11, gyr_y:-59, gyr_z:-13, tick:653502 
+lis3dml, mag_x:2314, mag_y:1583, mag_z:-1623
+icm42688, acc_x:613, acc_y:-2924, acc_z:7750, gyr_x:-11, gyr_y:-59, gyr_z:-12, tick:658246 
+lis3dml, mag_x:2341, mag_y:1604, mag_z:-1629
+icm42688, acc_x:614, acc_y:-2925, acc_z:7750, gyr_x:-9, gyr_y:-57, gyr_z:-11, tick:662989 
+lis3dml, mag_x:2341, mag_y:1604, mag_z:-1629
+icm42688, acc_x:615, acc_y:-2928, acc_z:7749, gyr_x:-7, gyr_y:-53, gyr_z:-9, tick:667733 
+lis3dml, mag_x:2341, mag_y:1604, mag_z:-1629
+icm42688, acc_x:614, acc_y:-2929, acc_z:7751, gyr_x:-8, gyr_y:-51, gyr_z:-8, tick:672476 
+lis3dml, mag_x:2324, mag_y:1599, mag_z:-1628
+icm42688, acc_x:614, acc_y:-2930, acc_z:7751, gyr_x:-9, gyr_y:-51, gyr_z:-10, tick:677219 
+lis3dml, mag_x:2324, mag_y:1599, mag_z:-1628
+icm42688, acc_x:613, acc_y:-2932, acc_z:7751, gyr_x:-8, gyr_y:-52, gyr_z:-11, tick:681963 
+lis3dml, mag_x:2301, mag_y:1618, mag_z:-1592
+icm42688, acc_x:613, acc_y:-2934, acc_z:7751, gyr_x:-7, gyr_y:-52, gyr_z:-13, tick:686707 
+lis3dml, mag_x:2301, mag_y:1618, mag_z:-1592
+icm42688, acc_x:613, acc_y:-2932, acc_z:7751, gyr_x:-6, gyr_y:-53, gyr_z:-12, tick:691450 
+lis3dml, mag_x:2301, mag_y:1618, mag_z:-1592
+icm42688, acc_x:613, acc_y:-2930, acc_z:7750, gyr_x:-5, gyr_y:-55, gyr_z:-11, tick:696193 
+lis3dml, mag_x:2344, mag_y:1578, mag_z:-1600
+icm42688, acc_x:613, acc_y:-2929, acc_z:7749, gyr_x:-5, gyr_y:-57, gyr_z:-10, tick:700936 
+lis3dml, mag_x:2344, mag_y:1578, mag_z:-1600
+icm42688, acc_x:614, acc_y:-2927, acc_z:7748, gyr_x:-8, gyr_y:-56, gyr_z:-10, tick:705680 
+lis3dml, mag_x:2321, mag_y:1609, mag_z:-1638
+icm42688, acc_x:614, acc_y:-2925, acc_z:7746, gyr_x:-7, gyr_y:-56, gyr_z:-12, tick:710423 
+lis3dml, mag_x:2321, mag_y:1609, mag_z:-1638
+icm42688, acc_x:615, acc_y:-2925, acc_z:7743, gyr_x:-5, gyr_y:-56, gyr_z:-11, tick:715167 
+lis3dml, mag_x:2321, mag_y:1609, mag_z:-1638
+icm42688, acc_x:615, acc_y:-2925, acc_z:7742, gyr_x:-6, gyr_y:-54, gyr_z:-9, tick:719910 
+lis3dml, mag_x:2297, mag_y:1612, mag_z:-1632
+icm42688, acc_x:613, acc_y:-2925, acc_z:7744, gyr_x:-7, gyr_y:-54, gyr_z:-8, tick:724653 
+lis3dml, mag_x:2297, mag_y:1612, mag_z:-1632
+icm42688, acc_x:612, acc_y:-2926, acc_z:7747, gyr_x:-6, gyr_y:-55, gyr_z:-9, tick:729397 
+lis3dml, mag_x:2297, mag_y:1612, mag_z:-1632
+icm42688, acc_x:611, acc_y:-2927, acc_z:7749, gyr_x:-8, gyr_y:-56, gyr_z:-9, tick:734140 
+lis3dml, mag_x:2338, mag_y:1585, mag_z:-1607
+icm42688, acc_x:611, acc_y:-2926, acc_z:7749, gyr_x:-7, gyr_y:-53, gyr_z:-9, tick:738883 
+lis3dml, mag_x:2338, mag_y:1585, mag_z:-1607
+icm42688, acc_x:611, acc_y:-2925, acc_z:7747, gyr_x:-6, gyr_y:-51, gyr_z:-8, tick:743626 
+lis3dml, mag_x:2311, mag_y:1601, mag_z:-1631
+icm42688, acc_x:613, acc_y:-2926, acc_z:7746, gyr_x:-8, gyr_y:-51, gyr_z:-9, tick:748371 
+lis3dml, mag_x:2311, mag_y:1601, mag_z:-1631
+icm42688, acc_x:615, acc_y:-2926, acc_z:7746, gyr_x:-9, gyr_y:-51, gyr_z:-12, tick:753114 
+lis3dml, mag_x:2311, mag_y:1601, mag_z:-1631
+icm42688, acc_x:615, acc_y:-2930, acc_z:7747, gyr_x:-10, gyr_y:-54, gyr_z:-14, tick:757857 
+lis3dml, mag_x:2319, mag_y:1577, mag_z:-1658
+icm42688, acc_x:615, acc_y:-2932, acc_z:7747, gyr_x:-8, gyr_y:-57, gyr_z:-15, tick:762600 
+lis3dml, mag_x:2319, mag_y:1577, mag_z:-1658
+icm42688, acc_x:614, acc_y:-2928, acc_z:7746, gyr_x:-6, gyr_y:-60, gyr_z:-14, tick:767343 
+lis3dml, mag_x:2373, mag_y:1589, mag_z:-1608
+icm42688, acc_x:611, acc_y:-2925, acc_z:7746, gyr_x:-6, gyr_y:-60, gyr_z:-14, tick:772088 
+lis3dml, mag_x:2373, mag_y:1589, mag_z:-1608
+icm42688, acc_x:610, acc_y:-2925, acc_z:7744, gyr_x:-6, gyr_y:-60, gyr_z:-15, tick:776831 
+lis3dml, mag_x:2373, mag_y:1589, mag_z:-1608
+icm42688, acc_x:611, acc_y:-2927, acc_z:7744, gyr_x:-7, gyr_y:-58, gyr_z:-15, tick:781574 
+lis3dml, mag_x:2340, mag_y:1592, mag_z:-1617
+icm42688, acc_x:615, acc_y:-2928, acc_z:7746, gyr_x:-7, gyr_y:-57, gyr_z:-14, tick:786317 
+lis3dml, mag_x:2340, mag_y:1592, mag_z:-1617
+icm42688, acc_x:616, acc_y:-2929, acc_z:7746, gyr_x:-7, gyr_y:-56, gyr_z:-11, tick:791061 
+lis3dml, mag_x:2313, mag_y:1595, mag_z:-1653
+icm42688, acc_x:615, acc_y:-2930, acc_z:7747, gyr_x:-9, gyr_y:-54, gyr_z:-9, tick:795804 
+lis3dml, mag_x:2313, mag_y:1595, mag_z:-1653
+icm42688, acc_x:614, acc_y:-2930, acc_z:7749, gyr_x:-10, gyr_y:-54, gyr_z:-9, tick:800547 
+lis3dml, mag_x:2313, mag_y:1595, mag_z:-1653
+icm42688, acc_x:615, acc_y:-2929, acc_z:7749, gyr_x:-8, gyr_y:-55, gyr_z:-9, tick:805291 
+lis3dml, mag_x:2321, mag_y:1573, mag_z:-1611
+icm42688, acc_x:615, acc_y:-2927, acc_z:7748, gyr_x:-6, gyr_y:-57, gyr_z:-9, tick:810034 
+lis3dml, mag_x:2321, mag_y:1573, mag_z:-1611
+icm42688, acc_x:615, acc_y:-2926, acc_z:7748, gyr_x:-7, gyr_y:-57, gyr_z:-10, tick:814778 
+lis3dml, mag_x:2321, mag_y:1604, mag_z:-1622
+icm42688, acc_x:614, acc_y:-2926, acc_z:7749, gyr_x:-8, gyr_y:-60, gyr_z:-11, tick:819521 
+lis3dml, mag_x:2314, mag_y:1604, mag_z:-1622
+icm42688, acc_x:611, acc_y:-2927, acc_z:7749, gyr_x:-11, gyr_y:-59, gyr_z:-12, tick:824264 
+lis3dml, mag_x:2314, mag_y:1604, mag_z:-1622
+icm42688, acc_x:610, acc_y:-2928, acc_z:7747, gyr_x:-10, gyr_y:-58, gyr_z:-13, tick:829007 
+lis3dml, mag_x:2296, mag_y:1583, mag_z:-1611
+icm42688, acc_x:610, acc_y:-2928, acc_z:7747, gyr_x:-8, gyr_y:-58, gyr_z:-13, tick:833751 
+lis3dml, mag_x:2296, mag_y:1583, mag_z:-1611
+icm42688, acc_x:611, acc_y:-2928, acc_z:7748, gyr_x:-7, gyr_y:-55, gyr_z:-12, tick:838495 
+lis3dml, mag_x:2296, mag_y:1583, mag_z:-1611
+icm42688, acc_x:613, acc_y:-2929, acc_z:7748, gyr_x:-7, gyr_y:-50, gyr_z:-10, tick:843238 
+lis3dml, mag_x:2312, mag_y:1565, mag_z:-1634
+icm42688, acc_x:615, acc_y:-2930, acc_z:7748, gyr_x:-6, gyr_y:-49, gyr_z:-9, tick:847981 
+lis3dml, mag_x:2312, mag_y:1565, mag_z:-1634
+icm42688, acc_x:616, acc_y:-2928, acc_z:7748, gyr_x:-6, gyr_y:-50, gyr_z:-9, tick:852724 
+lis3dml, mag_x:2342, mag_y:1576, mag_z:-1677
+icm42688, acc_x:615, acc_y:-2928, acc_z:7747, gyr_x:-10, gyr_y:-52, gyr_z:-10, tick:857468 
+lis3dml, mag_x:2342, mag_y:1576, mag_z:-1677
+icm42688, acc_x:615, acc_y:-2928, acc_z:7747, gyr_x:-11, gyr_y:-55, gyr_z:-11, tick:862212 
+lis3dml, mag_x:2342, mag_y:1576, mag_z:-1677
+icm42688, acc_x:615, acc_y:-2928, acc_z:7749, gyr_x:-9, gyr_y:-58, gyr_z:-11, tick:866955 
+lis3dml, mag_x:2357, mag_y:1588, mag_z:-1629
+icm42688, acc_x:616, acc_y:-2928, acc_z:7751, gyr_x:-8, gyr_y:-59, gyr_z:-9, tick:871698 
+lis3dml, mag_x:2357, mag_y:1588, mag_z:-1629
+icm42688, acc_x:615, acc_y:-2926, acc_z:7751, gyr_x:-6, gyr_y:-59, gyr_z:-8, tick:876442 
+lis3dml, mag_x:2300, mag_y:1602, mag_z:-1596
+icm42688, acc_x:615, acc_y:-2926, acc_z:7751, gyr_x:-7, gyr_y:-59, gyr_z:-7, tick:881185 
+lis3dml, mag_x:2300, mag_y:1602, mag_z:-1596
+icm42688, acc_x:613, acc_y:-2927, acc_z:7748, gyr_x:-10, gyr_y:-57, gyr_z:-9, tick:885928 
+lis3dml, mag_x:2300, mag_y:1602, mag_z:-1596
+icm42688, acc_x:612, acc_y:-2926, acc_z:7746, gyr_x:-13, gyr_y:-56, gyr_z:-11, tick:890671 
+lis3dml, mag_x:2303, mag_y:1584, mag_z:-1672
+icm42688, acc_x:611, acc_y:-2926, acc_z:7745, gyr_x:-11, gyr_y:-54, gyr_z:-12, tick:895416 
+lis3dml, mag_x:2303, mag_y:1584, mag_z:-1672
+icm42688, acc_x:610, acc_y:-2927, acc_z:7748, gyr_x:-7, gyr_y:-54, gyr_z:-13, tick:900159 
+lis3dml, mag_x:2328, mag_y:1590, mag_z:-1645
+icm42688, acc_x:608, acc_y:-2928, acc_z:7752, gyr_x:-6, gyr_y:-52, gyr_z:-13, tick:904902 
+lis3dml, mag_x:2328, mag_y:1590, mag_z:-1645
+icm42688, acc_x:609, acc_y:-2927, acc_z:7750, gyr_x:-6, gyr_y:-52, gyr_z:-11, tick:909645 
+lis3dml, mag_x:2328, mag_y:1590, mag_z:-1645
+icm42688, acc_x:610, acc_y:-2927, acc_z:7747, gyr_x:-7, gyr_y:-52, gyr_z:-12, tick:914388 
+lis3dml, mag_x:2306, mag_y:1585, mag_z:-1632
+icm42688, acc_x:610, acc_y:-2926, acc_z:7748, gyr_x:-8, gyr_y:-53, gyr_z:-13, tick:919132 
+lis3dml, mag_x:2306, mag_y:1585, mag_z:-1632
+icm42688, acc_x:613, acc_y:-2925, acc_z:7748, gyr_x:-8, gyr_y:-55, gyr_z:-12, tick:923875 
+lis3dml, mag_x:2306, mag_y:1585, mag_z:-1632
+icm42688, acc_x:615, acc_y:-2925, acc_z:7746, gyr_x:-9, gyr_y:-56, gyr_z:-11, tick:928619 
+lis3dml, mag_x:2278, mag_y:1579, mag_z:-1634
+icm42688, acc_x:614, acc_y:-2925, acc_z:7746, gyr_x:-11, gyr_y:-57, gyr_z:-11, tick:933362 
+lis3dml, mag_x:2278, mag_y:1579, mag_z:-1634
+icm42688, acc_x:612, acc_y:-2927, acc_z:7747, gyr_x:-11, gyr_y:-59, gyr_z:-12, tick:938105 
+lis3dml, mag_x:2324, mag_y:1575, mag_z:-1574
+icm42688, acc_x:612, acc_y:-2927, acc_z:7747, gyr_x:-10, gyr_y:-57, gyr_z:-12, tick:942849 
+lis3dml, mag_x:2324, mag_y:1575, mag_z:-1574
+icm42688, acc_x:613, acc_y:-2928, acc_z:7745, gyr_x:-9, gyr_y:-56, gyr_z:-11, tick:947592 
+lis3dml, mag_x:2324, mag_y:1575, mag_z:-1574
+icm42688, acc_x:614, acc_y:-2928, acc_z:7746, gyr_x:-6, gyr_y:-55, gyr_z:-11, tick:952336 
+lis3dml, mag_x:2287, mag_y:1579, mag_z:-1612
+icm42688, acc_x:614, acc_y:-2928, acc_z:7746, gyr_x:-7, gyr_y:-55, gyr_z:-12, tick:957079 
+lis3dml, mag_x:2287, mag_y:1579, mag_z:-1612
+icm42688, acc_x:614, acc_y:-2927, acc_z:7748, gyr_x:-10, gyr_y:-57, gyr_z:-13, tick:961823 
+lis3dml, mag_x:2334, mag_y:1556, mag_z:-1598
+icm42688, acc_x:613, acc_y:-2925, acc_z:7750, gyr_x:-13, gyr_y:-60, gyr_z:-13, tick:966566 
+lis3dml, mag_x:2334, mag_y:1556, mag_z:-1598
+icm42688, acc_x:612, acc_y:-2925, acc_z:7750, gyr_x:-12, gyr_y:-60, gyr_z:-13, tick:971309 
+lis3dml, mag_x:2334, mag_y:1556, mag_z:-1598
+icm42688, acc_x:614, acc_y:-2926, acc_z:7750, gyr_x:-8, gyr_y:-59, gyr_z:-14, tick:976052 
+lis3dml, mag_x:2356, mag_y:1580, mag_z:-1578
+icm42688, acc_x:615, acc_y:-2929, acc_z:7751, gyr_x:-7, gyr_y:-57, gyr_z:-13, tick:980796 
+lis3dml, mag_x:2356, mag_y:1580, mag_z:-1578
+icm42688, acc_x:615, acc_y:-2931, acc_z:7752, gyr_x:-5, gyr_y:-56, gyr_z:-11, tick:985540 
+lis3dml, mag_x:2312, mag_y:1596, mag_z:-1626
+icm42688, acc_x:615, acc_y:-2930, acc_z:7753, gyr_x:-5, gyr_y:-58, gyr_z:-10, tick:990283 
+lis3dml, mag_x:2312, mag_y:1596, mag_z:-1626
+icm42688, acc_x:614, acc_y:-2927, acc_z:7752, gyr_x:-9, gyr_y:-54, gyr_z:-10, tick:995026 
+lis3dml, mag_x:2312, mag_y:1596, mag_z:-1626
+icm42688, acc_x:613, acc_y:-2927, acc_z:7751, gyr_x:-11, gyr_y:-51, gyr_z:-11, tick:999769 
+lis3dml, mag_x:2326, mag_y:1598, mag_z:-1661
+icm42688, acc_x:615, acc_y:-2926, acc_z:7752, gyr_x:-11, gyr_y:-50, gyr_z:-12, tick:1004513 
+lis3dml, mag_x:2326, mag_y:1598, mag_z:-1661
+icm42688, acc_x:615, acc_y:-2927, acc_z:7755, gyr_x:-11, gyr_y:-53, gyr_z:-12, tick:1009256 
+lis3dml, mag_x:2326, mag_y:1598, mag_z:-1661
+icm42688, acc_x:615, acc_y:-2930, acc_z:7756, gyr_x:-15, gyr_y:-56, gyr_z:-13, tick:1013999 
+lis3dml, mag_x:2338, mag_y:1572, mag_z:-1598
+icm42688, acc_x:614, acc_y:-2932, acc_z:7754, gyr_x:-12, gyr_y:-63, gyr_z:-12, tick:1018743 
+lis3dml, mag_x:2338, mag_y:1572, mag_z:-1598
+icm42688, acc_x:614, acc_y:-2932, acc_z:7749, gyr_x:-10, gyr_y:-70, gyr_z:-12, tick:1023487 
+lis3dml, mag_x:2297, mag_y:1586, mag_z:-1615
+icm42688, acc_x:613, acc_y:-2931, acc_z:7745, gyr_x:-12, gyr_y:-63, gyr_z:-12, tick:1028230 
+lis3dml, mag_x:2297, mag_y:1586, mag_z:-1615
+icm42688, acc_x:613, acc_y:-2929, acc_z:7745, gyr_x:-12, gyr_y:-53, gyr_z:-13, tick:1032973 
+lis3dml, mag_x:2297, mag_y:1586, mag_z:-1615
+icm42688, acc_x:615, acc_y:-2927, acc_z:7749, gyr_x:-9, gyr_y:-46, gyr_z:-13, tick:1037717 
+lis3dml, mag_x:2333, mag_y:1573, mag_z:-1614
+icm42688, acc_x:616, acc_y:-2926, acc_z:7754, gyr_x:-10, gyr_y:-42, gyr_z:-13, tick:1042460 
+lis3dml, mag_x:2333, mag_y:1573, mag_z:-1614
+icm42688, acc_x:615, acc_y:-2928, acc_z:7755, gyr_x:-13, gyr_y:-44, gyr_z:-13, tick:1047204 
+lis3dml, mag_x:2318, mag_y:1565, mag_z:-1613
+icm42688, acc_x:614, acc_y:-2928, acc_z:7754, gyr_x:-12, gyr_y:-53, gyr_z:-13, tick:3371 
+lis3dml, mag_x:2318, mag_y:1565, mag_z:-1613
+icm42688, acc_x:610, acc_y:-2927, acc_z:7753, gyr_x:-13, gyr_y:-58, gyr_z:-12, tick:8114 
+lis3dml, mag_x:2318, mag_y:1565, mag_z:-1613
+icm42688, acc_x:607, acc_y:-2926, acc_z:7752, gyr_x:-14, gyr_y:-58, gyr_z:-11, tick:12857 
+lis3dml, mag_x:2317, mag_y:1590, mag_z:-1614
+icm42688, acc_x:608, acc_y:-2925, acc_z:7752, gyr_x:-12, gyr_y:-60, gyr_z:-12, tick:17601 
+lis3dml, mag_x:2317, mag_y:1590, mag_z:-1614
+icm42688, acc_x:610, acc_y:-2924, acc_z:7753, gyr_x:-10, gyr_y:-62, gyr_z:-14, tick:22344 
+lis3dml, mag_x:2324, mag_y:1589, mag_z:-1589
+icm42688, acc_x:612, acc_y:-2925, acc_z:7752, gyr_x:-10, gyr_y:-60, gyr_z:-15, tick:27088 
+lis3dml, mag_x:2324, mag_y:1589, mag_z:-1589
+icm42688, acc_x:614, acc_y:-2928, acc_z:7750, gyr_x:-8, gyr_y:-59, gyr_z:-15, tick:31831 
+lis3dml, mag_x:2324, mag_y:1589, mag_z:-1589
+icm42688, acc_x:615, acc_y:-2931, acc_z:7748, gyr_x:-8, gyr_y:-56, gyr_z:-15, tick:36574 
+lis3dml, mag_x:2307, mag_y:1557, mag_z:-1615
+icm42688, acc_x:612, acc_y:-2932, acc_z:7747, gyr_x:-11, gyr_y:-51, gyr_z:-14, tick:41318 
+lis3dml, mag_x:2307, mag_y:1557, mag_z:-1615
+icm42688, acc_x:608, acc_y:-2931, acc_z:7748, gyr_x:-9, gyr_y:-50, gyr_z:-12, tick:46061 
+lis3dml, mag_x:2307, mag_y:1557, mag_z:-1615
+icm42688, acc_x:607, acc_y:-2928, acc_z:7749, gyr_x:-7, gyr_y:-51, gyr_z:-10, tick:50804 
+lis3dml, mag_x:2330, mag_y:1573, mag_z:-1611
+icm42688, acc_x:608, acc_y:-2926, acc_z:7749, gyr_x:-6, gyr_y:-52, gyr_z:-10, tick:55547 
+lis3dml, mag_x:2330, mag_y:1573, mag_z:-1611
+icm42688, acc_x:611, acc_y:-2925, acc_z:7749, gyr_x:-7, gyr_y:-54, gyr_z:-10, tick:60292 
+lis3dml, mag_x:2328, mag_y:1567, mag_z:-1574
+icm42688, acc_x:612, acc_y:-2924, acc_z:7748, gyr_x:-9, gyr_y:-57, gyr_z:-10, tick:65035 
+lis3dml, mag_x:2328, mag_y:1567, mag_z:-1574
+icm42688, acc_x:613, acc_y:-2924, acc_z:7745, gyr_x:-9, gyr_y:-59, gyr_z:-11, tick:69778 
+lis3dml, mag_x:2328, mag_y:1567, mag_z:-1574
+icm42688, acc_x:613, acc_y:-2924, acc_z:7742, gyr_x:-8, gyr_y:-61, gyr_z:-13, tick:74521 
+lis3dml, mag_x:2292, mag_y:1605, mag_z:-1604
+icm42688, acc_x:613, acc_y:-2925, acc_z:7740, gyr_x:-7, gyr_y:-61, gyr_z:-14, tick:79265 
+lis3dml, mag_x:2292, mag_y:1605, mag_z:-1604
+icm42688, acc_x:613, acc_y:-2927, acc_z:7742, gyr_x:-9, gyr_y:-59, gyr_z:-15, tick:84009 
+lis3dml, mag_x:2311, mag_y:1577, mag_z:-1617
+icm42688, acc_x:613, acc_y:-2929, acc_z:7744, gyr_x:-10, gyr_y:-56, gyr_z:-15, tick:88752 
+lis3dml, mag_x:2311, mag_y:1577, mag_z:-1617
+icm42688, acc_x:614, acc_y:-2930, acc_z:7746, gyr_x:-9, gyr_y:-52, gyr_z:-16, tick:93495 
+lis3dml, mag_x:2311, mag_y:1577, mag_z:-1617
+icm42688, acc_x:614, acc_y:-2932, acc_z:7747, gyr_x:-8, gyr_y:-51, gyr_z:-15, tick:98239 
+lis3dml, mag_x:2307, mag_y:1607, mag_z:-1590
+icm42688, acc_x:611, acc_y:-2933, acc_z:7748, gyr_x:-8, gyr_y:-51, gyr_z:-11, tick:102982 
+lis3dml, mag_x:2307, mag_y:1607, mag_z:-1590
+icm42688, acc_x:611, acc_y:-2932, acc_z:7751, gyr_x:-8, gyr_y:-54, gyr_z:-10, tick:107725 
+lis3dml, mag_x:2293, mag_y:1589, mag_z:-1603
+icm42688, acc_x:612, acc_y:-2930, acc_z:7755, gyr_x:-10, gyr_y:-57, gyr_z:-10, tick:112469 
+lis3dml, mag_x:2293, mag_y:1589, mag_z:-1603
+icm42688, acc_x:614, acc_y:-2928, acc_z:7755, gyr_x:-11, gyr_y:-59, gyr_z:-10, tick:117212 
+lis3dml, mag_x:2293, mag_y:1589, mag_z:-1603
+icm42688, acc_x:614, acc_y:-2925, acc_z:7754, gyr_x:-9, gyr_y:-60, gyr_z:-10, tick:121956 
+lis3dml, mag_x:2346, mag_y:1551, mag_z:-1599
+icm42688, acc_x:614, acc_y:-2926, acc_z:7752, gyr_x:-9, gyr_y:-59, gyr_z:-9, tick:126699 
+lis3dml, mag_x:2346, mag_y:1551, mag_z:-1599
+icm42688, acc_x:614, acc_y:-2930, acc_z:7749, gyr_x:-9, gyr_y:-59, gyr_z:-10, tick:131442 
+lis3dml, mag_x:2346, mag_y:1551, mag_z:-1599
+icm42688, acc_x:613, acc_y:-2932, acc_z:7748, gyr_x:-9, gyr_y:-59, gyr_z:-11, tick:136185 
+lis3dml, mag_x:2286, mag_y:1578, mag_z:-1613
+icm42688, acc_x:612, acc_y:-2929, acc_z:7750, gyr_x:-10, gyr_y:-56, gyr_z:-12, tick:140928 
+lis3dml, mag_x:2286, mag_y:1578, mag_z:-1613
+icm42688, acc_x:610, acc_y:-2927, acc_z:7751, gyr_x:-10, gyr_y:-55, gyr_z:-11, tick:145672 
+lis3dml, mag_x:2300, mag_y:1574, mag_z:-1648
+icm42688, acc_x:611, acc_y:-2926, acc_z:7752, gyr_x:-8, gyr_y:-57, gyr_z:-11, tick:150416 
+lis3dml, mag_x:2300, mag_y:1574, mag_z:-1648
+icm42688, acc_x:612, acc_y:-2925, acc_z:7751, gyr_x:-9, gyr_y:-56, gyr_z:-10, tick:155159 
+lis3dml, mag_x:2300, mag_y:1574, mag_z:-1648
+icm42688, acc_x:613, acc_y:-2927, acc_z:7749, gyr_x:-10, gyr_y:-55, gyr_z:-9, tick:159902 
+lis3dml, mag_x:2336, mag_y:1571, mag_z:-1612
+icm42688, acc_x:613, acc_y:-2927, acc_z:7749, gyr_x:-8, gyr_y:-57, gyr_z:-10, tick:164646 
+lis3dml, mag_x:2336, mag_y:1571, mag_z:-1612
+icm42688, acc_x:615, acc_y:-2926, acc_z:7749, gyr_x:-7, gyr_y:-58, gyr_z:-11, tick:169390 
+lis3dml, mag_x:2314, mag_y:1552, mag_z:-1622
+icm42688, acc_x:615, acc_y:-2926, acc_z:7750, gyr_x:-7, gyr_y:-57, gyr_z:-12, tick:174133 
+lis3dml, mag_x:2314, mag_y:1552, mag_z:-1622
+icm42688, acc_x:615, acc_y:-2926, acc_z:7753, gyr_x:-7, gyr_y:-56, gyr_z:-12, tick:178876 
+lis3dml, mag_x:2314, mag_y:1552, mag_z:-1622
+icm42688, acc_x:614, acc_y:-2926, acc_z:7754, gyr_x:-9, gyr_y:-53, gyr_z:-11, tick:183620 
+lis3dml, mag_x:2322, mag_y:1584, mag_z:-1617
+icm42688, acc_x:611, acc_y:-2927, acc_z:7754, gyr_x:-10, gyr_y:-53, gyr_z:-12, tick:188363 
+lis3dml, mag_x:2322, mag_y:1584, mag_z:-1617
+icm42688, acc_x:612, acc_y:-2928, acc_z:7755, gyr_x:-8, gyr_y:-55, gyr_z:-12, tick:193106 
+lis3dml, mag_x:2335, mag_y:1573, mag_z:-1627
+icm42688, acc_x:612, acc_y:-2927, acc_z:7753, gyr_x:-8, gyr_y:-56, gyr_z:-13, tick:197849 
+lis3dml, mag_x:2335, mag_y:1573, mag_z:-1627
+icm42688, acc_x:614, acc_y:-2926, acc_z:7751, gyr_x:-7, gyr_y:-56, gyr_z:-14, tick:202593 
+lis3dml, mag_x:2335, mag_y:1573, mag_z:-1627
+icm42688, acc_x:613, acc_y:-2925, acc_z:7750, gyr_x:-8, gyr_y:-57, gyr_z:-13, tick:207337 
+lis3dml, mag_x:2250, mag_y:1549, mag_z:-1594
+icm42688, acc_x:613, acc_y:-2923, acc_z:7750, gyr_x:-9, gyr_y:-59, gyr_z:-12, tick:212080 
+lis3dml, mag_x:2250, mag_y:1549, mag_z:-1594
+icm42688, acc_x:614, acc_y:-2925, acc_z:7750, gyr_x:-10, gyr_y:-59, gyr_z:-11, tick:216823 
+lis3dml, mag_x:2250, mag_y:1549, mag_z:-1594
+icm42688, acc_x:613, acc_y:-2925, acc_z:7749, gyr_x:-9, gyr_y:-58, gyr_z:-10, tick:221566 
+lis3dml, mag_x:2284, mag_y:1600, mag_z:-1598
+icm42688, acc_x:615, acc_y:-2927, acc_z:7748, gyr_x:-11, gyr_y:-55, gyr_z:-10, tick:226310 
+lis3dml, mag_x:2284, mag_y:1600, mag_z:-1598
+icm42688, acc_x:615, acc_y:-2929, acc_z:7750, gyr_x:-12, gyr_y:-52, gyr_z:-11, tick:231053 
+lis3dml, mag_x:2302, mag_y:1614, mag_z:-1536
+icm42688, acc_x:614, acc_y:-2930, acc_z:7752, gyr_x:-12, gyr_y:-53, gyr_z:-11, tick:235797 
+lis3dml, mag_x:2302, mag_y:1614, mag_z:-1536
+icm42688, acc_x:615, acc_y:-2929, acc_z:7752, gyr_x:-11, gyr_y:-56, gyr_z:-11, tick:240540 
+lis3dml, mag_x:2302, mag_y:1614, mag_z:-1536
+icm42688, acc_x:614, acc_y:-2929, acc_z:7750, gyr_x:-10, gyr_y:-57, gyr_z:-10, tick:245283 
+lis3dml, mag_x:2296, mag_y:1591, mag_z:-1600
+icm42688, acc_x:614, acc_y:-2930, acc_z:7749, gyr_x:-8, gyr_y:-60, gyr_z:-12, tick:250027 
+lis3dml, mag_x:2296, mag_y:1591, mag_z:-1600
+icm42688, acc_x:615, acc_y:-2929, acc_z:7750, gyr_x:-10, gyr_y:-56, gyr_z:-14, tick:254770 
+lis3dml, mag_x:2305, mag_y:1584, mag_z:-1612
+icm42688, acc_x:615, acc_y:-2930, acc_z:7750, gyr_x:-9, gyr_y:-55, gyr_z:-15, tick:259514 
+lis3dml, mag_x:2305, mag_y:1584, mag_z:-1612
+icm42688, acc_x:615, acc_y:-2929, acc_z:7747, gyr_x:-6, gyr_y:-57, gyr_z:-16, tick:264257 
+lis3dml, mag_x:2305, mag_y:1584, mag_z:-1612
+icm42688, acc_x:615, acc_y:-2930, acc_z:7747, gyr_x:-7, gyr_y:-57, gyr_z:-17, tick:269001 
+lis3dml, mag_x:2299, mag_y:1599, mag_z:-1626
+icm42688, acc_x:615, acc_y:-2931, acc_z:7748, gyr_x:-8, gyr_y:-56, gyr_z:-17, tick:273744 
+lis3dml, mag_x:2299, mag_y:1599, mag_z:-1626
+icm42688, acc_x:615, acc_y:-2929, acc_z:7750, gyr_x:-10, gyr_y:-56, gyr_z:-15, tick:278487 
+lis3dml, mag_x:2279, mag_y:1605, mag_z:-1589
+icm42688, acc_x:615, acc_y:-2927, acc_z:7750, gyr_x:-10, gyr_y:-57, gyr_z:-11, tick:283230 
+lis3dml, mag_x:2279, mag_y:1605, mag_z:-1589
+icm42688, acc_x:614, acc_y:-2927, acc_z:7749, gyr_x:-10, gyr_y:-58, gyr_z:-9, tick:287973 
+lis3dml, mag_x:2279, mag_y:1605, mag_z:-1589
+icm42688, acc_x:612, acc_y:-2926, acc_z:7748, gyr_x:-9, gyr_y:-59, gyr_z:-10, tick:292718 
+lis3dml, mag_x:2308, mag_y:1595, mag_z:-1632
+icm42688, acc_x:611, acc_y:-2926, acc_z:7746, gyr_x:-9, gyr_y:-57, gyr_z:-11, tick:297461 
+lis3dml, mag_x:2308, mag_y:1595, mag_z:-1632
+icm42688, acc_x:610, acc_y:-2926, acc_z:7745, gyr_x:-10, gyr_y:-54, gyr_z:-12, tick:302204 
+lis3dml, mag_x:2308, mag_y:1595, mag_z:-1632
+icm42688, acc_x:613, acc_y:-2926, acc_z:7744, gyr_x:-9, gyr_y:-52, gyr_z:-12, tick:306947 
+lis3dml, mag_x:2306, mag_y:1593, mag_z:-1597
+icm42688, acc_x:614, acc_y:-2926, acc_z:7746, gyr_x:-10, gyr_y:-53, gyr_z:-13, tick:311691 
+lis3dml, mag_x:2306, mag_y:1593, mag_z:-1597
+icm42688, acc_x:614, acc_y:-2927, acc_z:7749, gyr_x:-10, gyr_y:-52, gyr_z:-13, tick:316434 
+lis3dml, mag_x:2280, mag_y:1622, mag_z:-1627
+icm42688, acc_x:612, acc_y:-2928, acc_z:7751, gyr_x:-7, gyr_y:-53, gyr_z:-12, tick:321177 
+lis3dml, mag_x:2280, mag_y:1622, mag_z:-1627
+icm42688, acc_x:610, acc_y:-2929, acc_z:7751, gyr_x:-7, gyr_y:-54, gyr_z:-12, tick:325921 
+lis3dml, mag_x:2280, mag_y:1622, mag_z:-1627
+icm42688, acc_x:612, acc_y:-2931, acc_z:7750, gyr_x:-7, gyr_y:-55, gyr_z:-12, tick:330664 
+lis3dml, mag_x:2318, mag_y:1574, mag_z:-1596
+icm42688, acc_x:615, acc_y:-2933, acc_z:7750, gyr_x:-7, gyr_y:-58, gyr_z:-11, tick:335408 
+lis3dml, mag_x:2318, mag_y:1574, mag_z:-1596
+icm42688, acc_x:616, acc_y:-2931, acc_z:7747, gyr_x:-9, gyr_y:-59, gyr_z:-11, tick:340151 
+lis3dml, mag_x:2319, mag_y:1575, mag_z:-1592
+icm42688, acc_x:615, acc_y:-2928, acc_z:7746, gyr_x:-11, gyr_y:-57, gyr_z:-11, tick:344894 
+lis3dml, mag_x:2319, mag_y:1575, mag_z:-1592
+icm42688, acc_x:612, acc_y:-2927, acc_z:7747, gyr_x:-8, gyr_y:-57, gyr_z:-11, tick:349638 
+lis3dml, mag_x:2319, mag_y:1575, mag_z:-1592
+icm42688, acc_x:611, acc_y:-2926, acc_z:7748, gyr_x:-6, gyr_y:-56, gyr_z:-12, tick:354382 
+lis3dml, mag_x:2296, mag_y:1598, mag_z:-1634
+icm42688, acc_x:610, acc_y:-2926, acc_z:7748, gyr_x:-7, gyr_y:-53, gyr_z:-13, tick:359125 
+lis3dml, mag_x:2296, mag_y:1598, mag_z:-1634
+icm42688, acc_x:611, acc_y:-2925, acc_z:7748, gyr_x:-9, gyr_y:-52, gyr_z:-14, tick:363868 
+lis3dml, mag_x:2330, mag_y:1576, mag_z:-1617
+icm42688, acc_x:610, acc_y:-2926, acc_z:7749, gyr_x:-11, gyr_y:-52, gyr_z:-15, tick:368611 
+lis3dml, mag_x:2330, mag_y:1576, mag_z:-1617
+icm42688, acc_x:610, acc_y:-2927, acc_z:7750, gyr_x:-12, gyr_y:-52, gyr_z:-13, tick:373354 
+lis3dml, mag_x:2330, mag_y:1576, mag_z:-1617
+icm42688, acc_x:614, acc_y:-2927, acc_z:7750, gyr_x:-11, gyr_y:-52, gyr_z:-13, tick:378098 
+lis3dml, mag_x:2295, mag_y:1576, mag_z:-1605
+icm42688, acc_x:617, acc_y:-2928, acc_z:7750, gyr_x:-8, gyr_y:-54, gyr_z:-13, tick:382842 
+lis3dml, mag_x:2295, mag_y:1576, mag_z:-1605
+icm42688, acc_x:618, acc_y:-2929, acc_z:7749, gyr_x:-7, gyr_y:-56, gyr_z:-12, tick:387585 
+lis3dml, mag_x:2295, mag_y:1576, mag_z:-1605
+icm42688, acc_x:616, acc_y:-2931, acc_z:7746, gyr_x:-7, gyr_y:-58, gyr_z:-11, tick:392328 
+lis3dml, mag_x:2284, mag_y:1608, mag_z:-1644
+icm42688, acc_x:615, acc_y:-2933, acc_z:7744, gyr_x:-7, gyr_y:-59, gyr_z:-9, tick:397072 
+lis3dml, mag_x:2284, mag_y:1608, mag_z:-1644
+icm42688, acc_x:615, acc_y:-2931, acc_z:7744, gyr_x:-7, gyr_y:-60, gyr_z:-7, tick:401815 
+lis3dml, mag_x:2346, mag_y:1592, mag_z:-1622
+icm42688, acc_x:615, acc_y:-2930, acc_z:7746, gyr_x:-6, gyr_y:-60, gyr_z:-7, tick:406558 
+lis3dml, mag_x:2346, mag_y:1592, mag_z:-1622
+icm42688, acc_x:615, acc_y:-2930, acc_z:7749, gyr_x:-7, gyr_y:-57, gyr_z:-10, tick:411301 
+lis3dml, mag_x:2346, mag_y:1592, mag_z:-1622
+icm42688, acc_x:614, acc_y:-2930, acc_z:7751, gyr_x:-8, gyr_y:-55, gyr_z:-12, tick:416046 
+lis3dml, mag_x:2297, mag_y:1565, mag_z:-1622
+icm42688, acc_x:614, acc_y:-2930, acc_z:7751, gyr_x:-7, gyr_y:-55, gyr_z:-12, tick:420789 
+lis3dml, mag_x:2297, mag_y:1565, mag_z:-1622
+icm42688, acc_x:615, acc_y:-2930, acc_z:7753, gyr_x:-9, gyr_y:-55, gyr_z:-11, tick:425532 
+lis3dml, mag_x:2313, mag_y:1582, mag_z:-1628
+icm42688, acc_x:615, acc_y:-2931, acc_z:7752, gyr_x:-10, gyr_y:-56, gyr_z:-11, tick:430275 
+lis3dml, mag_x:2313, mag_y:1582, mag_z:-1628
+icm42688, acc_x:615, acc_y:-2931, acc_z:7747, gyr_x:-9, gyr_y:-58, gyr_z:-11, tick:435018 
+lis3dml, mag_x:2313, mag_y:1582, mag_z:-1628
+icm42688, acc_x:614, acc_y:-2930, acc_z:7745, gyr_x:-8, gyr_y:-60, gyr_z:-11, tick:439763 
+lis3dml, mag_x:2315, mag_y:1598, mag_z:-1599
+icm42688, acc_x:613, acc_y:-2929, acc_z:7746, gyr_x:-8, gyr_y:-59, gyr_z:-12, tick:444506 
+lis3dml, mag_x:2315, mag_y:1598, mag_z:-1599
+icm42688, acc_x:614, acc_y:-2928, acc_z:7746, gyr_x:-6, gyr_y:-60, gyr_z:-11, tick:449249 
+lis3dml, mag_x:2305, mag_y:1592, mag_z:-1644
+icm42688, acc_x:613, acc_y:-2926, acc_z:7748, gyr_x:-4, gyr_y:-60, gyr_z:-10, tick:453992 
+lis3dml, mag_x:2305, mag_y:1592, mag_z:-1644
+icm42688, acc_x:612, acc_y:-2924, acc_z:7749, gyr_x:-3, gyr_y:-60, gyr_z:-9, tick:458735 
+lis3dml, mag_x:2305, mag_y:1592, mag_z:-1644
+icm42688, acc_x:612, acc_y:-2924, acc_z:7750, gyr_x:-3, gyr_y:-59, gyr_z:-11, tick:463479 
+lis3dml, mag_x:2332, mag_y:1614, mag_z:-1602
+icm42688, acc_x:612, acc_y:-2925, acc_z:7749, gyr_x:-3, gyr_y:-56, gyr_z:-12, tick:468222 
+lis3dml, mag_x:2332, mag_y:1614, mag_z:-1602
+icm42688, acc_x:611, acc_y:-2930, acc_z:7748, gyr_x:-4, gyr_y:-53, gyr_z:-12, tick:472966 
+lis3dml, mag_x:2332, mag_y:1614, mag_z:-1602
+icm42688, acc_x:610, acc_y:-2931, acc_z:7748, gyr_x:-4, gyr_y:-53, gyr_z:-12, tick:477709 
+lis3dml, mag_x:2316, mag_y:1578, mag_z:-1646
+icm42688, acc_x:611, acc_y:-2930, acc_z:7749, gyr_x:-3, gyr_y:-56, gyr_z:-13, tick:482453 
+lis3dml, mag_x:2316, mag_y:1578, mag_z:-1646
+icm42688, acc_x:612, acc_y:-2929, acc_z:7750, gyr_x:-5, gyr_y:-59, gyr_z:-11, tick:487196 
+lis3dml, mag_x:2281, mag_y:1572, mag_z:-1577
+icm42688, acc_x:613, acc_y:-2930, acc_z:7750, gyr_x:-7, gyr_y:-59, gyr_z:-10, tick:491939 
+lis3dml, mag_x:2281, mag_y:1572, mag_z:-1577
+icm42688, acc_x:615, acc_y:-2928, acc_z:7750, gyr_x:-10, gyr_y:-58, gyr_z:-11, tick:496682 
+lis3dml, mag_x:2281, mag_y:1572, mag_z:-1577
+icm42688, acc_x:615, acc_y:-2927, acc_z:7750, gyr_x:-10, gyr_y:-58, gyr_z:-12, tick:501426 
+lis3dml, mag_x:2305, mag_y:1590, mag_z:-1656
+icm42688, acc_x:612, acc_y:-2927, acc_z:7750, gyr_x:-8, gyr_y:-60, gyr_z:-12, tick:506170 
+lis3dml, mag_x:2305, mag_y:1590, mag_z:-1656
+icm42688, acc_x:611, acc_y:-2926, acc_z:7751, gyr_x:-7, gyr_y:-60, gyr_z:-12, tick:510913 
+lis3dml, mag_x:2288, mag_y:1576, mag_z:-1621
+icm42688, acc_x:612, acc_y:-2927, acc_z:7750, gyr_x:-7, gyr_y:-57, gyr_z:-12, tick:515656 
+lis3dml, mag_x:2288, mag_y:1576, mag_z:-1621
+icm42688, acc_x:611, acc_y:-2928, acc_z:7751, gyr_x:-7, gyr_y:-55, gyr_z:-12, tick:520399 
+lis3dml, mag_x:2288, mag_y:1576, mag_z:-1621
+icm42688, acc_x:613, acc_y:-2928, acc_z:7752, gyr_x:-4, gyr_y:-55, gyr_z:-10, tick:525143 
+lis3dml, mag_x:2314, mag_y:1575, mag_z:-1672
+icm42688, acc_x:615, acc_y:-2928, acc_z:7752, gyr_x:-3, gyr_y:-52, gyr_z:-9, tick:529887 
+lis3dml, mag_x:2314, mag_y:1575, mag_z:-1672
+icm42688, acc_x:617, acc_y:-2928, acc_z:7752, gyr_x:-4, gyr_y:-52, gyr_z:-10, tick:534630 
+lis3dml, mag_x:2307, mag_y:1597, mag_z:-1630
+icm42688, acc_x:616, acc_y:-2930, acc_z:7753, gyr_x:-6, gyr_y:-55, gyr_z:-11, tick:539373 
+lis3dml, mag_x:2307, mag_y:1597, mag_z:-1630
+icm42688, acc_x:615, acc_y:-2930, acc_z:7753, gyr_x:-8, gyr_y:-58, gyr_z:-11, tick:544117 
+lis3dml, mag_x:2307, mag_y:1597, mag_z:-1630
+icm42688, acc_x:613, acc_y:-2930, acc_z:7751, gyr_x:-9, gyr_y:-58, gyr_z:-10, tick:548860 
+lis3dml, mag_x:2287, mag_y:1595, mag_z:-1647
+icm42688, acc_x:613, acc_y:-2932, acc_z:7750, gyr_x:-10, gyr_y:-58, gyr_z:-12, tick:553603 
+lis3dml, mag_x:2287, mag_y:1595, mag_z:-1647
+icm42688, acc_x:612, acc_y:-2933, acc_z:7750, gyr_x:-10, gyr_y:-56, gyr_z:-11, tick:558346 
+lis3dml, mag_x:2287, mag_y:1595, mag_z:-1647
+icm42688, acc_x:612, acc_y:-2934, acc_z:7749, gyr_x:-10, gyr_y:-54, gyr_z:-9, tick:563091 
+lis3dml, mag_x:2316, mag_y:1582, mag_z:-1640
+icm42688, acc_x:612, acc_y:-2933, acc_z:7748, gyr_x:-9, gyr_y:-54, gyr_z:-9, tick:567834 
+lis3dml, mag_x:2316, mag_y:1582, mag_z:-1640
+icm42688, acc_x:613, acc_y:-2932, acc_z:7748, gyr_x:-6, gyr_y:-56, gyr_z:-9, tick:572577 
+lis3dml, mag_x:2329, mag_y:1580, mag_z:-1624
+icm42688, acc_x:614, acc_y:-2927, acc_z:7749, gyr_x:-6, gyr_y:-57, gyr_z:-8, tick:577320 
+lis3dml, mag_x:2329, mag_y:1580, mag_z:-1624
+icm42688, acc_x:615, acc_y:-2925, acc_z:7750, gyr_x:-6, gyr_y:-55, gyr_z:-8, tick:582063 
+lis3dml, mag_x:2329, mag_y:1580, mag_z:-1624
+icm42688, acc_x:615, acc_y:-2926, acc_z:7751, gyr_x:-7, gyr_y:-55, gyr_z:-10, tick:586807 
+lis3dml, mag_x:2288, mag_y:1583, mag_z:-1607
+icm42688, acc_x:615, acc_y:-2927, acc_z:7751, gyr_x:-11, gyr_y:-57, gyr_z:-11, tick:591550 
+lis3dml, mag_x:2288, mag_y:1583, mag_z:-1607
+icm42688, acc_x:615, acc_y:-2927, acc_z:7749, gyr_x:-13, gyr_y:-58, gyr_z:-13, tick:596294 
+lis3dml, mag_x:2312, mag_y:1590, mag_z:-1678
+icm42688, acc_x:613, acc_y:-2928, acc_z:7747, gyr_x:-11, gyr_y:-58, gyr_z:-13, tick:601037 
+lis3dml, mag_x:2312, mag_y:1590, mag_z:-1678
+icm42688, acc_x:613, acc_y:-2929, acc_z:7746, gyr_x:-7, gyr_y:-57, gyr_z:-13, tick:605780 
+lis3dml, mag_x:2312, mag_y:1590, mag_z:-1678
+icm42688, acc_x:614, acc_y:-2928, acc_z:7747, gyr_x:-5, gyr_y:-55, gyr_z:-12, tick:610524 
+lis3dml, mag_x:2331, mag_y:1562, mag_z:-1638
+icm42688, acc_x:612, acc_y:-2926, acc_z:7748, gyr_x:-3, gyr_y:-54, gyr_z:-10, tick:615267 
+lis3dml, mag_x:2331, mag_y:1562, mag_z:-1638
+icm42688, acc_x:612, acc_y:-2925, acc_z:7749, gyr_x:-4, gyr_y:-56, gyr_z:-9, tick:620011 
+lis3dml, mag_x:2311, mag_y:1595, mag_z:-1673
+icm42688, acc_x:611, acc_y:-2925, acc_z:7748, gyr_x:-7, gyr_y:-56, gyr_z:-9, tick:624754 
+lis3dml, mag_x:2311, mag_y:1595, mag_z:-1673
+icm42688, acc_x:609, acc_y:-2925, acc_z:7748, gyr_x:-8, gyr_y:-56, gyr_z:-9, tick:629498 
+lis3dml, mag_x:2311, mag_y:1595, mag_z:-1673
+icm42688, acc_x:609, acc_y:-2926, acc_z:7748, gyr_x:-8, gyr_y:-55, gyr_z:-10, tick:634241 
+lis3dml, mag_x:2338, mag_y:1580, mag_z:-1682
+icm42688, acc_x:610, acc_y:-2925, acc_z:7748, gyr_x:-7, gyr_y:-54, gyr_z:-10, tick:638984 
+lis3dml, mag_x:2338, mag_y:1580, mag_z:-1682
+icm42688, acc_x:612, acc_y:-2924, acc_z:7749, gyr_x:-7, gyr_y:-55, gyr_z:-11, tick:643727 
+lis3dml, mag_x:2338, mag_y:1580, mag_z:-1682
+icm42688, acc_x:611, acc_y:-2923, acc_z:7748, gyr_x:-8, gyr_y:-55, gyr_z:-13, tick:648471 
+lis3dml, mag_x:2319, mag_y:1583, mag_z:-1651
+icm42688, acc_x:610, acc_y:-2923, acc_z:7749, gyr_x:-9, gyr_y:-53, gyr_z:-14, tick:653215 
+lis3dml, mag_x:2319, mag_y:1583, mag_z:-1651
+icm42688, acc_x:611, acc_y:-2925, acc_z:7749, gyr_x:-9, gyr_y:-54, gyr_z:-15, tick:657958 
+lis3dml, mag_x:2265, mag_y:1569, mag_z:-1676
+icm42688, acc_x:612, acc_y:-2927, acc_z:7749, gyr_x:-8, gyr_y:-56, gyr_z:-14, tick:662701 
+lis3dml, mag_x:2265, mag_y:1569, mag_z:-1676
+icm42688, acc_x:614, acc_y:-2928, acc_z:7748, gyr_x:-9, gyr_y:-56, gyr_z:-13, tick:667444 
+lis3dml, mag_x:2265, mag_y:1569, mag_z:-1676
+icm42688, acc_x:615, acc_y:-2926, acc_z:7747, gyr_x:-9, gyr_y:-58, gyr_z:-12, tick:672188 
+lis3dml, mag_x:2341, mag_y:1589, mag_z:-1627
+icm42688, acc_x:615, acc_y:-2925, acc_z:7747, gyr_x:-8, gyr_y:-60, gyr_z:-11, tick:676931 
+lis3dml, mag_x:2341, mag_y:1589, mag_z:-1627
+icm42688, acc_x:616, acc_y:-2925, acc_z:7748, gyr_x:-9, gyr_y:-60, gyr_z:-12, tick:681674 
+lis3dml, mag_x:2281, mag_y:1585, mag_z:-1633
+icm42688, acc_x:616, acc_y:-2924, acc_z:7747, gyr_x:-10, gyr_y:-57, gyr_z:-13, tick:686418 
+lis3dml, mag_x:2281, mag_y:1585, mag_z:-1633
+icm42688, acc_x:616, acc_y:-2924, acc_z:7749, gyr_x:-10, gyr_y:-55, gyr_z:-12, tick:691162 
+lis3dml, mag_x:2281, mag_y:1585, mag_z:-1633
+icm42688, acc_x:615, acc_y:-2926, acc_z:7750, gyr_x:-7, gyr_y:-55, gyr_z:-11, tick:695905 
+lis3dml, mag_x:2287, mag_y:1595, mag_z:-1666
+icm42688, acc_x:614, acc_y:-2927, acc_z:7749, gyr_x:-5, gyr_y:-54, gyr_z:-11, tick:700648 
+lis3dml, mag_x:2287, mag_y:1595, mag_z:-1666
+icm42688, acc_x:613, acc_y:-2926, acc_z:7749, gyr_x:-6, gyr_y:-53, gyr_z:-12, tick:705391 
+lis3dml, mag_x:2357, mag_y:1574, mag_z:-1682
+icm42688, acc_x:613, acc_y:-2926, acc_z:7751, gyr_x:-6, gyr_y:-51, gyr_z:-13, tick:710135 
+lis3dml, mag_x:2357, mag_y:1574, mag_z:-1682
+icm42688, acc_x:613, acc_y:-2925, acc_z:7752, gyr_x:-6, gyr_y:-52, gyr_z:-13, tick:714879 
+lis3dml, mag_x:2357, mag_y:1574, mag_z:-1682
+icm42688, acc_x:612, acc_y:-2927, acc_z:7754, gyr_x:-6, gyr_y:-51, gyr_z:-12, tick:719622 
+lis3dml, mag_x:2313, mag_y:1588, mag_z:-1682
+icm42688, acc_x:613, acc_y:-2929, acc_z:7753, gyr_x:-5, gyr_y:-53, gyr_z:-11, tick:724365 
+lis3dml, mag_x:2313, mag_y:1588, mag_z:-1682
+icm42688, acc_x:612, acc_y:-2931, acc_z:7751, gyr_x:-5, gyr_y:-56, gyr_z:-9, tick:729108 
+lis3dml, mag_x:2313, mag_y:1588, mag_z:-1670
+icm42688, acc_x:611, acc_y:-2931, acc_z:7748, gyr_x:-7, gyr_y:-57, gyr_z:-7, tick:733852 
+lis3dml, mag_x:2328, mag_y:1570, mag_z:-1670
+icm42688, acc_x:612, acc_y:-2930, acc_z:7746, gyr_x:-9, gyr_y:-58, gyr_z:-7, tick:738595 
+lis3dml, mag_x:2328, mag_y:1570, mag_z:-1670
+icm42688, acc_x:614, acc_y:-2929, acc_z:7744, gyr_x:-9, gyr_y:-60, gyr_z:-9, tick:743339 
+lis3dml, mag_x:2314, mag_y:1560, mag_z:-1672
+icm42688, acc_x:615, acc_y:-2928, acc_z:7742, gyr_x:-9, gyr_y:-60, gyr_z:-11, tick:748082 
+lis3dml, mag_x:2314, mag_y:1560, mag_z:-1672
+icm42688, acc_x:615, acc_y:-2927, acc_z:7741, gyr_x:-9, gyr_y:-58, gyr_z:-13, tick:752825 
+lis3dml, mag_x:2314, mag_y:1560, mag_z:-1672
+icm42688, acc_x:612, acc_y:-2926, acc_z:7742, gyr_x:-8, gyr_y:-57, gyr_z:-13, tick:757569 
+lis3dml, mag_x:2319, mag_y:1584, mag_z:-1698
+icm42688, acc_x:610, acc_y:-2927, acc_z:7745, gyr_x:-8, gyr_y:-55, gyr_z:-11, tick:762312 
+lis3dml, mag_x:2319, mag_y:1584, mag_z:-1698
+icm42688, acc_x:612, acc_y:-2927, acc_z:7747, gyr_x:-8, gyr_y:-52, gyr_z:-12, tick:767055 
+lis3dml, mag_x:2330, mag_y:1583, mag_z:-1683
+icm42688, acc_x:614, acc_y:-2927, acc_z:7746, gyr_x:-8, gyr_y:-52, gyr_z:-13, tick:771798 
+lis3dml, mag_x:2330, mag_y:1583, mag_z:-1683
+icm42688, acc_x:615, acc_y:-2927, acc_z:7747, gyr_x:-7, gyr_y:-53, gyr_z:-14, tick:776543 
+lis3dml, mag_x:2330, mag_y:1583, mag_z:-1683
+icm42688, acc_x:615, acc_y:-2926, acc_z:7746, gyr_x:-7, gyr_y:-54, gyr_z:-14, tick:781286 
+lis3dml, mag_x:2345, mag_y:1573, mag_z:-1683
+icm42688, acc_x:615, acc_y:-2925, acc_z:7747, gyr_x:-8, gyr_y:-55, gyr_z:-14, tick:786029 
+lis3dml, mag_x:2345, mag_y:1573, mag_z:-1683
+icm42688, acc_x:612, acc_y:-2925, acc_z:7748, gyr_x:-9, gyr_y:-57, gyr_z:-13, tick:790772 
+lis3dml, mag_x:2323, mag_y:1552, mag_z:-1657
+icm42688, acc_x:609, acc_y:-2924, acc_z:7746, gyr_x:-10, gyr_y:-58, gyr_z:-11, tick:795516 
+lis3dml, mag_x:2323, mag_y:1552, mag_z:-1657
+icm42688, acc_x:611, acc_y:-2924, acc_z:7747, gyr_x:-10, gyr_y:-57, gyr_z:-10, tick:800260 
+lis3dml, mag_x:2323, mag_y:1552, mag_z:-1657
+icm42688, acc_x:614, acc_y:-2925, acc_z:7746, gyr_x:-6, gyr_y:-57, gyr_z:-10, tick:805003 
+lis3dml, mag_x:2365, mag_y:1557, mag_z:-1690
+icm42688, acc_x:615, acc_y:-2925, acc_z:7747, gyr_x:-6, gyr_y:-56, gyr_z:-10, tick:809746 
+lis3dml, mag_x:2365, mag_y:1557, mag_z:-1690
+icm42688, acc_x:615, acc_y:-2925, acc_z:7748, gyr_x:-7, gyr_y:-54, gyr_z:-10, tick:814490 
+lis3dml, mag_x:2365, mag_y:1557, mag_z:-1686
+icm42688, acc_x:615, acc_y:-2925, acc_z:7748, gyr_x:-8, gyr_y:-55, gyr_z:-11, tick:819233 
+lis3dml, mag_x:2321, mag_y:1584, mag_z:-1686
+icm42688, acc_x:615, acc_y:-2926, acc_z:7749, gyr_x:-9, gyr_y:-56, gyr_z:-13, tick:823976 
+lis3dml, mag_x:2321, mag_y:1584, mag_z:-1686
+icm42688, acc_x:615, acc_y:-2929, acc_z:7749, gyr_x:-9, gyr_y:-54, gyr_z:-14, tick:828719 
+lis3dml, mag_x:2325, mag_y:1593, mag_z:-1707
+icm42688, acc_x:615, acc_y:-2931, acc_z:7749, gyr_x:-8, gyr_y:-53, gyr_z:-13, tick:833463 
+lis3dml, mag_x:2325, mag_y:1593, mag_z:-1707
+icm42688, acc_x:614, acc_y:-2934, acc_z:7751, gyr_x:-7, gyr_y:-53, gyr_z:-11, tick:838207 
+lis3dml, mag_x:2325, mag_y:1593, mag_z:-1707
+icm42688, acc_x:613, acc_y:-2933, acc_z:7750, gyr_x:-8, gyr_y:-52, gyr_z:-10, tick:842950 
+lis3dml, mag_x:2344, mag_y:1612, mag_z:-1660
+icm42688, acc_x:614, acc_y:-2932, acc_z:7750, gyr_x:-8, gyr_y:-54, gyr_z:-10, tick:847693 
+lis3dml, mag_x:2344, mag_y:1612, mag_z:-1660
+icm42688, acc_x:615, acc_y:-2930, acc_z:7750, gyr_x:-9, gyr_y:-59, gyr_z:-9, tick:852436 
+lis3dml, mag_x:2284, mag_y:1613, mag_z:-1660
+icm42688, acc_x:616, acc_y:-2929, acc_z:7749, gyr_x:-11, gyr_y:-60, gyr_z:-9, tick:857179 
+lis3dml, mag_x:2284, mag_y:1613, mag_z:-1660
+icm42688, acc_x:616, acc_y:-2929, acc_z:7748, gyr_x:-12, gyr_y:-58, gyr_z:-10, tick:861923 
+lis3dml, mag_x:2284, mag_y:1613, mag_z:-1660
+icm42688, acc_x:615, acc_y:-2928, acc_z:7746, gyr_x:-10, gyr_y:-57, gyr_z:-9, tick:866667 
+lis3dml, mag_x:2311, mag_y:1579, mag_z:-1650
+icm42688, acc_x:615, acc_y:-2927, acc_z:7745, gyr_x:-11, gyr_y:-55, gyr_z:-9, tick:871410 
+lis3dml, mag_x:2311, mag_y:1579, mag_z:-1650
+icm42688, acc_x:613, acc_y:-2926, acc_z:7747, gyr_x:-12, gyr_y:-52, gyr_z:-12, tick:876153 
+lis3dml, mag_x:2339, mag_y:1565, mag_z:-1669
+icm42688, acc_x:611, acc_y:-2927, acc_z:7749, gyr_x:-9, gyr_y:-52, gyr_z:-15, tick:880897 
+lis3dml, mag_x:2339, mag_y:1565, mag_z:-1669
+icm42688, acc_x:611, acc_y:-2928, acc_z:7748, gyr_x:-8, gyr_y:-51, gyr_z:-15, tick:885641 
+lis3dml, mag_x:2339, mag_y:1565, mag_z:-1669
+icm42688, acc_x:610, acc_y:-2930, acc_z:7747, gyr_x:-9, gyr_y:-51, gyr_z:-14, tick:890384 
+lis3dml, mag_x:2301, mag_y:1592, mag_z:-1641
+icm42688, acc_x:610, acc_y:-2931, acc_z:7746, gyr_x:-9, gyr_y:-54, gyr_z:-13, tick:895127 
+lis3dml, mag_x:2301, mag_y:1592, mag_z:-1641
+icm42688, acc_x:610, acc_y:-2928, acc_z:7746, gyr_x:-10, gyr_y:-57, gyr_z:-12, tick:899871 
+lis3dml, mag_x:2301, mag_y:1579, mag_z:-1648
+icm42688, acc_x:612, acc_y:-2926, acc_z:7746, gyr_x:-10, gyr_y:-59, gyr_z:-11, tick:904614 
+lis3dml, mag_x:2324, mag_y:1579, mag_z:-1648
+icm42688, acc_x:614, acc_y:-2926, acc_z:7744, gyr_x:-9, gyr_y:-58, gyr_z:-11, tick:909357 
+lis3dml, mag_x:2324, mag_y:1579, mag_z:-1648
+icm42688, acc_x:615, acc_y:-2927, acc_z:7744, gyr_x:-6, gyr_y:-57, gyr_z:-12, tick:914100 
+lis3dml, mag_x:2322, mag_y:1602, mag_z:-1678
+icm42688, acc_x:615, acc_y:-2929, acc_z:7745, gyr_x:-6, gyr_y:-53, gyr_z:-13, tick:918844 
+lis3dml, mag_x:2322, mag_y:1602, mag_z:-1678
+icm42688, acc_x:616, acc_y:-2928, acc_z:7746, gyr_x:-7, gyr_y:-52, gyr_z:-13, tick:923588 
+lis3dml, mag_x:2322, mag_y:1602, mag_z:-1678
+icm42688, acc_x:615, acc_y:-2926, acc_z:7746, gyr_x:-7, gyr_y:-53, gyr_z:-13, tick:928331 
+lis3dml, mag_x:2322, mag_y:1574, mag_z:-1671
+icm42688, acc_x:612, acc_y:-2926, acc_z:7745, gyr_x:-8, gyr_y:-53, gyr_z:-12, tick:933074 
+lis3dml, mag_x:2322, mag_y:1574, mag_z:-1671
+icm42688, acc_x:610, acc_y:-2927, acc_z:7747, gyr_x:-10, gyr_y:-53, gyr_z:-11, tick:937817 
+lis3dml, mag_x:2319, mag_y:1600, mag_z:-1646
+icm42688, acc_x:611, acc_y:-2927, acc_z:7749, gyr_x:-10, gyr_y:-56, gyr_z:-11, tick:942561 
+lis3dml, mag_x:2319, mag_y:1600, mag_z:-1646
+icm42688, acc_x:615, acc_y:-2928, acc_z:7749, gyr_x:-10, gyr_y:-57, gyr_z:-10, tick:947304 
+lis3dml, mag_x:2319, mag_y:1600, mag_z:-1646
+icm42688, acc_x:616, acc_y:-2928, acc_z:7747, gyr_x:-10, gyr_y:-58, gyr_z:-11, tick:952047 
+lis3dml, mag_x:2312, mag_y:1605, mag_z:-1675
+icm42688, acc_x:619, acc_y:-2927, acc_z:7747, gyr_x:-7, gyr_y:-60, gyr_z:-12, tick:956791 
+lis3dml, mag_x:2312, mag_y:1605, mag_z:-1675
+icm42688, acc_x:620, acc_y:-2927, acc_z:7747, gyr_x:-8, gyr_y:-58, gyr_z:-12, tick:961534 
+lis3dml, mag_x:2306, mag_y:1613, mag_z:-1653
+icm42688, acc_x:617, acc_y:-2927, acc_z:7747, gyr_x:-9, gyr_y:-52, gyr_z:-13, tick:966278 
+lis3dml, mag_x:2306, mag_y:1613, mag_z:-1653
+icm42688, acc_x:614, acc_y:-2930, acc_z:7747, gyr_x:-7, gyr_y:-51, gyr_z:-14, tick:971021 
+lis3dml, mag_x:2306, mag_y:1613, mag_z:-1653
+icm42688, acc_x:611, acc_y:-2932, acc_z:7749, gyr_x:-5, gyr_y:-52, gyr_z:-12, tick:975765 
+lis3dml, mag_x:2329, mag_y:1607, mag_z:-1655
+icm42688, acc_x:610, acc_y:-2931, acc_z:7748, gyr_x:-6, gyr_y:-52, gyr_z:-10, tick:980508 
+lis3dml, mag_x:2329, mag_y:1607, mag_z:-1655
+icm42688, acc_x:611, acc_y:-2931, acc_z:7748, gyr_x:-6, gyr_y:-53, gyr_z:-9, tick:985252 
+lis3dml, mag_x:2318, mag_y:1625, mag_z:-1660
+icm42688, acc_x:613, acc_y:-2930, acc_z:7747, gyr_x:-6, gyr_y:-55, gyr_z:-10, tick:989995 
+lis3dml, mag_x:2318, mag_y:1625, mag_z:-1660
+icm42688, acc_x:615, acc_y:-2931, acc_z:7746, gyr_x:-6, gyr_y:-55, gyr_z:-10, tick:994738 
+lis3dml, mag_x:2318, mag_y:1625, mag_z:-1660
+icm42688, acc_x:615, acc_y:-2930, acc_z:7747, gyr_x:-6, gyr_y:-55, gyr_z:-11, tick:999481 
+lis3dml, mag_x:2273, mag_y:1607, mag_z:-1694
+icm42688, acc_x:615, acc_y:-2929, acc_z:7748, gyr_x:-8, gyr_y:-58, gyr_z:-12, tick:1004224 
+lis3dml, mag_x:2273, mag_y:1607, mag_z:-1694
+icm42688, acc_x:614, acc_y:-2927, acc_z:7748, gyr_x:-9, gyr_y:-59, gyr_z:-12, tick:1008969 
+lis3dml, mag_x:2273, mag_y:1607, mag_z:-1694
+icm42688, acc_x:613, acc_y:-2926, acc_z:7746, gyr_x:-10, gyr_y:-59, gyr_z:-11, tick:1013712 
+lis3dml, mag_x:2327, mag_y:1598, mag_z:-1672
+icm42688, acc_x:612, acc_y:-2924, acc_z:7746, gyr_x:-8, gyr_y:-59, gyr_z:-10, tick:1018455 
+lis3dml, mag_x:2327, mag_y:1598, mag_z:-1672
+icm42688, acc_x:613, acc_y:-2923, acc_z:7747, gyr_x:-9, gyr_y:-56, gyr_z:-10, tick:1023198 
+lis3dml, mag_x:2309, mag_y:1600, mag_z:-1625
+icm42688, acc_x:615, acc_y:-2925, acc_z:7747, gyr_x:-9, gyr_y:-53, gyr_z:-12, tick:1027942 
+lis3dml, mag_x:2309, mag_y:1600, mag_z:-1625
+icm42688, acc_x:613, acc_y:-2925, acc_z:7749, gyr_x:-8, gyr_y:-53, gyr_z:-14, tick:1032685 
+lis3dml, mag_x:2309, mag_y:1600, mag_z:-1625
+icm42688, acc_x:613, acc_y:-2925, acc_z:7750, gyr_x:-8, gyr_y:-55, gyr_z:-14, tick:1037428 
+lis3dml, mag_x:2305, mag_y:1575, mag_z:-1645
+icm42688, acc_x:612, acc_y:-2925, acc_z:7750, gyr_x:-9, gyr_y:-57, gyr_z:-13, tick:1042172 
+lis3dml, mag_x:2305, mag_y:1575, mag_z:-1645
+icm42688, acc_x:617, acc_y:-2929, acc_z:7749, gyr_x:-10, gyr_y:-62, gyr_z:-10, tick:1046915 
+lis3dml, mag_x:2335, mag_y:1579, mag_z:-1633
+icm42688, acc_x:618, acc_y:-2934, acc_z:7749, gyr_x:-11, gyr_y:-62, gyr_z:-9, tick:3083 
+lis3dml, mag_x:2335, mag_y:1579, mag_z:-1633
+icm42688, acc_x:617, acc_y:-2935, acc_z:7750, gyr_x:-12, gyr_y:-61, gyr_z:-10, tick:7826 
+lis3dml, mag_x:2335, mag_y:1579, mag_z:-1633
+icm42688, acc_x:616, acc_y:-2933, acc_z:7750, gyr_x:-12, gyr_y:-57, gyr_z:-12, tick:12569 
+lis3dml, mag_x:2262, mag_y:1587, mag_z:-1624
+icm42688, acc_x:614, acc_y:-2931, acc_z:7749, gyr_x:-10, gyr_y:-51, gyr_z:-10, tick:17313 
+lis3dml, mag_x:2262, mag_y:1587, mag_z:-1624
+icm42688, acc_x:612, acc_y:-2930, acc_z:7750, gyr_x:-7, gyr_y:-50, gyr_z:-10, tick:22057 
+lis3dml, mag_x:2334, mag_y:1606, mag_z:-1629
+icm42688, acc_x:614, acc_y:-2930, acc_z:7752, gyr_x:-8, gyr_y:-50, gyr_z:-13, tick:26800 
+lis3dml, mag_x:2334, mag_y:1606, mag_z:-1629
+icm42688, acc_x:614, acc_y:-2930, acc_z:7752, gyr_x:-9, gyr_y:-49, gyr_z:-14, tick:31543 
+lis3dml, mag_x:2334, mag_y:1606, mag_z:-1629
+icm42688, acc_x:615, acc_y:-2930, acc_z:7752, gyr_x:-7, gyr_y:-55, gyr_z:-12, tick:36286 
+lis3dml, mag_x:2311, mag_y:1581, mag_z:-1647
+icm42688, acc_x:617, acc_y:-2929, acc_z:7754, gyr_x:-4, gyr_y:-60, gyr_z:-11, tick:41030 
+lis3dml, mag_x:2311, mag_y:1581, mag_z:-1647
+icm42688, acc_x:616, acc_y:-2927, acc_z:7754, gyr_x:-5, gyr_y:-62, gyr_z:-12, tick:45773 
+lis3dml, mag_x:2311, mag_y:1581, mag_z:-1647
+icm42688, acc_x:615, acc_y:-2925, acc_z:7754, gyr_x:-4, gyr_y:-60, gyr_z:-11, tick:50517 
+lis3dml, mag_x:2264, mag_y:1597, mag_z:-1646
+icm42688, acc_x:615, acc_y:-2925, acc_z:7753, gyr_x:-3, gyr_y:-57, gyr_z:-12, tick:55260 
+lis3dml, mag_x:2264, mag_y:1597, mag_z:-1646
+icm42688, acc_x:615, acc_y:-2925, acc_z:7749, gyr_x:-6, gyr_y:-53, gyr_z:-13, tick:60003 
+lis3dml, mag_x:2313, mag_y:1622, mag_z:-1606
+icm42688, acc_x:615, acc_y:-2925, acc_z:7746, gyr_x:-8, gyr_y:-52, gyr_z:-13, tick:64747 
+lis3dml, mag_x:2313, mag_y:1622, mag_z:-1606
+icm42688, acc_x:615, acc_y:-2925, acc_z:7747, gyr_x:-7, gyr_y:-55, gyr_z:-12, tick:69490 
+lis3dml, mag_x:2313, mag_y:1622, mag_z:-1606
+icm42688, acc_x:614, acc_y:-2925, acc_z:7748, gyr_x:-7, gyr_y:-57, gyr_z:-12, tick:74233 
+lis3dml, mag_x:2310, mag_y:1603, mag_z:-1606
+icm42688, acc_x:614, acc_y:-2925, acc_z:7748, gyr_x:-8, gyr_y:-59, gyr_z:-11, tick:78976 
+lis3dml, mag_x:2310, mag_y:1603, mag_z:-1606
+icm42688, acc_x:614, acc_y:-2925, acc_z:7747, gyr_x:-7, gyr_y:-60, gyr_z:-11, tick:83720 
+lis3dml, mag_x:2289, mag_y:1618, mag_z:-1659
+icm42688, acc_x:612, acc_y:-2925, acc_z:7748, gyr_x:-7, gyr_y:-59, gyr_z:-11, tick:88464 
+lis3dml, mag_x:2289, mag_y:1618, mag_z:-1659
+icm42688, acc_x:611, acc_y:-2925, acc_z:7749, gyr_x:-6, gyr_y:-56, gyr_z:-12, tick:93207 
+lis3dml, mag_x:2289, mag_y:1618, mag_z:-1659
+icm42688, acc_x:612, acc_y:-2925, acc_z:7749, gyr_x:-5, gyr_y:-54, gyr_z:-12, tick:97950 
+lis3dml, mag_x:2307, mag_y:1606, mag_z:-1606
+icm42688, acc_x:614, acc_y:-2925, acc_z:7749, gyr_x:-6, gyr_y:-53, gyr_z:-10, tick:102694 
+lis3dml, mag_x:2307, mag_y:1606, mag_z:-1606
+icm42688, acc_x:614, acc_y:-2927, acc_z:7750, gyr_x:-6, gyr_y:-52, gyr_z:-10, tick:107438 
+lis3dml, mag_x:2308, mag_y:1594, mag_z:-1672
+icm42688, acc_x:615, acc_y:-2928, acc_z:7751, gyr_x:-5, gyr_y:-54, gyr_z:-11, tick:112181 
+lis3dml, mag_x:2308, mag_y:1594, mag_z:-1672
+icm42688, acc_x:617, acc_y:-2928, acc_z:7751, gyr_x:-4, gyr_y:-57, gyr_z:-10, tick:116924 
+lis3dml, mag_x:2308, mag_y:1594, mag_z:-1672
+icm42688, acc_x:619, acc_y:-2929, acc_z:7751, gyr_x:-6, gyr_y:-58, gyr_z:-10, tick:121667 
+lis3dml, mag_x:2291, mag_y:1602, mag_z:-1685
+icm42688, acc_x:618, acc_y:-2930, acc_z:7752, gyr_x:-6, gyr_y:-59, gyr_z:-10, tick:126411 
+lis3dml, mag_x:2291, mag_y:1602, mag_z:-1685
+icm42688, acc_x:617, acc_y:-2930, acc_z:7754, gyr_x:-6, gyr_y:-58, gyr_z:-9, tick:131154 
+lis3dml, mag_x:2291, mag_y:1602, mag_z:-1685
+icm42688, acc_x:615, acc_y:-2932, acc_z:7755, gyr_x:-7, gyr_y:-56, gyr_z:-9, tick:135897 
+lis3dml, mag_x:2285, mag_y:1586, mag_z:-1658
+icm42688, acc_x:615, acc_y:-2933, acc_z:7754, gyr_x:-6, gyr_y:-55, gyr_z:-11, tick:140641 
+lis3dml, mag_x:2285, mag_y:1586, mag_z:-1658
+icm42688, acc_x:615, acc_y:-2932, acc_z:7752, gyr_x:-6, gyr_y:-55, gyr_z:-11, tick:145384 
+lis3dml, mag_x:2258, mag_y:1593, mag_z:-1688
+icm42688, acc_x:615, acc_y:-2931, acc_z:7749, gyr_x:-7, gyr_y:-55, gyr_z:-10, tick:150128 
+lis3dml, mag_x:2258, mag_y:1593, mag_z:-1688
+icm42688, acc_x:614, acc_y:-2931, acc_z:7747, gyr_x:-6, gyr_y:-59, gyr_z:-11, tick:154871 
+lis3dml, mag_x:2258, mag_y:1593, mag_z:-1688
+icm42688, acc_x:613, acc_y:-2930, acc_z:7747, gyr_x:-6, gyr_y:-59, gyr_z:-10, tick:159614 
+lis3dml, mag_x:2290, mag_y:1570, mag_z:-1656
+icm42688, acc_x:614, acc_y:-2929, acc_z:7747, gyr_x:-6, gyr_y:-56, gyr_z:-10, tick:164357 
+lis3dml, mag_x:2290, mag_y:1570, mag_z:-1656
+icm42688, acc_x:615, acc_y:-2928, acc_z:7747, gyr_x:-7, gyr_y:-55, gyr_z:-11, tick:169101 
+lis3dml, mag_x:2340, mag_y:1561, mag_z:-1665
+icm42688, acc_x:617, acc_y:-2927, acc_z:7749, gyr_x:-8, gyr_y:-53, gyr_z:-12, tick:173845 
+lis3dml, mag_x:2340, mag_y:1561, mag_z:-1665
+icm42688, acc_x:615, acc_y:-2927, acc_z:7750, gyr_x:-10, gyr_y:-50, gyr_z:-12, tick:178588 
+lis3dml, mag_x:2340, mag_y:1561, mag_z:-1665
+icm42688, acc_x:614, acc_y:-2928, acc_z:7751, gyr_x:-9, gyr_y:-50, gyr_z:-11, tick:183331 
+lis3dml, mag_x:2283, mag_y:1590, mag_z:-1646
+icm42688, acc_x:613, acc_y:-2927, acc_z:7750, gyr_x:-9, gyr_y:-52, gyr_z:-11, tick:188074 
+lis3dml, mag_x:2283, mag_y:1590, mag_z:-1646
+icm42688, acc_x:610, acc_y:-2928, acc_z:7749, gyr_x:-10, gyr_y:-55, gyr_z:-13, tick:192818 
+lis3dml, mag_x:2323, mag_y:1583, mag_z:-1676
+icm42688, acc_x:610, acc_y:-2930, acc_z:7749, gyr_x:-10, gyr_y:-58, gyr_z:-14, tick:197562 
+lis3dml, mag_x:2323, mag_y:1583, mag_z:-1676
+icm42688, acc_x:612, acc_y:-2930, acc_z:7748, gyr_x:-8, gyr_y:-61, gyr_z:-14, tick:202305 
+lis3dml, mag_x:2323, mag_y:1583, mag_z:-1676
+icm42688, acc_x:613, acc_y:-2929, acc_z:7747, gyr_x:-8, gyr_y:-61, gyr_z:-13, tick:207048 
+lis3dml, mag_x:2275, mag_y:1570, mag_z:-1636
+icm42688, acc_x:612, acc_y:-2929, acc_z:7746, gyr_x:-8, gyr_y:-61, gyr_z:-11, tick:211792 
+lis3dml, mag_x:2275, mag_y:1570, mag_z:-1636
+icm42688, acc_x:612, acc_y:-2928, acc_z:7746, gyr_x:-7, gyr_y:-61, gyr_z:-10, tick:216535 
+lis3dml, mag_x:2275, mag_y:1570, mag_z:-1636
+icm42688, acc_x:611, acc_y:-2927, acc_z:7746, gyr_x:-6, gyr_y:-58, gyr_z:-10, tick:221278 
+lis3dml, mag_x:2282, mag_y:1561, mag_z:-1642
+icm42688, acc_x:612, acc_y:-2925, acc_z:7748, gyr_x:-5, gyr_y:-53, gyr_z:-10, tick:226021 
+lis3dml, mag_x:2282, mag_y:1561, mag_z:-1642
+icm42688, acc_x:613, acc_y:-2926, acc_z:7749, gyr_x:-4, gyr_y:-49, gyr_z:-12, tick:230766 
+lis3dml, mag_x:2301, mag_y:1567, mag_z:-1623
+icm42688, acc_x:615, acc_y:-2927, acc_z:7750, gyr_x:-5, gyr_y:-49, gyr_z:-12, tick:235509 
+lis3dml, mag_x:2301, mag_y:1567, mag_z:-1623
+icm42688, acc_x:615, acc_y:-2927, acc_z:7749, gyr_x:-8, gyr_y:-48, gyr_z:-11, tick:240252 
+lis3dml, mag_x:2301, mag_y:1567, mag_z:-1623
+icm42688, acc_x:614, acc_y:-2927, acc_z:7748, gyr_x:-10, gyr_y:-49, gyr_z:-9, tick:244995 
+lis3dml, mag_x:2279, mag_y:1581, mag_z:-1610
+icm42688, acc_x:613, acc_y:-2926, acc_z:7747, gyr_x:-10, gyr_y:-54, gyr_z:-9, tick:249738 
+lis3dml, mag_x:2279, mag_y:1581, mag_z:-1610
+icm42688, acc_x:613, acc_y:-2928, acc_z:7747, gyr_x:-11, gyr_y:-60, gyr_z:-9, tick:254482 
+lis3dml, mag_x:2318, mag_y:1580, mag_z:-1656
+icm42688, acc_x:613, acc_y:-2929, acc_z:7746, gyr_x:-11, gyr_y:-60, gyr_z:-10, tick:259225 
+lis3dml, mag_x:2318, mag_y:1580, mag_z:-1656
+icm42688, acc_x:612, acc_y:-2930, acc_z:7745, gyr_x:-9, gyr_y:-61, gyr_z:-11, tick:263969 
+lis3dml, mag_x:2318, mag_y:1580, mag_z:-1656
+icm42688, acc_x:612, acc_y:-2931, acc_z:7746, gyr_x:-8, gyr_y:-60, gyr_z:-13, tick:268712 
+lis3dml, mag_x:2341, mag_y:1613, mag_z:-1640
+icm42688, acc_x:612, acc_y:-2931, acc_z:7746, gyr_x:-7, gyr_y:-55, gyr_z:-14, tick:273456 
+lis3dml, mag_x:2341, mag_y:1613, mag_z:-1640
+icm42688, acc_x:612, acc_y:-2931, acc_z:7747, gyr_x:-5, gyr_y:-51, gyr_z:-13, tick:278199 
+lis3dml, mag_x:2273, mag_y:1606, mag_z:-1656
+icm42688, acc_x:613, acc_y:-2928, acc_z:7748, gyr_x:-5, gyr_y:-50, gyr_z:-12, tick:282942 
+lis3dml, mag_x:2273, mag_y:1606, mag_z:-1656
+icm42688, acc_x:614, acc_y:-2928, acc_z:7749, gyr_x:-6, gyr_y:-50, gyr_z:-12, tick:287686 
+lis3dml, mag_x:2273, mag_y:1606, mag_z:-1656
+icm42688, acc_x:615, acc_y:-2928, acc_z:7750, gyr_x:-8, gyr_y:-51, gyr_z:-10, tick:292429 
+lis3dml, mag_x:2278, mag_y:1590, mag_z:-1589
+icm42688, acc_x:616, acc_y:-2927, acc_z:7752, gyr_x:-8, gyr_y:-54, gyr_z:-7, tick:297173 
+lis3dml, mag_x:2278, mag_y:1590, mag_z:-1589
+icm42688, acc_x:615, acc_y:-2928, acc_z:7753, gyr_x:-8, gyr_y:-55, gyr_z:-7, tick:301916 
+lis3dml, mag_x:2278, mag_y:1590, mag_z:-1589
+icm42688, acc_x:615, acc_y:-2928, acc_z:7750, gyr_x:-8, gyr_y:-57, gyr_z:-7, tick:306659 
+lis3dml, mag_x:2325, mag_y:1582, mag_z:-1662
+icm42688, acc_x:615, acc_y:-2927, acc_z:7748, gyr_x:-7, gyr_y:-59, gyr_z:-8, tick:311402 
+lis3dml, mag_x:2325, mag_y:1582, mag_z:-1662
+icm42688, acc_x:616, acc_y:-2925, acc_z:7748, gyr_x:-6, gyr_y:-59, gyr_z:-9, tick:316146 
+lis3dml, mag_x:2276, mag_y:1579, mag_z:-1690
+icm42688, acc_x:614, acc_y:-2925, acc_z:7748, gyr_x:-6, gyr_y:-59, gyr_z:-11, tick:320890 
+lis3dml, mag_x:2276, mag_y:1579, mag_z:-1690
+icm42688, acc_x:614, acc_y:-2928, acc_z:7750, gyr_x:-7, gyr_y:-57, gyr_z:-11, tick:325633 
+lis3dml, mag_x:2276, mag_y:1579, mag_z:-1690
+icm42688, acc_x:613, acc_y:-2931, acc_z:7750, gyr_x:-7, gyr_y:-55, gyr_z:-10, tick:330376 
+lis3dml, mag_x:2319, mag_y:1580, mag_z:-1658
+icm42688, acc_x:613, acc_y:-2931, acc_z:7750, gyr_x:-6, gyr_y:-55, gyr_z:-10, tick:335120 
+lis3dml, mag_x:2319, mag_y:1580, mag_z:-1658
+icm42688, acc_x:614, acc_y:-2929, acc_z:7750, gyr_x:-6, gyr_y:-56, gyr_z:-11, tick:339863 
+lis3dml, mag_x:2302, mag_y:1576, mag_z:-1661
+icm42688, acc_x:614, acc_y:-2929, acc_z:7748, gyr_x:-8, gyr_y:-57, gyr_z:-12, tick:344606 
+lis3dml, mag_x:2302, mag_y:1576, mag_z:-1661
+icm42688, acc_x:615, acc_y:-2928, acc_z:7748, gyr_x:-11, gyr_y:-60, gyr_z:-13, tick:349349 
+lis3dml, mag_x:2302, mag_y:1576, mag_z:-1661
+icm42688, acc_x:615, acc_y:-2927, acc_z:7747, gyr_x:-12, gyr_y:-60, gyr_z:-12, tick:354093 
+lis3dml, mag_x:2271, mag_y:1625, mag_z:-1654
+icm42688, acc_x:615, acc_y:-2925, acc_z:7748, gyr_x:-10, gyr_y:-60, gyr_z:-10, tick:358837 
+lis3dml, mag_x:2271, mag_y:1625, mag_z:-1654
+icm42688, acc_x:614, acc_y:-2925, acc_z:7750, gyr_x:-8, gyr_y:-60, gyr_z:-10, tick:363580 
+lis3dml, mag_x:2264, mag_y:1582, mag_z:-1661
+icm42688, acc_x:613, acc_y:-2925, acc_z:7750, gyr_x:-8, gyr_y:-58, gyr_z:-11, tick:368323 
+lis3dml, mag_x:2264, mag_y:1582, mag_z:-1661
+icm42688, acc_x:613, acc_y:-2926, acc_z:7748, gyr_x:-7, gyr_y:-58, gyr_z:-10, tick:373066 
+lis3dml, mag_x:2264, mag_y:1582, mag_z:-1661
+icm42688, acc_x:613, acc_y:-2926, acc_z:7750, gyr_x:-7, gyr_y:-57, gyr_z:-9, tick:377811 
+lis3dml, mag_x:2280, mag_y:1607, mag_z:-1665
+icm42688, acc_x:613, acc_y:-2925, acc_z:7750, gyr_x:-9, gyr_y:-56, gyr_z:-11, tick:382554 
+lis3dml, mag_x:2280, mag_y:1607, mag_z:-1665
+icm42688, acc_x:612, acc_y:-2925, acc_z:7749, gyr_x:-9, gyr_y:-56, gyr_z:-12, tick:387297 
+lis3dml, mag_x:2280, mag_y:1607, mag_z:-1665
+icm42688, acc_x:612, acc_y:-2924, acc_z:7749, gyr_x:-9, gyr_y:-57, gyr_z:-10, tick:392040 
+lis3dml, mag_x:2308, mag_y:1618, mag_z:-1616
+icm42688, acc_x:610, acc_y:-2920, acc_z:7752, gyr_x:-9, gyr_y:-55, gyr_z:-7, tick:396783 
+lis3dml, mag_x:2308, mag_y:1618, mag_z:-1616
+icm42688, acc_x:612, acc_y:-2921, acc_z:7750, gyr_x:-8, gyr_y:-57, gyr_z:-6, tick:401527 
+lis3dml, mag_x:2271, mag_y:1610, mag_z:-1660
+icm42688, acc_x:612, acc_y:-2924, acc_z:7750, gyr_x:-10, gyr_y:-57, gyr_z:-8, tick:406270 
+lis3dml, mag_x:2271, mag_y:1610, mag_z:-1660
+icm42688, acc_x:613, acc_y:-2925, acc_z:7750, gyr_x:-11, gyr_y:-55, gyr_z:-12, tick:411014 
+lis3dml, mag_x:2271, mag_y:1610, mag_z:-1660
+icm42688, acc_x:611, acc_y:-2924, acc_z:7751, gyr_x:-10, gyr_y:-55, gyr_z:-12, tick:415757 
+lis3dml, mag_x:2284, mag_y:1636, mag_z:-1602
+icm42688, acc_x:610, acc_y:-2925, acc_z:7750, gyr_x:-9, gyr_y:-55, gyr_z:-11, tick:420501 
+lis3dml, mag_x:2284, mag_y:1636, mag_z:-1602
+icm42688, acc_x:609, acc_y:-2926, acc_z:7749, gyr_x:-8, gyr_y:-55, gyr_z:-10, tick:425244 
+lis3dml, mag_x:2313, mag_y:1626, mag_z:-1645
+icm42688, acc_x:610, acc_y:-2927, acc_z:7749, gyr_x:-7, gyr_y:-56, gyr_z:-11, tick:429987 
+lis3dml, mag_x:2313, mag_y:1626, mag_z:-1645
+icm42688, acc_x:611, acc_y:-2926, acc_z:7747, gyr_x:-9, gyr_y:-56, gyr_z:-12, tick:434730 
+lis3dml, mag_x:2313, mag_y:1626, mag_z:-1645
+icm42688, acc_x:609, acc_y:-2926, acc_z:7745, gyr_x:-10, gyr_y:-56, gyr_z:-11, tick:439473 
+lis3dml, mag_x:2311, mag_y:1600, mag_z:-1662
+icm42688, acc_x:607, acc_y:-2925, acc_z:7743, gyr_x:-9, gyr_y:-56, gyr_z:-10, tick:444218 
+lis3dml, mag_x:2311, mag_y:1600, mag_z:-1662
+icm42688, acc_x:607, acc_y:-2925, acc_z:7744, gyr_x:-8, gyr_y:-55, gyr_z:-11, tick:448961 
+lis3dml, mag_x:2291, mag_y:1599, mag_z:-1620
+icm42688, acc_x:609, acc_y:-2925, acc_z:7746, gyr_x:-9, gyr_y:-54, gyr_z:-11, tick:453704 
+lis3dml, mag_x:2291, mag_y:1599, mag_z:-1620
+icm42688, acc_x:610, acc_y:-2925, acc_z:7747, gyr_x:-9, gyr_y:-57, gyr_z:-10, tick:458447 
+lis3dml, mag_x:2291, mag_y:1599, mag_z:-1620
+icm42688, acc_x:611, acc_y:-2925, acc_z:7746, gyr_x:-10, gyr_y:-59, gyr_z:-9, tick:463191 
+lis3dml, mag_x:2266, mag_y:1608, mag_z:-1612
+icm42688, acc_x:611, acc_y:-2925, acc_z:7743, gyr_x:-11, gyr_y:-59, gyr_z:-9, tick:467935 
+lis3dml, mag_x:2266, mag_y:1608, mag_z:-1612
+icm42688, acc_x:610, acc_y:-2925, acc_z:7743, gyr_x:-8, gyr_y:-59, gyr_z:-10, tick:472678 
+lis3dml, mag_x:2266, mag_y:1608, mag_z:-1612
+icm42688, acc_x:609, acc_y:-2925, acc_z:7745, gyr_x:-6, gyr_y:-60, gyr_z:-12, tick:477421 
+lis3dml, mag_x:2328, mag_y:1614, mag_z:-1630
+icm42688, acc_x:609, acc_y:-2927, acc_z:7746, gyr_x:-7, gyr_y:-60, gyr_z:-13, tick:482165 
+lis3dml, mag_x:2328, mag_y:1614, mag_z:-1630
+icm42688, acc_x:611, acc_y:-2927, acc_z:7747, gyr_x:-10, gyr_y:-59, gyr_z:-13, tick:486908 
+lis3dml, mag_x:2283, mag_y:1605, mag_z:-1640
+icm42688, acc_x:611, acc_y:-2928, acc_z:7747, gyr_x:-10, gyr_y:-58, gyr_z:-13, tick:491651 
+lis3dml, mag_x:2283, mag_y:1605, mag_z:-1640
+icm42688, acc_x:612, acc_y:-2929, acc_z:7745, gyr_x:-7, gyr_y:-57, gyr_z:-13, tick:496394 
+lis3dml, mag_x:2283, mag_y:1605, mag_z:-1640
+icm42688, acc_x:612, acc_y:-2929, acc_z:7745, gyr_x:-5, gyr_y:-55, gyr_z:-13, tick:501138 
+lis3dml, mag_x:2292, mag_y:1603, mag_z:-1647
+icm42688, acc_x:611, acc_y:-2928, acc_z:7747, gyr_x:-3, gyr_y:-52, gyr_z:-14, tick:505882 
+lis3dml, mag_x:2292, mag_y:1603, mag_z:-1647
+icm42688, acc_x:610, acc_y:-2927, acc_z:7752, gyr_x:-4, gyr_y:-50, gyr_z:-13, tick:510625 
+lis3dml, mag_x:2334, mag_y:1616, mag_z:-1614
+icm42688, acc_x:609, acc_y:-2925, acc_z:7751, gyr_x:-6, gyr_y:-51, gyr_z:-13, tick:515368 
+lis3dml, mag_x:2334, mag_y:1616, mag_z:-1614
+icm42688, acc_x:609, acc_y:-2924, acc_z:7747, gyr_x:-7, gyr_y:-56, gyr_z:-14, tick:520111 
+lis3dml, mag_x:2334, mag_y:1616, mag_z:-1614
+icm42688, acc_x:610, acc_y:-2922, acc_z:7745, gyr_x:-7, gyr_y:-60, gyr_z:-14, tick:524855 
+lis3dml, mag_x:2282, mag_y:1626, mag_z:-1661
+icm42688, acc_x:611, acc_y:-2923, acc_z:7746, gyr_x:-6, gyr_y:-61, gyr_z:-13, tick:529598 
+lis3dml, mag_x:2282, mag_y:1626, mag_z:-1661
+icm42688, acc_x:613, acc_y:-2923, acc_z:7749, gyr_x:-6, gyr_y:-60, gyr_z:-12, tick:534342 
+lis3dml, mag_x:2276, mag_y:1603, mag_z:-1678
+icm42688, acc_x:615, acc_y:-2924, acc_z:7750, gyr_x:-7, gyr_y:-59, gyr_z:-14, tick:539085 
+lis3dml, mag_x:2276, mag_y:1603, mag_z:-1678
+icm42688, acc_x:616, acc_y:-2925, acc_z:7750, gyr_x:-8, gyr_y:-58, gyr_z:-15, tick:543828 
+lis3dml, mag_x:2276, mag_y:1603, mag_z:-1678
+icm42688, acc_x:616, acc_y:-2925, acc_z:7750, gyr_x:-8, gyr_y:-56, gyr_z:-16, tick:548572 
+lis3dml, mag_x:2264, mag_y:1591, mag_z:-1712
+icm42688, acc_x:615, acc_y:-2925, acc_z:7750, gyr_x:-8, gyr_y:-54, gyr_z:-15, tick:553315 
+lis3dml, mag_x:2264, mag_y:1591, mag_z:-1712
+icm42688, acc_x:613, acc_y:-2927, acc_z:7749, gyr_x:-9, gyr_y:-52, gyr_z:-13, tick:558059 
+lis3dml, mag_x:2264, mag_y:1590, mag_z:-1674
+icm42688, acc_x:611, acc_y:-2930, acc_z:7746, gyr_x:-9, gyr_y:-53, gyr_z:-12, tick:562802 
+lis3dml, mag_x:2278, mag_y:1590, mag_z:-1674
+icm42688, acc_x:613, acc_y:-2933, acc_z:7745, gyr_x:-8, gyr_y:-55, gyr_z:-12, tick:567546 
+lis3dml, mag_x:2278, mag_y:1590, mag_z:-1674
+icm42688, acc_x:615, acc_y:-2932, acc_z:7746, gyr_x:-9, gyr_y:-54, gyr_z:-12, tick:572289 
+lis3dml, mag_x:2296, mag_y:1578, mag_z:-1701
+icm42688, acc_x:615, acc_y:-2930, acc_z:7749, gyr_x:-9, gyr_y:-56, gyr_z:-13, tick:577032 
+lis3dml, mag_x:2296, mag_y:1578, mag_z:-1701
+icm42688, acc_x:615, acc_y:-2929, acc_z:7751, gyr_x:-8, gyr_y:-58, gyr_z:-13, tick:581775 
+lis3dml, mag_x:2296, mag_y:1578, mag_z:-1701
+icm42688, acc_x:613, acc_y:-2929, acc_z:7752, gyr_x:-8, gyr_y:-59, gyr_z:-13, tick:586518 
+lis3dml, mag_x:2301, mag_y:1587, mag_z:-1656
+icm42688, acc_x:613, acc_y:-2929, acc_z:7751, gyr_x:-9, gyr_y:-58, gyr_z:-12, tick:591263 
+lis3dml, mag_x:2301, mag_y:1587, mag_z:-1656
+icm42688, acc_x:615, acc_y:-2927, acc_z:7750, gyr_x:-10, gyr_y:-56, gyr_z:-12, tick:596006 
+lis3dml, mag_x:2279, mag_y:1599, mag_z:-1696
+icm42688, acc_x:616, acc_y:-2927, acc_z:7750, gyr_x:-10, gyr_y:-53, gyr_z:-12, tick:600749 
+lis3dml, mag_x:2279, mag_y:1599, mag_z:-1696
+icm42688, acc_x:617, acc_y:-2927, acc_z:7752, gyr_x:-9, gyr_y:-52, gyr_z:-11, tick:605492 
+lis3dml, mag_x:2279, mag_y:1599, mag_z:-1696
+icm42688, acc_x:617, acc_y:-2927, acc_z:7753, gyr_x:-9, gyr_y:-53, gyr_z:-12, tick:610236 
+lis3dml, mag_x:2301, mag_y:1584, mag_z:-1635
+icm42688, acc_x:617, acc_y:-2926, acc_z:7754, gyr_x:-7, gyr_y:-55, gyr_z:-13, tick:614979 
+lis3dml, mag_x:2301, mag_y:1584, mag_z:-1635
+icm42688, acc_x:617, acc_y:-2925, acc_z:7753, gyr_x:-5, gyr_y:-58, gyr_z:-11, tick:619722 
+lis3dml, mag_x:2288, mag_y:1579, mag_z:-1663
+icm42688, acc_x:616, acc_y:-2925, acc_z:7751, gyr_x:-5, gyr_y:-60, gyr_z:-10, tick:624466 
+lis3dml, mag_x:2288, mag_y:1579, mag_z:-1663
+icm42688, acc_x:615, acc_y:-2925, acc_z:7747, gyr_x:-7, gyr_y:-59, gyr_z:-10, tick:629209 
+lis3dml, mag_x:2288, mag_y:1579, mag_z:-1663
+icm42688, acc_x:614, acc_y:-2927, acc_z:7747, gyr_x:-10, gyr_y:-57, gyr_z:-11, tick:633953 
+lis3dml, mag_x:2272, mag_y:1603, mag_z:-1710
+icm42688, acc_x:613, acc_y:-2930, acc_z:7750, gyr_x:-9, gyr_y:-57, gyr_z:-12, tick:638696 
+lis3dml, mag_x:2272, mag_y:1603, mag_z:-1710
+icm42688, acc_x:614, acc_y:-2930, acc_z:7752, gyr_x:-9, gyr_y:-56, gyr_z:-12, tick:643440 
+lis3dml, mag_x:2294, mag_y:1604, mag_z:-1709
+icm42688, acc_x:615, acc_y:-2929, acc_z:7751, gyr_x:-7, gyr_y:-55, gyr_z:-11, tick:648183 
+lis3dml, mag_x:2294, mag_y:1604, mag_z:-1709
+icm42688, acc_x:615, acc_y:-2929, acc_z:7751, gyr_x:-7, gyr_y:-57, gyr_z:-10, tick:652927 
+lis3dml, mag_x:2294, mag_y:1604, mag_z:-1709
+icm42688, acc_x:614, acc_y:-2928, acc_z:7751, gyr_x:-8, gyr_y:-56, gyr_z:-11, tick:657670 
+lis3dml, mag_x:2254, mag_y:1606, mag_z:-1681
+icm42688, acc_x:612, acc_y:-2929, acc_z:7749, gyr_x:-8, gyr_y:-57, gyr_z:-11, tick:662413 
+lis3dml, mag_x:2254, mag_y:1606, mag_z:-1681
+icm42688, acc_x:613, acc_y:-2928, acc_z:7749, gyr_x:-8, gyr_y:-58, gyr_z:-10, tick:667156 
+lis3dml, mag_x:2254, mag_y:1606, mag_z:-1681
+icm42688, acc_x:614, acc_y:-2927, acc_z:7750, gyr_x:-8, gyr_y:-58, gyr_z:-9, tick:671900 
+lis3dml, mag_x:2322, mag_y:1587, mag_z:-1682
+icm42688, acc_x:614, acc_y:-2927, acc_z:7750, gyr_x:-9, gyr_y:-55, gyr_z:-9, tick:676643 
+lis3dml, mag_x:2322, mag_y:1587, mag_z:-1682
+icm42688, acc_x:613, acc_y:-2928, acc_z:7749, gyr_x:-9, gyr_y:-54, gyr_z:-10, tick:681387 
+lis3dml, mag_x:2302, mag_y:1591, mag_z:-1624
+icm42688, acc_x:614, acc_y:-2928, acc_z:7751, gyr_x:-9, gyr_y:-55, gyr_z:-11, tick:686130 
+lis3dml, mag_x:2302, mag_y:1591, mag_z:-1624
+icm42688, acc_x:616, acc_y:-2929, acc_z:7752, gyr_x:-11, gyr_y:-54, gyr_z:-12, tick:690873 
+lis3dml, mag_x:2302, mag_y:1591, mag_z:-1624
+icm42688, acc_x:615, acc_y:-2931, acc_z:7752, gyr_x:-11, gyr_y:-55, gyr_z:-13, tick:695617 
+lis3dml, mag_x:2286, mag_y:1590, mag_z:-1637
+icm42688, acc_x:615, acc_y:-2931, acc_z:7750, gyr_x:-9, gyr_y:-60, gyr_z:-15, tick:700360 
+lis3dml, mag_x:2286, mag_y:1590, mag_z:-1637
+icm42688, acc_x:615, acc_y:-2930, acc_z:7750, gyr_x:-10, gyr_y:-60, gyr_z:-15, tick:705103 
+lis3dml, mag_x:2317, mag_y:1608, mag_z:-1688
+icm42688, acc_x:615, acc_y:-2928, acc_z:7750, gyr_x:-12, gyr_y:-59, gyr_z:-16, tick:709846 
+lis3dml, mag_x:2317, mag_y:1608, mag_z:-1688
+icm42688, acc_x:615, acc_y:-2927, acc_z:7750, gyr_x:-11, gyr_y:-61, gyr_z:-16, tick:714591 
+lis3dml, mag_x:2317, mag_y:1608, mag_z:-1688
+icm42688, acc_x:616, acc_y:-2928, acc_z:7749, gyr_x:-12, gyr_y:-60, gyr_z:-16, tick:719334 
+lis3dml, mag_x:2280, mag_y:1590, mag_z:-1651
+icm42688, acc_x:615, acc_y:-2928, acc_z:7747, gyr_x:-13, gyr_y:-59, gyr_z:-15, tick:724077 
+lis3dml, mag_x:2280, mag_y:1590, mag_z:-1651
+icm42688, acc_x:613, acc_y:-2927, acc_z:7746, gyr_x:-14, gyr_y:-57, gyr_z:-15, tick:728820 
+lis3dml, mag_x:2260, mag_y:1610, mag_z:-1623
+icm42688, acc_x:610, acc_y:-2927, acc_z:7746, gyr_x:-14, gyr_y:-55, gyr_z:-14, tick:733565 
+lis3dml, mag_x:2260, mag_y:1610, mag_z:-1623
+icm42688, acc_x:609, acc_y:-2926, acc_z:7746, gyr_x:-13, gyr_y:-55, gyr_z:-13, tick:738308 
+lis3dml, mag_x:2260, mag_y:1610, mag_z:-1623
+icm42688, acc_x:610, acc_y:-2925, acc_z:7745, gyr_x:-12, gyr_y:-57, gyr_z:-12, tick:743051 
+lis3dml, mag_x:2298, mag_y:1592, mag_z:-1663
+icm42688, acc_x:611, acc_y:-2925, acc_z:7746, gyr_x:-11, gyr_y:-57, gyr_z:-12, tick:747794 
+lis3dml, mag_x:2298, mag_y:1592, mag_z:-1663
+icm42688, acc_x:611, acc_y:-2926, acc_z:7747, gyr_x:-11, gyr_y:-55, gyr_z:-11, tick:752537 
+lis3dml, mag_x:2298, mag_y:1592, mag_z:-1663
+icm42688, acc_x:613, acc_y:-2925, acc_z:7746, gyr_x:-9, gyr_y:-57, gyr_z:-11, tick:757281 
+lis3dml, mag_x:2297, mag_y:1595, mag_z:-1673
+icm42688, acc_x:615, acc_y:-2925, acc_z:7747, gyr_x:-7, gyr_y:-58, gyr_z:-10, tick:762024 
+lis3dml, mag_x:2297, mag_y:1595, mag_z:-1673
+icm42688, acc_x:615, acc_y:-2925, acc_z:7748, gyr_x:-8, gyr_y:-55, gyr_z:-9, tick:766768 
+lis3dml, mag_x:2253, mag_y:1600, mag_z:-1671
+icm42688, acc_x:614, acc_y:-2925, acc_z:7749, gyr_x:-8, gyr_y:-54, gyr_z:-10, tick:771511 
+lis3dml, mag_x:2253, mag_y:1600, mag_z:-1671
+icm42688, acc_x:614, acc_y:-2925, acc_z:7748, gyr_x:-7, gyr_y:-55, gyr_z:-12, tick:776255 
+lis3dml, mag_x:2253, mag_y:1600, mag_z:-1671
+icm42688, acc_x:615, acc_y:-2925, acc_z:7747, gyr_x:-7, gyr_y:-55, gyr_z:-13, tick:780998 
+lis3dml, mag_x:2344, mag_y:1559, mag_z:-1666
+icm42688, acc_x:615, acc_y:-2925, acc_z:7747, gyr_x:-7, gyr_y:-55, gyr_z:-12, tick:785741 
+lis3dml, mag_x:2344, mag_y:1559, mag_z:-1666
+icm42688, acc_x:615, acc_y:-2927, acc_z:7747, gyr_x:-7, gyr_y:-55, gyr_z:-12, tick:790484 
+lis3dml, mag_x:2285, mag_y:1583, mag_z:-1677
+icm42688, acc_x:614, acc_y:-2926, acc_z:7748, gyr_x:-8, gyr_y:-54, gyr_z:-12, tick:795227 
+lis3dml, mag_x:2285, mag_y:1583, mag_z:-1677
+icm42688, acc_x:613, acc_y:-2928, acc_z:7749, gyr_x:-7, gyr_y:-56, gyr_z:-12, tick:799971 
+lis3dml, mag_x:2285, mag_y:1583, mag_z:-1677
+icm42688, acc_x:614, acc_y:-2930, acc_z:7747, gyr_x:-8, gyr_y:-56, gyr_z:-12, tick:804715 
+lis3dml, mag_x:2284, mag_y:1563, mag_z:-1695
+icm42688, acc_x:615, acc_y:-2931, acc_z:7746, gyr_x:-8, gyr_y:-56, gyr_z:-13, tick:809458 
+lis3dml, mag_x:2284, mag_y:1563, mag_z:-1695
+icm42688, acc_x:615, acc_y:-2929, acc_z:7746, gyr_x:-6, gyr_y:-56, gyr_z:-12, tick:814201 
+lis3dml, mag_x:2324, mag_y:1579, mag_z:-1651
+icm42688, acc_x:615, acc_y:-2925, acc_z:7747, gyr_x:-7, gyr_y:-57, gyr_z:-12, tick:818945 
+lis3dml, mag_x:2324, mag_y:1579, mag_z:-1651
+icm42688, acc_x:615, acc_y:-2924, acc_z:7748, gyr_x:-8, gyr_y:-57, gyr_z:-12, tick:823689 
+lis3dml, mag_x:2324, mag_y:1579, mag_z:-1651
+icm42688, acc_x:613, acc_y:-2925, acc_z:7747, gyr_x:-9, gyr_y:-58, gyr_z:-11, tick:828432 
+lis3dml, mag_x:2255, mag_y:1583, mag_z:-1658
+icm42688, acc_x:611, acc_y:-2928, acc_z:7747, gyr_x:-11, gyr_y:-57, gyr_z:-10, tick:833175 
+lis3dml, mag_x:2255, mag_y:1583, mag_z:-1658
+icm42688, acc_x:611, acc_y:-2930, acc_z:7748, gyr_x:-11, gyr_y:-55, gyr_z:-12, tick:837919 
+lis3dml, mag_x:2255, mag_y:1583, mag_z:-1658
+icm42688, acc_x:611, acc_y:-2929, acc_z:7749, gyr_x:-10, gyr_y:-55, gyr_z:-12, tick:842662 
+lis3dml, mag_x:2307, mag_y:1573, mag_z:-1681
+icm42688, acc_x:611, acc_y:-2928, acc_z:7748, gyr_x:-10, gyr_y:-56, gyr_z:-11, tick:847405 
+lis3dml, mag_x:2307, mag_y:1573, mag_z:-1681
+icm42688, acc_x:611, acc_y:-2927, acc_z:7748, gyr_x:-11, gyr_y:-57, gyr_z:-12, tick:852148 
+lis3dml, mag_x:2302, mag_y:1578, mag_z:-1717
+icm42688, acc_x:612, acc_y:-2925, acc_z:7749, gyr_x:-10, gyr_y:-57, gyr_z:-13, tick:856892 
+lis3dml, mag_x:2302, mag_y:1578, mag_z:-1717
+icm42688, acc_x:612, acc_y:-2926, acc_z:7751, gyr_x:-9, gyr_y:-58, gyr_z:-13, tick:861636 
+lis3dml, mag_x:2302, mag_y:1578, mag_z:-1717
+icm42688, acc_x:612, acc_y:-2929, acc_z:7752, gyr_x:-7, gyr_y:-60, gyr_z:-13, tick:866379 
+lis3dml, mag_x:2291, mag_y:1608, mag_z:-1666
+icm42688, acc_x:612, acc_y:-2932, acc_z:7752, gyr_x:-7, gyr_y:-60, gyr_z:-12, tick:871122 
+lis3dml, mag_x:2291, mag_y:1608, mag_z:-1666
+icm42688, acc_x:612, acc_y:-2933, acc_z:7750, gyr_x:-9, gyr_y:-60, gyr_z:-12, tick:875865 
+lis3dml, mag_x:2319, mag_y:1608, mag_z:-1658
+icm42688, acc_x:614, acc_y:-2931, acc_z:7749, gyr_x:-9, gyr_y:-60, gyr_z:-13, tick:880608 
+lis3dml, mag_x:2319, mag_y:1608, mag_z:-1658
+icm42688, acc_x:616, acc_y:-2927, acc_z:7748, gyr_x:-9, gyr_y:-59, gyr_z:-14, tick:885352 
+lis3dml, mag_x:2319, mag_y:1608, mag_z:-1658
+icm42688, acc_x:616, acc_y:-2926, acc_z:7747, gyr_x:-10, gyr_y:-56, gyr_z:-14, tick:890096 
+lis3dml, mag_x:2290, mag_y:1554, mag_z:-1696
+icm42688, acc_x:615, acc_y:-2925, acc_z:7746, gyr_x:-11, gyr_y:-55, gyr_z:-12, tick:894839 
+lis3dml, mag_x:2290, mag_y:1554, mag_z:-1696
+icm42688, acc_x:612, acc_y:-2921, acc_z:7747, gyr_x:-14, gyr_y:-55, gyr_z:-10, tick:899582 
+lis3dml, mag_x:2305, mag_y:1569, mag_z:-1698
+icm42688, acc_x:611, acc_y:-2919, acc_z:7749, gyr_x:-13, gyr_y:-56, gyr_z:-11, tick:904326 
+lis3dml, mag_x:2305, mag_y:1569, mag_z:-1698
+icm42688, acc_x:611, acc_y:-2922, acc_z:7748, gyr_x:-11, gyr_y:-57, gyr_z:-12, tick:909069 
+lis3dml, mag_x:2305, mag_y:1569, mag_z:-1698
+icm42688, acc_x:610, acc_y:-2927, acc_z:7748, gyr_x:-11, gyr_y:-56, gyr_z:-12, tick:913813 
+lis3dml, mag_x:2313, mag_y:1583, mag_z:-1709
+icm42688, acc_x:611, acc_y:-2932, acc_z:7747, gyr_x:-9, gyr_y:-54, gyr_z:-14, tick:918556 
+lis3dml, mag_x:2313, mag_y:1583, mag_z:-1709
+icm42688, acc_x:612, acc_y:-2932, acc_z:7746, gyr_x:-9, gyr_y:-54, gyr_z:-14, tick:923300 
+lis3dml, mag_x:2313, mag_y:1583, mag_z:-1709
+icm42688, acc_x:612, acc_y:-2929, acc_z:7746, gyr_x:-8, gyr_y:-58, gyr_z:-13, tick:928043 
+lis3dml, mag_x:2313, mag_y:1612, mag_z:-1664
+icm42688, acc_x:615, acc_y:-2927, acc_z:7748, gyr_x:-5, gyr_y:-60, gyr_z:-10, tick:932786 
+lis3dml, mag_x:2313, mag_y:1612, mag_z:-1664
+icm42688, acc_x:615, acc_y:-2927, acc_z:7749, gyr_x:-5, gyr_y:-60, gyr_z:-9, tick:937529 
+lis3dml, mag_x:2294, mag_y:1584, mag_z:-1686
+icm42688, acc_x:615, acc_y:-2928, acc_z:7750, gyr_x:-7, gyr_y:-60, gyr_z:-9, tick:942272 
+lis3dml, mag_x:2294, mag_y:1584, mag_z:-1686
+icm42688, acc_x:615, acc_y:-2926, acc_z:7750, gyr_x:-9, gyr_y:-58, gyr_z:-10, tick:947017 
+lis3dml, mag_x:2294, mag_y:1584, mag_z:-1686
+icm42688, acc_x:613, acc_y:-2925, acc_z:7749, gyr_x:-9, gyr_y:-58, gyr_z:-12, tick:951760 
+lis3dml, mag_x:2295, mag_y:1597, mag_z:-1670
+icm42688, acc_x:613, acc_y:-2926, acc_z:7749, gyr_x:-9, gyr_y:-57, gyr_z:-12, tick:956503 
+lis3dml, mag_x:2295, mag_y:1597, mag_z:-1670
+icm42688, acc_x:616, acc_y:-2927, acc_z:7747, gyr_x:-9, gyr_y:-56, gyr_z:-11, tick:961246 
+lis3dml, mag_x:2274, mag_y:1583, mag_z:-1708
+icm42688, acc_x:616, acc_y:-2927, acc_z:7747, gyr_x:-9, gyr_y:-56, gyr_z:-11, tick:965990 
+lis3dml, mag_x:2274, mag_y:1583, mag_z:-1708
+icm42688, acc_x:615, acc_y:-2927, acc_z:7748, gyr_x:-8, gyr_y:-56, gyr_z:-11, tick:970733 
+lis3dml, mag_x:2274, mag_y:1583, mag_z:-1708
+icm42688, acc_x:614, acc_y:-2926, acc_z:7748, gyr_x:-9, gyr_y:-56, gyr_z:-12, tick:975476 
+lis3dml, mag_x:2295, mag_y:1592, mag_z:-1719
+icm42688, acc_x:612, acc_y:-2926, acc_z:7748, gyr_x:-9, gyr_y:-57, gyr_z:-12, tick:980220 
+lis3dml, mag_x:2295, mag_y:1592, mag_z:-1719
+icm42688, acc_x:612, acc_y:-2924, acc_z:7748, gyr_x:-7, gyr_y:-60, gyr_z:-13, tick:984963 
+lis3dml, mag_x:2309, mag_y:1580, mag_z:-1683
+icm42688, acc_x:614, acc_y:-2923, acc_z:7749, gyr_x:-6, gyr_y:-60, gyr_z:-13, tick:989707 
+lis3dml, mag_x:2309, mag_y:1580, mag_z:-1683
+icm42688, acc_x:614, acc_y:-2924, acc_z:7749, gyr_x:-7, gyr_y:-59, gyr_z:-13, tick:994450 
+lis3dml, mag_x:2309, mag_y:1580, mag_z:-1683
+icm42688, acc_x:613, acc_y:-2925, acc_z:7748, gyr_x:-8, gyr_y:-59, gyr_z:-11, tick:999193 
+lis3dml, mag_x:2232, mag_y:1586, mag_z:-1673
+icm42688, acc_x:614, acc_y:-2926, acc_z:7749, gyr_x:-8, gyr_y:-60, gyr_z:-10, tick:1003937 
+lis3dml, mag_x:2232, mag_y:1586, mag_z:-1673
+icm42688, acc_x:613, acc_y:-2926, acc_z:7749, gyr_x:-8, gyr_y:-57, gyr_z:-11, tick:1008681 
+lis3dml, mag_x:2232, mag_y:1586, mag_z:-1673
+icm42688, acc_x:614, acc_y:-2925, acc_z:7749, gyr_x:-8, gyr_y:-55, gyr_z:-11, tick:1013424 
+lis3dml, mag_x:2294, mag_y:1606, mag_z:-1694
+icm42688, acc_x:614, acc_y:-2925, acc_z:7749, gyr_x:-8, gyr_y:-55, gyr_z:-10, tick:1018167 
+lis3dml, mag_x:2294, mag_y:1606, mag_z:-1694
+icm42688, acc_x:614, acc_y:-2925, acc_z:7751, gyr_x:-9, gyr_y:-53, gyr_z:-9, tick:1022910 
+lis3dml, mag_x:2294, mag_y:1581, mag_z:-1656
+icm42688, acc_x:615, acc_y:-2924, acc_z:7750, gyr_x:-10, gyr_y:-52, gyr_z:-8, tick:1027654 
+lis3dml, mag_x:2294, mag_y:1581, mag_z:-1656
+icm42688, acc_x:615, acc_y:-2922, acc_z:7748, gyr_x:-10, gyr_y:-54, gyr_z:-6, tick:1032397 
+lis3dml, mag_x:2294, mag_y:1581, mag_z:-1656
+icm42688, acc_x:613, acc_y:-2923, acc_z:7748, gyr_x:-9, gyr_y:-57, gyr_z:-5, tick:1037141 
+lis3dml, mag_x:2287, mag_y:1620, mag_z:-1699
+icm42688, acc_x:615, acc_y:-2925, acc_z:7747, gyr_x:-7, gyr_y:-59, gyr_z:-7, tick:1041884 
+lis3dml, mag_x:2287, mag_y:1620, mag_z:-1699
+icm42688, acc_x:615, acc_y:-2928, acc_z:7749, gyr_x:-8, gyr_y:-60, gyr_z:-11, tick:1046627 
+lis3dml, mag_x:2299, mag_y:1609, mag_z:-1628
+icm42688, acc_x:615, acc_y:-2929, acc_z:7750, gyr_x:-10, gyr_y:-59, gyr_z:-12, tick:2795 
+lis3dml, mag_x:2299, mag_y:1609, mag_z:-1628
+icm42688, acc_x:615, acc_y:-2929, acc_z:7749, gyr_x:-9, gyr_y:-58, gyr_z:-14, tick:7538 
+lis3dml, mag_x:2299, mag_y:1609, mag_z:-1628
+icm42688, acc_x:615, acc_y:-2929, acc_z:7746, gyr_x:-7, gyr_y:-57, gyr_z:-14, tick:12281 
+lis3dml, mag_x:2302, mag_y:1581, mag_z:-1593
+icm42688, acc_x:611, acc_y:-2929, acc_z:7746, gyr_x:-5, gyr_y:-56, gyr_z:-13, tick:17024 
+lis3dml, mag_x:2302, mag_y:1581, mag_z:-1593
+icm42688, acc_x:611, acc_y:-2929, acc_z:7748, gyr_x:-6, gyr_y:-55, gyr_z:-12, tick:21769 
+lis3dml, mag_x:2299, mag_y:1588, mag_z:-1635
+icm42688, acc_x:612, acc_y:-2927, acc_z:7749, gyr_x:-9, gyr_y:-54, gyr_z:-11, tick:26512 
+lis3dml, mag_x:2299, mag_y:1588, mag_z:-1635
+icm42688, acc_x:610, acc_y:-2926, acc_z:7750, gyr_x:-11, gyr_y:-55, gyr_z:-10, tick:31255 
+lis3dml, mag_x:2299, mag_y:1588, mag_z:-1635
+icm42688, acc_x:609, acc_y:-2926, acc_z:7751, gyr_x:-9, gyr_y:-56, gyr_z:-10, tick:35998 
+lis3dml, mag_x:2340, mag_y:1590, mag_z:-1650
+icm42688, acc_x:609, acc_y:-2925, acc_z:7749, gyr_x:-7, gyr_y:-57, gyr_z:-11, tick:40741 
+lis3dml, mag_x:2340, mag_y:1590, mag_z:-1650
+icm42688, acc_x:611, acc_y:-2924, acc_z:7749, gyr_x:-7, gyr_y:-57, gyr_z:-11, tick:45486 
+lis3dml, mag_x:2340, mag_y:1590, mag_z:-1650
+icm42688, acc_x:612, acc_y:-2924, acc_z:7750, gyr_x:-7, gyr_y:-57, gyr_z:-13, tick:50229 
+lis3dml, mag_x:2294, mag_y:1587, mag_z:-1693
+icm42688, acc_x:611, acc_y:-2925, acc_z:7752, gyr_x:-8, gyr_y:-58, gyr_z:-13, tick:54972 
+lis3dml, mag_x:2294, mag_y:1587, mag_z:-1693
+icm42688, acc_x:612, acc_y:-2926, acc_z:7753, gyr_x:-9, gyr_y:-59, gyr_z:-12, tick:59715 
+lis3dml, mag_x:2295, mag_y:1600, mag_z:-1674
+icm42688, acc_x:614, acc_y:-2927, acc_z:7754, gyr_x:-10, gyr_y:-59, gyr_z:-13, tick:64458 
+lis3dml, mag_x:2295, mag_y:1600, mag_z:-1674
+icm42688, acc_x:615, acc_y:-2927, acc_z:7753, gyr_x:-10, gyr_y:-58, gyr_z:-15, tick:69202 
+lis3dml, mag_x:2295, mag_y:1600, mag_z:-1674
+icm42688, acc_x:615, acc_y:-2928, acc_z:7750, gyr_x:-10, gyr_y:-57, gyr_z:-14, tick:73945 
+lis3dml, mag_x:2301, mag_y:1616, mag_z:-1695
+icm42688, acc_x:615, acc_y:-2926, acc_z:7750, gyr_x:-9, gyr_y:-58, gyr_z:-12, tick:78689 
+lis3dml, mag_x:2301, mag_y:1616, mag_z:-1695
+icm42688, acc_x:615, acc_y:-2924, acc_z:7748, gyr_x:-9, gyr_y:-59, gyr_z:-10, tick:83433 
+lis3dml, mag_x:2265, mag_y:1591, mag_z:-1668
+icm42688, acc_x:614, acc_y:-2925, acc_z:7747, gyr_x:-9, gyr_y:-58, gyr_z:-11, tick:88176 
+lis3dml, mag_x:2265, mag_y:1591, mag_z:-1668
+icm42688, acc_x:615, acc_y:-2926, acc_z:7747, gyr_x:-10, gyr_y:-57, gyr_z:-12, tick:92919 
+lis3dml, mag_x:2265, mag_y:1591, mag_z:-1668
+icm42688, acc_x:615, acc_y:-2928, acc_z:7747, gyr_x:-9, gyr_y:-55, gyr_z:-13, tick:97662 
+lis3dml, mag_x:2257, mag_y:1581, mag_z:-1658
+icm42688, acc_x:615, acc_y:-2929, acc_z:7747, gyr_x:-8, gyr_y:-53, gyr_z:-14, tick:102405 
+lis3dml, mag_x:2257, mag_y:1581, mag_z:-1658
+icm42688, acc_x:613, acc_y:-2929, acc_z:7749, gyr_x:-7, gyr_y:-52, gyr_z:-15, tick:107149 
+lis3dml, mag_x:2306, mag_y:1595, mag_z:-1655
+icm42688, acc_x:611, acc_y:-2926, acc_z:7749, gyr_x:-7, gyr_y:-51, gyr_z:-14, tick:111893 
+lis3dml, mag_x:2306, mag_y:1595, mag_z:-1655
+icm42688, acc_x:612, acc_y:-2924, acc_z:7749, gyr_x:-8, gyr_y:-53, gyr_z:-14, tick:116636 
+lis3dml, mag_x:2306, mag_y:1595, mag_z:-1655
+icm42688, acc_x:614, acc_y:-2925, acc_z:7749, gyr_x:-9, gyr_y:-55, gyr_z:-14, tick:121379 
+lis3dml, mag_x:2311, mag_y:1608, mag_z:-1688
+icm42688, acc_x:614, acc_y:-2927, acc_z:7748, gyr_x:-9, gyr_y:-54, gyr_z:-14, tick:126122 
+lis3dml, mag_x:2311, mag_y:1608, mag_z:-1688
+icm42688, acc_x:614, acc_y:-2930, acc_z:7747, gyr_x:-9, gyr_y:-53, gyr_z:-12, tick:130866 
+lis3dml, mag_x:2311, mag_y:1608, mag_z:-1688
+icm42688, acc_x:615, acc_y:-2932, acc_z:7747, gyr_x:-9, gyr_y:-53, gyr_z:-11, tick:135610 
+lis3dml, mag_x:2320, mag_y:1626, mag_z:-1674
+icm42688, acc_x:615, acc_y:-2932, acc_z:7747, gyr_x:-9, gyr_y:-54, gyr_z:-11, tick:140353 
+lis3dml, mag_x:2320, mag_y:1626, mag_z:-1674
+icm42688, acc_x:612, acc_y:-2932, acc_z:7748, gyr_x:-9, gyr_y:-60, gyr_z:-9, tick:145096 
+lis3dml, mag_x:2328, mag_y:1615, mag_z:-1628
+icm42688, acc_x:611, acc_y:-2931, acc_z:7748, gyr_x:-10, gyr_y:-60, gyr_z:-10, tick:149840 
+lis3dml, mag_x:2328, mag_y:1615, mag_z:-1628
+icm42688, acc_x:611, acc_y:-2927, acc_z:7746, gyr_x:-8, gyr_y:-59, gyr_z:-12, tick:154583 
+lis3dml, mag_x:2328, mag_y:1615, mag_z:-1628
+icm42688, acc_x:610, acc_y:-2926, acc_z:7747, gyr_x:-6, gyr_y:-56, gyr_z:-14, tick:159326 
+lis3dml, mag_x:2289, mag_y:1621, mag_z:-1695
+icm42688, acc_x:611, acc_y:-2925, acc_z:7749, gyr_x:-7, gyr_y:-54, gyr_z:-14, tick:164069 
+lis3dml, mag_x:2289, mag_y:1621, mag_z:-1695
+icm42688, acc_x:614, acc_y:-2925, acc_z:7751, gyr_x:-7, gyr_y:-52, gyr_z:-13, tick:168814 
+lis3dml, mag_x:2332, mag_y:1597, mag_z:-1668
+icm42688, acc_x:615, acc_y:-2925, acc_z:7752, gyr_x:-7, gyr_y:-52, gyr_z:-12, tick:173557 
+lis3dml, mag_x:2332, mag_y:1597, mag_z:-1668
+icm42688, acc_x:616, acc_y:-2926, acc_z:7753, gyr_x:-7, gyr_y:-52, gyr_z:-11, tick:178300 
+lis3dml, mag_x:2332, mag_y:1597, mag_z:-1668
+icm42688, acc_x:615, acc_y:-2927, acc_z:7752, gyr_x:-8, gyr_y:-52, gyr_z:-11, tick:183043 
+lis3dml, mag_x:2299, mag_y:1582, mag_z:-1648
+icm42688, acc_x:614, acc_y:-2928, acc_z:7753, gyr_x:-9, gyr_y:-54, gyr_z:-11, tick:187786 
+lis3dml, mag_x:2299, mag_y:1582, mag_z:-1648
+icm42688, acc_x:614, acc_y:-2930, acc_z:7754, gyr_x:-11, gyr_y:-54, gyr_z:-11, tick:192530 
+lis3dml, mag_x:2316, mag_y:1600, mag_z:-1639
+icm42688, acc_x:615, acc_y:-2931, acc_z:7753, gyr_x:-12, gyr_y:-57, gyr_z:-11, tick:197273 
+lis3dml, mag_x:2316, mag_y:1600, mag_z:-1639
+icm42688, acc_x:617, acc_y:-2931, acc_z:7751, gyr_x:-11, gyr_y:-60, gyr_z:-11, tick:202017 
+lis3dml, mag_x:2316, mag_y:1600, mag_z:-1639
+icm42688, acc_x:617, acc_y:-2930, acc_z:7750, gyr_x:-10, gyr_y:-60, gyr_z:-11, tick:206760 
+lis3dml, mag_x:2303, mag_y:1598, mag_z:-1646
+icm42688, acc_x:615, acc_y:-2930, acc_z:7752, gyr_x:-8, gyr_y:-60, gyr_z:-10, tick:211504 
+lis3dml, mag_x:2303, mag_y:1598, mag_z:-1646
+icm42688, acc_x:615, acc_y:-2929, acc_z:7752, gyr_x:-8, gyr_y:-58, gyr_z:-10, tick:216247 
+lis3dml, mag_x:2303, mag_y:1598, mag_z:-1646
+icm42688, acc_x:613, acc_y:-2929, acc_z:7752, gyr_x:-7, gyr_y:-55, gyr_z:-10, tick:220990 
+lis3dml, mag_x:2299, mag_y:1590, mag_z:-1656
+icm42688, acc_x:612, acc_y:-2928, acc_z:7751, gyr_x:-7, gyr_y:-53, gyr_z:-11, tick:225734 
+lis3dml, mag_x:2299, mag_y:1590, mag_z:-1656
+icm42688, acc_x:612, acc_y:-2927, acc_z:7750, gyr_x:-8, gyr_y:-51, gyr_z:-11, tick:230477 
+lis3dml, mag_x:2279, mag_y:1570, mag_z:-1639
+icm42688, acc_x:614, acc_y:-2926, acc_z:7748, gyr_x:-7, gyr_y:-51, gyr_z:-11, tick:235221 
+lis3dml, mag_x:2279, mag_y:1570, mag_z:-1639
+icm42688, acc_x:614, acc_y:-2926, acc_z:7749, gyr_x:-5, gyr_y:-51, gyr_z:-11, tick:239964 
+lis3dml, mag_x:2279, mag_y:1570, mag_z:-1639
+icm42688, acc_x:615, acc_y:-2927, acc_z:7750, gyr_x:-3, gyr_y:-54, gyr_z:-10, tick:244707 
+lis3dml, mag_x:2322, mag_y:1586, mag_z:-1647
+icm42688, acc_x:615, acc_y:-2927, acc_z:7751, gyr_x:-4, gyr_y:-57, gyr_z:-10, tick:249450 
+lis3dml, mag_x:2322, mag_y:1586, mag_z:-1647
+icm42688, acc_x:615, acc_y:-2927, acc_z:7748, gyr_x:-5, gyr_y:-61, gyr_z:-10, tick:254194 
+lis3dml, mag_x:2281, mag_y:1573, mag_z:-1653
+icm42688, acc_x:615, acc_y:-2927, acc_z:7745, gyr_x:-7, gyr_y:-63, gyr_z:-11, tick:258938 
+lis3dml, mag_x:2281, mag_y:1573, mag_z:-1653
+icm42688, acc_x:616, acc_y:-2928, acc_z:7745, gyr_x:-10, gyr_y:-61, gyr_z:-11, tick:263681 
+lis3dml, mag_x:2281, mag_y:1573, mag_z:-1653
+icm42688, acc_x:617, acc_y:-2928, acc_z:7748, gyr_x:-10, gyr_y:-59, gyr_z:-10, tick:268424 
+lis3dml, mag_x:2289, mag_y:1587, mag_z:-1668
+icm42688, acc_x:617, acc_y:-2928, acc_z:7751, gyr_x:-9, gyr_y:-56, gyr_z:-9, tick:273168 
+lis3dml, mag_x:2289, mag_y:1587, mag_z:-1668
+icm42688, acc_x:615, acc_y:-2928, acc_z:7753, gyr_x:-9, gyr_y:-53, gyr_z:-8, tick:277911 
+lis3dml, mag_x:2344, mag_y:1573, mag_z:-1610
+icm42688, acc_x:615, acc_y:-2926, acc_z:7753, gyr_x:-11, gyr_y:-54, gyr_z:-10, tick:282654 
+lis3dml, mag_x:2344, mag_y:1573, mag_z:-1610
+icm42688, acc_x:616, acc_y:-2925, acc_z:7752, gyr_x:-11, gyr_y:-55, gyr_z:-12, tick:287397 
+lis3dml, mag_x:2344, mag_y:1573, mag_z:-1610
+icm42688, acc_x:615, acc_y:-2925, acc_z:7751, gyr_x:-12, gyr_y:-55, gyr_z:-13, tick:292141 
+lis3dml, mag_x:2289, mag_y:1606, mag_z:-1659
+icm42688, acc_x:614, acc_y:-2925, acc_z:7750, gyr_x:-11, gyr_y:-56, gyr_z:-13, tick:296885 
+lis3dml, mag_x:2289, mag_y:1606, mag_z:-1659
+icm42688, acc_x:613, acc_y:-2924, acc_z:7749, gyr_x:-7, gyr_y:-58, gyr_z:-11, tick:301628 
+lis3dml, mag_x:2289, mag_y:1606, mag_z:-1659
+icm42688, acc_x:613, acc_y:-2925, acc_z:7748, gyr_x:-6, gyr_y:-58, gyr_z:-9, tick:306371 
+lis3dml, mag_x:2330, mag_y:1598, mag_z:-1653
+icm42688, acc_x:611, acc_y:-2926, acc_z:7749, gyr_x:-9, gyr_y:-56, gyr_z:-8, tick:311114 
+lis3dml, mag_x:2330, mag_y:1598, mag_z:-1653
+icm42688, acc_x:611, acc_y:-2927, acc_z:7749, gyr_x:-9, gyr_y:-57, gyr_z:-8, tick:315859 
+lis3dml, mag_x:2326, mag_y:1572, mag_z:-1637
+icm42688, acc_x:612, acc_y:-2926, acc_z:7749, gyr_x:-7, gyr_y:-58, gyr_z:-8, tick:320602 
+lis3dml, mag_x:2326, mag_y:1572, mag_z:-1637
+icm42688, acc_x:614, acc_y:-2925, acc_z:7749, gyr_x:-7, gyr_y:-58, gyr_z:-10, tick:325345 
+lis3dml, mag_x:2326, mag_y:1572, mag_z:-1637
+icm42688, acc_x:615, acc_y:-2924, acc_z:7748, gyr_x:-6, gyr_y:-59, gyr_z:-13, tick:330088 
+lis3dml, mag_x:2314, mag_y:1598, mag_z:-1656
+icm42688, acc_x:615, acc_y:-2923, acc_z:7747, gyr_x:-9, gyr_y:-58, gyr_z:-14, tick:334831 
+lis3dml, mag_x:2314, mag_y:1598, mag_z:-1656
+icm42688, acc_x:615, acc_y:-2923, acc_z:7745, gyr_x:-10, gyr_y:-55, gyr_z:-14, tick:339575 
+lis3dml, mag_x:2331, mag_y:1570, mag_z:-1616
+icm42688, acc_x:615, acc_y:-2925, acc_z:7743, gyr_x:-9, gyr_y:-55, gyr_z:-15, tick:344318 
+lis3dml, mag_x:2331, mag_y:1570, mag_z:-1616
+icm42688, acc_x:615, acc_y:-2925, acc_z:7745, gyr_x:-8, gyr_y:-56, gyr_z:-14, tick:349062 
+lis3dml, mag_x:2331, mag_y:1570, mag_z:-1616
+icm42688, acc_x:615, acc_y:-2925, acc_z:7749, gyr_x:-10, gyr_y:-54, gyr_z:-12, tick:353805 
+lis3dml, mag_x:2303, mag_y:1592, mag_z:-1628
+icm42688, acc_x:615, acc_y:-2927, acc_z:7753, gyr_x:-10, gyr_y:-55, gyr_z:-11, tick:358549 
+lis3dml, mag_x:2303, mag_y:1592, mag_z:-1628
+icm42688, acc_x:614, acc_y:-2927, acc_z:7754, gyr_x:-10, gyr_y:-56, gyr_z:-9, tick:363292 
+lis3dml, mag_x:2284, mag_y:1600, mag_z:-1641
+icm42688, acc_x:614, acc_y:-2927, acc_z:7751, gyr_x:-10, gyr_y:-56, gyr_z:-8, tick:368035 
+lis3dml, mag_x:2284, mag_y:1600, mag_z:-1641
+icm42688, acc_x:613, acc_y:-2927, acc_z:7750, gyr_x:-8, gyr_y:-56, gyr_z:-9, tick:372778 
+lis3dml, mag_x:2284, mag_y:1600, mag_z:-1641
+icm42688, acc_x:614, acc_y:-2926, acc_z:7750, gyr_x:-8, gyr_y:-55, gyr_z:-11, tick:377522 
+lis3dml, mag_x:2347, mag_y:1591, mag_z:-1676
+icm42688, acc_x:615, acc_y:-2925, acc_z:7748, gyr_x:-10, gyr_y:-54, gyr_z:-12, tick:382266 
+lis3dml, mag_x:2347, mag_y:1591, mag_z:-1676
+icm42688, acc_x:615, acc_y:-2925, acc_z:7747, gyr_x:-10, gyr_y:-54, gyr_z:-11, tick:387009 
+lis3dml, mag_x:2347, mag_y:1591, mag_z:-1676
+icm42688, acc_x:615, acc_y:-2925, acc_z:7750, gyr_x:-8, gyr_y:-55, gyr_z:-11, tick:391752 
+lis3dml, mag_x:2314, mag_y:1581, mag_z:-1672
+icm42688, acc_x:615, acc_y:-2925, acc_z:7751, gyr_x:-8, gyr_y:-56, gyr_z:-11, tick:396495 
+lis3dml, mag_x:2314, mag_y:1581, mag_z:-1672
+icm42688, acc_x:612, acc_y:-2924, acc_z:7751, gyr_x:-9, gyr_y:-57, gyr_z:-10, tick:401239 
+lis3dml, mag_x:2297, mag_y:1576, mag_z:-1653
+icm42688, acc_x:610, acc_y:-2925, acc_z:7751, gyr_x:-8, gyr_y:-57, gyr_z:-11, tick:405983 
+lis3dml, mag_x:2297, mag_y:1576, mag_z:-1653
+icm42688, acc_x:611, acc_y:-2928, acc_z:7749, gyr_x:-8, gyr_y:-56, gyr_z:-13, tick:410726 
+lis3dml, mag_x:2297, mag_y:1576, mag_z:-1653
+icm42688, acc_x:611, acc_y:-2931, acc_z:7748, gyr_x:-6, gyr_y:-57, gyr_z:-12, tick:415469 
+lis3dml, mag_x:2355, mag_y:1594, mag_z:-1669
+icm42688, acc_x:612, acc_y:-2929, acc_z:7748, gyr_x:-5, gyr_y:-57, gyr_z:-10, tick:420213 
+lis3dml, mag_x:2355, mag_y:1594, mag_z:-1669
+icm42688, acc_x:614, acc_y:-2929, acc_z:7749, gyr_x:-9, gyr_y:-57, gyr_z:-10, tick:424956 
+lis3dml, mag_x:2282, mag_y:1577, mag_z:-1677
+icm42688, acc_x:616, acc_y:-2930, acc_z:7752, gyr_x:-11, gyr_y:-57, gyr_z:-11, tick:429699 
+lis3dml, mag_x:2282, mag_y:1577, mag_z:-1677
+icm42688, acc_x:619, acc_y:-2930, acc_z:7754, gyr_x:-11, gyr_y:-57, gyr_z:-11, tick:434442 
+lis3dml, mag_x:2282, mag_y:1577, mag_z:-1677
+icm42688, acc_x:617, acc_y:-2929, acc_z:7754, gyr_x:-12, gyr_y:-56, gyr_z:-11, tick:439186 
+lis3dml, mag_x:2326, mag_y:1587, mag_z:-1638
+icm42688, acc_x:615, acc_y:-2928, acc_z:7754, gyr_x:-9, gyr_y:-57, gyr_z:-9, tick:443930 
+lis3dml, mag_x:2326, mag_y:1587, mag_z:-1638
+icm42688, acc_x:614, acc_y:-2928, acc_z:7755, gyr_x:-10, gyr_y:-57, gyr_z:-8, tick:448673 
+lis3dml, mag_x:2302, mag_y:1590, mag_z:-1651
+icm42688, acc_x:614, acc_y:-2929, acc_z:7754, gyr_x:-12, gyr_y:-58, gyr_z:-9, tick:453416 
+lis3dml, mag_x:2302, mag_y:1590, mag_z:-1651
+icm42688, acc_x:614, acc_y:-2930, acc_z:7752, gyr_x:-12, gyr_y:-59, gyr_z:-11, tick:458159 
+lis3dml, mag_x:2302, mag_y:1590, mag_z:-1651
+icm42688, acc_x:614, acc_y:-2931, acc_z:7750, gyr_x:-11, gyr_y:-58, gyr_z:-12, tick:462903 
+lis3dml, mag_x:2283, mag_y:1607, mag_z:-1658
+icm42688, acc_x:614, acc_y:-2931, acc_z:7749, gyr_x:-10, gyr_y:-55, gyr_z:-12, tick:467646 
+lis3dml, mag_x:2283, mag_y:1607, mag_z:-1658
+icm42688, acc_x:613, acc_y:-2929, acc_z:7749, gyr_x:-10, gyr_y:-53, gyr_z:-12, tick:472390 
+lis3dml, mag_x:2283, mag_y:1607, mag_z:-1658
+icm42688, acc_x:611, acc_y:-2928, acc_z:7749, gyr_x:-9, gyr_y:-53, gyr_z:-11, tick:477133 
+lis3dml, mag_x:2291, mag_y:1594, mag_z:-1665
+icm42688, acc_x:610, acc_y:-2927, acc_z:7751, gyr_x:-9, gyr_y:-54, gyr_z:-12, tick:481877 
+lis3dml, mag_x:2291, mag_y:1594, mag_z:-1665
+icm42688, acc_x:610, acc_y:-2927, acc_z:7754, gyr_x:-10, gyr_y:-53, gyr_z:-12, tick:486620 
+lis3dml, mag_x:2315, mag_y:1600, mag_z:-1665
+icm42688, acc_x:611, acc_y:-2927, acc_z:7755, gyr_x:-8, gyr_y:-54, gyr_z:-12, tick:491364 
+lis3dml, mag_x:2315, mag_y:1600, mag_z:-1665
+icm42688, acc_x:611, acc_y:-2925, acc_z:7754, gyr_x:-8, gyr_y:-55, gyr_z:-12, tick:496107 
+lis3dml, mag_x:2315, mag_y:1600, mag_z:-1665
+icm42688, acc_x:612, acc_y:-2925, acc_z:7751, gyr_x:-10, gyr_y:-56, gyr_z:-12, tick:500850 
+lis3dml, mag_x:2292, mag_y:1582, mag_z:-1724
+icm42688, acc_x:614, acc_y:-2926, acc_z:7749, gyr_x:-8, gyr_y:-57, gyr_z:-11, tick:505594 
+lis3dml, mag_x:2292, mag_y:1582, mag_z:-1724
+icm42688, acc_x:615, acc_y:-2926, acc_z:7750, gyr_x:-5, gyr_y:-58, gyr_z:-11, tick:510337 
+lis3dml, mag_x:2309, mag_y:1579, mag_z:-1672
+icm42688, acc_x:616, acc_y:-2925, acc_z:7752, gyr_x:-6, gyr_y:-57, gyr_z:-13, tick:515080 
+lis3dml, mag_x:2309, mag_y:1579, mag_z:-1672
+icm42688, acc_x:615, acc_y:-2925, acc_z:7753, gyr_x:-9, gyr_y:-56, gyr_z:-14, tick:519823 
+lis3dml, mag_x:2309, mag_y:1579, mag_z:-1672
+icm42688, acc_x:614, acc_y:-2925, acc_z:7755, gyr_x:-10, gyr_y:-56, gyr_z:-14, tick:524567 
+lis3dml, mag_x:2290, mag_y:1571, mag_z:-1666
+icm42688, acc_x:612, acc_y:-2926, acc_z:7756, gyr_x:-12, gyr_y:-55, gyr_z:-14, tick:529311 
+lis3dml, mag_x:2290, mag_y:1571, mag_z:-1666
+icm42688, acc_x:611, acc_y:-2927, acc_z:7755, gyr_x:-12, gyr_y:-55, gyr_z:-13, tick:534054 
+lis3dml, mag_x:2263, mag_y:1588, mag_z:-1637
+icm42688, acc_x:610, acc_y:-2929, acc_z:7752, gyr_x:-8, gyr_y:-57, gyr_z:-11, tick:538797 
+lis3dml, mag_x:2263, mag_y:1588, mag_z:-1637
+icm42688, acc_x:609, acc_y:-2928, acc_z:7747, gyr_x:-6, gyr_y:-55, gyr_z:-8, tick:543540 
+lis3dml, mag_x:2263, mag_y:1588, mag_z:-1637
+icm42688, acc_x:609, acc_y:-2928, acc_z:7745, gyr_x:-7, gyr_y:-57, gyr_z:-9, tick:548284 
+lis3dml, mag_x:2304, mag_y:1629, mag_z:-1684
+icm42688, acc_x:612, acc_y:-2928, acc_z:7744, gyr_x:-7, gyr_y:-58, gyr_z:-9, tick:553027 
+lis3dml, mag_x:2304, mag_y:1629, mag_z:-1684
+icm42688, acc_x:614, acc_y:-2926, acc_z:7744, gyr_x:-6, gyr_y:-57, gyr_z:-10, tick:557770 
+lis3dml, mag_x:2304, mag_y:1629, mag_z:-1703
+icm42688, acc_x:615, acc_y:-2926, acc_z:7745, gyr_x:-5, gyr_y:-58, gyr_z:-12, tick:562514 
+lis3dml, mag_x:2298, mag_y:1606, mag_z:-1703
+icm42688, acc_x:617, acc_y:-2927, acc_z:7747, gyr_x:-7, gyr_y:-57, gyr_z:-15, tick:567258 
+lis3dml, mag_x:2298, mag_y:1606, mag_z:-1703
+icm42688, acc_x:616, acc_y:-2929, acc_z:7746, gyr_x:-11, gyr_y:-54, gyr_z:-14, tick:572001 
+lis3dml, mag_x:2293, mag_y:1603, mag_z:-1673
+icm42688, acc_x:616, acc_y:-2928, acc_z:7747, gyr_x:-11, gyr_y:-55, gyr_z:-13, tick:576744 
+lis3dml, mag_x:2293, mag_y:1603, mag_z:-1673
+icm42688, acc_x:615, acc_y:-2927, acc_z:7748, gyr_x:-8, gyr_y:-57, gyr_z:-13, tick:581488 
+lis3dml, mag_x:2293, mag_y:1603, mag_z:-1673
+icm42688, acc_x:615, acc_y:-2928, acc_z:7748, gyr_x:-8, gyr_y:-54, gyr_z:-13, tick:586231 
+lis3dml, mag_x:2344, mag_y:1609, mag_z:-1703
+icm42688, acc_x:613, acc_y:-2928, acc_z:7748, gyr_x:-9, gyr_y:-53, gyr_z:-12, tick:590975 
+lis3dml, mag_x:2344, mag_y:1609, mag_z:-1703
+icm42688, acc_x:614, acc_y:-2927, acc_z:7746, gyr_x:-10, gyr_y:-56, gyr_z:-13, tick:595718 
+lis3dml, mag_x:2297, mag_y:1615, mag_z:-1664
+icm42688, acc_x:615, acc_y:-2925, acc_z:7744, gyr_x:-13, gyr_y:-55, gyr_z:-13, tick:600461 
+lis3dml, mag_x:2297, mag_y:1615, mag_z:-1664
+icm42688, acc_x:615, acc_y:-2925, acc_z:7742, gyr_x:-12, gyr_y:-55, gyr_z:-13, tick:605204 
+lis3dml, mag_x:2297, mag_y:1615, mag_z:-1664
+icm42688, acc_x:615, acc_y:-2925, acc_z:7744, gyr_x:-6, gyr_y:-57, gyr_z:-12, tick:609948 
+lis3dml, mag_x:2267, mag_y:1612, mag_z:-1637
+icm42688, acc_x:615, acc_y:-2925, acc_z:7748, gyr_x:-5, gyr_y:-56, gyr_z:-12, tick:614692 
+lis3dml, mag_x:2267, mag_y:1612, mag_z:-1637
+icm42688, acc_x:614, acc_y:-2925, acc_z:7750, gyr_x:-6, gyr_y:-56, gyr_z:-12, tick:619435 
+lis3dml, mag_x:2321, mag_y:1613, mag_z:-1621
+icm42688, acc_x:612, acc_y:-2928, acc_z:7751, gyr_x:-5, gyr_y:-60, gyr_z:-13, tick:624178 
+lis3dml, mag_x:2321, mag_y:1613, mag_z:-1621
+icm42688, acc_x:610, acc_y:-2930, acc_z:7751, gyr_x:-7, gyr_y:-58, gyr_z:-13, tick:628921 
+lis3dml, mag_x:2321, mag_y:1613, mag_z:-1621
+icm42688, acc_x:609, acc_y:-2930, acc_z:7749, gyr_x:-8, gyr_y:-55, gyr_z:-13, tick:633665 
+lis3dml, mag_x:2283, mag_y:1603, mag_z:-1624
+icm42688, acc_x:610, acc_y:-2931, acc_z:7750, gyr_x:-7, gyr_y:-55, gyr_z:-12, tick:638408 
+lis3dml, mag_x:2283, mag_y:1603, mag_z:-1624
+icm42688, acc_x:613, acc_y:-2930, acc_z:7749, gyr_x:-10, gyr_y:-54, gyr_z:-12, tick:643151 
+lis3dml, mag_x:2283, mag_y:1609, mag_z:-1628
+icm42688, acc_x:615, acc_y:-2929, acc_z:7749, gyr_x:-11, gyr_y:-54, gyr_z:-12, tick:647895 
+lis3dml, mag_x:2300, mag_y:1609, mag_z:-1628
+icm42688, acc_x:615, acc_y:-2927, acc_z:7749, gyr_x:-9, gyr_y:-57, gyr_z:-13, tick:652639 
+lis3dml, mag_x:2300, mag_y:1609, mag_z:-1628
+icm42688, acc_x:614, acc_y:-2926, acc_z:7749, gyr_x:-8, gyr_y:-58, gyr_z:-13, tick:657382 
+lis3dml, mag_x:2307, mag_y:1606, mag_z:-1611
+icm42688, acc_x:615, acc_y:-2928, acc_z:7749, gyr_x:-8, gyr_y:-57, gyr_z:-14, tick:662125 
+lis3dml, mag_x:2307, mag_y:1606, mag_z:-1611
+icm42688, acc_x:613, acc_y:-2929, acc_z:7748, gyr_x:-7, gyr_y:-59, gyr_z:-13, tick:666868 
+lis3dml, mag_x:2307, mag_y:1606, mag_z:-1611
+icm42688, acc_x:612, acc_y:-2931, acc_z:7747, gyr_x:-8, gyr_y:-60, gyr_z:-11, tick:671612 
+lis3dml, mag_x:2309, mag_y:1577, mag_z:-1640
+icm42688, acc_x:612, acc_y:-2932, acc_z:7746, gyr_x:-10, gyr_y:-59, gyr_z:-10, tick:676356 
+lis3dml, mag_x:2309, mag_y:1577, mag_z:-1640
+icm42688, acc_x:611, acc_y:-2932, acc_z:7746, gyr_x:-12, gyr_y:-56, gyr_z:-11, tick:681099 
+lis3dml, mag_x:2316, mag_y:1605, mag_z:-1641
+icm42688, acc_x:611, acc_y:-2931, acc_z:7747, gyr_x:-11, gyr_y:-53, gyr_z:-11, tick:685842 
+lis3dml, mag_x:2316, mag_y:1605, mag_z:-1641
+icm42688, acc_x:612, acc_y:-2929, acc_z:7749, gyr_x:-10, gyr_y:-50, gyr_z:-11, tick:690586 
+lis3dml, mag_x:2316, mag_y:1605, mag_z:-1641
+icm42688, acc_x:613, acc_y:-2928, acc_z:7751, gyr_x:-11, gyr_y:-50, gyr_z:-12, tick:695329 
+lis3dml, mag_x:2313, mag_y:1574, mag_z:-1653
+icm42688, acc_x:613, acc_y:-2926, acc_z:7750, gyr_x:-10, gyr_y:-51, gyr_z:-12, tick:700072 
+lis3dml, mag_x:2313, mag_y:1574, mag_z:-1653
+icm42688, acc_x:613, acc_y:-2925, acc_z:7748, gyr_x:-9, gyr_y:-53, gyr_z:-11, tick:704816 
+lis3dml, mag_x:2285, mag_y:1583, mag_z:-1647
+icm42688, acc_x:613, acc_y:-2925, acc_z:7748, gyr_x:-10, gyr_y:-56, gyr_z:-11, tick:709559 
+lis3dml, mag_x:2285, mag_y:1583, mag_z:-1647
+icm42688, acc_x:611, acc_y:-2925, acc_z:7748, gyr_x:-9, gyr_y:-59, gyr_z:-12, tick:714303 
+lis3dml, mag_x:2285, mag_y:1583, mag_z:-1647
+icm42688, acc_x:612, acc_y:-2925, acc_z:7748, gyr_x:-9, gyr_y:-59, gyr_z:-12, tick:719046 
+lis3dml, mag_x:2323, mag_y:1596, mag_z:-1640
+icm42688, acc_x:613, acc_y:-2927, acc_z:7749, gyr_x:-7, gyr_y:-59, gyr_z:-13, tick:723789 
+lis3dml, mag_x:2323, mag_y:1596, mag_z:-1640
+icm42688, acc_x:612, acc_y:-2927, acc_z:7750, gyr_x:-7, gyr_y:-59, gyr_z:-14, tick:728532 
+lis3dml, mag_x:2342, mag_y:1600, mag_z:-1615
+icm42688, acc_x:611, acc_y:-2926, acc_z:7749, gyr_x:-7, gyr_y:-56, gyr_z:-15, tick:733275 
+lis3dml, mag_x:2342, mag_y:1600, mag_z:-1615
+icm42688, acc_x:611, acc_y:-2926, acc_z:7746, gyr_x:-8, gyr_y:-54, gyr_z:-15, tick:738020 
+lis3dml, mag_x:2342, mag_y:1600, mag_z:-1615
+icm42688, acc_x:611, acc_y:-2928, acc_z:7744, gyr_x:-9, gyr_y:-53, gyr_z:-12, tick:742763 
+lis3dml, mag_x:2307, mag_y:1594, mag_z:-1615
+icm42688, acc_x:614, acc_y:-2929, acc_z:7745, gyr_x:-8, gyr_y:-53, gyr_z:-12, tick:747506 
+lis3dml, mag_x:2307, mag_y:1594, mag_z:-1615
+icm42688, acc_x:615, acc_y:-2928, acc_z:7749, gyr_x:-9, gyr_y:-53, gyr_z:-12, tick:752249 
+lis3dml, mag_x:2307, mag_y:1594, mag_z:-1615
+icm42688, acc_x:615, acc_y:-2926, acc_z:7750, gyr_x:-9, gyr_y:-56, gyr_z:-12, tick:756993 
+lis3dml, mag_x:2325, mag_y:1585, mag_z:-1645
+icm42688, acc_x:615, acc_y:-2925, acc_z:7749, gyr_x:-8, gyr_y:-59, gyr_z:-14, tick:761737 
+lis3dml, mag_x:2325, mag_y:1585, mag_z:-1645
+icm42688, acc_x:615, acc_y:-2924, acc_z:7746, gyr_x:-7, gyr_y:-61, gyr_z:-13, tick:766480 
+lis3dml, mag_x:2295, mag_y:1583, mag_z:-1614
+icm42688, acc_x:614, acc_y:-2925, acc_z:7741, gyr_x:-6, gyr_y:-61, gyr_z:-11, tick:771223 
+lis3dml, mag_x:2295, mag_y:1583, mag_z:-1614
+icm42688, acc_x:613, acc_y:-2926, acc_z:7741, gyr_x:-6, gyr_y:-60, gyr_z:-11, tick:775967 
+lis3dml, mag_x:2295, mag_y:1583, mag_z:-1614
+icm42688, acc_x:612, acc_y:-2927, acc_z:7746, gyr_x:-8, gyr_y:-57, gyr_z:-11, tick:780710 
+lis3dml, mag_x:2318, mag_y:1564, mag_z:-1628
+icm42688, acc_x:613, acc_y:-2927, acc_z:7750, gyr_x:-9, gyr_y:-55, gyr_z:-10, tick:785453 
+lis3dml, mag_x:2318, mag_y:1564, mag_z:-1628
+icm42688, acc_x:612, acc_y:-2926, acc_z:7750, gyr_x:-9, gyr_y:-55, gyr_z:-11, tick:790196 
+lis3dml, mag_x:2332, mag_y:1577, mag_z:-1636
+icm42688, acc_x:612, acc_y:-2925, acc_z:7749, gyr_x:-9, gyr_y:-56, gyr_z:-10, tick:794940 
+lis3dml, mag_x:2332, mag_y:1577, mag_z:-1636
+icm42688, acc_x:612, acc_y:-2925, acc_z:7748, gyr_x:-9, gyr_y:-55, gyr_z:-11, tick:799684 
+lis3dml, mag_x:2332, mag_y:1577, mag_z:-1636
+icm42688, acc_x:612, acc_y:-2925, acc_z:7748, gyr_x:-8, gyr_y:-56, gyr_z:-13, tick:804427 
+lis3dml, mag_x:2286, mag_y:1573, mag_z:-1656
+icm42688, acc_x:611, acc_y:-2927, acc_z:7748, gyr_x:-7, gyr_y:-56, gyr_z:-13, tick:809170 
+lis3dml, mag_x:2286, mag_y:1573, mag_z:-1656
+icm42688, acc_x:614, acc_y:-2930, acc_z:7747, gyr_x:-6, gyr_y:-57, gyr_z:-12, tick:813913 
+lis3dml, mag_x:2327, mag_y:1586, mag_z:-1657
+icm42688, acc_x:614, acc_y:-2932, acc_z:7745, gyr_x:-8, gyr_y:-57, gyr_z:-11, tick:818657 
+lis3dml, mag_x:2327, mag_y:1586, mag_z:-1657
+icm42688, acc_x:614, acc_y:-2935, acc_z:7745, gyr_x:-9, gyr_y:-56, gyr_z:-11, tick:823400 
+lis3dml, mag_x:2327, mag_y:1586, mag_z:-1657
+icm42688, acc_x:614, acc_y:-2937, acc_z:7746, gyr_x:-11, gyr_y:-55, gyr_z:-12, tick:828144 
+lis3dml, mag_x:2312, mag_y:1588, mag_z:-1657
+icm42688, acc_x:613, acc_y:-2933, acc_z:7749, gyr_x:-10, gyr_y:-55, gyr_z:-13, tick:832887 
+lis3dml, mag_x:2312, mag_y:1588, mag_z:-1657
+icm42688, acc_x:614, acc_y:-2929, acc_z:7751, gyr_x:-9, gyr_y:-56, gyr_z:-13, tick:837630 
+lis3dml, mag_x:2312, mag_y:1588, mag_z:-1657
+icm42688, acc_x:615, acc_y:-2928, acc_z:7750, gyr_x:-7, gyr_y:-57, gyr_z:-12, tick:842374 
+lis3dml, mag_x:2336, mag_y:1619, mag_z:-1598
+icm42688, acc_x:615, acc_y:-2928, acc_z:7750, gyr_x:-7, gyr_y:-58, gyr_z:-11, tick:847117 
+lis3dml, mag_x:2336, mag_y:1619, mag_z:-1598
+icm42688, acc_x:615, acc_y:-2928, acc_z:7749, gyr_x:-8, gyr_y:-58, gyr_z:-10, tick:851861 
+lis3dml, mag_x:2319, mag_y:1592, mag_z:-1608
+icm42688, acc_x:615, acc_y:-2930, acc_z:7748, gyr_x:-7, gyr_y:-58, gyr_z:-9, tick:856604 
+lis3dml, mag_x:2319, mag_y:1592, mag_z:-1608
+icm42688, acc_x:615, acc_y:-2932, acc_z:7748, gyr_x:-5, gyr_y:-56, gyr_z:-10, tick:861348 
+lis3dml, mag_x:2319, mag_y:1592, mag_z:-1608
+icm42688, acc_x:613, acc_y:-2931, acc_z:7751, gyr_x:-5, gyr_y:-55, gyr_z:-11, tick:866091 
+lis3dml, mag_x:2312, mag_y:1592, mag_z:-1649
+icm42688, acc_x:612, acc_y:-2930, acc_z:7751, gyr_x:-6, gyr_y:-55, gyr_z:-11, tick:870834 
+lis3dml, mag_x:2312, mag_y:1592, mag_z:-1649
+icm42688, acc_x:611, acc_y:-2930, acc_z:7750, gyr_x:-8, gyr_y:-55, gyr_z:-12, tick:875577 
+lis3dml, mag_x:2305, mag_y:1613, mag_z:-1650
+icm42688, acc_x:608, acc_y:-2929, acc_z:7746, gyr_x:-7, gyr_y:-56, gyr_z:-13, tick:880321 
+lis3dml, mag_x:2305, mag_y:1613, mag_z:-1650
+icm42688, acc_x:608, acc_y:-2928, acc_z:7744, gyr_x:-4, gyr_y:-56, gyr_z:-14, tick:885065 
+lis3dml, mag_x:2305, mag_y:1613, mag_z:-1650
+icm42688, acc_x:610, acc_y:-2927, acc_z:7745, gyr_x:-5, gyr_y:-54, gyr_z:-14, tick:889808 
+lis3dml, mag_x:2321, mag_y:1588, mag_z:-1636
+icm42688, acc_x:610, acc_y:-2925, acc_z:7749, gyr_x:-9, gyr_y:-55, gyr_z:-13, tick:894551 
+lis3dml, mag_x:2321, mag_y:1588, mag_z:-1636
+icm42688, acc_x:612, acc_y:-2925, acc_z:7749, gyr_x:-10, gyr_y:-56, gyr_z:-12, tick:899294 
+lis3dml, mag_x:2327, mag_y:1580, mag_z:-1632
+icm42688, acc_x:614, acc_y:-2927, acc_z:7748, gyr_x:-11, gyr_y:-57, gyr_z:-12, tick:904038 
+lis3dml, mag_x:2327, mag_y:1580, mag_z:-1632
+icm42688, acc_x:613, acc_y:-2928, acc_z:7747, gyr_x:-10, gyr_y:-56, gyr_z:-11, tick:908781 
+lis3dml, mag_x:2327, mag_y:1580, mag_z:-1632
+icm42688, acc_x:612, acc_y:-2929, acc_z:7747, gyr_x:-7, gyr_y:-55, gyr_z:-11, tick:913524 
+lis3dml, mag_x:2291, mag_y:1579, mag_z:-1653
+icm42688, acc_x:612, acc_y:-2929, acc_z:7749, gyr_x:-6, gyr_y:-54, gyr_z:-11, tick:918268 
+lis3dml, mag_x:2291, mag_y:1579, mag_z:-1653
+icm42688, acc_x:610, acc_y:-2928, acc_z:7750, gyr_x:-4, gyr_y:-53, gyr_z:-12, tick:923011 
+lis3dml, mag_x:2291, mag_y:1579, mag_z:-1653
+icm42688, acc_x:611, acc_y:-2927, acc_z:7748, gyr_x:-5, gyr_y:-54, gyr_z:-12, tick:927755 
+lis3dml, mag_x:2342, mag_y:1572, mag_z:-1649
+icm42688, acc_x:612, acc_y:-2928, acc_z:7747, gyr_x:-5, gyr_y:-53, gyr_z:-12, tick:932498 
+lis3dml, mag_x:2342, mag_y:1572, mag_z

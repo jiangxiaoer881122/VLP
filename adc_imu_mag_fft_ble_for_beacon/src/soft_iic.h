@@ -7,7 +7,10 @@
 #include <nrfx_gpiote.h>
 //硬件IIC所需头文件
 #include "iic_twi.h"
-
+//nrf库所需头文件
+#include "nrfx_twi.h"
+extern nrfx_twi_t m_twi;
+extern  bool  twi_done;
 #define ACK_VAL 0x0
 #define NACK_VAL 0x1
 #define ACK_CHECK_EN 0x1

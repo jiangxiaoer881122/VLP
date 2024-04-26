@@ -51,6 +51,14 @@ void icm_init();
  */
 void lis3dml_init();
 /**
+ * @brief read bytes to a sensor register 重新封装IIC的读取
+ */
+void sensor_register_read(uint8_t sensor_addr, uint8_t reg_addr, uint8_t *data, uint8_t len);
+/**
+ * @brief Write a byte to a sensor register 重新封装IIC的写入
+ */
+void sensor_register_write_byte(uint8_t sensor_addr, uint8_t reg_addr, uint8_t data);
+/**
  * @brief imu与bag 初始化程序
  */
 void imu_bag_init(void);

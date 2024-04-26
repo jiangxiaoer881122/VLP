@@ -18,6 +18,13 @@
         "string_view": "c",
         "array": "c",
         "fft.h": "c",
-        "ble.h": "c"
-    }
+        "ble.h": "c",
+        "log.h": "c",
+        "nrfx.h": "c",
+        "nrfx_common.h": "c",
+        "nrfx_twi.h": "c",
+        "lis3dml.h": "c",
+        "nrfx_twim.h": "c"
+    },
+    "idf.portWin": "COM5"
 }

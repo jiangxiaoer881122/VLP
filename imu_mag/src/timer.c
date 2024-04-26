@@ -6,20 +6,27 @@
  * @param[in] event_type 定时器的事件类型.
  * @param[in] p_context  传递的字节数
  */
-extern int flag,count,imu_flag,pd[100];
+extern int flag,count,imu_flag,pd[100],a;
+extern char a_a[10];
 void timer_handler(nrf_timer_event_t event_type, void * p_context)
 {
 
     if(event_type == NRF_TIMER_EVENT_COMPARE0)
     {
-        flag =(flag+1)%2;
-        count++;
-        pd[count-1] = adc_value_get();
-        if(count%100==0)
-        {
-        count =count%100;
-        imu_flag =1;
-        }
+        // flag =(flag+1)%2;
+        // count++;
+        // pd[count-1] = adc_value_get();
+        // if(count%20==0)
+        // {
+        // count = count%20;
+        imu_flag =(imu_flag+1)%2;
+        // print_uart("A\n");
+        // a++;
+		// a=a%100;
+		// sprintf(a_a,"%d\n",a);
+		// print_uart(a_a);
+        // }
+
     }
 }
 
@@ -41,7 +48,7 @@ void timer1_init_enable(void)
     printk("this is time %d\n",base_frequency);
     config.bit_width = NRF_TIMER_BIT_WIDTH_32;
     config.p_context = "Some context";
-    printf("config.frequnecy is %d",config.frequency);
+    printk("config.frequnecy is %d",config.frequency);
     printf("config.mode is %d",config.mode);
     //初始化定时器
     status = nrfx_timer_init(&timer_inst, &config, timer_handler);
@@ -54,9 +61,10 @@ void timer1_init_enable(void)
     //清除定时器
     nrfx_timer_clear(&timer_inst);
     //直接通过转换来成计数器通道的配置数字，极大的简便了定时器的工作(这里可选择ms还是us)
-    uint32_t desired_ticks = nrfx_timer_us_to_ticks(&timer_inst, TIME_TO_WAIT_US);
-    // uint32_t desired_ticks = nrfx_timer_ms_to_ticks(&timer_inst, TIME_TO_WAIT_MS);
-    printf("this is desired %d",desired_ticks);
+    // uint32_t desired_ticks = nrfx_timer_us_to_ticks(&timer_inst, TIME_TO_WAIT_US);
+    uint32_t desired_ticks =0;
+    desired_ticks=nrfx_timer_ms_to_ticks(&timer_inst, TIME_TO_WAIT_MS);
+    printk("this is desired %d",desired_ticks);
 
     //用于使能定时器比较通道，使能比较中断，设置触发比较寄存器CC[n],根据通道来停止任务（或者清零）
     nrfx_timer_extended_compare(&timer_inst, NRF_TIMER_CC_CHANNEL0, desired_ticks,

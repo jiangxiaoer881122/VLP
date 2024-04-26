@@ -152,6 +152,7 @@ void imu_bag_read_data( void)
 		// 将整数格式化成指针
 		sprintf(str_42688,"icm42688, acc_x:%d, acc_y:%d, acc_z:%d, gyr_x:%d, gyr_y:%d, gyr_z:%d, tick:%ld \n",acc_data[0], acc_data[1], acc_data[2],
 			   gyro_data[0], gyro_data[1], gyro_data[2],(long int)icm42688_timestamp);
+		// sprintf(str_42688,"tick:%ld\n",(long int)icm42688_timestamp);
 		ptr_42688 = str_42688;
 		print_uart(ptr_42688);
 		// memset(str_42688,0,sizeof(str_42688));

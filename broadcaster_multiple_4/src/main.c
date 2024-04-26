@@ -20,6 +20,7 @@ int main(void)
 			k_sleep(K_MSEC(200));
 			//得先关闭蓝牙后在开启
 			bt_disable();
+
 			k_sleep(K_MSEC(800));
 			
 	}

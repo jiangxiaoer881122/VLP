@@ -26,6 +26,9 @@ int count =0;
 int imu_flag =0;
 int b = 0;
 int c = 1;
+//用于imu_bag计数
+int a=0;
+char a_a[10];
 LOG_MODULE_REGISTER(adc, LOG_LEVEL_DBG);
 #define CHANNEL_COUNT 1
 
@@ -87,6 +90,7 @@ int main(void)
 	// //字符指针
 	char *P;
 	int i=0,offset=0;
+
 	//硬件IIC
 	i2c_dev = device_get_binding(I2C_DEV_NAME);
 	if(!i2c_dev)
@@ -116,13 +120,13 @@ int main(void)
 			{
 			imu_flag =0;
 			imu_bag_read_data();
-			for(i=0;i<100;i++)
-			{
-				offset += sprintf(str + offset, "%d,", pd[i]); // 将整数转换为字符串并拼接到str中
-			}
-			P=str;
-			print_uart(P);
-			offset=0;
+			// for(i=0;i<100;i++)
+			// {
+			// 	offset += sprintf(str + offset, "%d,", pd[i]); // 将整数转换为字符串并拼接到str中
+			// }
+			// P=str;
+			// print_uart(P);
+			// offset=0;
 			// }
 		}else{
 			//必须加否则会被优化

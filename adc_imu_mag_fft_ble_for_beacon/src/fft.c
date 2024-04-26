@@ -12,10 +12,10 @@ float fft_output_mag_buf[FFT_LENGTH];
 int fft_out[6];
 int fft_index[6];
 //用于调试
-// char str_a[100];
-// //字符指针
-// char *P_a;
-// int  offset_a=0;
+char str_a[100];
+//字符指针
+char *P_a;
+int  offset_a=0;
 int fft(void)
 {
 	uint32_t maxIndex;
@@ -48,10 +48,10 @@ int fft(void)
     // for (int i = 0; i < FFT_LENGTH; i++)
 	// {
 	// 	printk("%d.%d, ", (uint16_t)(fft_output_mag_buf[i]), (uint16_t)((fft_output_mag_buf[i] - (uint16_t)(fft_output_mag_buf[i])) * 100.0));
-	// 	if ((i + 1) % 32 == 0)
-	// 	{
-	// 		printk("\n");
-	// 	}
+	// 	// if ((i + 1) % 32 == 0)
+	// 	// {
+	// 	// 	printk("\n");
+	// 	// }
 	// }
 	// printk("fft end\n");
 
@@ -61,9 +61,11 @@ int fft(void)
 		//找寻最大值
     	arm_max_f32(&fft_output_mag_buf[fre_num[i]], 5, &maxValue, &maxIndex);
 		//将最大值存入数组 记录数值
-		fft_out[i]=(int)(maxValue*2/FFT_LENGTH);
+		fft_out[i]=(int)(maxValue*2/FFT_LENGTH*1000);
+				// fft_out[i]=(int)(maxValue*2);
 		fft_index[i]=(int)maxIndex+fre_num[i];
 	}
+
     // arm_max_f32(fft_output_mag_buf, FFT_LENGTH, &maxValue, &maxIndex);
     // printk("最大值为: %d\n", fft_out[0]);
     // printk("对应的索引序列为: %d\n",fft_index[0]);
@@ -74,6 +76,7 @@ int fft(void)
 	// }
 	// P_a=str_a;
 	// print_uart(P_a);
+	// print_uart("\n");
 	// offset_a=0;
 	return 0;
 }

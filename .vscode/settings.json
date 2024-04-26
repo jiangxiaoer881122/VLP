@@ -1,5 +1,6 @@
 {
     "nrf-connect.applications": [
         "${workspaceFolder}\\adc_imu_mag_fft_ble_for_beacon"
-    ]
+    ],
+    "cmake.sourceDirectory": "D:/NRF52/project/adc"
 }

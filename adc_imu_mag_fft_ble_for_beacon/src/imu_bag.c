@@ -19,14 +19,14 @@ uint32_t icm42688_timestamp = 0;
  * @brief Read a sequence of bytes from a sensor registers 重新封装IIC的读取
  * 
  */
-static void sensor_register_read(uint8_t sensor_addr, uint8_t reg_addr, uint8_t *data, uint8_t len)
+void sensor_register_read(uint8_t sensor_addr, uint8_t reg_addr, uint8_t *data, uint8_t len)
 {
 	EspI2cReadBytes(sensor_addr, reg_addr, data, len);
 }
 /**
  * @brief Write a byte to a sensor register 重新封装IIC的写入
  */
-static void sensor_register_write_byte(uint8_t sensor_addr, uint8_t reg_addr, uint8_t data)
+void sensor_register_write_byte(uint8_t sensor_addr, uint8_t reg_addr, uint8_t data)
 {
 	EspI2cWriteByte(sensor_addr, reg_addr, data);
 }
@@ -75,7 +75,7 @@ void lis3dml_init()
 {
 	/* 读WHO_AM_I寄存器 */
 	sensor_register_read(LIS3MDL_I2C_ADDR_G, LIS3MDL_WHO_AM_I, data, 1);
-	printk("lis3dml read id:%X\n", data[0]);
+	printk("lis3dml read id:%d\n", data[0]);
 	if (data[0] == LIS3MDL_ID)
 	{
 		printk("lis3dml ready!");
@@ -106,7 +106,7 @@ void lis3dml_init()
 	I2cInit();
 	/* 初始化icm42688 */
 	icm_init();
-	/* 初始化lis3dml */
+	// /* 初始化lis3dml */
 	lis3dml_init();
 }
 /**
@@ -114,13 +114,12 @@ void lis3dml_init()
  */
 void imu_bag_read_data( void)
 {
-	//用于存储格式化字符串
-	char str_42688[120];
-	char str_3dml[120];
-	// 字符指针
-	char *ptr_42688;
-	char *ptr_3dml;
-
+		//用于存储格式化字符串
+		char str_42688[120];
+		char str_3dml[120];
+		// 字符指针
+		char *ptr_42688;
+		char *ptr_3dml;
 		/* ICM-42688-P 读数据 */
 		sensor_register_write_byte(ICM_I2C_ADDR, ICM_BANK_SEL, 0);
 		sensor_register_write_byte(ICM_I2C_ADDR, ICM_SIGNAL_PATH_RESET, 0x04);
@@ -148,7 +147,7 @@ void imu_bag_read_data( void)
 
 		// 将上面两行数据直接用串口打印
 		// 将整数格式化成指针
-		sprintf(str_42688,"icm42688, acc_x:%d, acc_y:%d, acc_z:%d, gyr_x:%d, gyr_y:%d, gyr_z:%d, tick:%ld,",acc_data[0], acc_data[1], acc_data[2],
+		sprintf(str_42688,"icm42688, acc_x:%d, acc_y:%d, acc_z:%d, gyr_x:%d, gyr_y:%d, gyr_z:%d, tick:%ld\n",acc_data[0], acc_data[1], acc_data[2],
 			   gyro_data[0], gyro_data[1], gyro_data[2],(long int)icm42688_timestamp);
 		ptr_42688 = str_42688;
 		sprintf(str_3dml,"lis3dml, mag_x:%d, mag_y:%d, mag_z:%d\n",
@@ -156,6 +155,8 @@ void imu_bag_read_data( void)
 		ptr_3dml = str_3dml;
 		print_uart(ptr_42688);
 		print_uart(ptr_3dml);
+		// printk("%s",ptr_42688);
+		// printk("%s",ptr_3dml);
 		memset(str_42688,0,sizeof(str_42688));
 		memset(str_3dml,0,sizeof(str_3dml));
 		// print_uart("1,");

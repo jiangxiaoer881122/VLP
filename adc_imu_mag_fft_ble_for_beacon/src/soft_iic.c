@@ -14,12 +14,14 @@ void I2cInit()
     //     .pull_down_en = GPIO_PULLDOWN_DISABLE,
     //     .pull_up_en = GPIO_PULLUP_ENABLE,
     //     .pin_bit_mask = (1ULL << I2C_SCL_PIN) | (1ULL << I2C_SDA_PIN)};
-    // gpio_config(&io_config);
-    nrf_gpio_cfg_output(I2C_SCL_PIN);
-    nrf_gpio_cfg_output(I2C_SDA_PIN);
+    // // gpio_config(&io_config);
 
-    I2C_SDA_HIGH;
-    I2C_SCL_HIGH;
+    
+    // nrf_gpio_cfg_output(I2C_SCL_PIN);
+    // nrf_gpio_cfg_output(I2C_SDA_PIN);
+
+    // I2C_SDA_HIGH;
+    // I2C_SCL_HIGH;
 }
 
 void I2cSdaIn(void)
@@ -171,16 +173,39 @@ void EspI2cWriteByte(uint8_t dev_addr, uint8_t reg_addr, uint8_t write_data)
     // i2c_write(i2c_dev, reg_addr, 1, dev_addr);
     // i2c_write(i2c_dev, write_data, 1, dev_addr);
     
-    //重新更新硬件IIC
-    struct i2c_msg msgs[2];
-	msgs[0].buf = &reg_addr;
-	msgs[0].len = 1;
-	msgs[0].flags = I2C_MSG_WRITE;
-	msgs[1].buf = &write_data;
-	msgs[1].len = 1;
-	msgs[1].flags = I2C_MSG_WRITE | I2C_MSG_STOP;
+    //重新更新硬件IIC zephry
+    // struct i2c_msg msgs[2];
+	// msgs[0].buf = &reg_addr;
+	// msgs[0].len = 1;
+	// msgs[0].flags = I2C_MSG_WRITE;
+	// msgs[1].buf = &write_data;
+	// msgs[1].len = 1;
+	// msgs[1].flags = I2C_MSG_WRITE | I2C_MSG_STOP;
 
-	i2c_transfer(i2c_dev, msgs, 2, dev_addr);
+	// i2c_transfer(i2c_dev, msgs, 2, dev_addr);
+    
+    //nrfx的库
+    // nrfx_err_t errcode;
+    // nrfx_twi_xfer_desc_t m_transfer_desc={
+    //     .address=dev_addr,
+    //     .p_primary_buf=&reg_addr,
+    //     .p_secondary_buf=&write_data,
+    //     .primary_length =1,
+    //     .secondary_length =1,
+    //     .type = NRFX_TWI_XFER_TXTX,
+    // };
+    // nrfx_twi_xfer(&m_twi, &m_transfer_desc, 0);
+    // printk("%d\n",errcode);
+    uint8_t buffer[2] = {reg_addr, write_data};
+	nrfx_twi_xfer_desc_t xfer_desc = {
+		.type = NRFX_TWI_XFER_TX,
+		.address = dev_addr,
+		.primary_length = sizeof(buffer),
+		.p_primary_buf = buffer,
+	};
+
+	nrfx_twi_xfer(&m_twi, &xfer_desc, 0);
+    while(nrfx_twi_is_busy(&m_twi)){};
 }
 
 void EspI2cReadByte(uint8_t dev_addr, uint8_t reg_addr, uint8_t *read_data)
@@ -248,15 +273,47 @@ void EspI2cReadBytes(uint8_t dev_addr, uint8_t reg_addr, uint8_t *read_data, uin
 
     //以下是调用硬件IIC
     // i2c_write_read(i2c_dev, dev_addr,&reg_addr, 1, read_data ,read_len);
-    struct i2c_msg msgs[2];
-	msgs[0].buf = &reg_addr;
-	msgs[0].len = 1;
-	msgs[0].flags = I2C_MSG_WRITE | I2C_MSG_STOP;
-	msgs[1].buf = read_data;
-	msgs[1].len = read_len;
-	msgs[1].flags = I2C_MSG_READ | I2C_MSG_STOP;
+    // struct i2c_msg msgs[2];
+	// msgs[0].buf = &reg_addr;
+	// msgs[0].len = 1;
+	// msgs[0].flags = I2C_MSG_WRITE | I2C_MSG_STOP;
+	// msgs[1].buf = read_data;
+	// msgs[1].len = read_len;
+	// msgs[1].flags = I2C_MSG_READ | I2C_MSG_STOP;
 
-	i2c_transfer(i2c_dev, msgs, 2, dev_addr);
+	// i2c_transfer(i2c_dev, msgs, 2, dev_addr);
+
+    //nrf库
+    // nrfx_err_t errcode;
+    //     nrfx_twi_xfer_desc_t m_transfer_desc={
+    //     .address=dev_addr,
+    //     .p_primary_buf=&reg_addr,
+    //     .p_secondary_buf=read_data,
+    //     .primary_length =1,
+    //     .secondary_length =read_len,
+    //     .type = NRFX_TWI_XFER_TXRX,
+    // };
+    // errcode = nrfx_twi_xfer(&m_twi, &m_transfer_desc, 0);
+    // printk("%d",errcode);
+
+    uint8_t addr_buffer[1] = {reg_addr};
+	uint8_t data_buffer[read_len];
+
+	nrfx_twi_xfer_desc_t xfer_desc = {
+		.type = NRFX_TWI_XFER_TXRX,
+		.address = dev_addr,
+		.primary_length = sizeof(addr_buffer),
+		.p_primary_buf = addr_buffer,
+		.secondary_length = sizeof(data_buffer),
+		.p_secondary_buf = data_buffer,
+	};
+	nrfx_twi_xfer(&m_twi, &xfer_desc, 0);
+	while(nrfx_twi_is_busy(&m_twi)){};
+    // while(!twi_done){};
+    // twi_done=false;
+	for (int i = 0; i < read_len; i++) {
+		read_data[i] = data_buffer[i];
+	}
 }
 
 void I2cDetect(void)

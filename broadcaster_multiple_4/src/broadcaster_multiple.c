@@ -6,6 +6,8 @@
 
 #include <zephyr/sys/printk.h>
 #include <zephyr/bluetooth/bluetooth.h>
+#include <zephyr/bluetooth/addr.h>
+#include <zephyr/bluetooth/hci.h>
 
 /* Maximum supported AD data length, use a value supported by the Controller,
  * Bluetooth Core Specification define minimum of 31 bytes will be supported by
@@ -64,7 +66,8 @@ static const struct bt_data ad[] = {
 };
 
 static struct bt_le_ext_adv *adv[CONFIG_BT_EXT_ADV_MAX_ADV_SET];
-
+bt_addr_t addr;
+char addr_str[18];
 int broadcaster_multiple(void)
 {
 	struct bt_le_adv_param adv_param = {
@@ -118,6 +121,8 @@ int broadcaster_multiple(void)
 		}
 
 		printk("Started Extended Advertising Set %d.\n", index);
+		bt_addr_to_str(&addr, addr_str, sizeof(addr_str));
+		printk("AAA %s\n",addr_str);
 	}
 
 	return 0;

@@ -13,16 +13,66 @@
 #include "zephyr/logging/log.h"
 #include "nrfx_saadc.h"
 #include <zephyr/kernel.h>
+#include "nrfx_twi.h"
+#include "nrfx_twim.h"
+#include "nrfx_gpiote.h"
+
+#define TWI_INSTANCE_ID     0
+#define TWI_SCL_PIN         NRF_GPIO_PIN_MAP(0, 27)
+#define TWI_SDA_PIN			NRF_GPIO_PIN_MAP(0, 26)
+//定义一个发送完成的变量
+bool twi_done=true;
+// 定义 TWI 实例结构体
+nrfx_twi_t m_twi = NRFX_TWI_INSTANCE(TWI_INSTANCE_ID);
+void twi_handler(nrfx_twi_evt_t const * p_event, void * p_context) 
+{
+	switch (p_event->type) {
+		case NRFX_TWI_EVT_DONE:
+			/* Transfer completed */
+			twi_done=true;
+			break;
+		case NRFX_TWI_EVT_ADDRESS_NACK:
+			/* NACK received after sending the address */
+			printk("address nack");
+			break;
+		case NRFX_TWI_EVT_DATA_NACK:
+			/* NACK received after sending a data byte */
+			printk("data nack");
+			break;
+		default:
+			break;
+	}
+}
+// 初始化 TWI
+void twi_init(void)
+{
+	nrfx_err_t err_code;
+
+    // 配置 TWI
+    const nrfx_twi_config_t twi_config = {
+        .scl = TWI_SCL_PIN,
+        .sda = TWI_SDA_PIN,
+        .frequency = NRF_TWI_FREQ_400K,
+        .interrupt_priority = NRFX_SAADC_DEFAULT_CONFIG_IRQ_PRIORITY,
+        .hold_bus_uninit = false,
+    };
+    err_code = nrfx_twi_init(&m_twi, &twi_config, twi_handler, NULL);
+	IRQ_DIRECT_CONNECT(NRFX_IRQ_NUMBER_GET(NRF_TWI_INST_GET(0)), IRQ_PRIO_LOWEST,
+                       NRFX_TWI_INST_HANDLER_GET(0), 0);
+	printk("%d",err_code);
+    // 使能 TWI
+    nrfx_twi_enable(&m_twi);
+}
 //定义IIC的设备名称
-struct device *i2c_dev;
-#define I2C_DEV_NAME "I2C_0"
+// struct device *i2c_dev;
+// #define I2C_DEV_NAME "I2C_0"
 //用于进行flag的调用
 int flag =0;
 //存储一定的AD进而来进行在一定下进行输送
 int pd[1000];
 //用于imu的数据发送
-int count_imu =0;
-int imu_flag =0;
+// int count_imu =0;
+// int imu_flag =0;
 //这里是0.5秒的计时器
 int count =0;
 int b = 0;
@@ -40,6 +90,7 @@ uint8_t voltage = 0;
 //标志接收端的imu的时间戳
 int small_time = 0; 
 
+//以下是nrf库的adc采样
 LOG_MODULE_REGISTER(adc, LOG_LEVEL_DBG);
 
 #define CHANNEL_COUNT 1
@@ -104,55 +155,62 @@ int main(void)
 	// //字符指针
 	char *P;
 	int i=0,offset=0;
-	//硬件IIC
-	i2c_dev = device_get_binding(I2C_DEV_NAME);
-	if(!i2c_dev)
-	{
-		printk("Failed\n");
-		return 0;
-	}else{
-		printk("SUCCESS\n");
-	}
+	// //硬件IIC zephry库的
+	// i2c_dev = device_get_binding(I2C_DEV_NAME);
+	// if(!i2c_dev)
+	// {
+	// 	printk("Failed\n");
+	// 	return 0;
+	// }else{
+	// 	printk("SUCCESS\n");
+	// }
 
-	int err = i2c_configure(i2c_dev, I2C_SPEED_SET(I2C_SPEED_FAST));
-    if (err) {
-        printk("Failed to configure I2C device: %d\n", err);
-        return 0;
-    }
-    printk("I2C device configured successfully\n");
+	// int err = i2c_configure(i2c_dev, I2C_SPEED_SET(I2C_SPEED_FAST));
+    // if (err) {
+    //     printk("Failed to configure I2C device: %d\n", err);
+    //     return 0;
+    // }
+    // printk("I2C device configured successfully\n");
 
+
+	//iic nrf库
+	twi_init();
 	// 进行imu与bag的初始化
 	imu_bag_init();
 	// 进行adc初始化
 	adc_init2();
 	//进行串口初始化
 	uart_init_slef();
-	bt_disable();
-	broadcaster_multiple();
+	// bt_disable();
+	// broadcaster_multiple();
 	//进行定时器初始化 2k采样率 
  	timer1_init_enable(); 
+	//进行定时器初始化 20hz
+	// timer2_init_enable(); 
 	while (1)
 	{
+
 		// 这里检测定时器代码
-		if(imu_flag)
-		{
-			imu_flag=0;
+		// if(imu_flag)
+		// {
+			// imu_flag=0;
 			//进行imu_bag的读取
-			small_time = small_time+400;
+			// small_time = small_time+400;
 			// imu_bag_read_data();
 			if(flag)
 			{
-			//这代表0.5秒时间触发了
+			// //这代表0.5秒时间触发了
 			big_time++;
-			//进行FFT处理
-			fft();
+			// imu_bag_read_data();
+			// //进行FFT处理
+			// fft();
 			//进行数据的更新
 			// ble_data_update();
 			//清零
 			flag=0;
 			//清除imu的时间戳
-			small_time=0;
-			}
+			// small_time=0;
+			// }
 		}else{
 			//必须加否则会被优化
 			c=1;
