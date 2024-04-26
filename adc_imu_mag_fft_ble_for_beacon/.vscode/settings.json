@@ -24,7 +24,9 @@
         "nrfx_common.h": "c",
         "nrfx_twi.h": "c",
         "lis3dml.h": "c",
-        "nrfx_twim.h": "c"
+        "nrfx_twim.h": "c",
+        "nrfx_ppi.h": "c",
+        "irq.h": "c"
     },
     "idf.portWin": "COM5"
 }

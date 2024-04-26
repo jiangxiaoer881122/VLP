@@ -16,6 +16,7 @@
 #include "nrfx_twi.h"
 #include "nrfx_twim.h"
 #include "nrfx_gpiote.h"
+#include <zephyr/irq.h>
 
 #define TWI_INSTANCE_ID     0
 #define TWI_SCL_PIN         NRF_GPIO_PIN_MAP(0, 27)
@@ -24,45 +25,49 @@
 bool twi_done=true;
 // 定义 TWI 实例结构体
 nrfx_twi_t m_twi = NRFX_TWI_INSTANCE(TWI_INSTANCE_ID);
-void twi_handler(nrfx_twi_evt_t const * p_event, void * p_context) 
-{
-	switch (p_event->type) {
-		case NRFX_TWI_EVT_DONE:
-			/* Transfer completed */
-			twi_done=true;
-			break;
-		case NRFX_TWI_EVT_ADDRESS_NACK:
-			/* NACK received after sending the address */
-			printk("address nack");
-			break;
-		case NRFX_TWI_EVT_DATA_NACK:
-			/* NACK received after sending a data byte */
-			printk("data nack");
-			break;
-		default:
-			break;
-	}
-}
+// void twi_handler(nrfx_twi_evt_t const * p_event, void * p_context) 
+// {
+// 	switch (p_event->type) {
+// 		case NRFX_TWI_EVT_DONE:
+// 			/* Transfer completed */
+// 			twi_done=true;
+// 			break;
+// 		case NRFX_TWI_EVT_ADDRESS_NACK:
+// 			/* NACK received after sending the address */
+// 			printk("address nack");
+// 			break;
+// 		case NRFX_TWI_EVT_DATA_NACK:
+// 			/* NACK received after sending a data byte */
+// 			printk("data nack");
+// 			break;
+// 		default:
+// 			break;
+// 	}
+// }
 // 初始化 TWI
 void twi_init(void)
 {
 	nrfx_err_t err_code;
-
     // 配置 TWI
     const nrfx_twi_config_t twi_config = {
         .scl = TWI_SCL_PIN,
         .sda = TWI_SDA_PIN,
         .frequency = NRF_TWI_FREQ_400K,
-        .interrupt_priority = NRFX_SAADC_DEFAULT_CONFIG_IRQ_PRIORITY,
+        .interrupt_priority = 4,
         .hold_bus_uninit = false,
     };
-    err_code = nrfx_twi_init(&m_twi, &twi_config, twi_handler, NULL);
-	IRQ_DIRECT_CONNECT(NRFX_IRQ_NUMBER_GET(NRF_TWI_INST_GET(0)), IRQ_PRIO_LOWEST,
-                       NRFX_TWI_INST_HANDLER_GET(0), 0);
-	printk("%d",err_code);
+    err_code = nrfx_twi_init(&m_twi, &twi_config, NULL, NULL);
+	// IRQ_DIRECT_CONNECT(NRFX_IRQ_NUMBER_GET(NRF_TWI_INST_GET(0)), IRQ_PRIO_LOWEST,
+    //                    NRFX_TWI_INST_HANDLER_GET(0), 0);
+	// irq_enable(NRFX_IRQ_NUMBER_GET(NRF_TWI_INST_GET(0)));
+	// printk("IRQ_PRIO_LOWEST:%d\n",IRQ_PRIO_LOWEST);
+	// printk("NRFX_IRQ_NUMBER_GET(NRF_TWI_INST_GET(0)):%d\n",	NRFX_IRQ_NUMBER_GET(NRF_TWI_INST_GET(0)));
+	// printk("BIT:%d\n",	 (_IRQ_PRIO_OFFSET));
+	// printk("BIT:%d\n",	 twi_config.interrupt_priority);
     // 使能 TWI
     nrfx_twi_enable(&m_twi);
 }
+
 //定义IIC的设备名称
 // struct device *i2c_dev;
 // #define I2C_DEV_NAME "I2C_0"
@@ -144,8 +149,6 @@ int adc_to_voltage(int adc_value)
 {
 	return (adc_value * 3600) / 4096;
 }
-
-
 int main(void)
 {
 	// //用于计数
@@ -172,7 +175,6 @@ int main(void)
     // }
     // printk("I2C device configured successfully\n");
 
-
 	//iic nrf库
 	twi_init();
 	// 进行imu与bag的初始化
@@ -186,7 +188,7 @@ int main(void)
 	//进行定时器初始化 2k采样率 
  	timer1_init_enable(); 
 	//进行定时器初始化 20hz
-	// timer2_init_enable(); 
+	timer2_init_enable(); 
 	while (1)
 	{
 
@@ -199,11 +201,10 @@ int main(void)
 			// imu_bag_read_data();
 			if(flag)
 			{
-			// //这代表0.5秒时间触发了
+			//这代表0.5秒时间触发了
 			big_time++;
-			// imu_bag_read_data();
-			// //进行FFT处理
-			// fft();
+			//进行FFT处理
+			fft();
 			//进行数据的更新
 			// ble_data_update();
 			//清零

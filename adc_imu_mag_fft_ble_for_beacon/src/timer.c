@@ -32,7 +32,7 @@ void timer_handler(nrf_timer_event_t event_type, void * p_context)
         count++;
         pd[count-1] = adc_value_get();
         //这里是0.05秒的计时器 与20hz的计时器
-        if(count%100==0)
+        if(count%1000==0)
         {
             count =0;
             flag =1;
@@ -84,7 +84,6 @@ void timer1_init_enable(void)
 #if defined(__ZEPHYR__)
     IRQ_DIRECT_CONNECT(NRFX_IRQ_NUMBER_GET(NRF_TIMER_INST_GET(TIMER_INST_IDX)), IRQ_PRIO_LOWEST,
                        NRFX_TIMER_INST_HANDLER_GET(TIMER_INST_IDX), 0);
-    printk("A\n");
 #endif
     //清除定时器
     nrfx_timer_clear(&timer_inst);
@@ -129,6 +128,9 @@ void timer2_init_enable(void)
 #if defined(__ZEPHYR__)
     IRQ_DIRECT_CONNECT(NRFX_IRQ_NUMBER_GET(NRF_TIMER_INST_GET(TIMER2_INST_IDX)), IRQ_PRIO_LOWEST,
                        NRFX_TIMER_INST_HANDLER_GET(TIMER2_INST_IDX), 0);
+    printk("IRQ_PRIO_LOWEST:%d\n",IRQ_PRIO_LOWEST);
+	printk("timer2:%d\n",	NRFX_IRQ_NUMBER_GET(NRF_TIMER_INST_GET(TIMER2_INST_IDX)));
+	printk("BIT:%d\n",	 NRFX_TIMER_INST_HANDLER_GET(TIMER2_INST_IDX));
 #endif
     config2.interrupt_priority =6;
     printk("config2.frequnecy is %d",config2.interrupt_priority);

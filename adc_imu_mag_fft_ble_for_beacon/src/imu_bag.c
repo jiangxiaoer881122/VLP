@@ -155,9 +155,6 @@ void imu_bag_read_data( void)
 		ptr_3dml = str_3dml;
 		print_uart(ptr_42688);
 		print_uart(ptr_3dml);
-		// printk("%s",ptr_42688);
-		// printk("%s",ptr_3dml);
 		memset(str_42688,0,sizeof(str_42688));
 		memset(str_3dml,0,sizeof(str_3dml));
-		// print_uart("1,");
 }

@@ -50,7 +50,7 @@
 &i2c0 {
 	clock-frequency = <I2C_BITRATE_FAST>;
 	label = "I2C_0";
-	status = "disabled";
+	status = "okay";
 };
 
 &clock {
