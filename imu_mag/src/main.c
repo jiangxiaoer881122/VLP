@@ -32,7 +32,7 @@ char a_a[10];
 LOG_MODULE_REGISTER(adc, LOG_LEVEL_DBG);
 #define CHANNEL_COUNT 1
 
-static nrfx_saadc_channel_t single_channel = NRFX_SAADC_DEFAULT_CHANNEL_SE(NRF_SAADC_INPUT_AIN2, 0);
+static nrfx_saadc_channel_t single_channel = NRFX_SAADC_DEFAULT_CHANNEL_SE(NRF_SAADC_INPUT_AIN2 , 0);
 static nrf_saadc_value_t buffer[CHANNEL_COUNT];
 /*时钟校准*/
 void Bsp_HFCLK_Init_Extern()
@@ -45,7 +45,6 @@ void Bsp_HFCLK_Init_Extern()
         // Do nothing.
     }
 }
-
 int adc_init2(void)
 {
 	Bsp_HFCLK_Init_Extern();
@@ -53,7 +52,7 @@ int adc_init2(void)
 	//初始化 输入初始化的中断优秀级
 	err = nrfx_saadc_init(NRFX_SAADC_DEFAULT_CONFIG_IRQ_PRIORITY);
 	//配置通道的属性
-	single_channel.channel_config.gain = NRF_SAADC_GAIN1_6;
+	single_channel.channel_config.gain = NRF_SAADC_GAIN1_3;
 	//显示通道的采样时间间隔
 	LOG_INF("TIME=%d\r\n",single_channel.channel_config.acq_time);
 	//nrfx_saadc_channel_config完成通道的配置
@@ -80,7 +79,8 @@ int adc_value_get(void)
 //转换成电压
 int adc_to_voltage(int adc_value)
 {
-	return (adc_value * 3600) / 4096;
+	// return (adc_value * 1800)/4096 ;
+	return adc_value ;
 }
 
 int main(void)
@@ -133,5 +133,66 @@ int main(void)
 			c=1;
 		}
 	}
+
+	// // // //用于存储格式化字符串
+	// // char str[200];
+	// // // //字符指针
+	// // char *P;
+	// // int i=0,offset=0;
+
+	// //硬件IIC
+	// // i2c_dev = device_get_binding(I2C_DEV_NAME);
+	// // if(!i2c_dev)
+	// // {
+	// // 	printk("Failed\n");
+	// // 	return 0;
+	// // }else{
+	// // 	printk("SUCCESS\n");
+	// // }
+	// // int err = i2c_configure(i2c_dev, I2C_SPEED_SET(I2C_SPEED_FAST));
+    // // if (err) {
+    // //     printk("Failed to configure I2C device: %d\n", err);
+    // //     return 0;
+    // // }
+    // // printk("I2C device configured successfully\n");
+	// // 进行imu与bag的初始化
+	// // imu_bag_init();
+	// // 进行adc初始化
+	// adc_init();
+	// //进行串口初始化
+	// uart_init_slef();
+	// //进行定时器初始化 2k采样率 
+ 	// timer1_init_enable();
+	// while (1)
+	// {
+	// 		if(imu_flag)
+	// 		{
+	// 		imu_flag =0;
+	// 		adc_read_data();
+	// 		// imu_bag_read_data();
+	// 		// for(i=0;i<100;i++)
+	// 		// {
+	// 		// 	offset += sprintf(str + offset, "%d,", pd[i]); // 将整数转换为字符串并拼接到str中
+	// 		// }
+	// 		// P=str;
+	// 		// print_uart(P);
+	// 		// offset=0;
+	// 		// }
+	// 	}else{
+	// 		//必须加否则会被优化
+	// 		c=1;
+	// 	}
+	// }
+
+	// adc_init2();
+	// while(1){
+	// 	printk("vol=%d\r\n",adc_to_voltage(adc_value_get()));
+	// 	k_msleep(100);
+	// }
+	// adc_init();
+	// while(1){
+	// 	adc_read_data();
+	// 	k_msleep(1);
+	// }
 	return 0;
 }

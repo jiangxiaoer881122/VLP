@@ -29,7 +29,6 @@
 	};
 
 	status = "okay";
-
 	interrupts = <7>, <3>;
 };
 &comp {

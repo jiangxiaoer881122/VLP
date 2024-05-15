@@ -2,7 +2,8 @@
 //定义相关的频率的点位(在点位范围内上下加减2) 频率为213,437,589,777,943,985
 int fre_num[6]={218-2,447-2,603-2,795-2,965-2,1008-2};
 arm_cfft_instance_f32 scfft;
-extern int pd[1000];
+extern int pd2[1000];
+extern u_int16_t big_time ;
 /* FFT信号数组，包含实部和虚部 */
 float fft_input_buf[FFT_LENGTH * 2];
 float fft_input_buf2[FFT_LENGTH * 2];
@@ -30,7 +31,7 @@ int fft(void)
         //实部进行PD数据的赋值
         if(i<1000)
         {
-           fft_input_buf[2 * i] = pd[i];
+           fft_input_buf[2 * i] = pd2[i];
         }else{
            fft_input_buf[2 * i] = 0;
         }
@@ -78,5 +79,16 @@ int fft(void)
 	// print_uart(P_a);
 	// print_uart("\n");
 	// offset_a=0;
+	//串口输出原始值
+	// sprintf(str_a, "T%d,",big_time); 
+	// P_a=str_a;
+	// print_uart(P_a);
+	for(i=0;i<1000;i++)
+	{
+		sprintf(str_a, "%d,",pd2[i]); 
+		P_a=str_a;
+		print_uart(P_a);
+	}
+	// print_uart("\n");
 	return 0;
 }

@@ -23,7 +23,14 @@
  */
 // char str[10];
 // char *P;
-extern int flag,count,imu_flag,pd[1000];
+//10组imu的数据
+SensorData imu_10[10] = {0};
+//10组imu的数据做隔离
+SensorData imu_10_2[10] = {0};
+extern int flag,count,imu_flag,pd[1000],imu_count,pd2[1000];
+//进行imu的数据控制
+extern uint8_t icm42688_data[15],lis3dml_data[15];
+extern int icm42688_time;
 void timer_handler(nrf_timer_event_t event_type, void * p_context)
 {
 
@@ -36,6 +43,8 @@ void timer_handler(nrf_timer_event_t event_type, void * p_context)
         {
             count =0;
             flag =1;
+            //需要进行复制从而进行隔离
+            memcpy(pd2, pd, sizeof(pd));
         }
     }
 }
@@ -52,6 +61,19 @@ void timer2_handler(nrf_timer_event_t event_type, void * p_context)
     {
         //这里是0.5秒的计时器 与20hz的计时器
         imu_bag_read_data();
+        //进行数据拷贝
+        memcpy(imu_10[imu_count].icm, icm42688_data, sizeof(icm42688_data));
+        memcpy(imu_10[imu_count].lis, lis3dml_data, sizeof(lis3dml_data));
+        imu_10[imu_count].time = icm42688_time;
+        imu_count++;
+        if(imu_count==10)
+        {
+        imu_count=0;
+        memcpy(imu_10_2, imu_10, sizeof(imu_10)); 
+        // print_uart("BBB\n");
+        //进行置位imu_flag
+        imu_flag = 1;        
+        }
     }
 }
 

@@ -75,6 +75,9 @@ void twi_init(void)
 int flag =0;
 //存储一定的AD进而来进行在一定下进行输送
 int pd[1000];
+int pd2[1000];
+//存储一定的imu进行来输送
+int imu_count=0;
 //用于imu的数据发送
 // int count_imu =0;
 // int imu_flag =0;
@@ -82,6 +85,8 @@ int pd[1000];
 int count =0;
 int b = 0;
 int c = 1;
+int imu_flag =0;
+
 //以下是大的时间戳 0.5秒计时一次 0-65536
 u_int16_t big_time = 0;
 //MovingFlag 与beacondeviceType
@@ -121,7 +126,7 @@ int adc_init2(void)
 	//初始化 输入初始化的中断优秀级
 	err = nrfx_saadc_init(NRFX_SAADC_DEFAULT_CONFIG_IRQ_PRIORITY);
 	//配置通道的属性
-	single_channel.channel_config.gain = NRF_SAADC_GAIN1_6;
+	single_channel.channel_config.gain = NRF_SAADC_GAIN1_4;
 	//显示通道的采样时间间隔
 	LOG_INF("TIME=%d\r\n",single_channel.channel_config.acq_time);
 	//nrfx_saadc_channel_config完成通道的配置
@@ -138,6 +143,8 @@ int adc_init2(void)
 int adc_value_get(void)
 {
 	nrfx_err_t err;
+	//重新补充一下
+	// Bsp_HFCLK_Init_Extern();
 	//nrfx_saadc_offset_calibrate(NULL);校准ADC的偏移量，这里不使用回调函数。
 	err = nrfx_saadc_offset_calibrate(NULL);
 	//nrfx_saadc_mode_trigger();开始采集数据。
@@ -149,6 +156,7 @@ int adc_to_voltage(int adc_value)
 {
 	return (adc_value * 3600) / 4096;
 }
+
 int main(void)
 {
 	// //用于计数
@@ -205,8 +213,13 @@ int main(void)
 			big_time++;
 			//进行FFT处理
 			fft();
+			//进行一个校准确保是10imu数据
+			//然后复位
 			//进行数据的更新
+			// imu_flag=0;
 			// ble_data_update();
+			// print_uart("AAA\n");
+			//进行测试
 			//清零
 			flag=0;
 			//清除imu的时间戳

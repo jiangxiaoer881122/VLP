@@ -45,6 +45,13 @@
 变量声明
 ===========================
 */
+typedef struct {
+	uint8_t icm[15];
+	uint8_t lis[15];
+    int time;
+} SensorData;
+
+
 /*
 ===========================
 函数声明

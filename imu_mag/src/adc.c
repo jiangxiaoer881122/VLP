@@ -86,7 +86,7 @@ void adc_read_data(void)
 		    sprintf(str,"%d,",val_mv);
 		    ptr =str;
     		print_uart(ptr);
-
+            // printk("%d,",val_mv);
 
             //下列代码是将ADC原始值变换为mV
             // err = adc_raw_to_millivolts_dt(&adc_channels[i],
