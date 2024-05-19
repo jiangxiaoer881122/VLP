@@ -83,12 +83,13 @@ int fft(void)
 	// sprintf(str_a, "T%d,",big_time); 
 	// P_a=str_a;
 	// print_uart(P_a);
-	for(i=0;i<1000;i++)
-	{
-		sprintf(str_a, "%d,",pd2[i]); 
-		P_a=str_a;
-		print_uart(P_a);
-	}
+	
+	// for(i=0;i<1000;i++)
+	// {
+	// 	sprintf(str_a, "%d,",pd2[i]); 
+	// 	P_a=str_a;
+	// 	print_uart(P_a);
+	// }
 	// print_uart("\n");
 	return 0;
 }

@@ -144,7 +144,7 @@ int adc_value_get(void)
 {
 	nrfx_err_t err;
 	//重新补充一下
-	// Bsp_HFCLK_Init_Extern();
+	Bsp_HFCLK_Init_Extern();
 	//nrfx_saadc_offset_calibrate(NULL);校准ADC的偏移量，这里不使用回调函数。
 	err = nrfx_saadc_offset_calibrate(NULL);
 	//nrfx_saadc_mode_trigger();开始采集数据。
@@ -166,6 +166,8 @@ int main(void)
 	// //字符指针
 	char *P;
 	int i=0,offset=0;
+	//测试
+	int ADC=0;
 	// //硬件IIC zephry库的
 	// i2c_dev = device_get_binding(I2C_DEV_NAME);
 	// if(!i2c_dev)
@@ -191,8 +193,8 @@ int main(void)
 	adc_init2();
 	//进行串口初始化
 	uart_init_slef();
-	// bt_disable();
-	// broadcaster_multiple();
+	bt_disable();
+	broadcaster_multiple();
 	//进行定时器初始化 2k采样率 
  	timer1_init_enable(); 
 	//进行定时器初始化 20hz
@@ -211,13 +213,19 @@ int main(void)
 			{
 			//这代表0.5秒时间触发了
 			big_time++;
+
+			// ADC = adc_value_get();
+			// //这里是用于打印
+			// sprintf(str, "%d,",ADC); 
+			// print_uart(str);
+
 			//进行FFT处理
 			fft();
 			//进行一个校准确保是10imu数据
 			//然后复位
 			//进行数据的更新
 			// imu_flag=0;
-			// ble_data_update();
+			ble_data_update();
 			// print_uart("AAA\n");
 			//进行测试
 			//清零

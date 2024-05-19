@@ -31,6 +31,12 @@ extern int flag,count,imu_flag,pd[1000],imu_count,pd2[1000];
 //进行imu的数据控制
 extern uint8_t icm42688_data[15],lis3dml_data[15];
 extern int icm42688_time;
+
+//这里只是调试用途
+char PA[20];
+	// 	sprintf(str_a, "%d,",pd2[i]); 
+	// 	P_a=str_a;
+	// 	print_uart(P_a);
 void timer_handler(nrf_timer_event_t event_type, void * p_context)
 {
 
@@ -38,7 +44,10 @@ void timer_handler(nrf_timer_event_t event_type, void * p_context)
     {
         count++;
         pd[count-1] = adc_value_get();
-        //这里是0.05秒的计时器 与20hz的计时器
+        //这里是用于打印
+	    // sprintf(PA, "%d,",pd[count-1]); 
+        // print_uart(PA);
+        // 这里是0.05秒的计时器 与20hz的计时器
         if(count%1000==0)
         {
             count =0;
