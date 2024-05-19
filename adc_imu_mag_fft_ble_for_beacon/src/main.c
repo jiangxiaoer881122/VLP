@@ -213,12 +213,10 @@ int main(void)
 			{
 			//这代表0.5秒时间触发了
 			big_time++;
-
 			// ADC = adc_value_get();
 			// //这里是用于打印
 			// sprintf(str, "%d,",ADC); 
 			// print_uart(str);
-
 			//进行FFT处理
 			fft();
 			//进行一个校准确保是10imu数据
@@ -226,7 +224,6 @@ int main(void)
 			//进行数据的更新
 			// imu_flag=0;
 			ble_data_update();
-			// print_uart("AAA\n");
 			//进行测试
 			//清零
 			flag=0;
