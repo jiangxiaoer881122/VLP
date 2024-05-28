@@ -77,7 +77,6 @@ void timer2_handler(nrf_timer_event_t event_type, void * p_context)
         {
         imu_count=0;
         memcpy(imu_10_2, imu_10, sizeof(imu_10)); 
-        // print_uart("BBB\n");
         //进行置位imu_flag
         imu_flag = 1;        
         }
