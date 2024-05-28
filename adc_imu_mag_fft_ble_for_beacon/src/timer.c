@@ -1,5 +1,6 @@
 #include "timer.h"
 #include "adc.h"
+#include "mymacros.h"
 #include <nrfx_timer.h>
 #include "imu_bag.h"
 #include "adc.h"
@@ -16,6 +17,7 @@
 #include "lis3dml.h"
 #include "uart.h"
 #define  MY_DEV_IRQ 3
+
 /**
  * @brief 定时器事件处理函数 2khz的采样同时兼顾0.5秒的选择
  *
@@ -43,8 +45,11 @@ void timer_handler(nrf_timer_event_t event_type, void * p_context)
         count++;
         pd[count-1] = adc_value_get();
         //这里是用于打印
-	    // sprintf(PA, "%dF,",pd[count-1]); 
-        // print_uart(PA);
+        if(PD_UART_Display)
+        {
+            sprintf(PA, "%d,",pd[count-1]); 
+            print_uart(PA);
+        }
         // 这里是0.05秒的计时器 与20hz的计时器
         if(count%1000==0)
         {
