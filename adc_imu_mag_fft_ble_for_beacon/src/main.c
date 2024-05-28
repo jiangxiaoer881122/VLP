@@ -126,7 +126,7 @@ int adc_init2(void)
 	//初始化 输入初始化的中断优秀级
 	err = nrfx_saadc_init(NRFX_SAADC_DEFAULT_CONFIG_IRQ_PRIORITY);
 	//配置通道的属性
-	single_channel.channel_config.gain = NRF_SAADC_GAIN1_4;
+	single_channel.channel_config.gain = NRF_SAADC_GAIN1_6;
 	//显示通道的采样时间间隔
 	LOG_INF("TIME=%d\r\n",single_channel.channel_config.acq_time);
 	//nrfx_saadc_channel_config完成通道的配置
@@ -198,7 +198,7 @@ int main(void)
 	//进行定时器初始化 2k采样率 
  	timer1_init_enable(); 
 	//进行定时器初始化 20hz
-	// timer2_init_enable(); 
+	timer2_init_enable(); 
 	while (1)
 	{
 
@@ -213,12 +213,12 @@ int main(void)
 			{
 			//这代表0.5秒时间触发了
 			big_time++;
-			ADC = adc_value_get();
-			//这里是用于打印
-			sprintf(str, "%d,",ADC); 
-			print_uart(str);
+			// ADC = adc_value_get();
+			// //这里是用于打印
+			// sprintf(str, "%d,",ADC); 
+			// print_uart(str);
 			//进行FFT处理
-			// fft();
+			fft();
 			//进行一个校准确保是10imu数据
 			//然后复位
 			//进行数据的更新

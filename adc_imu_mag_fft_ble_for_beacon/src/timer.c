@@ -15,6 +15,7 @@
 #include "icm_42688.h"
 #include "lis3dml.h"
 #include "uart.h"
+#define  MY_DEV_IRQ 3
 /**
  * @brief 定时器事件处理函数 2khz的采样同时兼顾0.5秒的选择
  *
@@ -34,28 +35,24 @@ extern int icm42688_time;
 
 //这里只是调试用途
 char PA[20];
-	// 	sprintf(str_a, "%d,",pd2[i]); 
-	// 	P_a=str_a;
-	// 	print_uart(P_a);
 void timer_handler(nrf_timer_event_t event_type, void * p_context)
 {
 
     if(event_type == NRF_TIMER_EVENT_COMPARE0)
     {
         count++;
-        // pd[count-1] = adc_value_get();
+        pd[count-1] = adc_value_get();
         //这里是用于打印
-	    // sprintf(PA, "%d,",pd[count-1]); 
+	    // sprintf(PA, "%dF,",pd[count-1]); 
         // print_uart(PA);
-        flag =1;
         // 这里是0.05秒的计时器 与20hz的计时器
-        // if(count%1000==0)
-        // {
-        //     count =0;
-        //     flag =1;
-        //     //需要进行复制从而进行隔离
-        //     memcpy(pd2, pd, sizeof(pd));
-        // }
+        if(count%1000==0)
+        {
+            count =0;
+            flag =1;
+            //需要进行复制从而进行隔离
+            memcpy(pd2, pd, sizeof(pd));
+        }
     }
 }
 /**
@@ -67,7 +64,7 @@ void timer_handler(nrf_timer_event_t event_type, void * p_context)
 void timer2_handler(nrf_timer_event_t event_type, void * p_context)
 {
 
-    if(event_type == NRF_TIMER_EVENT_COMPARE0)
+    if(event_type == NRF_TIMER_EVENT_COMPARE1)
     {
         //这里是0.5秒的计时器 与20hz的计时器
         imu_bag_read_data();
@@ -105,7 +102,7 @@ void timer1_init_enable(void)
     printk("this is time %d\n",base_frequency);
     config.bit_width = NRF_TIMER_BIT_WIDTH_32;
     config.p_context = "Some context";
-    //修改优先级为6
+    //修改优先级为7
     config.interrupt_priority =6;
     printk("config.frequnecy is %d",config.frequency);
     printk("config.mode is %d",config.mode);
@@ -114,7 +111,7 @@ void timer1_init_enable(void)
     NRFX_ASSERT(status == NRFX_SUCCESS);
 
 #if defined(__ZEPHYR__)
-    IRQ_DIRECT_CONNECT(NRFX_IRQ_NUMBER_GET(NRF_TIMER_INST_GET(TIMER_INST_IDX)), IRQ_PRIO_LOWEST,
+    IRQ_DIRECT_CONNECT(NRFX_IRQ_NUMBER_GET(NRF_TIMER_INST_GET(TIMER_INST_IDX)), MY_DEV_IRQ,
                        NRFX_TIMER_INST_HANDLER_GET(TIMER_INST_IDX), 0);
 #endif
     //清除定时器
@@ -174,8 +171,8 @@ void timer2_init_enable(void)
     //用于使能定时器比较通道，使能比较中断，设置触发比较寄存器CC[n],根据通道来停止任务（或者清零）
     // nrfx_timer_extended_compare(&timer_inst2, NRF_TIMER_CC_CHANNEL0, desired_ticks2,
     //                             NRF_TIMER_SHORT_COMPARE0_CLEAR_MASK, true);
-    nrfx_timer_extended_compare(&timer_inst2, NRF_TIMER_CC_CHANNEL0, desired_ticks2,
-                                    NRF_TIMER_SHORT_COMPARE0_CLEAR_MASK, true);
+    nrfx_timer_extended_compare(&timer_inst2, NRF_TIMER_CC_CHANNEL1, desired_ticks2,
+                                    NRF_TIMER_SHORT_COMPARE1_CLEAR_MASK, true);
 
     //使能定时器
     nrfx_timer_enable(&timer_inst2);
