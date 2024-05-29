@@ -135,7 +135,7 @@ int adc_init2(void)
 	uint32_t channels_mask = nrfx_saadc_channels_configured_get();
 	LOG_INF("ADC channels mask: %d\n", channels_mask);
 	//设置通道分辨率为12bit，不使用过采样，事件回调
-	err = nrfx_saadc_simple_mode_set(channels_mask, NRF_SAADC_RESOLUTION_12BIT, NRF_SAADC_OVERSAMPLE_DISABLED, NULL);
+	err = nrfx_saadc_simple_mode_set(channels_mask, NRF_SAADC_RESOLUTION_14BIT, NRF_SAADC_OVERSAMPLE_DISABLED, NULL);
 	//在开始 SAADC 转换之前，您需要调用此函数来设置一个缓冲区，SAADC 将把采样数据存储到这个缓冲区中。
 	err = nrfx_saadc_buffer_set(buffer, CHANNEL_COUNT);
 }
