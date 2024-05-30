@@ -126,7 +126,7 @@ int adc_init2(void)
 	//初始化 输入初始化的中断优秀级
 	err = nrfx_saadc_init(NRFX_SAADC_DEFAULT_CONFIG_IRQ_PRIORITY);
 	//配置通道的属性
-	single_channel.channel_config.gain = NRF_SAADC_GAIN1_4;
+	single_channel.channel_config.gain = NRF_SAADC_GAIN1_6;
 	//显示通道的采样时间间隔
 	LOG_INF("TIME=%d\r\n",single_channel.channel_config.acq_time);
 	//nrfx_saadc_channel_config完成通道的配置
@@ -135,7 +135,7 @@ int adc_init2(void)
 	uint32_t channels_mask = nrfx_saadc_channels_configured_get();
 	LOG_INF("ADC channels mask: %d\n", channels_mask);
 	//设置通道分辨率为12bit，不使用过采样，事件回调
-	err = nrfx_saadc_simple_mode_set(channels_mask, NRF_SAADC_RESOLUTION_14BIT, NRF_SAADC_OVERSAMPLE_DISABLED, NULL);
+	err = nrfx_saadc_simple_mode_set(channels_mask, NRF_SAADC_RESOLUTION_12BIT, NRF_SAADC_OVERSAMPLE_DISABLED, NULL);
 	//在开始 SAADC 转换之前，您需要调用此函数来设置一个缓冲区，SAADC 将把采样数据存储到这个缓冲区中。
 	err = nrfx_saadc_buffer_set(buffer, CHANNEL_COUNT);
 }
@@ -144,7 +144,7 @@ int adc_value_get(void)
 {
 	nrfx_err_t err;
 	//重新补充一下
-	Bsp_HFCLK_Init_Extern();
+	// Bsp_HFCLK_Init_Extern();
 	//nrfx_saadc_offset_calibrate(NULL);校准ADC的偏移量，这里不使用回调函数。
 	err = nrfx_saadc_offset_calibrate(NULL);
 	//nrfx_saadc_mode_trigger();开始采集数据。
