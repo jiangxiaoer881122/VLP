@@ -144,7 +144,7 @@ int adc_value_get(void)
 {
 	nrfx_err_t err;
 	//重新补充一下
-	// Bsp_HFCLK_Init_Extern();
+	Bsp_HFCLK_Init_Extern();
 	//nrfx_saadc_offset_calibrate(NULL);校准ADC的偏移量，这里不使用回调函数。
 	err = nrfx_saadc_offset_calibrate(NULL);
 	//nrfx_saadc_mode_trigger();开始采集数据。
@@ -190,16 +190,16 @@ int main(void)
 	// 进行imu与bag的初始化
 	imu_bag_init();
 	// 进行adc初始化
-	adc_init();
-	// adc_init2();
+	// adc_init();
+	adc_init2();
 	//进行串口初始化
 	uart_init_slef();
-	// bt_disable();
-	// broadcaster_multiple();
+	bt_disable();
+	broadcaster_multiple();
 	//进行定时器初始化 2k采样率 
  	timer1_init_enable(); 
 	//进行定时器初始化 20hz
-	// timer2_init_enable(); 
+	timer2_init_enable(); 
 	while (1)
 	{
 
@@ -219,15 +219,15 @@ int main(void)
 			// sprintf(str, "%d,",ADC); 
 			// print_uart(str);
 			//进行FFT处理
-			// fft();
+			fft();
 			//进行一个校准确保是10imu数据
 			//然后复位
 			//进行数据的更新
-			// imu_flag=0;
-			// ble_data_update();
+			imu_flag=0;
+			ble_data_update();
 			//进行测试
 			//清零
-			adc_read_data();
+			// adc_read_data();
 			flag=0;
 			//清除imu的时间戳
 			// small_time=0;

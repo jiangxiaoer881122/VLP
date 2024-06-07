@@ -16,8 +16,8 @@
 #include "icm_42688.h"
 #include "lis3dml.h"
 #include "uart.h"
-#define  MY_DEV_IRQ 3
-
+#define  MY_PD_IRQ 5
+#define  MY_IMU_IRQ 5
 /**
  * @brief 定时器事件处理函数 2khz的采样同时兼顾0.5秒的选择
  *
@@ -42,23 +42,23 @@ void timer_handler(nrf_timer_event_t event_type, void * p_context)
 
     if(event_type == NRF_TIMER_EVENT_COMPARE0)
     {
-        // count++;
-        // pd[count-1] = adc_value_get();
-        // //这里是用于打印
-        // if(PD_UART_Display)
-        // {
-        //     sprintf(PA, "%d,",pd[count-1]); 
-        //     print_uart(PA);
-        // }
-        // // 这里是0.05秒的计时器 与20hz的计时器
-        // if(count%1000==0)
-        // {
-        //     count =0;
-        //     flag =1;
-        //     //需要进行复制从而进行隔离
-        //     memcpy(pd2, pd, sizeof(pd));
-        // }
-        flag=1;
+        count++;
+        pd[count-1] = adc_value_get();
+        //这里是用于打印
+        if(PD_UART_Display)
+        {
+            sprintf(PA, "%d,",pd[count-1]); 
+            print_uart(PA);
+        }
+        // 这里是0.05秒的计时器 与20hz的计时器
+        if(count%1000==0)
+        {
+            count =0;
+            flag =1;
+            //需要进行复制从而进行隔离
+            memcpy(pd2, pd, sizeof(pd));
+        }
+        // flag=1;
 
     }
 }
@@ -117,8 +117,12 @@ void timer1_init_enable(void)
     NRFX_ASSERT(status == NRFX_SUCCESS);
 
 #if defined(__ZEPHYR__)
-    IRQ_DIRECT_CONNECT(NRFX_IRQ_NUMBER_GET(NRF_TIMER_INST_GET(TIMER_INST_IDX)), MY_DEV_IRQ,
+    IRQ_DIRECT_CONNECT(NRFX_IRQ_NUMBER_GET(NRF_TIMER_INST_GET(TIMER_INST_IDX)), MY_PD_IRQ,
                        NRFX_TIMER_INST_HANDLER_GET(TIMER_INST_IDX), 0);
+    // IRQ_DIRECT_CONNECT(NRFX_IRQ_NUMBER_GET(NRF_TIMER_INST_GET(TIMER_INST_IDX)), IRQ_PRIO_LOWEST,
+    //                    NRFX_TIMER_INST_HANDLER_GET(TIMER_INST_IDX), 0);                       
+    //用于调试打印
+    printk("irq:id%d",NRFX_IRQ_NUMBER_GET(NRF_TIMER_INST_GET(TIMER_INST_IDX)));
 #endif
     //清除定时器
     nrfx_timer_clear(&timer_inst);
@@ -161,8 +165,10 @@ void timer2_init_enable(void)
     NRFX_ASSERT(status2 == NRFX_SUCCESS);
 
 #if defined(__ZEPHYR__)
+    // IRQ_DIRECT_CONNECT(NRFX_IRQ_NUMBER_GET(NRF_TIMER_INST_GET(TIMER2_INST_IDX)), MY_IMU_IRQ,
+    //                    NRFX_TIMER_INST_HANDLER_GET(TIMER2_INST_IDX), 0);
     IRQ_DIRECT_CONNECT(NRFX_IRQ_NUMBER_GET(NRF_TIMER_INST_GET(TIMER2_INST_IDX)), IRQ_PRIO_LOWEST,
-                       NRFX_TIMER_INST_HANDLER_GET(TIMER2_INST_IDX), 0);
+                       NRFX_TIMER_INST_HANDLER_GET(TIMER2_INST_IDX), 0);                       
     printk("IRQ_PRIO_LOWEST:%d\n",IRQ_PRIO_LOWEST);
 	printk("timer2:%d\n",	NRFX_IRQ_NUMBER_GET(NRF_TIMER_INST_GET(TIMER2_INST_IDX)));
 	printk("BIT:%d\n",	 NRFX_TIMER_INST_HANDLER_GET(TIMER2_INST_IDX));
