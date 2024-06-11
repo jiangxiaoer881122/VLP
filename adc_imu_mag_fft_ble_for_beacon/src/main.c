@@ -194,10 +194,10 @@ int main(void)
 	adc_init2();
 	//进行串口初始化
 	uart_init_slef();
-	bt_disable();
-	broadcaster_multiple();
+	// bt_disable();
+	// broadcaster_multiple();
 	//进行定时器初始化 2k采样率 
- 	timer1_init_enable(); 
+ 	// timer1_init_enable(); 
 	//进行定时器初始化 20hz
 	timer2_init_enable(); 
 	while (1)
@@ -219,12 +219,12 @@ int main(void)
 			// sprintf(str, "%d,",ADC); 
 			// print_uart(str);
 			//进行FFT处理
-			fft();
+			// fft();
 			//进行一个校准确保是10imu数据
 			//然后复位
 			//进行数据的更新
 			imu_flag=0;
-			ble_data_update();
+			// ble_data_update();
 			//进行测试
 			//清零
 			// adc_read_data();

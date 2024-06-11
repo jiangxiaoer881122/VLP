@@ -58,11 +58,11 @@ void icm_init()
 	k_msleep(100);
 
 	/* 配置FS和ODR */
-	sensor_register_write_byte(ICM_I2C_ADDR, ICM_GYRO_CONFIG0, 0x67); // 250dps,200Hz
-	// sensor_register_write_byte(ICM_I2C_ADDR, ICM_GYRO_CONFIG0, 0x66); // 250dps,1000Hz
+	// sensor_register_write_byte(ICM_I2C_ADDR, ICM_GYRO_CONFIG0, 0x67); // 250dps,200Hz
+	sensor_register_write_byte(ICM_I2C_ADDR, ICM_GYRO_CONFIG0, 0x66); // 250dps,1000Hz
 	k_msleep(50);
-	sensor_register_write_byte(ICM_I2C_ADDR, ICM_ACCEL_CONFIG0, 0x47); // 4g, 100Hz（这里应为200Hz）
-	// sensor_register_write_byte(ICM_I2C_ADDR, ICM_ACCEL_CONFIG0, 0x46); // 4g, 1000Hz
+	// sensor_register_write_byte(ICM_I2C_ADDR, ICM_ACCEL_CONFIG0, 0x47); // 4g, 100Hz（这里应为200Hz）
+	sensor_register_write_byte(ICM_I2C_ADDR, ICM_ACCEL_CONFIG0, 0x46); // 4g, 1000Hz
 	k_msleep(50);
 	sensor_register_write_byte(ICM_I2C_ADDR, ICM_GYRO_ACCEL_CONFIG0, 0x55); // 20Hz BW
 	k_msleep(50);
@@ -97,8 +97,8 @@ void lis3dml_init()
 	/* 延时 */
 	k_msleep(50);
 	/* 配置 */
-	sensor_register_write_byte(LIS3MDL_I2C_ADDR_G, LIS3MDL_CTRL_REG1, 0x60 | 0x1C); // X、Y轴high performance，80Hz(这个不太对应该是ultra-high-perfermance)
-	// sensor_register_write_byte(LIS3MDL_I2C_ADDR_G, LIS3MDL_CTRL_REG1, 0x40 | 0x02); // X、Y轴high performance，300Hz(只支持high-perfermance)
+	// sensor_register_write_byte(LIS3MDL_I2C_ADDR_G, LIS3MDL_CTRL_REG1, 0x60 | 0x1C); // X、Y轴high performance，80Hz(这个不太对应该是ultra-high-perfermance)
+	sensor_register_write_byte(LIS3MDL_I2C_ADDR_G, LIS3MDL_CTRL_REG1, 0x40 | 0x02); // X、Y轴high performance，300Hz(只支持high-perfermance)
 	sensor_register_write_byte(LIS3MDL_I2C_ADDR_G, LIS3MDL_CTRL_REG2, 0x00);		// ±4 gauss
 	sensor_register_write_byte(LIS3MDL_I2C_ADDR_G, LIS3MDL_CTRL_REG3, 0x00);		// 连续转换模式
 	sensor_register_write_byte(LIS3MDL_I2C_ADDR_G, LIS3MDL_CTRL_REG4, 0x0C);		// Z轴high performance(这个不太对应该是ultra-high-perfermance)
