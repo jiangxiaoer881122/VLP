@@ -1,5 +1,7 @@
 #include "fft.h"
+
 //定义相关的频率的点位(在点位范围内上下加减2) 频率为213,437,589,777,943,985
+// int fre_num[6]={218-2,447-2,603-2,795-2,965-2,1008-2};
 int fre_num[6]={218-2,447-2,603-2,795-2,965-2,1008-2};
 arm_cfft_instance_f32 scfft;
 extern int pd2[1000];
@@ -45,16 +47,22 @@ int fft(void)
 	 /* 运算结果求幅值 */
 	arm_cmplx_mag_f32(fft_input_buf, fft_output_mag_buf, FFT_LENGTH);
 	// printk("i:%d\n",i+1);
-	// //以下是输出的FFT的值
-    // for (int i = 0; i < FFT_LENGTH; i++)
-	// {
-	// 	printk("%d.%d, ", (uint16_t)(fft_output_mag_buf[i]), (uint16_t)((fft_output_mag_buf[i] - (uint16_t)(fft_output_mag_buf[i])) * 100.0));
-	// 	// if ((i + 1) % 32 == 0)
-	// 	// {
-	// 	// 	printk("\n");
-	// 	// }
-	// }
-	// printk("fft end\n");
+
+	//以下是输出的FFT的值
+	if(FFT_UART_Display)
+	{
+		for (int i = 0; i < FFT_LENGTH; i++)
+		{
+			printk("%d.%d, ", (uint16_t)(fft_output_mag_buf[i]), (uint16_t)((fft_output_mag_buf[i] - (uint16_t)(fft_output_mag_buf[i])) * 100.0));
+			// if ((i + 1) % 32 == 0)
+			// {
+			// 	printk("\n");
+			// }
+		}
+		// printk("fft end\n");
+	}
+
+
 
 	//for 循环 在对应频率 取得最大的六个数值
 	for(i=0;i<6;i++)
@@ -67,29 +75,34 @@ int fft(void)
 		fft_index[i]=(int)maxIndex+fre_num[i];
 	}
 
-    // arm_max_f32(fft_output_mag_buf, FFT_LENGTH, &maxValue, &maxIndex);
-    // printk("最大值为: %d\n", fft_out[0]);
-    // printk("对应的索引序列为: %d\n",fft_index[0]);
 	//串口检验FFT的大小
-	// for(i=0;i<6;i++)
-	// {
-	// 	offset_a += sprintf(str_a + offset_a, "index %d:%d,", fft_index[i],fft_out[i]); 
-	// }
-	// P_a=str_a;
-	// print_uart(P_a);
-	// print_uart("\n");
-	// offset_a=0;
-	//串口输出原始值
-	// sprintf(str_a, "T%d,",big_time); 
-	// P_a=str_a;
-	// print_uart(P_a);
-	
-	// for(i=0;i<1000;i++)
-	// {
-	// 	sprintf(str_a, "%d,",pd2[i]); 
-	// 	P_a=str_a;
-	// 	print_uart(P_a);
-	// }
-	// print_uart("\n");
+	if(fft_UART_Display)
+	{
+		for(i=0;i<6;i++)
+		{
+			offset_a += sprintf(str_a + offset_a, "index %d:%d,", fft_index[i],fft_out[i]); 
+		}
+		P_a=str_a;
+		print_uart(P_a);
+		offset_a=0;
+		//串口输出原始值
+		sprintf(str_a, "T%d,",big_time); 
+		P_a=str_a;
+		print_uart(P_a);
+		print_uart("\n");
+	}
+
+	//输出正弦波值
+	if(fft_pd_uart)
+	{
+		for(i=0;i<1000;i++)
+		{
+			sprintf(str_a, "%d,",pd2[i]); 
+			P_a=str_a;
+			print_uart(P_a);
+		}
+		print_uart("\n");
+	}
+
 	return 0;
 }

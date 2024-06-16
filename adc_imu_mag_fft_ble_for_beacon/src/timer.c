@@ -34,7 +34,7 @@ extern int flag,count,imu_flag,pd[1000],imu_count,pd2[1000];
 //进行imu的数据控制
 extern uint8_t icm42688_data[15],lis3dml_data[15];
 extern int icm42688_time;
-
+extern u_int16_t big_time;
 //这里只是调试用途
 char PA[20];
 void timer_handler(nrf_timer_event_t event_type, void * p_context)
@@ -55,6 +55,7 @@ void timer_handler(nrf_timer_event_t event_type, void * p_context)
         {
             count =0;
             flag =1;
+            big_time++;
             //需要进行复制从而进行隔离
             memcpy(pd2, pd, sizeof(pd));
         }

@@ -126,7 +126,7 @@ int adc_init2(void)
 	//初始化 输入初始化的中断优秀级
 	err = nrfx_saadc_init(NRFX_SAADC_DEFAULT_CONFIG_IRQ_PRIORITY);
 	//配置通道的属性
-	single_channel.channel_config.gain = NRF_SAADC_GAIN1_6;
+	single_channel.channel_config.gain = NRF_SAADC_GAIN1_4;
 	//显示通道的采样时间间隔
 	LOG_INF("TIME=%d\r\n",single_channel.channel_config.acq_time);
 	//nrfx_saadc_channel_config完成通道的配置
@@ -194,43 +194,27 @@ int main(void)
 	adc_init2();
 	//进行串口初始化
 	uart_init_slef();
-	// bt_disable();
-	// broadcaster_multiple();
+	bt_disable();
+	broadcaster_multiple();
 	//进行定时器初始化 2k采样率 
- 	// timer1_init_enable(); 
+ 	timer1_init_enable(); 
 	//进行定时器初始化 20hz
 	timer2_init_enable(); 
 	while (1)
 	{
-
-		// 这里检测定时器代码
-		// if(imu_flag)
-		// {
-			// imu_flag=0;
-			//进行imu_bag的读取
-			// small_time = small_time+400;
-			// imu_bag_read_data();
 			if(flag)
 			{
 			//这代表0.5秒时间触发了
-			big_time++;
-			// ADC = adc_value_get();
-			// //这里是用于打印
-			// sprintf(str, "%d,",ADC); 
-			// print_uart(str);
+			// big_time++;
 			//进行FFT处理
-			// fft();
+			fft();
 			//进行一个校准确保是10imu数据
 			//然后复位
 			//进行数据的更新
 			imu_flag=0;
-			// ble_data_update();
-			//进行测试
+			ble_data_update();
 			//清零
-			// adc_read_data();
 			flag=0;
-			//清除imu的时间戳
-			// small_time=0;
 			// }
 		}else{
 			//必须加否则会被优化

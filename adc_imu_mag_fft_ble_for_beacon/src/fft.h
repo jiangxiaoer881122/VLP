@@ -18,6 +18,7 @@
 #include <arm_math.h>
 #include <arm_const_structs.h>
 #include "uart.h"
+#include "mymacros.h"
 // #include <support_functions.h>
 /*
 ===========================
@@ -27,7 +28,6 @@
 
 /* FFT长度 */
 #define FFT_LENGTH 2048
-
 
 /*
 ===========================
