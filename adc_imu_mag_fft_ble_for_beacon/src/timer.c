@@ -37,6 +37,7 @@ extern int icm42688_time;
 extern u_int16_t big_time;
 //这里只是调试用途
 char PA[20];
+char PB[100];
 void timer_handler(nrf_timer_event_t event_type, void * p_context)
 {
 
@@ -79,12 +80,31 @@ void timer2_handler(nrf_timer_event_t event_type, void * p_context)
         //进行数据拷贝
         memcpy(imu_10[imu_count].icm, icm42688_data, sizeof(icm42688_data));
         memcpy(imu_10[imu_count].lis, lis3dml_data, sizeof(lis3dml_data));
+        //用于测试是否数据传输过来
+        // for(int j=0;j<1;j++)
+        // {
+        // sprintf(PB, "icm[%d]%d,imu_10.icm[%d]%d\n",j,icm42688_data[j+1],j,imu_10[imu_count].icm[j+1]); 
+        // print_uart(PB);
+        // }
         imu_10[imu_count].time = icm42688_time;
+        //检测时间戳问题
+        // sprintf(PB, "temp:%d,imu_10 count:%d\n",imu_10[imu_count].time,imu_count); 
+        // print_uart(PB);
         imu_count++;
         if(imu_count==10)
         {
         imu_count=0;
         memcpy(imu_10_2, imu_10, sizeof(imu_10)); 
+        //检查时间戳问题
+        // sprintf(PB, "temp:%d,\n",imu_10_2[0].time); 
+        // print_uart(PB);
+        //检查时间戳问题
+        // for(int j=0;j<10;j++)
+        // {
+        // sprintf(PB, "time1:%d,time2:%d\n",imu_10_2[j].time,imu_10[j].time); 
+        // print_uart(PB);
+        // }
+        //自定义时间戳
         //进行置位imu_flag
         imu_flag = 1;        
         }

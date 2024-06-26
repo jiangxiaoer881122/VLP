@@ -27,8 +27,8 @@ struct bt_le_adv_param adv_param = {
 			.sid = 0U, /* Supply unique SID when creating advertising set */
 			.secondary_max_skip = 0U,
 			.options = (BT_LE_ADV_OPT_EXT_ADV | BT_LE_ADV_OPT_USE_NAME),
-			.interval_min = 0x0020,
-			.interval_max = 0x0020,
+			.interval_min = 0x0100,
+			.interval_max = 0x0100,
 			.peer = NULL,
 };//间隔为50ms
 int err;
@@ -61,7 +61,7 @@ int broadcaster_multiple(void)
 			       "(err %d)\n", index, err);
 			return err;
 		}
-		/* Start extended advertising set */
+		/* Start extended advertising set */   
 		err = bt_le_ext_adv_start(adv[index],BT_LE_EXT_ADV_START_DEFAULT);
 		if (err) {
 			printk("Failed to start extended advertising set %d "
@@ -117,17 +117,17 @@ void ble_data_change()
 	//4+4	
 	mfg_data[24+a]=((imu_10_2[1].time&0x0F)<<4)|((imu_10_2[2].time>>6)&0x0F);
 	//6+2
-	mfg_data[25+a]=((imu_10_2[2].time&0x3F)<<6)|((imu_10_2[3].time>>8)&0x03);
+	mfg_data[25+a]=((imu_10_2[2].time&0x3F)<<2)|((imu_10_2[3].time>>8)&0x03);
 	mfg_data[26+a]=imu_10_2[3].time&0xFF;
-	
-	//第二组时间戳
+
+	// //第二组时间戳
 	mfg_data[27+a]=(imu_10_2[4].time>>2)&0xFF;
 	//2+6
 	mfg_data[28+a]=((imu_10_2[4].time&0x03)<<6)|((imu_10_2[5].time>>4)&0x3F);
 	//4+4	
 	mfg_data[29+a]=((imu_10_2[5].time&0x0F)<<4)|((imu_10_2[6].time>>6)&0x0F);
 	//6+2
-	mfg_data[30+a]=((imu_10_2[6].time&0x3F)<<6)|((imu_10_2[7].time>>8)&0x03);
+	mfg_data[30+a]=((imu_10_2[6].time&0x3F)<<2)|((imu_10_2[7].time>>8)&0x03);
 	mfg_data[31+a]=imu_10_2[7].time&0xFF;
 
 	//第三组时间戳

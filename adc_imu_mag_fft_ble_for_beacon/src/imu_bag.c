@@ -64,7 +64,7 @@ void icm_init()
 	// sensor_register_write_byte(ICM_I2C_ADDR, ICM_ACCEL_CONFIG0, 0x47); // 4g, 100Hz（这里应为200Hz）
 	sensor_register_write_byte(ICM_I2C_ADDR, ICM_ACCEL_CONFIG0, 0x46); // 4g, 1000Hz
 	k_msleep(50);
-	sensor_register_write_byte(ICM_I2C_ADDR, ICM_GYRO_ACCEL_CONFIG0, 0x55); // 20Hz BW
+	sensor_register_write_byte(ICM_I2C_ADDR, ICM_GYRO_ACCEL_CONFIG0, 0x55); // 20Hz BW,这里根据配置而变化
 	k_msleep(50);
 	printk("icm42688 gyr and acc config finished!");
 

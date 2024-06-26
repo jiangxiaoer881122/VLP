@@ -69,9 +69,8 @@ int fft(void)
 	{
 		//找寻最大值
     	arm_max_f32(&fft_output_mag_buf[fre_num[i]], 5, &maxValue, &maxIndex);
-		//将最大值存入数组 记录数值
-		fft_out[i]=(int)(maxValue*2/FFT_LENGTH*1000);
-				// fft_out[i]=(int)(maxValue*2);
+		//将最大值存入数组 记录数值,并保留两位小数
+		fft_out[i]=(int)(maxValue*2/1000*100);
 		fft_index[i]=(int)maxIndex+fre_num[i];
 	}
 
@@ -92,7 +91,7 @@ int fft(void)
 		print_uart("\n");
 	}
 
-	//输出正弦波值
+	//输出ADC值
 	if(fft_pd_uart)
 	{
 		for(i=0;i<1000;i++)
