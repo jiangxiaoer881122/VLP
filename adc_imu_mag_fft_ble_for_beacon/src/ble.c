@@ -22,11 +22,18 @@ static const struct bt_data ad[] = {
 };
 //广播参数实现
 static struct bt_le_ext_adv *adv[CONFIG_BT_EXT_ADV_MAX_ADV_SET];
+//广播的mac地址
+static const bt_addr_le_t fixed_addr = {
+    .type = BT_ADDR_LE_PUBLIC,  // 地址类型，使用公共地址
+    .a = {
+        .val = { 0x01, 0x23, 0x45, 0x67, 0x89, 0xAB }  // 固定的地址
+    }
+};
 struct bt_le_adv_param adv_param = {
 			.id = BT_ID_DEFAULT,
 			.sid = 0U, /* Supply unique SID when creating advertising set */
 			.secondary_max_skip = 0U,
-			.options = (BT_LE_ADV_OPT_EXT_ADV | BT_LE_ADV_OPT_USE_NAME),
+			.options = (BT_LE_ADV_OPT_EXT_ADV | BT_LE_ADV_OPT_USE_NAME|BT_LE_ADV_OPT_USE_IDENTITY),
 			.interval_min = 0x0100,
 			.interval_max = 0x0100,
 			.peer = NULL,
@@ -41,6 +48,8 @@ int broadcaster_multiple(void)
 		printk("Bluetooth init failed (err %d)\n", err);
 		return err;
 	}
+	//设置蓝牙的mac地址
+
 	//设置广播数据
 	mfg_data[235]=0xAF;
 	for (int index = 0; index < CONFIG_BT_EXT_ADV_MAX_ADV_SET; index++) {
