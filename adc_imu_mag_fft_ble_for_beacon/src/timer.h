@@ -39,8 +39,8 @@
 #define TIME2_TO_WAIT_US 500UL
 /** @brief 等待时间以ms为单位*/
 #define TIME_TO_WAIT_MS 100UL
-#define TIME2_TO_WAIT_MS 5UL
-// #define TIME2_TO_WAIT_MS 50UL
+// #define TIME2_TO_WAIT_MS 5UL
+#define TIME2_TO_WAIT_MS 50UL
 /*
 ===========================
 变量声明
