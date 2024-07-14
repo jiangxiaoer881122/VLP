@@ -2,7 +2,7 @@
 
 //定义相关的频率的点位(在点位范围内上下加减2) 频率为213,437,589,777,943,985
 // int fre_num[6]={218-2,447-2,603-2,795-2,965-2,1008-2};
-int fre_num[6]={218-2,447-2,603-2,795-2,965-2,1008-2};
+int fre_num[6]={218-10,447-10,603-10,796-10,966-10,1009-10};
 arm_cfft_instance_f32 scfft;
 extern int pd2[1000];
 extern u_int16_t big_time ;
@@ -68,7 +68,7 @@ int fft(void)
 	for(i=0;i<6;i++)
 	{
 		//找寻最大值
-    	arm_max_f32(&fft_output_mag_buf[fre_num[i]], 5, &maxValue, &maxIndex);
+    	arm_max_f32(&fft_output_mag_buf[fre_num[i]], 20, &maxValue, &maxIndex);
 		//将最大值存入数组 记录数值,并保留两位小数
 		fft_out[i]=(int)(maxValue*2/1000*100);
 		fft_index[i]=(int)maxIndex+fre_num[i];
