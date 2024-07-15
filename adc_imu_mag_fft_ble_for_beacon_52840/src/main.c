@@ -186,9 +186,9 @@ int main(void)
     // printk("I2C device configured successfully\n");
 
 	//iic nrf库
-	twi_init();
+	// twi_init();
 	// 进行imu与bag的初始化
-	imu_bag_init();
+	// imu_bag_init();
 	// 进行adc初始化
 	// adc_init();
 	adc_init2();
@@ -198,8 +198,8 @@ int main(void)
 	broadcaster_multiple();
 	//进行定时器初始化 2k采样率 
  	timer1_init_enable(); 
-	//进行定时器初始化 20hz
-	timer2_init_enable(); 
+	// //进行定时器初始化 20hz
+	// timer2_init_enable(); 
 	while (1)
 	{
 			if(flag)
