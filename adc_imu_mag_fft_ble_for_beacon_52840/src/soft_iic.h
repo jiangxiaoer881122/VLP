@@ -86,4 +86,8 @@ void EspI2cReadBytes(uint8_t dev_addr,
 
 void I2cDetect(void);
 
+//十六位的iic写入
+void writeRegister(uint8_t dev_addr, uint8_t reg_addr, uint16_t write_data);
+//十六位的iic读取
+uint16_t readRegister(uint8_t dev_addr, uint8_t reg_addr);
 #endif

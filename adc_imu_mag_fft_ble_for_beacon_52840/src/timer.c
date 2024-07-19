@@ -16,6 +16,7 @@
 #include "icm_42688.h"
 #include "lis3dml.h"
 #include "uart.h"
+#include "ads1015.h"
 #define  MY_PD_IRQ 5
 #define  MY_IMU_IRQ 5
 /**
@@ -43,23 +44,35 @@ void timer_handler(nrf_timer_event_t event_type, void * p_context)
 
     if(event_type == NRF_TIMER_EVENT_COMPARE0)
     {
-        count++;
-        pd[count-1] = adc_value_get();
-        //这里是用于打印
-        if(PD_UART_Display)
-        {
-            sprintf(PA, "%d,",pd[count-1]); 
-            print_uart(PA);
-        }
-        // 这里是0.05秒的计时器 与20hz的计时器
-        if(count%1000==0)
-        {
-            count =0;
-            flag =1;
-            big_time++;
-            //需要进行复制从而进行隔离
-            memcpy(pd2, pd, sizeof(pd));
-        }
+        // count++;
+        // pd[count-1] = adc_value_get();
+        // //这里是用于打印
+        // if(PD_UART_Display)
+        // {
+        //     sprintf(PA, "%d,",pd[count-1]); 
+        //     print_uart(PA);
+        // }
+        // // 这里是0.05秒的计时器 与20hz的计时器
+        // if(count%1000==0)
+        // {
+        //     count =0;
+        //     flag =1;
+        //     big_time++;
+        //     //需要进行复制从而进行隔离
+        //     memcpy(pd2, pd, sizeof(pd));
+        // }
+    Ads1015init(0);
+	int a=365;
+	a=Ads1015read();
+	// printk("ok");
+	// printk("%d",a);
+	// print_uart("Ads");
+	// char pa[10];
+	// sprintf(pa,"%d\n",a);
+	// print_uart(pa);
+	char pa[10];
+	sprintf(pa,"%d,",a);
+	print_uart(pa);
         // flag=1;
 
     }

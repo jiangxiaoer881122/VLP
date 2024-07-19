@@ -27,7 +27,9 @@
         "nrfx_twim.h": "c",
         "nrfx_ppi.h": "c",
         "irq.h": "c",
-        "mymacros.h": "c"
+        "mymacros.h": "c",
+        "compare": "c",
+        "icm_42688.h": "c"
     },
     "idf.portWin": "COM5",
     "nrf-connect.topdir": "${nrf-connect.sdk:2.5.1}",

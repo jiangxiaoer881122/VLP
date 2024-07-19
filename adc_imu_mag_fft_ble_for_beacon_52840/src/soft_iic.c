@@ -207,6 +207,22 @@ void EspI2cWriteByte(uint8_t dev_addr, uint8_t reg_addr, uint8_t write_data)
 	nrfx_twi_xfer(&m_twi, &xfer_desc, 0);
     while(nrfx_twi_is_busy(&m_twi)){};
 }
+//变成16位的写入
+void writeRegister(uint8_t dev_addr, uint8_t reg_addr, uint16_t write_data)
+{
+    uint8_t buffer[3] = {reg_addr};
+    buffer[1]= ((uint8_t)(write_data>>8));
+    buffer[2]=((uint8_t)(write_data&0xFF));
+	nrfx_twi_xfer_desc_t xfer_desc = {
+		.type = NRFX_TWI_XFER_TX,
+		.address = dev_addr,
+		.primary_length = sizeof(buffer),
+		.p_primary_buf = buffer,
+	};
+
+	nrfx_twi_xfer(&m_twi, &xfer_desc, 0);
+    while(nrfx_twi_is_busy(&m_twi)){};
+}
 
 void EspI2cReadByte(uint8_t dev_addr, uint8_t reg_addr, uint8_t *read_data)
 {
@@ -314,6 +330,26 @@ void EspI2cReadBytes(uint8_t dev_addr, uint8_t reg_addr, uint8_t *read_data, uin
 	for (int i = 0; i < read_len; i++) {
 		read_data[i] = data_buffer[i];
 	}
+}
+//自制16位的读取   
+uint16_t readRegister(uint8_t dev_addr, uint8_t reg_addr)
+{
+    uint8_t i = 0;
+    uint8_t read_len=2;
+    uint8_t addr_buffer[1] = {reg_addr};
+	uint8_t data_buffer[read_len];
+
+	nrfx_twi_xfer_desc_t xfer_desc = {
+		.type = NRFX_TWI_XFER_TXRX,
+		.address = dev_addr,
+		.primary_length = sizeof(addr_buffer),
+		.p_primary_buf = addr_buffer,
+		.secondary_length = sizeof(data_buffer),
+		.p_secondary_buf = data_buffer,
+	};
+	nrfx_twi_xfer(&m_twi, &xfer_desc, 0);
+	while(nrfx_twi_is_busy(&m_twi)){};
+    return ((data_buffer[0]<<8)|data_buffer[1]);
 }
 
 void I2cDetect(void)
