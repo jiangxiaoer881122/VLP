@@ -39,6 +39,7 @@ extern u_int16_t big_time;
 //这里只是调试用途
 char PA[20];
 char PB[100];
+int a=365;
 void timer_handler(nrf_timer_event_t event_type, void * p_context)
 {
 
@@ -62,14 +63,14 @@ void timer_handler(nrf_timer_event_t event_type, void * p_context)
         //     memcpy(pd2, pd, sizeof(pd));
         // }
     Ads1015init(0);
-	int a=365;
 	a=Ads1015read();
-	// printk("ok");
-	// printk("%d",a);
-	// print_uart("Ads");
-	// char pa[10];
-	// sprintf(pa,"%d\n",a);
-	// print_uart(pa);
+    //进行一次判断
+    if(a>2047)
+    {
+        a=a-4096;
+    }else{
+        a=a;
+    }
 	char pa[10];
 	sprintf(pa,"%d,",a);
 	print_uart(pa);
