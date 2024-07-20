@@ -29,7 +29,9 @@
         "irq.h": "c",
         "mymacros.h": "c",
         "compare": "c",
-        "icm_42688.h": "c"
+        "icm_42688.h": "c",
+        "nrfx_spi.h": "c",
+        "ads1220.h": "c"
     },
     "idf.portWin": "COM5",
     "nrf-connect.topdir": "${nrf-connect.sdk:2.5.1}",

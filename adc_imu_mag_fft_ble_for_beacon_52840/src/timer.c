@@ -17,6 +17,7 @@
 #include "lis3dml.h"
 #include "uart.h"
 #include "ads1015.h"
+#include "ads1220.h"
 #define  MY_PD_IRQ 5
 #define  MY_IMU_IRQ 5
 /**
@@ -62,20 +63,28 @@ void timer_handler(nrf_timer_event_t event_type, void * p_context)
         //     //需要进行复制从而进行隔离
         //     memcpy(pd2, pd, sizeof(pd));
         // }
-    Ads1015init(0);
-	a=Ads1015read();
-    //进行一次判断
-    if(a>2047)
-    {
-        a=a-4096;
-    }else{
-        a=a;
-    }
-	char pa[10];
+    // Ads1015init(0);
+	// a=Ads1015read();
+    // //进行一次判断
+    // if(a>2047)
+    // {
+    //     a=a-4096;
+    // }else{
+    //     a=a;
+    // }
+	// char pa[10];
+	// sprintf(pa,"%d,",a);
+	// print_uart(pa);
+    //     // flag=1;
+
+
+
+ 	Start_Conv();	
+	//开始输出
+	a=Read_Data();
+    char pa[10];
 	sprintf(pa,"%d,",a);
 	print_uart(pa);
-        // flag=1;
-
     }
 }
 /**

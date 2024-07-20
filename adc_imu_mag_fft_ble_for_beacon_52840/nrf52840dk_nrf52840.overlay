@@ -105,3 +105,15 @@
 /delete-node/ &{/pin-controller/pwm0_default/group1/};
 
 
+
+&spi3 {
+	status = "disabled";
+};
+
+&spi1 {
+	status = "disabled";
+};
+
+&spi2 {
+	status = "okay";
+};

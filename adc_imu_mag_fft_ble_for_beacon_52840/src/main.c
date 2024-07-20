@@ -18,6 +18,7 @@
 #include "nrfx_gpiote.h"
 #include <zephyr/irq.h>
 #include "ads1015.h"
+#include "ads1220.h"
 
 #define TWI_INSTANCE_ID     0
 #define TWI_SCL_PIN         NRF_GPIO_PIN_MAP(0, 27)
@@ -187,7 +188,7 @@ int main(void)
     // printk("I2C device configured successfully\n");
 
 	//iic nrf库
-	twi_init();
+	// twi_init();
 	// 进行imu与bag的初始化
 	// imu_bag_init();
 	// 进行adc初始化
@@ -195,12 +196,35 @@ int main(void)
 	// adc_init2();
 	//进行串口初始化
 	uart_init_slef();
+	//开始spi的初始化
+ 	ads_1015_spi_init();
+	printk("s");
+	//开ads的初始化配置
+ 	ads_begin();
+	printk("b");
+	//开始读取
+	printk("d");
+ 	Start_Conv();
+	printk("c");	
+	//开始输出
+	print_uart("ads1250");
+	int a=56;
+	a=Read_Data();
+	printk("%d",a);	
+	// char pa[10];
+	// sprintf(pa,"%d,",a);
+	// print_uart(pa);
+
 	// bt_disable();
 	// broadcaster_multiple();
 	//进行定时器初始化 2k采样率 
  	timer1_init_enable(); 
 	// //进行定时器初始化 20hz
 	// timer2_init_enable();
+
+
+	
+
 
 	while (1)
 	{
