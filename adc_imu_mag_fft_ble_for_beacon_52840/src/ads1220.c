@@ -67,7 +67,7 @@ void ads_begin(void)
     k_msleep(50);
 
     //开始写入配置
-    uint8_t m_config_reg0 = 0x90;   //settings: AINP=A0, AINN=GND, Gain 1, PGA enabled
+    uint8_t m_config_reg0 = 0x80;   //settings: AINP=A0, AINN=GND, Gain 1, PGA enabled
     uint8_t m_config_reg1 = 0x04;   //settings: DR=2000 SPS, Mode=Trbuo, Conv mode=single shot, Temp Sensor disabled, Current Source off
     uint8_t m_config_reg2 = 0x10;   //settings: Vref internal, 50/60Hz rejection, power open, IDAC off
     uint8_t m_config_reg3 = 0x00;   //settings: IDAC1 disabled, IDAC2 disabled, DRDY pin only
@@ -100,15 +100,18 @@ void Start_Conv(void)
 
 int  Read_Data(void){
     int  result = 0;
-    uint8_t spi_tx_buf[2]={0x10};
-    uint8_t spi_rx_buf[3]={0};
+    uint8_t spi_tx_buf[1]={0x10};
+    uint8_t spi_rx_buf[4]={0};
     nrfx_spi_xfer_desc_t  s_w =NRFX_SPI_XFER_TRX(spi_tx_buf,sizeof(spi_tx_buf),spi_rx_buf,sizeof(spi_rx_buf));
     nrfx_spi_xfer(&spi,&s_w, 0);
 
-    result = spi_rx_buf[0];
-    result = (result << 8) | spi_rx_buf[1];
-    result = (result << 8) | spi_rx_buf[2];
+    // result = spi_rx_buf[0];
+    // result = (result << 8) | spi_rx_buf[1];
+    // result = (result << 8) | spi_rx_buf[2];
 
+    result = spi_rx_buf[1];
+    result = (result << 8) | spi_rx_buf[2];
+    result = (result << 8) | spi_rx_buf[3];
     // if (spi_rx_buf[0] & (1<<7)) {
     //     result |= 0xFF000000;
     // }
