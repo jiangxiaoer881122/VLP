@@ -22,6 +22,7 @@ void ads_1015_spi_init(void)
         // spi_config.miso_pin = MISO_PIN;
         // spi_config.mosi_pin = MOSI_PIN;
         // spi_config.sck_pin = SPI_SCK_PIN;
+        spi_config.frequency=NRF_SPI_FREQ_8M;
         spi_config.mode = NRF_SPI_MODE_1;
         
         //开始初始化 开始阻塞读写
@@ -68,7 +69,7 @@ void ads_begin(void)
 
     //开始写入配置
     uint8_t m_config_reg0 = 0x80;   //settings: AINP=A0, AINN=GND, Gain 1, PGA enabled
-    uint8_t m_config_reg1 = 0x04;   //settings: DR=2000 SPS, Mode=Trbuo, Conv mode=single shot, Temp Sensor disabled, Current Source off
+    uint8_t m_config_reg1 = 0xD4;   //settings: DR=2000 SPS, Mode=Trbuo, Conv mode=con shot, Temp Sensor disabled, Current Source off
     uint8_t m_config_reg2 = 0x10;   //settings: Vref internal, 50/60Hz rejection, power open, IDAC off
     uint8_t m_config_reg3 = 0x00;   //settings: IDAC1 disabled, IDAC2 disabled, DRDY pin only
 
@@ -82,9 +83,7 @@ void SPI_Command(uint8_t data_in)
 {
     //发送与输出的TX与RX的缓冲
     uint8_t spi_tx_buf[1];
-    uint8_t spi_rx_buf[2];
     spi_tx_buf[0]=data_in;
-    // nrfx_spi_xfer_desc_t  s_w =NRFX_SPI_XFER_TRX(spi_tx_buf,sizeof(spi_tx_buf),spi_rx_buf,sizeof(spi_rx_buf));
     nrfx_spi_xfer_desc_t  s_w =NRFX_SPI_XFER_TRX(spi_tx_buf,sizeof(spi_tx_buf),NULL,0);
     nrfx_spi_xfer(&spi,&s_w, 0);
 
@@ -104,11 +103,6 @@ int  Read_Data(void){
     uint8_t spi_rx_buf[4]={0};
     nrfx_spi_xfer_desc_t  s_w =NRFX_SPI_XFER_TRX(spi_tx_buf,sizeof(spi_tx_buf),spi_rx_buf,sizeof(spi_rx_buf));
     nrfx_spi_xfer(&spi,&s_w, 0);
-
-    // result = spi_rx_buf[0];
-    // result = (result << 8) | spi_rx_buf[1];
-    // result = (result << 8) | spi_rx_buf[2];
-
     result = spi_rx_buf[1];
     result = (result << 8) | spi_rx_buf[2];
     result = (result << 8) | spi_rx_buf[3];

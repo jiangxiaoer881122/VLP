@@ -76,11 +76,6 @@ void timer_handler(nrf_timer_event_t event_type, void * p_context)
 	// sprintf(pa,"%d,",a);
 	// print_uart(pa);
     //     // flag=1;
-
-
-
- 	Start_Conv();	
-	//开始输出
 	a=Read_Data();
     char pa[10];
 	sprintf(pa,"%d,",a);
@@ -171,8 +166,8 @@ void timer1_init_enable(void)
     //清除定时器
     nrfx_timer_clear(&timer_inst);
     //直接通过转换来成计数器通道的配置数字，极大的简便了定时器的工作(这里可选择ms还是us)
-    // uint32_t desired_ticks = nrfx_timer_us_to_ticks(&timer_inst, TIME_TO_WAIT_US);
-    uint32_t desired_ticks = nrfx_timer_ms_to_ticks(&timer_inst, TIME_TO_WAIT_MS);
+    uint32_t desired_ticks = nrfx_timer_us_to_ticks(&timer_inst, TIME_TO_WAIT_US);
+    // uint32_t desired_ticks = nrfx_timer_ms_to_ticks(&timer_inst, TIME_TO_WAIT_MS);
     printk("this is desired %d",desired_ticks);
 
     //用于使能定时器比较通道，使能比较中断，设置触发比较寄存器CC[n],根据通道来停止任务（或者清零）

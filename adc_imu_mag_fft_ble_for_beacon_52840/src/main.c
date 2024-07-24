@@ -198,25 +198,9 @@ int main(void)
 	uart_init_slef();
 	//开始spi的初始化
  	ads_1015_spi_init();
-	printk("s");
 	//开ads的初始化配置
  	ads_begin();
-	printk("b");
-	//开始读取
-	printk("d");
- 	Start_Conv();
-	printk("c");	
-	//开始输出
-	print_uart("ads1250");
-	int a=56;
-	a=Read_Data();
-	printk("%d",a);	
-	// char pa[10];
-	// sprintf(pa,"%d,",a);
-	// print_uart(pa);
-
-	// bt_disable();
-	// broadcaster_multiple();
+	Start_Conv();
 	//进行定时器初始化 2k采样率 
  	timer1_init_enable(); 
 	// //进行定时器初始化 20hz
