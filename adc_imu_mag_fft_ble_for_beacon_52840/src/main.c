@@ -1,8 +1,8 @@
-/*
- * Copyright (c) 2012-2014 Wind River Systems, Inc.
- *
- * SPDX-License-Identifier: Apache-2.0
- */
+// /*
+//  * Copyright (c) 2012-2014 Wind River Systems, Inc.
+//  *
+//  * SPDX-License-Identifier: Apache-2.0
+//  */
 #include "imu_bag.h"
 #include "timer.h"
 #include "adc.h"
@@ -179,14 +179,12 @@ int main(void)
 	// }else{
 	// 	printk("SUCCESS\n");
 	// }
-
 	// int err = i2c_configure(i2c_dev, I2C_SPEED_SET(I2C_SPEED_FAST));
     // if (err) {
     //     printk("Failed to configure I2C device: %d\n", err);
     //     return 0;
     // }
     // printk("I2C device configured successfully\n");
-
 	//iic nrf库
 	// twi_init();
 	// 进行imu与bag的初始化
@@ -196,6 +194,7 @@ int main(void)
 	// adc_init2();
 	//进行串口初始化
 	uart_init_slef();
+	printf("AAA");
 	//开始spi的初始化
  	ads_1015_spi_init();
 	//开ads的初始化配置
@@ -205,11 +204,6 @@ int main(void)
  	timer1_init_enable(); 
 	// //进行定时器初始化 20hz
 	// timer2_init_enable();
-
-
-	
-
-
 	while (1)
 	{
 			if(flag)

@@ -11,10 +11,10 @@
 
 //ADS1220的几个管脚与spi的历程
 #define SPI_INSTANCE 2
-#define SPI_CS_PIN      NRF_GPIO_PIN_MAP(1, 13)
-#define MOSI_PIN        NRF_GPIO_PIN_MAP(1, 11)    
-#define MISO_PIN		NRF_GPIO_PIN_MAP(1, 10)	
-#define SPI_SCK_PIN     NRF_GPIO_PIN_MAP(1, 12)
+#define SPI_CS_PIN      NRF_GPIO_PIN_MAP(0, 30)
+#define MOSI_PIN        NRF_GPIO_PIN_MAP(0, 28)    
+#define MISO_PIN		NRF_GPIO_PIN_MAP(0, 27)	
+#define SPI_SCK_PIN     NRF_GPIO_PIN_MAP(0, 29)
 
 //spi的使用配置头
 static const nrfx_spi_t spi = NRFX_SPI_INSTANCE(SPI_INSTANCE);
