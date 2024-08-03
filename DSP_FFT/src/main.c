@@ -58,22 +58,21 @@ int main(void)
 
 	while (1)
 	{
-		k_msleep(30);
-		// nrf_gpio_pin_toggle(LED_IO_NUM);\
+		// nrf_gpio_pin_toggle(LED_IO_NUM);
 			/* FFT计算 */
 		arm_cfft_f32(&scfft, fft_input_buf, 0, 1);
 		/* 运算结果求幅值 */
 		arm_cmplx_mag_f32(fft_input_buf, fft_output_mag_buf, FFT_LENGTH);
 		k_msleep(500);
 		/* 生成信号序列 */
-		for (int i = 0; i < FFT_LENGTH; i++)
-		{
-			/* 实部，生成频率为100Hz和150Hz合成信号 */
-			fft_input_buf[2 * i] = 10 * arm_sin_f32(2 * PI * i * 100 / FFT_LENGTH) +
-								   5 * arm_sin_f32(2 * PI * i * 150 / FFT_LENGTH);
-			/* 虚部 */
-			fft_input_buf[2 * i + 1] = 0;
-		}
+		// for (int i = 0; i < FFT_LENGTH; i++)
+		// {
+		// 	/* 实部，生成频率为100Hz和150Hz合成信号 */
+		// 	fft_input_buf[2 * i] = 10 * arm_sin_f32(2 * PI * i * 100 / FFT_LENGTH) +
+		// 						   5 * arm_sin_f32(2 * PI * i * 150 / FFT_LENGTH);
+		// 	/* 虚部 */
+		// 	fft_input_buf[2 * i + 1] = 0;
+		// }
 		// printk("led toggle\n");
 	}
 
