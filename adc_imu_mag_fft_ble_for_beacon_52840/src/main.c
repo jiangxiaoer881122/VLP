@@ -199,12 +199,12 @@ int main(void)
 	uart_init_slef();
 	// printf("AAA");
 	//开始spi的初始化
- 	// ads_1015_spi_init();
+ 	ads_1015_spi_init();
 	//开ads的初始化配置
- 	// ads_begin();
-	// Start_Conv();
+ 	ads_begin();
+	Start_Conv();
 	//进行定时器初始化 2k采样率 
- 	// timer1_init_enable(); 
+ 	timer1_init_enable(); 
 	// //进行定时器初始化 20hz
 	timer2_init_enable();
 	while (1)

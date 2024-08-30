@@ -46,40 +46,27 @@ void timer_handler(nrf_timer_event_t event_type, void * p_context)
 
     if(event_type == NRF_TIMER_EVENT_COMPARE0)
     {
-        // count++;
-        // pd[count-1] = adc_value_get();
-        // //这里是用于打印
-        // if(PD_UART_Display)
-        // {
-        //     sprintf(PA, "%d,",pd[count-1]); 
-        //     print_uart(PA);
-        // }
-        // // 这里是0.05秒的计时器 与20hz的计时器
-        // if(count%1000==0)
-        // {
-        //     count =0;
-        //     flag =1;
-        //     big_time++;
-        //     //需要进行复制从而进行隔离
-        //     memcpy(pd2, pd, sizeof(pd));
-        // }
-    // Ads1015init(0);
-	// a=Ads1015read();
-    // //进行一次判断
-    // if(a>2047)
-    // {
-    //     a=a-4096;
-    // }else{
-    //     a=a;
-    // }
-	// char pa[10];
+        count++;
+        pd[count-1] = Read_Data();;
+        //这里是用于打印
+        if(PD_UART_Display)
+        {
+            sprintf(PA, "%d,",pd[count-1]); 
+            print_uart(PA);
+        }
+        // 这里是0.05秒的计时器 与20hz的计时器
+        if(count%1000==0)
+        {
+            count =0;
+            flag =1;
+            big_time++;
+            //需要进行复制从而进行隔离
+            memcpy(pd2, pd, sizeof(pd));
+        }
+	// a=Read_Data();
+    // char pa[10];
 	// sprintf(pa,"%d,",a);
 	// print_uart(pa);
-    //     // flag=1;
-	a=Read_Data();
-    char pa[10];
-	sprintf(pa,"%d,",a);
-	print_uart(pa);
     }
 }
 /**
