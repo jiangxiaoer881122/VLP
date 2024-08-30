@@ -9,7 +9,7 @@
 #include "iic_twi.h"
 #include "icm_42688.h"
 #include "uart.h"
-#include <stdio.h>
+#include <stdio.h>  
 #include "zephyr/logging/log.h"
 #include "nrfx_saadc.h"
 #include <zephyr/kernel.h>
@@ -19,8 +19,10 @@
 #include <zephyr/irq.h>
 
 #define TWI_INSTANCE_ID     0
-#define TWI_SCL_PIN         NRF_GPIO_PIN_MAP(0, 27)
-#define TWI_SDA_PIN			NRF_GPIO_PIN_MAP(0, 26)
+// #define TWI_SCL_PIN         NRF_GPIO_PIN_MAP(0, 27)
+// #define TWI_SDA_PIN			NRF_GPIO_PIN_MAP(0, 26)
+#define TWI_SCL_PIN         NRF_GPIO_PIN_MAP(0, 18)
+#define TWI_SDA_PIN			NRF_GPIO_PIN_MAP(0, 19)
 //定义一个发送完成的变量
 bool twi_done=true;
 // 定义 TWI 实例结构体
@@ -194,8 +196,8 @@ int main(void)
 	adc_init2();
 	//进行串口初始化
 	uart_init_slef();
-	bt_disable();
-	broadcaster_multiple();
+	// bt_disable();
+	// broadcaster_multiple();
 	//进行定时器初始化 2k采样率 
  	timer1_init_enable(); 
 	//进行定时器初始化 20hz
@@ -213,7 +215,7 @@ int main(void)
 			//进行数据的更新
 			// while(imu_flag==0);
 			imu_flag=0;
-			ble_data_update();
+			// ble_data_update();
 			//清零
 			flag=0;
 			// }
