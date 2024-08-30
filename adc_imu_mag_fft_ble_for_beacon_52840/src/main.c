@@ -203,6 +203,8 @@ int main(void)
 	//开ads的初始化配置
  	ads_begin();
 	Start_Conv();
+	bt_disable();
+	broadcaster_multiple();
 	//进行定时器初始化 2k采样率 
  	timer1_init_enable(); 
 	// //进行定时器初始化 20hz
@@ -212,7 +214,7 @@ int main(void)
 			if(flag)
 			{
 			//这代表0.5秒时间触发了
-			big_time++;
+			// big_time++;
 			//进行FFT处理
 			fft();
 			//进行一个校准确保是10imu数据
@@ -220,7 +222,7 @@ int main(void)
 			//进行数据的更新
 			// while(imu_flag==0);
 			imu_flag=0;
-			// ble_data_update();
+			ble_data_update();
 			//清零
 			flag=0;
 			// }

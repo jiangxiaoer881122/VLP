@@ -33,9 +33,12 @@ struct bt_le_adv_param adv_param = {
 			.id = BT_ID_DEFAULT,
 			.sid = 0U, /* Supply unique SID when creating advertising set */
 			.secondary_max_skip = 0U,
-			.options = (BT_LE_ADV_OPT_EXT_ADV | BT_LE_ADV_OPT_USE_NAME|BT_LE_ADV_OPT_USE_IDENTITY),
-			.interval_min = 0x0100,
-			.interval_max = 0x0100,
+			.options = (BT_LE_ADV_OPT_EXT_ADV | BT_LE_ADV_OPT_USE_NAME),
+			// .options = (BT_LE_ADV_OPT_EXT_ADV | BT_LE_ADV_OPT_USE_NAME|BT_LE_ADV_OPT_USE_IDENTITY),
+			.interval_min = 0x00A0,
+			.interval_max = 0x00A0,
+			// .interval_min = 0x0100,
+			// .interval_max = 0x0100,
 			.peer = NULL,
 };//间隔为50ms
 int err;
