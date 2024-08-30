@@ -21,8 +21,10 @@
 #include "ads1220.h"
 
 #define TWI_INSTANCE_ID     0
-#define TWI_SCL_PIN         NRF_GPIO_PIN_MAP(0, 27)
-#define TWI_SDA_PIN			NRF_GPIO_PIN_MAP(0, 26)
+#define TWI_SCL_PIN         NRF_GPIO_PIN_MAP(0, 18)
+#define TWI_SDA_PIN			NRF_GPIO_PIN_MAP(0, 19)
+// #define TWI_SCL_PIN         NRF_GPIO_PIN_MAP(0, 27)
+// #define TWI_SDA_PIN			NRF_GPIO_PIN_MAP(0, 26)
 //定义一个发送完成的变量
 bool twi_done=true;
 // 定义 TWI 实例结构体
@@ -68,6 +70,7 @@ void twi_init(void)
 	// printk("BIT:%d\n",	 twi_config.interrupt_priority);
     // 使能 TWI
     nrfx_twi_enable(&m_twi);
+	printk("this is a twi ok");
 }
 
 //定义IIC的设备名称
@@ -186,24 +189,24 @@ int main(void)
     // }
     // printk("I2C device configured successfully\n");
 	//iic nrf库
-	// twi_init();
+	twi_init();
 	// 进行imu与bag的初始化
-	// imu_bag_init();
+	imu_bag_init();
 	// 进行adc初始化
 	// adc_init();
 	// adc_init2();
 	//进行串口初始化
 	uart_init_slef();
-	printf("AAA");
+	// printf("AAA");
 	//开始spi的初始化
- 	ads_1015_spi_init();
+ 	// ads_1015_spi_init();
 	//开ads的初始化配置
- 	ads_begin();
-	Start_Conv();
+ 	// ads_begin();
+	// Start_Conv();
 	//进行定时器初始化 2k采样率 
- 	timer1_init_enable(); 
+ 	// timer1_init_enable(); 
 	// //进行定时器初始化 20hz
-	// timer2_init_enable();
+	timer2_init_enable();
 	while (1)
 	{
 			if(flag)
