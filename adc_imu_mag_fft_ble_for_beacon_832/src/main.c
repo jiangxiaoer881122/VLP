@@ -19,9 +19,18 @@
 #include <zephyr/irq.h>
 #include "ads1015.h"
 #include "ads1220.h"
+
+// 定义一个用于读取消息队列的线程堆栈空间
+#define STACK_SIZE 1024
+#define PRIORITY 5
+// 读取线程的栈空间
+K_THREAD_STACK_DEFINE(read_thread_stack, STACK_SIZE);
+// 定义一个线程数据结构
+struct k_thread read_thread_data;
+
 //尝试使用消息队列
-K_MSGQ_DEFINE(uart_msgq2, sizeof(char *), 10, 4); // 队列大小为10，消息长度为指针大小
-char *p ="I'm jjl\n";
+K_MSGQ_DEFINE(uart_msgq2, sizeof(char *), 30, 4); // 队列大小为10，消息长度为指针大小
+char *p="jjl 15645 68 6156 156 123156\n";
 void  put_MSGQ(void)
 {
 	//用于将数据添加进去队列
@@ -31,11 +40,24 @@ void  put_MSGQ(void)
 		printk("too much\n");
 	}
 }
+// void get_MSGQ(void)
+// {
+// 	//用于将数据获取队列并进行输出
+// 	char *msg;
+// 	while(1)
+// 	{
+// 	while(k_msgq_get(&uart_msgq2,&msg,K_NO_WAIT)==0)
+// 	{
+// 		print_uart(msg);
+// 	}
+// 	}
+// }
+
 void get_MSGQ(void)
 {
 	//用于将数据获取队列并进行输出
 	char *msg;
-	if(k_msgq_get(&uart_msgq2,&msg,K_FOREVER)==0)
+	while(k_msgq_get(&uart_msgq2,&msg,K_NO_WAIT)==0)
 	{
 		print_uart(msg);
 	}
@@ -209,9 +231,9 @@ int main(void)
     // }
     // printk("I2C device configured successfully\n");
 	//iic nrf库
-	// twi_init();
+	twi_init();
 	// 进行imu与bag的初始化
-	// imu_bag_init();
+	imu_bag_init();
 	// 进行adc初始化
 	// adc_init();
 	// adc_init2();
@@ -219,44 +241,40 @@ int main(void)
 	uart_init_slef();
 	// printf("AAA");
 	//开始spi的初始化
- 	// ads_1015_spi_init();
+ 	ads_1015_spi_init();
 	//开ads的初始化配置
- 	// ads_begin();
-	// Start_Conv();
+ 	ads_begin();
+	Start_Conv();
 	// bt_disable();
 	// broadcaster_multiple();
 	//进行定时器初始化 2k采样率 
- 	// timer1_init_enable(); 
+ 	timer1_init_enable(); 
 	// //进行定时器初始化 20hz
-	// timer2_init_enable();
-	// while (1)
-	// {
-	// 		if(flag)
-	// 		{
-	// 		//这代表0.5秒时间触发了
-	// 		// big_time++;
-	// 		//进行FFT处理
-	// 		fft();
-	// 		//进行一个校准确保是10imu数据
-	// 		//然后复位
-	// 		//进行数据的更新
-	// 		// while(imu_flag==0);
-	// 		imu_flag=0;
-	// 		// ble_data_update();
-	// 		//清零
-	// 		flag=0;
-	// 		// }
-	// 	}else{
-	// 		//必须加否则会被优化
-	// 		c=1;
-	// 	}
-	// }
-	while(1){
-		put_MSGQ();
-		k_sleep(K_SECONDS(1));
-		get_MSGQ();
+	timer2_init_enable();
+	// k_thread_create(&read_thread_data, read_thread_stack, STACK_SIZE,
+    //                 get_MSGQ, NULL, NULL, NULL,
+    //                 PRIORITY, 0, K_NO_WAIT);
+	while (1)
+	{
+			if(flag)
+			{
+			//这代表0.5秒时间触发了
+			// big_time++;
+			//进行FFT处理
+			fft();
+			//进行一个校准确保是10imu数据
+			//然后复位
+			imu_flag=0;
+			// ble_data_update();
+			//清零
+			flag=0;
+			// }
+		}else{
+			//必须加否则会被优化
+			get_MSGQ();
+			c=1;
+		}
 	}
-	return 0;
 }
 
 

@@ -121,8 +121,8 @@ void imu_bag_read_data( void)
 {
 	//创建一个
 		//用于存储格式化字符串
-		char str_42688[120];
-		char str_3dml[120];
+		char str_42688[100];
+		char str_3dml[100];
 		// 字符指针
 		char *ptr_42688;
 		char *ptr_3dml;
@@ -156,14 +156,26 @@ void imu_bag_read_data( void)
 			mag_data[2] = lis3dml_data[4] + (lis3dml_data[5] << 8);
 			// 将上面两行数据直接用串口打印
 			// 将整数格式化成指针
-			sprintf(str_42688,"icm42688, acc_x:%d, acc_y:%d, acc_z:%d, gyr_x:%d, gyr_y:%d, gyr_z:%d, tick:%ld\n",acc_data[0], acc_data[1], acc_data[2],
+			sprintf(str_42688,"icm42688,acc_x:%d,acc_y:%d,acc_z:%d,gyr_x:%d,gyr_y:%d,gyr_z:%d,tick:%ld\n",acc_data[0], acc_data[1], acc_data[2],
 				gyro_data[0], gyro_data[1], gyro_data[2],(long int)icm42688_timestamp);
 			ptr_42688 = str_42688;
-			sprintf(str_3dml,"lis3dml, mag_x:%d, mag_y:%d, mag_z:%d\n",
+			sprintf(str_3dml,"lis3dml,mag_x:%d,mag_y:%d,mag_z:%d\n",
 					mag_data[0], mag_data[1], mag_data[2]);
 			ptr_3dml = str_3dml;
-			print_uart(ptr_42688);
-			print_uart(ptr_3dml);
+			//进行数据队列的填充
+			//用于将数据添加进去队列
+			if(k_msgq_put(&uart_msgq2,&ptr_42688,K_NO_WAIT)!=0)
+			{
+				//丢弃
+				printk("too much\n");
+			}
+			if(k_msgq_put(&uart_msgq2,&ptr_3dml,K_NO_WAIT)!=0)
+			{
+				//丢弃
+				printk("too much\n");
+			}
+			// print_uart(ptr_42688);
+			// print_uart(ptr_3dml);
 			memset(str_42688,0,sizeof(str_42688));
 			memset(str_3dml,0,sizeof(str_3dml));
 		}

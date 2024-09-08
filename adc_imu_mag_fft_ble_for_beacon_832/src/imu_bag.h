@@ -37,6 +37,9 @@ extern int16_t acc_data[3];
 extern int16_t gyro_data[3];
 extern int16_t mag_data[3];
 extern uint32_t icm42688_timestamp;
+
+//声明消息队列
+extern struct k_msgq uart_msgq2;
 /*
 ===========================
 函数声明

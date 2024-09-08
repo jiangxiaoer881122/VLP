@@ -82,14 +82,20 @@ int fft(void)
 		{
 			offset_a += sprintf(str_a + offset_a, "index %d:%d,", fft_index[i],fft_out[i]); 
 		}
-		P_a=str_a;
-		print_uart(P_a);
-		offset_a=0;
+		// P_a=str_a;
+		// print_uart(P_a);
+		// offset_a=0;
 		//串口输出原始值
-		sprintf(str_a, "T%d,",big_time); 
+		offset_a+=sprintf(str_a + offset_a, "T%d\n",big_time); 
 		P_a=str_a;
-		print_uart(P_a);
-		print_uart("\n");
+		offset_a=0;
+		if(k_msgq_put(&uart_msgq2,&P_a,K_NO_WAIT)!=0)
+		{
+			//丢弃
+			printk("too much\n");
+		}
+		// print_uart(P_a);
+		// print_uart("\n");
 	}
 
 	//输出ADC值
