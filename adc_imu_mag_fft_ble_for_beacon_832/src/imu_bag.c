@@ -164,12 +164,12 @@ void imu_bag_read_data( void)
 			ptr_3dml = str_3dml;
 			//进行数据队列的填充
 			//用于将数据添加进去队列
-			if(k_msgq_put(&uart_msgq2,&ptr_42688,K_NO_WAIT)!=0)
+			if(k_msgq_put(&uart_msgq3,&ptr_42688,K_NO_WAIT)!=0)
 			{
 				//丢弃
 				printk("too much\n");
 			}
-			if(k_msgq_put(&uart_msgq2,&ptr_3dml,K_NO_WAIT)!=0)
+			if(k_msgq_put(&uart_msgq3,&ptr_3dml,K_NO_WAIT)!=0)
 			{
 				//丢弃
 				printk("too much\n");

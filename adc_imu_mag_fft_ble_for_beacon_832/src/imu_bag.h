@@ -40,6 +40,7 @@ extern uint32_t icm42688_timestamp;
 
 //声明消息队列
 extern struct k_msgq uart_msgq2;
+extern struct k_msgq uart_msgq3;
 /*
 ===========================
 函数声明

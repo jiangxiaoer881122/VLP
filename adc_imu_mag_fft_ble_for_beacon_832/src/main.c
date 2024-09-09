@@ -29,7 +29,8 @@ K_THREAD_STACK_DEFINE(read_thread_stack, STACK_SIZE);
 struct k_thread read_thread_data;
 
 //尝试使用消息队列
-K_MSGQ_DEFINE(uart_msgq2, sizeof(char *), 100, 4); // 队列大小为10，消息长度为指针大小
+K_MSGQ_DEFINE(uart_msgq2, sizeof(char *), 50, 4); // 队列大小为10，消息长度为指针大小
+K_MSGQ_DEFINE(uart_msgq3, sizeof(char *), 30, 4); // 队列大小为10，消息长度为指针大小，存储imu的数据
 char *p="jjl 15645 68 6156 156 123156\n";
 void  put_MSGQ(void)
 {
@@ -40,24 +41,16 @@ void  put_MSGQ(void)
 		printk("too much\n");
 	}
 }
-// void get_MSGQ(void)
-// {
-// 	//用于将数据获取队列并进行输出
-// 	char *msg;
-// 	while(1)
-// 	{
-// 	while(k_msgq_get(&uart_msgq2,&msg,K_NO_WAIT)==0)
-// 	{
-// 		print_uart(msg);
-// 	}
-// 	}
-// }
-
 void get_MSGQ(void)
 {
 	//用于将数据获取队列并进行输出
 	char *msg;
 	while(k_msgq_get(&uart_msgq2,&msg,K_NO_WAIT)==0)
+	{
+		print_uart(msg);
+	}
+	//进行双消息队列的存储
+	while(k_msgq_get(&uart_msgq3,&msg,K_NO_WAIT)==0)
 	{
 		print_uart(msg);
 	}
