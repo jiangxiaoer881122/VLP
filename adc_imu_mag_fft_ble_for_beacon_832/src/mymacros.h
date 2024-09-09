@@ -6,8 +6,8 @@
 #define  PD_UART_Display false 
 
 //调试的一个宏定义,True则显示IMU,反之亦然
-#define  IMU_UART_Display true 
-// #define  IMU_UART_Display false 
+// #define  IMU_UART_Display true 
+#define  IMU_UART_Display false 
 
 //调试的一个宏定义,True则显示FFT(所有),反之亦然
 // #define  FFT_UART_Display true 
@@ -18,7 +18,7 @@
 // #define  fft_UART_Display false 
 
 //调试的一个宏定义,True则显示1000个PD数据,反之亦然
-// #define  fft_pd_uart true 
-#define  fft_pd_uart false 
+#define  fft_pd_uart true 
+// #define  fft_pd_uart false 
 #endif
 

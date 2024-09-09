@@ -29,7 +29,7 @@ K_THREAD_STACK_DEFINE(read_thread_stack, STACK_SIZE);
 struct k_thread read_thread_data;
 
 //尝试使用消息队列
-K_MSGQ_DEFINE(uart_msgq2, sizeof(char *), 30, 4); // 队列大小为10，消息长度为指针大小
+K_MSGQ_DEFINE(uart_msgq2, sizeof(char *), 100, 4); // 队列大小为10，消息长度为指针大小
 char *p="jjl 15645 68 6156 156 123156\n";
 void  put_MSGQ(void)
 {

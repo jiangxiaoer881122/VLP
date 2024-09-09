@@ -4,7 +4,7 @@
 // int fre_num[6]={218-2,447-2,603-2,795-2,965-2,1008-2};
 int fre_num[6]={218-2,447-2,603-2,795-2,965-2,1008-2};
 arm_cfft_instance_f32 scfft;
-extern int pd2[1000];
+extern int pd2[2200];
 extern u_int16_t big_time ;
 /* FFT信号数组，包含实部和虚部 */
 float fft_input_buf[FFT_LENGTH * 2];
@@ -15,10 +15,16 @@ float fft_output_mag_buf[FFT_LENGTH];
 int fft_out[6];
 int fft_index[6];
 //用于调试
-char str_a[100];
+char str_a[500];
 //字符指针
 char *P_a;
 int  offset_a=0;
+
+//用于调试
+char str_a1[100];
+//字符指针
+char *P_a1;
+int  offset_a1=0;
 int fft(void)
 {
 	uint32_t maxIndex;
@@ -80,35 +86,48 @@ int fft(void)
 	{
 		for(i=0;i<6;i++)
 		{
-			offset_a += sprintf(str_a + offset_a, "index %d:%d,", fft_index[i],fft_out[i]); 
+			offset_a1 += sprintf(str_a1 + offset_a1, "index %d:%d,", fft_index[i],fft_out[i]); 
 		}
 		// P_a=str_a;
 		// print_uart(P_a);
 		// offset_a=0;
 		//串口输出原始值
-		offset_a+=sprintf(str_a + offset_a, "T%d\n",big_time); 
-		P_a=str_a;
-		offset_a=0;
-		if(k_msgq_put(&uart_msgq2,&P_a,K_NO_WAIT)!=0)
+		offset_a1+=sprintf(str_a1 + offset_a1, "T%d\n",big_time); 
+		P_a1=str_a1;
+		offset_a1=0;
+		if(k_msgq_put(&uart_msgq2,&P_a1,K_NO_WAIT)!=0)
 		{
 			//丢弃
 			printk("too much\n");
 		}
+		P_a1=NULL;
 		// print_uart(P_a);
 		// print_uart("\n");
 	}
-
 	//输出ADC值
 	if(fft_pd_uart)
 	{
-		for(i=0;i<1000;i++)
+		for(int j=1;j<21;j++)
 		{
-			sprintf(str_a, "%d,",pd2[i]); 
+			for(i=1;i<51;i++)
+			{
+			offset_a+=sprintf(str_a + offset_a,"%d,",pd2[i*j-1]); 
+			}
+			if(j==20){
+			offset_a+=sprintf(str_a + offset_a, "\n"); 
 			P_a=str_a;
-			print_uart(P_a);
+			offset_a=0;
+			}else{
+				P_a=str_a;
+				offset_a=0;
+			}
+			if(k_msgq_put(&uart_msgq2,&P_a,K_NO_WAIT)!=0)
+			{
+			//丢弃
+			printk("too much\n");
+			}
+			P_a=NULL;
 		}
-		print_uart("\n");
 	}
-
 	return 0;
 }
