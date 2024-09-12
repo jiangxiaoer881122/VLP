@@ -10,7 +10,7 @@
 
 /* queue to store up to 10 messages (aligned to 4-byte boundary) */
 //初始化存储队列
-K_MSGQ_DEFINE(uart_msgq, MSG_SIZE, 10, 4);
+K_MSGQ_DEFINE(uart_msgq, MSG_SIZE, 100, 4);
 
 const struct device *const uart_dev = DEVICE_DT_GET(UART_DEVICE_NODE);
 
@@ -36,13 +36,13 @@ void serial_cb(const struct device *dev, void *user_data)
 
 	/* read until FIFO empty */
 	while (uart_fifo_read(uart_dev, &c, 1) == 1) {
-		if ((c == '\n' || c == '\r') && rx_buf_pos > 0) {
+		if ((c == '\n' || c == '\r'|| c == ',') && rx_buf_pos > 0) {
 			/* terminate string */
-			rx_buf[rx_buf_pos] = '\0';
+			rx_buf[rx_buf_pos] = ',';
+			rx_buf[rx_buf_pos+1] = '\0';
 
 			/* if queue is full, message is silently dropped */
 			k_msgq_put(&uart_msgq, &rx_buf, K_NO_WAIT);
-
 			/* reset the buffer (it was copied to the msgq) */
 			rx_buf_pos = 0;
 		} else if (rx_buf_pos < (sizeof(rx_buf) - 1)) {
