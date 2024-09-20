@@ -19,6 +19,7 @@
 #include <zephyr/irq.h>
 #include "ads1015.h"
 #include "ads1220.h"
+#include "mymacros.h"
 
 // 定义一个用于读取消息队列的线程堆栈空间
 #define STACK_SIZE 1024
@@ -55,11 +56,11 @@ void get_MSGQ(void)
 	{
 		print_uart(msg);
 	}
-	//继续读取中断返回的数
-	while(k_msgq_get(&uart_msgq,&tx_buf,K_NO_WAIT)==0)
-	{
-		print_uart(tx_buf);
-	}
+	// //继续读取中断返回的数
+	// while(k_msgq_get(&uart_msgq,&tx_buf,K_NO_WAIT)==0)
+	// {
+	// 	print_uart(tx_buf);
+	// }
 }
 #define TWI_INSTANCE_ID     0
 #define TWI_SCL_PIN         NRF_GPIO_PIN_MAP(0, 18)
@@ -240,31 +241,36 @@ int main(void)
 	uart_init_slef();
 	// printf("AAA");
 	//开始spi的初始化
- 	// ads_1015_spi_init();
-	//开ads的初始化配置
- 	// ads_begin();
-	// Start_Conv();
-	// bt_disable();
-	// broadcaster_multiple();
+	if(AD_1220)
+	{
+ 	ads_1015_spi_init();
+	//开ads1220的初始化配置
+	ads_begin();
+	//开始转换
+	Start_Conv();
+	}
+	if(BLE_OK)
+	{
+	bt_disable();
+	broadcaster_multiple();
+	}
 	//进行定时器初始化 2k采样率 
- 	// timer1_init_enable(); 
+ 	timer1_init_enable(); 
 	// //进行定时器初始化 20hz
-	// timer2_init_enable();
-	// k_thread_create(&read_thread_data, read_thread_stack, STACK_SIZE,
-    //                 get_MSGQ, NULL, NULL, NULL,
-    //                 PRIORITY, 0, K_NO_WAIT);
+	timer2_init_enable();
 	while (1)
 	{
 			if(flag)
 			{
-			//这代表0.5秒时间触发了
-			// big_time++;
 			//进行FFT处理
-			// fft();
+			fft();
 			//进行一个校准确保是10imu数据
 			//然后复位
 			imu_flag=0;
-			// ble_data_update();
+			if(BLE_OK)
+			{
+			ble_data_update();
+			}
 			//清零
 			flag=0;
 			// }

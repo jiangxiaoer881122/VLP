@@ -18,8 +18,10 @@
 #include "uart.h"
 #include "ads1015.h"
 #include "ads1220.h"
+#include "stdlib.h"
 #define  MY_PD_IRQ 5
 #define  MY_IMU_IRQ 5
+extern struct k_msgq uart_msgq;
 /**
  * @brief 定时器事件处理函数 2khz的采样同时兼顾0.5秒的选择
  *
@@ -40,19 +42,41 @@ extern u_int16_t big_time;
 //这里只是调试用途
 char PA[20];
 char PB[100];
+char RX_32[32];
 int a=365;
+int count2=0;
 void timer_handler(nrf_timer_event_t event_type, void * p_context)
 {
 
     if(event_type == NRF_TIMER_EVENT_COMPARE0)
     {
-        count++;
-        pd[count-1] = Read_Data();;
-        //这里是用于打印
-        if(PD_UART_Display)
+        // count2++;
+        //1220
+        if(AD_1220)
         {
-            sprintf(PA, "%d,",pd[count-1]); 
-            print_uart(PA);
+            pd[count-1] = Read_Data();
+            //这里是用于打印
+            if(PD_UART_Display)
+            {
+                sprintf(PA, "%d,",pd[count-1]); 
+                print_uart(PA);
+            }
+            count++;
+        }
+        //stm32
+        if(AD_32)
+        {
+            if(k_msgq_get(&uart_msgq,&RX_32,K_NO_WAIT)==0)
+            {
+                pd[count-1]=atoi(RX_32);
+                        //这里是用于打印
+                if(PD_UART_Display)
+                {
+                    sprintf(PA, "%d,",pd[count-1]); 
+                    print_uart(PA);
+                }
+                count++;
+            }
         }
         // 这里是0.05秒的计时器 与20hz的计时器
         if(count%1000==0)

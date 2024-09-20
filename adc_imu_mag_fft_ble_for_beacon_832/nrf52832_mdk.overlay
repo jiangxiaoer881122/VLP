@@ -44,7 +44,7 @@
 };
 &uart0 {
 	current-speed = <250000>;
-	interrupts = <2>, <4>;
+	interrupts = <2>, <3>;
 };
 
 &i2c0 {

@@ -35,7 +35,7 @@
 #define TIMER_INST_IDX 2
 #define TIMER2_INST_IDX 3
 /** @brief 等待时间以us为单位*/
-#define TIME_TO_WAIT_US 500UL
+#define TIME_TO_WAIT_US 200UL
 #define TIME2_TO_WAIT_US 500UL
 /** @brief 等待时间以ms为单位*/
 #define TIME_TO_WAIT_MS 50UL
