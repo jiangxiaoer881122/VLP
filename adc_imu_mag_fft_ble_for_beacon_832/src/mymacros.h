@@ -20,7 +20,6 @@
 //调试的一个宏定义,True则显示1000个PD数据,反之亦然
 // #define  fft_pd_uart true 
 #define  fft_pd_uart false 
-<<<<<<< HEAD
 
 //切换两种ad
 // #define AD_1220 true
@@ -33,7 +32,5 @@
 #define BLE_OK  true
 // #define BLE_OK  false
 
-=======
->>>>>>> temp
 #endif
 
