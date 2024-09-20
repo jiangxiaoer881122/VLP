@@ -18,7 +18,7 @@
 // #define  fft_UART_Display false 
 
 //调试的一个宏定义,True则显示1000个PD数据,反之亦然
-#define  fft_pd_uart true 
-// #define  fft_pd_uart false 
+// #define  fft_pd_uart true 
+#define  fft_pd_uart false 
 #endif
 
