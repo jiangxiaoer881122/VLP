@@ -1,10 +1,11 @@
 #include "fft.h"
 
+
 //定义相关的频率的点位(在点位范围内上下加减2) 频率为213,437,589,777,943,985
 // int fre_num[6]={218-2,447-2,603-2,795-2,965-2,1008-2};
 int fre_num[6]={218-2,447-2,603-2,795-2,965-2,1008-2};
 arm_cfft_instance_f32 scfft;
-extern int pd2[2200];
+extern int pd2[1000];
 extern u_int16_t big_time ;
 /* FFT信号数组，包含实部和虚部 */
 float fft_input_buf[FFT_LENGTH * 2];
@@ -25,8 +26,111 @@ char str_a1[100];
 //字符指针
 char *P_a1;
 int  offset_a1=0;
+/*滤波器*/
+//进行滤波器设计 零相位延迟
+
+// 假设输入信号长度为 1000，滤波器长度为 17 (16 阶滤波器)
+#define SIGNAL_LENGTH 1000
+#define FILTER_LENGTH 17
+#define EXTENDED_LENGTH (SIGNAL_LENGTH + 2*3*(FILTER_LENGTH - 1))  // 延拓后的信号长度
+// 定义滤波器系数 b (从 MATLAB 中获取)
+float ba[] = {
+ 1.866779e-03, 8.163281e-04, -3.512367e-03, -1.634744e-02, -4.077692e-02, -7.486983e-02, -1.111612e-01, -1.391366e-01, 8.480923e-01, -1.391366e-01, -1.111612e-01, -7.486983e-02, -4.077692e-02, -1.634744e-02, -3.512367e-03, 8.163281e-04, 1.866779e-03  // 前馈系数
+};
+
+// FIR 滤波器卷积实现函数
+void fir_filter(const float *input, float *output, int input_len, const float *filter, int filter_len) {
+    // 初始化输出信号
+    for (int n = 0; n < input_len; n++) {
+        output[n] = filter[0]*input[n];
+        for (int k = 1; k <= filter_len; k++) {
+            if (n - k >= 0) {
+                output[n] += filter[k] * input[n - k];
+            }
+        }
+    }
+}
+// 对称延拓信号
+void extend_signal(const int *input, float *extended, int input_len, int filter_len) {
+    int extend_size = 3*(filter_len - 1);  // 延拓长度
+    int i;
+    for (i = 0; i < input_len + extend_size * 2; i++)
+    {
+        if (i < extend_size)
+        {
+            extended[i] = 2 * input[0] - input[extend_size - i]; //前延拓
+        }
+        else if (i < input_len + extend_size)
+        {
+            extended[i] = input[i - extend_size]; //中间数据不变
+        }
+        else
+        {
+            extended[i] = 2 * input[input_len - 1] - input[input_len - 2 - (i - input_len - extend_size)]; //后延拓
+        }
+    }
+}
+// 数组反转函数
+void reverse(float *data, int len) {
+    int i, j;
+    double temp;
+    for (i = 0, j = len - 1; i < j; i++, j--) {
+        temp = data[i];
+        data[i] = data[j];
+        data[j] = temp;
+    }
+}
+//数据滤波函数
+void data_pro(float *y)
+{
+	// 中间步骤的正向滤波结果和最终的输出信号
+    float extended_signal[EXTENDED_LENGTH];
+    float y_forward[EXTENDED_LENGTH];
+    float y_final[EXTENDED_LENGTH];
+	int i;
+	//process
+	extend_signal(pd2, extended_signal, SIGNAL_LENGTH, FILTER_LENGTH);
+    // 第一步：正向滤波
+    fir_filter(extended_signal, y_forward, EXTENDED_LENGTH, ba, FILTER_LENGTH);
+    // 第二步：反转正向滤波结果
+    reverse(y_forward, EXTENDED_LENGTH);
+    // 第三步：对反转后的信号再次进行滤波
+    fir_filter(y_forward, y_final, EXTENDED_LENGTH, ba, FILTER_LENGTH);
+    // 第四步：再将结果反转回来，得到最终的滤波输出
+    reverse(y_final, EXTENDED_LENGTH);
+    // // 第六步：去除延拓部分，保留原始信号长度
+    for ( i = 0; i < SIGNAL_LENGTH; i++) {
+        // y[i] = y_final[48 + i];
+		y[i]=0;
+    }
+}
+/*滤波器*/
 int fft(void)
 {
+	// 最终输出信号 (只保留原始长度的部分)
+	float y_a[SIGNAL_LENGTH];
+		// 中间步骤的正向滤波结果和最终的输出信号
+    float extended_signal[EXTENDED_LENGTH];
+    float y_forward[EXTENDED_LENGTH];
+    float y_final[EXTENDED_LENGTH];
+	int k;
+	//process
+	extend_signal(pd2, extended_signal, SIGNAL_LENGTH, FILTER_LENGTH);
+    // 第一步：正向滤波
+    fir_filter(extended_signal, y_forward, EXTENDED_LENGTH, ba, FILTER_LENGTH);
+    // 第二步：反转正向滤波结果
+    reverse(y_forward, EXTENDED_LENGTH);
+    // 第三步：对反转后的信号再次进行滤波
+    fir_filter(y_forward, y_final, EXTENDED_LENGTH, ba, FILTER_LENGTH);
+    // 第四步：再将结果反转回来，得到最终的滤波输出
+    reverse(y_final, EXTENDED_LENGTH);
+    // // 第六步：去除延拓部分，保留原始信号长度
+    // for ( k = 0; k < SIGNAL_LENGTH; k++) {
+    //     // y[i] = y_final[48 + i];
+	// 	y_a[k]=0;
+    // }
+	// //滤波
+	// data_pro(y_a);
 	uint32_t maxIndex;
     float32_t maxValue;
     /* ===================fft部分=================== */

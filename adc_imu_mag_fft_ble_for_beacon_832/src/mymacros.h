@@ -29,8 +29,8 @@
 // #define AD_32  false
 
 //是否进行蓝牙开始
-#define BLE_OK  true
-// #define BLE_OK  false
+// #define BLE_OK  true
+#define BLE_OK  false
 
 #endif
 

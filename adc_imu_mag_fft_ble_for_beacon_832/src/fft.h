@@ -19,6 +19,8 @@
 #include <arm_const_structs.h>
 #include "uart.h"
 #include "mymacros.h"
+#include <stdio.h>
+#include <string.h>
 // #include <support_functions.h>
 /*
 ===========================
