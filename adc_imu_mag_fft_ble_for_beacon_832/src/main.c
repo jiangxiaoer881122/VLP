@@ -21,28 +21,18 @@
 #include "ads1220.h"
 #include "mymacros.h"
 
-// 定义一个用于读取消息队列的线程堆栈空间
-#define STACK_SIZE 1024
-#define PRIORITY 5
-// 读取线程的栈空间
-K_THREAD_STACK_DEFINE(read_thread_stack, STACK_SIZE);
-// 定义一个线程数据结构
-struct k_thread read_thread_data;
+// // 定义一个用于读取消息队列的线程堆栈空间
+// #define STACK_SIZE 1024
+// #define PRIORITY 5
+// // 读取线程的栈空间
+// K_THREAD_STACK_DEFINE(read_thread_stack, STACK_SIZE);
+// // 定义一个线程数据结构
+// struct k_thread read_thread_data;
 extern struct k_msgq uart_msgq;
 char tx_buf[MSG_SIZE];
 //尝试使用消息队列
-K_MSGQ_DEFINE(uart_msgq2, sizeof(char *), 50, 4); // 队列大小为10，消息长度为指针大小
-K_MSGQ_DEFINE(uart_msgq3, sizeof(char *), 30, 4); // 队列大小为10，消息长度为指针大小，存储imu的数据
-char *p="jjl 15645 68 6156 156 123156\n";
-void  put_MSGQ(void)
-{
-	//用于将数据添加进去队列
-	if(k_msgq_put(&uart_msgq2,&p,K_NO_WAIT)!=0)
-	{
-		//丢弃
-		printk("too much\n");
-	}
-}
+K_MSGQ_DEFINE(uart_msgq2, sizeof(char *), 5, 4); // 队列大小为10，消息长度为指针大小
+K_MSGQ_DEFINE(uart_msgq3, sizeof(char *), 3, 4); // 队列大小为10，消息长度为指针大小，存储imu的数据
 void get_MSGQ(void)
 {
 	//用于将数据获取队列并进行输出
@@ -209,12 +199,12 @@ int main(void)
 	// //用于计数
 	// int count=0;
 	// //用于存储格式化字符串
-	char str[200];
+	// char str[200];
 	// //字符指针
 	char *P;
 	int i=0,offset=0;
 	//测试
-	int ADC=0;
+
 	// //硬件IIC zephry库的
 	// i2c_dev = device_get_binding(I2C_DEV_NAME);
 	// if(!i2c_dev)
@@ -255,37 +245,32 @@ int main(void)
 	broadcaster_multiple();
 	}
 	//进行定时器初始化 2k采样率 
- 	// timer1_init_enable(); 
+ 	timer1_init_enable(); 
 	// //进行定时器初始化 20hz
-	// timer2_init_enable();
+	timer2_init_enable();
 
-	while(1)
+	while (1)
 	{
-		fft();
-		print_uart("1\n");
+			if(flag)
+			{
+			//进行FFT处理
+			fft();
+			//进行一个校准确保是10imu数据
+			//然后复位
+			imu_flag=0;
+			if(BLE_OK)
+			{
+			ble_data_update();
+			}
+			//清零
+			flag=0;
+			// }
+		}else{
+			//必须加否则会被优化
+			get_MSGQ();
+			c=1;
+		}
 	}
-	// while (1)
-	// {
-	// 		if(flag)
-	// 		{
-	// 		//进行FFT处理
-	// 		fft();
-	// 		//进行一个校准确保是10imu数据
-	// 		//然后复位
-	// 		imu_flag=0;
-	// 		if(BLE_OK)
-	// 		{
-	// 		ble_data_update();
-	// 		}
-	// 		//清零
-	// 		flag=0;
-	// 		// }
-	// 	}else{
-	// 		//必须加否则会被优化
-	// 		get_MSGQ();
-	// 		c=1;
-	// 	}
-	// }
 }
 
 
