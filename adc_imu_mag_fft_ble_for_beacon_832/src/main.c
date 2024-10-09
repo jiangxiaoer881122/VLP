@@ -21,6 +21,11 @@
 #include "ads1220.h"
 #include "mymacros.h"
 
+
+
+
+//定义一个Gain control 0.31
+#define GC NRF_GPIO_PIN_MAP(0,31) 
 // // 定义一个用于读取消息队列的线程堆栈空间
 // #define STACK_SIZE 1024
 // #define PRIORITY 5
@@ -203,7 +208,8 @@ int main(void)
 	// //字符指针
 	char *P;
 	int i=0,offset=0;
-	//测试
+	//进行GAIN CONTROL 
+	nrf_gpio_pin_set(GC);
 
 	// //硬件IIC zephry库的
 	// i2c_dev = device_get_binding(I2C_DEV_NAME);
