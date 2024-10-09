@@ -33,7 +33,8 @@
         "nrfx_spi.h": "c",
         "ads1220.h": "c",
         "ads1015.h": "c",
-        "nrf_spi.h": "c"
+        "nrf_spi.h": "c",
+        "nrf_gpio.h": "c"
     },
     "idf.portWin": "COM5",
     "nrf-connect.topdir": "${nrf-connect.sdk:2.5.1}",
