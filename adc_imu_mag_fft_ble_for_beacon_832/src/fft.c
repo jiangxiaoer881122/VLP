@@ -26,6 +26,8 @@ int  offset_a1=0;
 static  int FFT_first=0;
 //存储一个数组用于保存1000个数据
 int pd3[1000];
+//存储一个48点的
+int pd4[48]={0};
 /*滤波器*/
 int fft(void)
 {
@@ -57,18 +59,34 @@ int fft(void)
 		for ( i = 0; i < FFT_LENGTH; i++)
 		{
 			//实部进行PD数据的赋值
-			if(i<1000)
+			if(i<48)
 			{
-			fft_input_buf[2 * i] = pd3[i];
+			fft_input_buf[2 * i] = pd4[i];
 			//存储代码为后续做准备
-			pd3[i]=pd2[i];
-			}else if(i<2000){
-			fft_input_buf[2 * i] = pd2[i];
-			}else{
-			fft_input_buf[2 * i] = 0;
+			pd4[i]=pd3[i+951];
+			}else if(i<1048){
+			fft_input_buf[2 * i] = pd3[i-48];
+			}else if(i<2048){
+			fft_input_buf[2 * i] = pd2[i-1048];
+			//存储代码为后续做准备
+			pd3[i-1048]=pd2[i-1048];
 			}
+
 			/* 虚部 */
 			fft_input_buf[2 * i + 1] = 0;
+			// //实部进行PD数据的赋值
+			// if(i<1000)
+			// {
+			// fft_input_buf[2 * i] = pd3[i];
+			// //存储代码为后续做准备
+			// pd3[i]=pd2[i];
+			// }else if(i<2000){
+			// fft_input_buf[2 * i] = pd2[i];
+			// }else{
+			// fft_input_buf[2 * i] = 0;
+			// }
+			// /* 虚部 */
+			// fft_input_buf[2 * i + 1] = 0;
 		}		
 	}
 

@@ -209,8 +209,8 @@ int main(void)
 	char *P;
 	int i=0,offset=0;
 	//进行GAIN CONTROL 
-	nrf_gpio_cfg_output(GC);
-	nrf_gpio_pin_set(GC);
+	// nrf_gpio_cfg_output(GC);
+	// nrf_gpio_pin_set(GC);
 
 	// //硬件IIC zephry库的
 	// i2c_dev = device_get_binding(I2C_DEV_NAME);
