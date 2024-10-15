@@ -5,7 +5,9 @@
             "includePath": [
                 "${workspaceFolder}/**",
                 "C:/ncs/v2.5.1/modules/hal/nordic/nrfx/drivers/include/",
-                "C:/ncs/v2.5.1/modules/hal/nordic/nrfx/",
+                "C:/ncs/v2.5.1/modules/hal/nordic/nrfx/**",
+                "C:/ncs/v2.5.1/zephyr/include/zephyr/logging/**",
+                "C:/ncs/v2.5.1/modules/hal/cmsis/CMSIS/DSP/Include/",
                 "C:/ncs/v2.5.1/zephyr/include/"
             ],
             "defines": [

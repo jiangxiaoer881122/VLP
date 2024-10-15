@@ -34,7 +34,12 @@
         "ads1220.h": "c",
         "ads1015.h": "c",
         "nrf_spi.h": "c",
-        "nrf_gpio.h": "c"
+        "nrf_gpio.h": "c",
+        "nrfx_timer.h": "c",
+        "log_core.h": "c",
+        "arm_math.h": "c",
+        "arm_const_structs.h": "c",
+        "arm_math_types.h": "c"
     },
     "idf.portWin": "COM5",
     "nrf-connect.topdir": "${nrf-connect.sdk:2.5.1}",

@@ -7,7 +7,6 @@ extern int pd2[1000];
 extern u_int16_t big_time ;
 /* FFT信号数组，包含实部和虚部 */
 float fft_input_buf[FFT_LENGTH * 2];
-float fft_input_buf2[FFT_LENGTH * 2];
 /* FFT输出结果数组，幅度输出 */
 float fft_output_mag_buf[FFT_LENGTH];
 /*FFT最大的六个值以及输出*/
@@ -26,7 +25,7 @@ int  offset_a1=0;
 static  int FFT_first=0;
 //存储一个数组用于保存1000个数据
 int pd3[1000];
-//存储一个48点的
+//存储一个48点的值
 int pd4[48]={0};
 /*滤波器*/
 int fft(void)
@@ -63,7 +62,7 @@ int fft(void)
 			{
 			fft_input_buf[2 * i] = pd4[i];
 			//存储代码为后续做准备
-			pd4[i]=pd3[i+951];
+			pd4[i]=pd3[i+952];
 			}else if(i<1048){
 			fft_input_buf[2 * i] = pd3[i-48];
 			}else if(i<2048){
@@ -71,7 +70,6 @@ int fft(void)
 			//存储代码为后续做准备
 			pd3[i-1048]=pd2[i-1048];
 			}
-
 			/* 虚部 */
 			fft_input_buf[2 * i + 1] = 0;
 			// //实部进行PD数据的赋值
