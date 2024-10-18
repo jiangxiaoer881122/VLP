@@ -1,7 +1,8 @@
 #include "fft.h"
 //定义相关的频率的点位(在点位范围内上下加减2) 频率为213,437,589,777,943,985
 // int fre_num[6]={218-2,447-2,603-2,795-2,965-2,1008-2};
-int fre_num[6]={918-5,662-5,362-5,406-5,874-5,618-5};
+//[896,854,646,604,958,292,354,396];
+int fre_num[8]={918-5,875-5,662-5,619-5,981-5,300-5,363-5,406-5};
 arm_cfft_instance_f32 scfft;
 extern int pd2[1000];
 extern u_int16_t big_time ;
@@ -27,11 +28,40 @@ static  int FFT_first=0;
 int pd3[1000];
 //存储一个48点的值
 int pd4[48]={0};
-/*滤波器*/
+
+// 交换两个整数的值
+void swap(int* a, int* b) {
+    int temp = *a;
+    *a = *b;
+    *b = temp;
+}
+
+// 选择前 6 大的元素及其位置
+void find_top_6(int values[], int positions[], int size) {
+    // 遍历数组，找到前 8 大的元素
+    for (int i = 0; i < 6; i++) {
+        int max_idx = i;  // 假设当前元素是最大的
+        for (int j = i + 1; j < size; j++) {
+            if (values[j] > values[max_idx]) {
+                max_idx = j;
+            }
+        }
+        // 交换当前最大值到第 i 个位置
+        if (max_idx != i) {
+            swap(&values[i], &values[max_idx]);
+            swap(&positions[i], &positions[max_idx]);
+        }
+    }
+}
+
+
 int fft(void)
 {
 	uint32_t maxIndex;
     float32_t maxValue;
+	//用于存储临时的值
+	int temp_fft_out[8];
+	int temp_fft_index[8];
     /* ===================fft部分=================== */
 	/* 初始化scfft结构体，设定FFT相关参数*/
 	arm_cfft_init_f32(&scfft, FFT_LENGTH);
@@ -72,19 +102,6 @@ int fft(void)
 			}
 			/* 虚部 */
 			fft_input_buf[2 * i + 1] = 0;
-			// //实部进行PD数据的赋值
-			// if(i<1000)
-			// {
-			// fft_input_buf[2 * i] = pd3[i];
-			// //存储代码为后续做准备
-			// pd3[i]=pd2[i];
-			// }else if(i<2000){
-			// fft_input_buf[2 * i] = pd2[i];
-			// }else{
-			// fft_input_buf[2 * i] = 0;
-			// }
-			// /* 虚部 */
-			// fft_input_buf[2 * i + 1] = 0;
 		}		
 	}
 
@@ -112,17 +129,24 @@ int fft(void)
 
 
 
-	//for 循环 在对应频率 取得最大的六个数值
-	for(i=0;i<6;i++)
+	//for 循环 在对应频率 取得最大的数值
+	for(i=0;i<8;i++)
 	{
 		//找寻最大值
     	arm_max_f32(&fft_output_mag_buf[fre_num[i]], 10, &maxValue, &maxIndex);
 		//将最大值存入数组 记录数值,并保留两位小数
 		// fft_out[i]=(int)(maxValue*2/1000*100);
-		fft_out[i]=(int)(maxValue*2/1000*100);
-		fft_index[i]=(int)maxIndex+fre_num[i];
+		temp_fft_out[i]=(int)(maxValue*2/1000*100);
+		temp_fft_index[i]=(int)maxIndex+fre_num[i];
 	}
-
+	//再冲八个里面选取最大的数值
+	// 查找前 8 大的元素
+    find_top_6(temp_fft_out, temp_fft_index, 8);
+	//进行赋值
+	for (int i = 0; i < 6; i++) {
+		fft_out[i]=temp_fft_out[i];
+		fft_index[i]=temp_fft_index[i];
+    }
 	//串口检验FFT的大小
 	if(fft_UART_Display)
 	{
