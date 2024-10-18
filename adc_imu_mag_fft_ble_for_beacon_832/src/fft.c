@@ -28,7 +28,6 @@ static  int FFT_first=0;
 int pd3[1000];
 //存储一个48点的值
 int pd4[48]={0};
-
 // 交换两个整数的值
 void swap(int* a, int* b) {
     int temp = *a;
@@ -62,6 +61,9 @@ int fft(void)
 	//用于存储临时的值
 	int temp_fft_out[8];
 	int temp_fft_index[8];
+	//求一下直流均值
+	int dc_val=0;
+	arm_mean_f32(pd2,1000,&dc_val);
     /* ===================fft部分=================== */
 	/* 初始化scfft结构体，设定FFT相关参数*/
 	arm_cfft_init_f32(&scfft, FFT_LENGTH);
@@ -90,13 +92,13 @@ int fft(void)
 			//实部进行PD数据的赋值
 			if(i<48)
 			{
-			fft_input_buf[2 * i] = pd4[i];
+			fft_input_buf[2 * i] = pd4[i]-dc_val;
 			//存储代码为后续做准备
 			pd4[i]=pd3[i+952];
 			}else if(i<1048){
-			fft_input_buf[2 * i] = pd3[i-48];
+			fft_input_buf[2 * i] = pd3[i-48]-dc_val;
 			}else if(i<2048){
-			fft_input_buf[2 * i] = pd2[i-1048];
+			fft_input_buf[2 * i] = pd2[i-1048]-dc_val;
 			//存储代码为后续做准备
 			pd3[i-1048]=pd2[i-1048];
 			}
