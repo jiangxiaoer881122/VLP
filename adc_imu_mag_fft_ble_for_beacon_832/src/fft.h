@@ -29,7 +29,8 @@
 */
 
 /* FFT长度 */
-#define FFT_LENGTH 2048
+#define FFT_LENGTH 1024
+// #define FFT_LENGTH 2048
 extern struct k_msgq uart_msgq2;
 /*
 ===========================

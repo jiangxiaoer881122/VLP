@@ -2,7 +2,8 @@
 //定义相关的频率的点位(在点位范围内上下加减2) 频率为213,437,589,777,943,985
 // int fre_num[6]={218-2,447-2,603-2,795-2,965-2,1008-2};
 //[896,854,646,604,958,292,354,396];
-int fre_num[8]={918-5,875-5,662-5,619-5,981-5,300-5,363-5,406-5};
+// int fre_num[8]={918-5,875-5,662-5,619-5,981-5,300-5,363-5,406-5};
+int fre_num[8]={918-2,875-2,662-2,619-2,981-2,300-2,363-2,406-2};
 arm_cfft_instance_f32 scfft;
 extern int pd2[1000];
 extern u_int16_t big_time ;
@@ -69,16 +70,17 @@ int fft(void)
 	arm_cfft_init_f32(&scfft, FFT_LENGTH);
 	int i =0;
 	/* 生成信号序列 */
+	//1024点
 	if(FFT_first==0)
 	{
 		for ( i = 0; i < FFT_LENGTH; i++)
 		{
-			//实部进行PD数据的赋值
-			if(i<1000)
+			//实部进行PD数据的赋值 只保留后面48个
+			if(i<24)
 			{
 			fft_input_buf[2 * i] = pd2[i];
-			//存储上一次代码
-			pd3[i]=pd2[i];
+			//存储只保留后面48个
+			pd4[i]=pd2[i+976];
 			}else{
 			fft_input_buf[2 * i] = 0;
 			}
@@ -90,22 +92,57 @@ int fft(void)
 		for ( i = 0; i < FFT_LENGTH; i++)
 		{
 			//实部进行PD数据的赋值
-			if(i<48)
+			if(i<24)
 			{
 			fft_input_buf[2 * i] = pd4[i]-dc_val;
 			//存储代码为后续做准备
-			pd4[i]=pd3[i+952];
-			}else if(i<1048){
-			fft_input_buf[2 * i] = pd3[i-48]-dc_val;
-			}else if(i<2048){
-			fft_input_buf[2 * i] = pd2[i-1048]-dc_val;
-			//存储代码为后续做准备
-			pd3[i-1048]=pd2[i-1048];
+			pd4[i]=pd2[i+976];
+			}else{
+			fft_input_buf[2 * i] = pd2[i-24]-dc_val;
 			}
+			
 			/* 虚部 */
 			fft_input_buf[2 * i + 1] = 0;
 		}		
 	}
+	//2048历史数据
+	// if(FFT_first==0)
+	// {
+	// 	for ( i = 0; i < FFT_LENGTH; i++)
+	// 	{
+	// 		//实部进行PD数据的赋值
+	// 		if(i<1000)
+	// 		{
+	// 		fft_input_buf[2 * i] = pd2[i];
+	// 		//存储上一次代码
+	// 		pd3[i]=pd2[i];
+	// 		}else{
+	// 		fft_input_buf[2 * i] = 0;
+	// 		}
+	// 		/* 虚部 */
+	// 		fft_input_buf[2 * i + 1] = 0;
+	// 	}
+	// 	FFT_first=1;
+	// }else{
+	// 	for ( i = 0; i < FFT_LENGTH; i++)
+	// 	{
+	// 		//实部进行PD数据的赋值
+	// 		if(i<48)
+	// 		{
+	// 		fft_input_buf[2 * i] = pd4[i]-dc_val;
+	// 		//存储代码为后续做准备
+	// 		pd4[i]=pd3[i+952];
+	// 		}else if(i<1048){
+	// 		fft_input_buf[2 * i] = pd3[i-48]-dc_val;
+	// 		}else if(i<2048){
+	// 		fft_input_buf[2 * i] = pd2[i-1048]-dc_val;
+	// 		//存储代码为后续做准备
+	// 		pd3[i-1048]=pd2[i-1048];
+	// 		}
+	// 		/* 虚部 */
+	// 		fft_input_buf[2 * i + 1] = 0;
+	// 	}		
+	// }
 
 	//输出i
 	// printk("i:%d\n",i);
@@ -135,7 +172,7 @@ int fft(void)
 	for(i=0;i<8;i++)
 	{
 		//找寻最大值
-    	arm_max_f32(&fft_output_mag_buf[fre_num[i]], 10, &maxValue, &maxIndex);
+    	arm_max_f32(&fft_output_mag_buf[fre_num[i]], 5, &maxValue, &maxIndex);
 		//将最大值存入数组 记录数值,并保留两位小数
 		// fft_out[i]=(int)(maxValue*2/1000*100);
 		temp_fft_out[i]=(int)(maxValue*2/1000*100);
