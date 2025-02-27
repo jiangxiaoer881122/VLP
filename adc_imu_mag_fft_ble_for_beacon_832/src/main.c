@@ -124,7 +124,7 @@ int imu_count=0;
 // int count_imu =0;
 // int imu_flag =0;
 //这里是0.5秒的计时器
-int count =0;
+int count =1;
 int b = 0;
 int c = 1;
 int imu_flag =0;

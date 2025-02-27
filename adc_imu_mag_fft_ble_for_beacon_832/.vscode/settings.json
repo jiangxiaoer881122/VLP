@@ -41,7 +41,11 @@
         "arm_const_structs.h": "c",
         "arm_math_types.h": "c"
     },
-    "idf.portWin": "COM5",
+    "idf.portWin": "COM24",
     "nrf-connect.topdir": "${nrf-connect.sdk:2.5.1}",
-    "nrf-connect.toolchain.path": "${nrf-connect.toolchain:2.5.1}"
+    "nrf-connect.toolchain.path": "${nrf-connect.toolchain:2.5.1}",
+    "idf.openOcdConfigs": [
+        "interface/ftdi/esp32_devkitj_v1.cfg",
+        "target/esp32s3.cfg"
+    ]
 }

@@ -10,7 +10,7 @@
 
 /* queue to store up to 10 messages (aligned to 4-byte boundary) */
 //初始化存储队列
-K_MSGQ_DEFINE(uart_msgq, MSG_SIZE, 100, 4);
+K_MSGQ_DEFINE(uart_msgq, MSG_SIZE, 500, 4);
 
 const struct device *const uart_dev = DEVICE_DT_GET(UART_DEVICE_NODE);
 

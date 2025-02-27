@@ -69,6 +69,7 @@ void timer_handler(nrf_timer_event_t event_type, void * p_context)
             if(k_msgq_get(&uart_msgq,&RX_32,K_NO_WAIT)==0)
             {
                 pd[count-1]=atoi(RX_32);
+                // pd[count-1]=20;
                         //这里是用于打印
                 if(PD_UART_Display)
                 {
@@ -79,9 +80,9 @@ void timer_handler(nrf_timer_event_t event_type, void * p_context)
             }
         }
         // 这里是0.05秒的计时器 与20hz的计时器
-        if(count%1000==0)
+        if(count==1001)
         {
-            count =0;
+            count =1;
             flag =1;
             big_time++;
             //需要进行复制从而进行隔离
