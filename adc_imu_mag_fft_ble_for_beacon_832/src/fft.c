@@ -185,9 +185,9 @@ int fft(void)
 		temp_fft_out[i]=(int)(maxValue*2/1000*100);
 		temp_fft_index[i]=(int)maxIndex+fre_num[i];
 	}
-	//再冲八个里面选取最大的数值
-	// 查找前 8 大的元素
-    find_top_6(temp_fft_out, temp_fft_index, 8);
+	//再冲12个里面选取最大的数值
+	// 查找前 12 大的元素
+    find_top_6(temp_fft_out, temp_fft_index, 12);
 	//进行赋值
 	for (int i = 0; i < 6; i++) {
 		fft_out[i]=temp_fft_out[i];
