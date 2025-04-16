@@ -221,11 +221,20 @@ int fft(void)
     /* ===================fft部分=================== */
 
 	//再冲12个里面选取最大的数值
+	// printk("pd2:%d\n",pd2[0]);
+	// printk("pd2:%d\n",pd2[1]);
+	// printk("pd2:%d\n",pd2[2]);
+	// printk("pd2:%d\n",pd2[3]);
+	// printk("pd2:%d\n",pd2[4]);
+	// printk("pd2:%d\n",pd2[5]);
+	
 	// 查找前 12 大的元素
 	for(int i=0;i<12;i++)
 	{
-		temp_fft_out[i]=2*sqrt(goertzel((const float*)pd2, 1000, 2000, fre_num[i]))/1000;
+		// temp_fft_out[i]=2*sqrt(goertzel((const float*)pd2, 1000, 2000, fre_num[i]))/1000;
+		temp_fft_out[i]=goertzel(pd2, 1000, 2000, fre_num[i]);
 		temp_fft_index[i]=fre_num[i];
+		// printk("index %d:%d,",temp_fft_index[i],temp_fft_out[i]);
 	}
 
     find_top_6(temp_fft_out, temp_fft_index, 12);
@@ -233,6 +242,7 @@ int fft(void)
 	for (int i = 0; i < 6; i++) {
 		fft_out[i]=temp_fft_out[i];
 		fft_index[i]=temp_fft_index[i];
+
     }
 	//串口检验FFT的大小
 	if(fft_UART_Display)
