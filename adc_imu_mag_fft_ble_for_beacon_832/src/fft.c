@@ -231,8 +231,8 @@ int fft(void)
 	// 查找前 12 大的元素
 	for(int i=0;i<12;i++)
 	{
-		// temp_fft_out[i]=2*sqrt(goertzel((const float*)pd2, 1000, 2000, fre_num[i]))/1000;
-		temp_fft_out[i]=goertzel(pd2, 1000, 2000, fre_num[i]);
+		temp_fft_out[i]=2*sqrt(goertzel(pd2, 1000, 2000, fre_num[i]))/1000*100;
+		// temp_fft_out[i]=goertzel(pd2, 1000, 2000, fre_num[i]);
 		temp_fft_index[i]=fre_num[i];
 		// printk("index %d:%d,",temp_fft_index[i],temp_fft_out[i]);
 	}
@@ -242,11 +242,11 @@ int fft(void)
 	for (int i = 0; i < 6; i++) {
 		fft_out[i]=temp_fft_out[i];
 		fft_index[i]=temp_fft_index[i];
-
     }
 	//串口检验FFT的大小
 	if(fft_UART_Display)
 	{
+		// offset_a1 += sprintf(str_a1 + offset_a1, "\n"); 
 		for(int i=0;i<6;i++)
 		{
 			offset_a1 += sprintf(str_a1 + offset_a1, "index %d:%d,", fft_index[i],fft_out[i]); 
